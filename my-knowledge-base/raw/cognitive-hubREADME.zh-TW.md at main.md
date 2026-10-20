@@ -1,0 +1,231 @@
+---
+title: "cognitive-hub/README.zh-TW.md at main"
+source: "https://github.com/wenjenglee/cognitive-hub/blob/main/README.zh-TW.md"
+author:
+  - "[[wenjenglee]]"
+published:
+created: 2026-05-13
+description: "A memory-first design pattern for AI agents in multi-role knowledge work. Externalized living memory that is human-readable, AI-readable, and collaboratively editable. - cognitive-hub/README.zh-TW.md at main · wenjenglee/cognitive-hub"
+tags:
+  - "clippings"
+status: processed
+---
+## Cognitive Hub
+
+**以記憶為核心的 AI 代理設計模式，專為知識密集型專業工作打造。**
+
+外部化的活記憶（externalized living memory）——人類可讀、AI 可讀、可協作編輯的結構化知識庫，讓 AI 代理擁有持續且可稽核的脈絡。
+
+> 🌐 [English version](https://github.com/wenjenglee/cognitive-hub/blob/main/README.md)
+
+---
+
+## 問題
+
+臨床醫師和知識工作者隨時間累積大量專業知識。瓶頸不在於某一天的工作量，而在於 **決策脈絡隨時間不斷流失** ——跨任務、跨時間、跨協作者。
+
+一週前委員會做的決定，你可能已經記不清當初考慮過哪些選項、排除了什麼、為什麼做出那個選擇。這不是記憶力問題，而是工作記憶的根本限制：沒有被外部化的脈絡，終將遺失。
+
+目前 AI 代理的主流方向是「幫你做事」——自動寫信、管行事曆、跑自動化。這解決的是「手不夠用」。但對於累積深厚領域知識的專業人士，更核心的困境是「腦不夠用」：
+
+- 決策脈絡隨時間流失——同樣的考量反覆進行
+- 過去的決策和理由沒有被系統性記錄
+- 團隊成員之間缺乏共享的決策記憶
+- AI 每次新對話都從零開始——強大但失憶
+
+**Cognitive Hub 的核心主張：記憶先於行動。** AI 要能有意義地行動，必須先有持續、可控的脈絡。
+
+## 什麼是外部化的活記憶？
+
+這個做法稱為 *外部化的活記憶（externalized living memory）* ，因為三個特質：
+
+- **外部化（Externalized）** ：知識存在結構化系統中，不在短暫的 AI 對話或人的工作記憶裡
+- **活的（Living）** ：知識會成長、修正、被淘汰——而且 AI 代理在查詢時能跨領域交叉推理，這是靜態文件做不到的
+- **多代理可存取（Multi-agent accessible）** ：同一個知識庫可被人和 AI 代理同時讀寫，也包括團隊成員
+
+三個特性使它有別於現有工具：
+
+1. **No-code 即可建置** — 用一般筆記平台就能實作
+2. **不綁定特定 LLM** — 換模型不會失去知識
+3. **可擴展** — 平台商可以將目前手動的部分自動化
+
+## 架構
+
+Cognitive Hub 是一個 **設計模式（design pattern）** ，不是產品。它可以用任何 LLM + 結構化知識平台 + 橋接協定的組合來實現。參考實作使用 Claude + Notion + MCP，但架構本身不綁定任何特定工具。
+
+### 分層架構
+
+知識組織為三層：
+
+[![Figure 1: 分層架構](https://github.com/wenjenglee/cognitive-hub/raw/main/figure1_architecture.svg)](https://github.com/wenjenglee/cognitive-hub/blob/main/figure1_architecture.svg)
+
+```
+┌─────────────────────────────────────────────┐
+│       運算層 Computation Layer (LLM)        │
+│   可替換的運算引擎。                          │
+│   在知識上推理，但不擁有知識。                  │
+│   換模型不會造成知識損失。                      │
+└──────────────────┬──────────────────────────┘
+                   │ 雙向連接
+┌──────────────────┴──────────────────────────┐
+│       橋接層 Bridge Layer (例如 MCP)         │
+│   知識平台與 AI 引擎之間的雙向通道。            │
+│   設計上與工具無關。                           │
+└──────────────────┬──────────────────────────┘
+                   │
+┌──────────────────┴──────────────────────────┐
+│       知識層 Knowledge Layer (Hub)           │
+│   持久的、人類擁有的知識庫：                    │
+│   ├── Rules & Protocols — 決策邏輯           │
+│   ├── Projects — 進行中的工作脈絡             │
+│   ├── References — 穩定的背景資訊             │
+│   └── SOP — 重複性工作的標準流程              │
+│                                             │
+│   + Hub Index（路由表）                      │
+│   + Governance Hierarchy（治理層級）          │
+└─────────────────────────────────────────────┘
+```
+
+### Hub Index 作為路由表
+
+知識層維護一個頂層索引，功能等同路由表。它列出各子區塊的一行摘要和觸發條件。AI 在對話開始時 **只讀這個索引** ，然後按需載入相關子頁面。Context window 有限，但知識庫可以無限成長。路由表讓規模擴展不會降低品質。
+
+### 治理層級（Governance Hierarchy）
+
+知識層採用類似憲法的治理層級：
+
+- **頂層** ：精簡、穩定、每次對話都載入——只放路由訊號
+- **下層** ：完整程序，按需載入
+
+將規則向上提升有高門檻：只有高頻率、跨對話、一行就能表達的訊號才有資格。這防止頂層膨脹——膨脹會降低路由準確度，浪費 context 預算。
+
+### 雙層可見性（Dual-Layer Visibility）
+
+為了隱私，系統分離兩層：
+
+- **個人層** （策略思考、管理判斷）：只有作者和 AI 可存取
+- **協作層** （任務層級資訊）：與團隊成員共享
+
+這是務實的做法，不是技術保證。機構應評估當地資料保護合規性。
+
+## 設計原則
+
+五條原則指引建構和維護：
+
+1. **同時服務人和 AI 讀者。** 每一條知識都應該讓人類審閱者能理解、讓 AI 代理能解析。這確保完全的可稽核性。
+2. **知識與運算引擎分離。** 知識層不應依賴特定 LLM。知識是持久資產；LLM 是消耗品。
+3. **用成熟的管理原則管理 AI。** 系統採用組織管理的做法——授權、SOP、新人到職文件——並應用到 AI 的行為管理上。
+4. **資料層比工具層長壽。** 平台會換。知識結構必須可攜帶。Markdown、純文字格式確保生存力。
+5. **提升路由訊號，不提升完整程序。** 當一條規則夠重要需要放在頂層，只提升一行指標。完整程序留在專屬頁面。
+
+## 核心能力
+
+### 持續性決策記憶
+
+當你隔了幾天或幾週回到某個專案，AI 已經掌握你之前的決策內容、理由和未完事項——不需要重新交代背景。
+
+### 規則驅動行為
+
+不再期望 AI「猜到」你的偏好——而是寫下明確的規則：溝通風格、決策框架、研究協定。AI 讀取並遵循。
+
+### 異步接力工作流程（Async Relay Workflow）
+
+團隊的協作模式：主管在 Hub 中列出任務 → 團隊成員隔天用自己的 AI 代理接手（AI 讀取共享專案頁面取得脈絡）→ 完成分配的部分 → 更新頁面 → 主管審閱並加入下一步。一週內專案透過多次接力推進，不需要同步開會。
+
+[![Figure 2: 異步接力工作流程](https://github.com/wenjenglee/cognitive-hub/raw/main/figure2_async_relay.svg)](https://github.com/wenjenglee/cognitive-hub/blob/main/figure2_async_relay.svg)
+
+### 先定稿再產出（Settle-Then-Generate）
+
+自然浮現的工作模式：先在 Hub 中確定內容實質，再產出交付物。這減少無效迭代，因為每一個中間決策都被記錄、可回溯。
+
+## 與現有方案的比較
+
+| 維度 | PKM | AI Agents | LLM 記憶 | Custom GPTs | 機構 RAG | 活記憶 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 記憶模型 | 人設計 | Agent 管理 | Agent 管理 | 靜態上傳 | 靜態文件 | 人設計 |
+| AI 存取 | 無 | 完整 | 完整 | 唯讀 | 唯讀 | 讀寫 |
+| 動態性 | 手動更新 | 自動記錄 | 自動摘要 | 靜態 | 靜態 | 活的（策展式） |
+| 平台獨立性 | 可攜帶 | 視系統而異 | 鎖定 | 鎖定 | 鎖定 | 可攜帶 |
+| 可控性 | 完整 | 視系統而異 | 部分\* | 部分 | 有限 | 完整 |
+| 建置門檻 | 手動 | 需工程 | 零 | 低 | 需工程 | No-code |
+| 團隊協作 | 有限 | 初期 | 無 | 無 | 全機構 | 多人 |
+
+\*近期 LLM 記憶功能（如 Claude Memory）允許使用者檢視、編輯和刪除個別記憶，因此列為「部分」而非「有限」。但這些系統缺乏結構化組織（無層級、路由或治理），且仍鎖定於特定平台。本表反映 2026 年初的生產環境功能，研究原型可能有所不同。
+
+## 範本
+
+`templates/` 目錄包含去識別化的範例模板：
+
+- **`rules-template.md`** — Rules 頁面範本，展示如何結構化決策邏輯供 AI 讀取
+- **`project-template.md`** — 異步接力工作流程的專案頁面範本（目標、方法、角色分工、待辦、經驗紀錄）
+- **`sop-template.md`** — 標準作業流程範本
+- **`sync-notion-backup.py`** — 將 Hub 頁面從 Notion 匯出為本機 markdown 的 Python 腳本，提供離線存取和跨平台可攜性
+
+這些是起點。請根據你的角色、工具和工作方式自由調整。
+
+## 快速開始
+
+你需要兩樣東西：
+
+1. **一個可存取外部知識的 LLM** — Claude + Notion MCP，或任何可以讀寫外部知識平台的 LLM
+2. **一個結構化知識平台** — Notion、Obsidian、Confluence，或任何支援結構化頁面且 AI 可存取的工具
+
+設定約需一小時：
+
+1. 建立 Hub 主頁，下設子區塊：Rules、Projects、References、SOP
+2. 建立 Hub Index（路由表），列出每個區塊的一行摘要和觸發條件
+3. 寫 5–10 條核心規則（溝通風格、決策原則、行為準則）
+4. 加入基本 References（你是誰、你的角色、你的工具和偏好）
+5. 設定你的 LLM 在對話開始時讀取 Hub Index
+6. 測試： *「你知道我目前有哪些專案嗎？」*
+
+## 限制
+
+- **單一團隊驗證。** 由一個機構的一個團隊開發和測試。這是設計案例研究，不是控制實驗。
+- **維護成本。** Hub 需要主動維護（作者經驗約每天 15 分鐘）。過時的 Hub 比沒有 Hub 更糟。
+- **橋接層依賴平台支援。** 雖然設計模式與工具無關，但橋接層取決於特定平台支援。並非所有組合都有成熟的橋接方案。
+- **隱私考量。** 將 LLM 連接到知識庫意味著服務商會處理這些內容。雙層可見性可以減輕但不能消除此疑慮。
+- **頂層膨脹風險。** 沒有提升紀律，路由層會膨脹直到降低準確度。
+- **不替代機構級系統。** 這是個人/團隊的生產力架構。
+
+## 📄 論文
+
+設計模式與臨床案例研究已撰寫為同儕審查論文，目前審稿中：
+
+> Lee WJ, Wu CF. Externalized Living Memory: Structuring Clinical Knowledge for the Age of AI Agents. *J Med Internet Res*. Preprint. doi:[10.2196/preprints.96809](https://doi.org/10.2196/preprints.96809)
+
+論文以醫療為案例，但設計模式不限特定領域，適用於任何管理多重角色或累積大量領域知識的知識工作者。
+
+## 與其他記憶系統的關係
+
+[OpenClaw](https://github.com/anthropics/openclaw) 等專案證明了 AI 代理需要持久記憶。Cognitive Hub 從不同角度探索同一個問題：不需要 Docker 容器、boot files 和排程任務的全端代理平台，而是用 **現有的 no-code 工具** （筆記平台 + 具備雙向存取的 LLM）來達成持久、可稽核的脈絡。
+
+兩種做法互補，不是競爭：
+
+- **OpenClaw** 擅長持續執行：排程、行動通訊、24/7 自主任務
+- **Cognitive Hub** 擅長深度脈絡：結構化決策記憶、跨角色知識、按需檢索且不受 context window 限制
+
+你可以單獨使用任何一種，也可以兩者並用——Hub 作為思考層，代理平台作為執行層。選擇適合你工作流程的工具。
+
+## 引用
+
+```
+@article{lee2026externalized,
+         = {Lee, Wen-Jeng and Wu, Chiung-Fang},
+  title        = {Externalized Living Memory: Structuring Clinical
+                  Knowledge for the Age of AI Agents},
+  journal      = {Journal of Medical Internet Research},
+  year         = {2026},
+  note         = {Preprint},
+  doi          = {10.2196/preprints.96809},
+  url          = {https://doi.org/10.2196/preprints.96809}
+}
+```
+
+機器可讀引用格式見 `CITATION.cff` 。
+
+## 授權
+
+本作品採用 Creative Commons Attribution 4.0 International (CC BY 4.0) 授權。
+
+你可以自由分享和改編本作品於任何用途（包含商業用途），只要給予適當署名。

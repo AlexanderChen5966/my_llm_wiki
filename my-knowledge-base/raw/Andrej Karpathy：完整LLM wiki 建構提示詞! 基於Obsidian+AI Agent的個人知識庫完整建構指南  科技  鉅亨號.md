@@ -1,0 +1,135 @@
+---
+title: "Andrej Karpathy：完整LLM wiki 建構提示詞! 基於Obsidian+AI Agent的個人知識庫完整建構指南 | 科技 | 鉅亨號"
+source: "https://hao.cnyes.com/post/240756"
+author:
+  - "[[RexAA]]"
+published: 2026-04-05
+created: 2026-05-18
+description:
+tags:
+  - "clippings"
+status: processed
+---
+> 這是一篇很有意思的文章。Andrej Karpathy兩天前剛提出了備受關注的以Obsidian+AI建構個人知識庫的模式，這個路徑是非常明確的，Obsidian筆記軟體在本地管理了以md為格式的知識文件，提供了知識庫建構所需要的各種目錄索引組織功能， Andrej提出的設計模式讓AI Agent來接管Obsidian，讓人們從整理原始素材的繁瑣工作中解脫出來，讓大家真正擁有一個自主整理資料乃至分析提煉的AI助手。
+
+所以Anredj其實是提出了一種區別於傳統對話機器人的全新個人知識庫建構範式。而今天，Andrej更是直接給出了詳細方法，這文章實就是直接給AI Agent看的完整建構指南。
+
+為了讀者看完就能直接上手操作，本文在關鍵步驟加入了 💡【手把手實操註釋】。讀者可以把它當作一份“實戰搭建指南”。
+
+### 建構個人 LLM Wiki（大語言模型維基）的設計模式
+
+**作者：Andrej Karpathy**
+
+這是一個“概念檔案（Idea File）”，它的設計初衷是讓你直接複製貼上給你的 LLM Agent（例如 OpenAI Codex、Claude Code、OpenCode / Cursor / Pi 等）。本文的目的是傳達高層次的理念，而你的 AI 助手將會和你一起協作，建構出具體的實現細節。
+
+### 💡 【實操註釋：第一步該怎麼做？】
+
+Karpathy 的意思是，你不需要自己從零寫程式碼。你可以直接把這篇中文版，喂給具備“讀取本地檔案”能力的 AI 工具。
+
+告訴 AI：“閱讀這篇文章，理解 LLM Wiki 的理念，以後你就是我的 Wiki 維護員了。”
+
+### 核心理念 (The core idea)
+
+大多數人使用 LLM 處理文件的體驗類似於 RAG（檢索增強生成）：你上傳一堆檔案，當你提問時，LLM 檢索出相關的文字塊，然後生成答案。這種方法能用，但問題是：LLM 每次回答新問題時，都在“從零開始”重新發現知識。沒有任何知識沉澱。 如果你問一個需要綜合五份文件的複雜問題，LLM 每次都得重新去尋找並拼湊相關碎片。NotebookLM、ChatGPT 的檔案上傳功能，以及大多數 RAG 系統都是這樣工作的。
+
+這裡的理唸完全不同。LLM 不再是在你提問時才去原始文件裡檢索，而是持續建構並維護一個持久的 Wiki（維基庫）——這是一個由相互連結的 Markdown 檔案組成的結構化集合，它介於你和原始資料之間。
+
+<iframe width="794" height="280" frameborder="0" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-0246916887946697&amp;output=html&amp;h=280&amp;num_ads=1&amp;adk=779292680&amp;adf=3940071313&amp;pi=t.aa~a.3140611556~i.12~rp.4&amp;w=794&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1779091022&amp;rafmt=1&amp;armr=3&amp;sem=mc&amp;pwprc=6620092565&amp;ad_type=text_image&amp;format=794x280&amp;url=https%3A%2F%2Fhao.cnyes.com%2Fpost%2F240756&amp;fwr=0&amp;pra=3&amp;rh=199&amp;rw=794&amp;rpe=1&amp;resp_fmts=3&amp;asro=0&amp;aiactd=0&amp;aicctd=0&amp;ailctd=0&amp;aimartd=4&amp;aieuf=1&amp;aicrs=1&amp;fa=27&amp;uach=WyJtYWNPUyIsIjI2LjUuMCIsImFybSIsIiIsIjE0OC4wLjc3NzguMTY4IixudWxsLDAsbnVsbCwiNjQiLFtbIkNocm9taXVtIiwiMTQ4LjAuNzc3OC4xNjgiXSxbIkdvb2dsZSBDaHJvbWUiLCIxNDguMC43Nzc4LjE2OCJdLFsiTm90L0EpQnJhbmQiLCI5OS4wLjAuMCJdXSwwXQ..&amp;abgtt=6&amp;dt=1779091022474&amp;bpp=1&amp;bdt=690&amp;idt=1&amp;shv=r20260512&amp;mjsv=m202605130101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3Dfe96cc4e40dfc129%3AT%3D1772441462%3ART%3D1779091022%3AS%3DALNI_Ma2B0h65TtzFIsAOQGx1oO1-xVCNg&amp;gpic=UID%3D000012104c120b7d%3AT%3D1772441462%3ART%3D1779091022%3AS%3DALNI_MZASAL66zOiHT2IPhor6399wIH8zA&amp;eo_id_str=ID%3Da1b3d57c65fd2e3c%3AT%3D1772441462%3ART%3D1779091022%3AS%3DAA-AfjZ3hEkhG87XHYumqbg00Mpj&amp;prev_fmts=0x0%2C300x250%2C300x250&amp;nras=2&amp;correlator=5609110537577&amp;frm=20&amp;pv=1&amp;u_tz=480&amp;u_his=3&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1050&amp;u_aw=1920&amp;u_cd=24&amp;u_sd=1&amp;dmc=32&amp;adx=250&amp;ady=1903&amp;biw=1652&amp;bih=938&amp;scr_x=0&amp;scr_y=0&amp;eid=31098563%2C42533293%2C95390681%2C95373848&amp;oid=2&amp;pvsid=8909224380763354&amp;tmod=355495255&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;fc=1408&amp;brdim=1920%2C30%2C1920%2C30%2C1920%2C30%2C1892%2C985%2C1652%2C938&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=128&amp;bc=31&amp;plas=218x742_l%7C218x742_r&amp;bz=1.15&amp;pgls=CAk.&amp;ifi=6&amp;uci=a!6&amp;btvi=3&amp;fsb=1&amp;dtd=6" title="Advertisement" aria-label="Advertisement"></iframe>
+
+當你加入一份新資料時，LLM 不是簡單地建立索引留待後用。它會主動閱讀它，提取關鍵資訊，並將其整合到現有的 Wiki 中——更新實體頁面，修改主題摘要，標註新資料與舊觀點的衝突之處，強化或挑戰正在演變的綜合結論。知識被“編譯（compiled）”一次後就會保持更新，而不是每次提問都重新推導。
+
+這是最關鍵的區別：Wiki 是一個持久的、具備複利效應的產物。 交叉引用已經存在了，矛盾之處已經被標記了，總結結論已經反映了你讀過的所有內容。你加入的資料越多、問的問題越多，這個 Wiki 就越豐富。
+
+你永遠（或極少）需要自己動手寫 Wiki——LLM 會負責編寫和維護這一切。你的職責是尋找資料、探索發現、以及提出好問題。 LLM 則負責所有的“苦力活”——總結、交叉引用、歸檔、記帳，正是這些枯燥的工作讓一個知識庫隨著時間推移變得真正有用。
+
+在實際操作中，我會在螢幕一邊打開 LLM Agent，另一邊打開 Obsidian（一款本地筆記軟體）。LLM 根據我們的對話修改檔案，我則即時瀏覽結果——點選連結跳轉、查看知識圖譜（graph view）、閱讀更新後的頁面。
+
+Obsidian 是開發工具（IDE），LLM 是程式設計師，而你的 Wiki 就是程式碼庫。
+
+### 適用場景 (Examples)
+
+這套模式適用於多種情境：
+
+- 個人管理：追蹤你的目標、健康、心理、自我提升——將日記、文章、播客筆記歸檔，隨著時間推移建構一個結構化的“自我畫像”。
+- 深度研究：花費數周或數月深入研究一個主題——閱讀論文、文章、報告，並逐步建構一個包含演進論點的全面 Wiki。
+- 閱讀書籍：邊讀邊將每一章歸檔，為人物、主題、情節線索建立頁面，記錄它們之間的關聯。讀完後，你就會擁有一個內容豐富的伴讀 Wiki。（想想類似《指環王》粉絲建立的維基百科，成千上萬個連結頁面，現在你可以用 LLM 自己建一個）。
+- 商業/團隊：一個由 LLM 維護的內部 Wiki，資料來源可以是 Slack 聊天記錄、會議記錄、項目文件、客戶通話。
+- 競品分析、盡職調查、旅行規劃、課程筆記、愛好鑽研——任何需要隨著時間推移積累知識，且希望知識井然有序而不是散落一地的場景。
+
+### 系統架構 (Architecture)
+
+整個系統分為三個層級：
+
+1. 原始資料層 (Raw sources)：你收集的原始文件庫。文章、論文、圖片、資料檔案。這些是不可變（immutable）的——LLM 只能讀取它們，絕不能修改它們。這是你的事實真相源（Source of truth）。
+2. Wiki 層 (The wiki)：由 LLM 生成的 Markdown 檔案目錄。包括摘要、實體頁面、概念頁面、對比表格、概覽和綜合分析。LLM 完全擁有這一層。它負責建立頁面、更新內容、維護交叉引用並保持一致性。你負責讀，LLM 負責寫。
+3. 約束架構層 (The schema)：一個配置檔案（例如 Claude Code 的 CLAUDE.md 或 Codex 的 AGENTS.md），用於告訴 LLM 這個 Wiki 的結構是什麼、命名約定是什麼，以及在提取資料、回答問題或維護 Wiki 時要遵循什麼工作流。你和 LLM 會隨著時間的推移不斷最佳化這個檔案。
+
+### 💡 【實操註釋：普通使用者如何在電腦上建立這個架構？】
+
+你只需要在電腦桌面上新建一個資料夾，比如叫 My\_AI\_Wiki，然後在裡面建三個子資料夾/檔案：
+
+📁 Raw\_Sources (你把下載的 PDF、網頁文字扔這裡，別讓AI改)
+
+📁 Wiki\_Pages (讓 AI 在這裡面自由建立和修改.md 筆記)
+
+📄 Agents.md (這是給AI看的規則說明書)
+
+操作方式：用你的AI Agent軟體打開這個 My\_AI\_Wiki 資料夾，你就可以直接在聊天框裡讓 AI 讀取Angets.md, 它就開始幹活了。
+
+### 日常操作 (Operations)
+
+攝入資料 (Ingest)：
+
+你把一份新資料扔進原始資料庫，然後叫 LLM 處理它。例如：LLM 讀取資料，跟你討論核心觀點，然後在 Wiki 中寫一頁摘要，更新目錄索引，更新各個相關的實體和概念頁面，最後在日誌裡寫下一筆。
+
+一份資料可能會觸及 10-15 個 Wiki 頁面。我個人傾向於每次只攝入一份資料並保持參與感——我會閱讀摘要、檢查更新、引導 LLM 強調那些內容。你也可以建立自己的工作流並寫在 schema 規則裡。
+
+### 💡 【實操註釋：讓AI Ingest的有效提示詞（Prompt）舉例】
+
+"請閱讀 Raw\_Sources 資料夾中剛放入的《2024新能源報告.pdf》。讀完後：1. 在 Wiki\_Pages 建立該報告的摘要頁面；2. 如果報告提到了電池技術，去更新已有的 固態電池.md 頁面；3. 更新總目錄 index.md。"
+
+**查詢 (Query)：**
+
+你向 Wiki 提問。LLM 會搜尋相關頁面，閱讀它們，並附上引用來源生成答案。答案可以是 Markdown 頁面、對比表、幻燈片或圖表。
+
+最重要的見解是：高品質的答案應該作為新頁面存回 Wiki 中。 你要求做的橫向對比、分析、發現的關聯——這些都是有價值的，不應該消失在聊天記錄裡。讓你的探索像原始資料一樣在知識庫中產生複利。
+
+**程式碼審查/健康檢查 (Lint)：**
+
+定期讓 LLM 對 Wiki 進行健康檢查。尋找：頁面之間的矛盾、被新資料推翻的舊觀點、沒有外部連結的“孤兒頁面”、提到了但沒有專屬頁面的重要概念、缺失的交叉引用等。這能讓 Wiki 在膨脹時保持健康。
+
+### 索引與日誌 (Indexing and logging)
+
+有兩個特殊檔案能幫助 LLM（以及你）在 Wiki 不斷增長時進行導航：
+
+- index.md (內容目錄)：它是 Wiki 中所有內容的目錄。每個頁面都有一個連結、一句話摘要，也許還有日期或來源數量等中繼資料。按類別組織。LLM 在每次攝入新資料時都會更新它。LLM 回答問題時，會先看 index 找到相關頁面。在中等規模下（~100 份資料，數百個頁面），這種方法出奇地好用，無需搭建複雜的向量檢索（RAG）基礎設施。
+- log.md (操作日誌)：它是按時間順序記錄的。這是一個“只能追加（append-only）”的記錄，記錄了何時發生了什麼（攝入、查詢、檢查）。小技巧：如果每條記錄都以一致的前綴開頭，日誌就能用簡單的工具進行解析。這能讓 LLM 瞭解最近做了什麼。
+
+### 💡 【實操註釋：為什麼這兩個檔案極其重要？】
+
+因為目前 AI 的“上下文窗口”是有限的。如果不建索引，AI 無法瞬間看清幾百個檔案的全貌。index.md 就像是一張全域地圖，每次 AI 接到任務，你讓它先看地圖，再決定去修改那個具體的本地檔案。
+
+### 可選：命令列工具 (Optional: CLI tools)
+
+隨著 Wiki 變大，你可能需要幫助 LLM 更高效操作的工具。最明顯的就是搜尋引擎。在小規模時 index.md 就夠了，但做大後你需要真正的搜尋。qmd 是個不錯的選擇（一個本地 markdown 搜尋引擎）。你也可以自己讓 LLM 幫你寫一個簡單的搜尋指令碼。
+
+(註：對於普通小白使用者，直接使用 Obsidian 自帶的搜尋，或者 Cursor 的 Codebase 檢索功能即可，無需折騰複雜的命令列工具。)
+
+### 技巧與竅門 (Tips and tricks)
+
+1. Obsidian Web Clipper：一個瀏覽器外掛，能把網頁文章轉換成 Markdown。非常適合快速把資料抓進你的 Raw\_Sources。
+2. 把圖片下載到本地：在 Obsidian 中設定快速鍵將引用的圖片下載到本地。這樣 LLM 可以直接查看本地圖片，而不是依賴隨時會失效的網址連結。
+3. Obsidian 知識圖譜 (Graph view)：這是查看 Wiki 形狀的最佳方式——什麼連接著什麼，那些是核心樞紐，那些是孤島。
+4. Marp 幻燈片：一種基於 Markdown 的 PPT 格式。
+5. Dataview 外掛：如果你讓 LLM 在頁面開頭加上 YAML 中繼資料（如標籤、日期），Dataview 外掛能幫你生成動態表格。
+6. Git 版本控制：Wiki 只是一個包含 Markdown 檔案的資料夾（git repo）。你可以免費獲得歷史版本和防呆備份。就算 AI 把檔案改亂了，你也可以一鍵回撤。
+
+### 為什麼這種模式有效 (Why this works)
+
+維護一個知識庫最繁瑣的部分不是閱讀或思考，而是“記帳（bookkeeping）”。
+
+更新交叉引用、保持摘要最新、留意新舊資料的衝突、在幾十個頁面間保持一致性。人類之所以會放棄維護 Wiki，是因為維護的負擔增長得比它帶來的價值快得多。
+
+但是，LLM 不會覺得無聊，不會忘記更新連結，並且一次操作就能修改 15 個檔案。因為維護成本接近於零，所以 Wiki 能夠一直保持良好的狀態。
+
+人類的工作是精選資料、指導分析、提出好問題，並思考這一切的意義。LLM 的工作是搞定剩下的一切。 (Web3天空之城)

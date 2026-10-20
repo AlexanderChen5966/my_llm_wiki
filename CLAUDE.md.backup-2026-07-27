@@ -1,0 +1,154 @@
+# 知識庫規則說明
+
+個人知識庫（AI 工具應用、軟體開發、技術研究、PKM）。Obsidian 介面 + Claude Code 整理引擎。
+
+## 關注方向
+
+AI 工具（Claude Code / MCP / Agent）、PKM 方法論、軟體開發（Flutter / Spring Boot）、知識資產化（MAPS / Skills）
+
+## 目錄結構
+
+- `raw/`：原始素材暫存（唯讀，NEVER 修改）
+- `wiki/`：整理後知識條目（AI 全權維護，含 `concepts/` 跨主題框架）
+- `research/`：深度研究分析筆記
+- `ideas/`：靈感與初步想法
+- `outputs/`：AI 產出的報告與分析
+- `archive/`：停用內容（移入，不刪除）
+- `my-technical-notes/`：技術筆記（`agent-mcp/` / `agent-skills/` 子目錄）
+
+## 支援輸入格式
+
+raw/ 接受：`.md` / `.pdf`（≤10頁全文，>10頁需指定 pages）/ `.png .jpg .jpeg .webp .gif` / `.txt .srt .vtt` / `.html` / `.ipynb` / `.csv`
+
+## 筆記格式規範
+
+所有筆記 `.md`，開頭必須包含：
+
+```yaml
+---
+title: 筆記標題
+date: YYYY-MM-DD
+tags: [tag1, tag2]
+source: 來源網址或出處
+type: article | note | idea | reference | project | meeting
+status: inbox | processed | reviewed | archived
+---
+```
+
+Tag 使用階層式 `/` 分隔：`ai/claude` `ai/agent` `ai/mcp` `ai/prompt-engineering` `dev/flutter` `dev/spring-boot` `pkm/workflow` `pkm/obsidian` `project/專案名稱`
+
+> 以上僅為常用樣例；**完整 tag 清單以 `skills/knowledge-organizer/references/tag-taxonomy.md` 為權威來源**（含 `ai/workflow`、`pkm/automation`、`pkm/framework`、`method/*`、`type/*`、`dev/architecture` 等）。
+
+## AI 操作規則
+
+NEVER modify or delete files in `raw/`  
+NEVER write to any file without reading it first  
+ALWAYS link related topics with `[[wikilink]]`  
+ALWAYS update `wiki/INDEX.md` after adding or editing any wiki entry  
+ALWAYS move inactive notes to `archive/` instead of deleting  
+
+## Inbox 判斷規則
+
+Obsidian Web Clipper 產生的 frontmatter 為帶引號格式 `status: "inbox"`，手動建立的筆記可能為無引號格式 `status: inbox`，兩者 YAML 語義等價，掃描指令必須同時覆蓋。
+
+### `.md` 檔案（ideas / research / wiki 等）
+
+- **Inbox**：frontmatter 含 `status: inbox` 或 `status: "inbox"`
+- **Processed**：將 frontmatter 改為 `status: processed`
+- **掃描 inbox 指令**（只掃 frontmatter，避免正文誤報）：
+  ```bash
+  find /Users/alexander/notes/my-knowledge-base/ -name "*.md" \
+    ! -path "*/raw/*" ! -path "*/archive/*" ! -path "*/templates/*" ! -path "*/rules/*" \
+    | while read f; do head -10 "$f" | grep -q '^status:.*inbox' && echo "$f"; done | sort
+  ```
+
+### `raw/` 目錄的 `.md` 檔案（特殊規則）
+
+raw/ 檔案**不可修改**，因此與非 .md 檔案一樣使用 **旁車標記檔** 判斷：
+
+- **Inbox**：有 `status:.*inbox` 且沒有同名 `.processed` 標記
+- **Processed**：建立同名 `.processed` 空檔案
+- **掃描 inbox 指令**：
+  ```bash
+  for f in /Users/alexander/notes/my-knowledge-base/raw/*.md; do
+    grep -q 'status:.*inbox' "$f" 2>/dev/null \
+      && [ ! -f "${f}.processed" ] && echo "$f"
+  done
+  ```
+
+### `raw/` 目錄的非 `.md` 檔案（PDF / 圖片等）
+
+- **掃描 inbox 指令**：
+  ```bash
+  find raw/ -type f ! -name "*.md" ! -name "*.processed" \
+    | while read f; do [ ! -f "${f}.processed" ] && echo "$f"; done
+  ```
+
+### 通用完整掃描（一次列出所有 inbox）
+
+```bash
+# Step 1：raw/ .md（需 .processed marker）
+echo "=== raw/ .md inbox ===" && \
+for f in /Users/alexander/notes/my-knowledge-base/raw/*.md; do
+  grep -q 'status:.*inbox' "$f" 2>/dev/null \
+    && [ ! -f "${f}.processed" ] && echo "$f"
+done
+
+# Step 2：raw/ 非 .md（需 .processed marker）
+echo "=== raw/ 非 .md inbox ===" && \
+find /Users/alexander/notes/my-knowledge-base/raw/ -type f \
+  ! -name "*.md" ! -name "*.processed" \
+  | while read f; do [ ! -f "${f}.processed" ] && echo "$f"; done
+
+# Step 3：ideas / research / rules 等（改 frontmatter）
+echo "=== ideas/research/rules inbox ===" && \
+find /Users/alexander/notes/my-knowledge-base/ -name "*.md" \
+  ! -path "*/raw/*" ! -path "*/archive/*" ! -path "*/templates/*" ! -path "*/rules/*" \
+  | while read f; do head -10 "$f" | grep -q '^status:.*inbox' && echo "$f"; done | sort
+```
+
+注意：建立 `.processed` 標記屬於新增元資料，不違反「NEVER modify raw/ 原始檔」規則。
+
+完整協議與各 Skill 實作對照見 `my-knowledge-base/rules/inbox-detection-protocol.md`。
+
+## 任務路由
+
+| 情境 | 動作 |
+|------|------|
+| raw/ 新素材（單篇） | 執行 knowledge-organizer Skill |
+| raw/ 積壓 ≥ 10 篇 | 執行 raw-pipeline Skill |
+| 需整合多篇同主題 wiki | 執行 knowledge-synthesizer Skill |
+| 同領域 ≥ 3 個精粹條目 | 執行 knowledge-elevation Skill |
+| wiki 內容對齊檢查 | 執行 alignment-check Skill |
+| 月底健康檢查 | 執行 wiki-health-check Skill |
+
+## Skills
+
+| Skill | 用途 |
+|-------|------|
+| knowledge-organizer | 單篇 raw/ 素材 → 結構化 wiki 條目（TBRC 四層框架）|
+| raw-pipeline | 批次處理 raw/ 積壓（三 Agent 軟編排）|
+| knowledge-synthesizer | 多篇同類 wiki → 精粹條目（CAVE 框架）|
+| knowledge-elevation | 精粹條目 → 跨主題概念框架（`wiki/concepts/`）|
+| wiki-health-check | 每月健康檢查（矛盾偵測 / 缺口分析 / 孤立筆記）|
+| daily-brief-generator | 每日簡報（積壓 / wiki 更新 / 任務狀態）|
+| alignment-check | 掃描 wiki 補充段落是否與主題對齊 |
+| obsidian-second-brain | 第三方：vault-first 深度研究 + `/notebooklm` 等研究指令（不套用 inbox 協議）|
+| scientific-brainstorming | 第三方：五階段學術腦力激盪（缺口識別 → 新假設）|
+
+## 知識整理流程
+
+處理 raw/ 新素材時依序執行：
+
+1. 讀取原始內容，用 2-3 句話總結核心論點
+2. 指定 1-3 個 tag（遵循上方 Tag 規範）
+3. 判斷歸屬：ideas / research / projects / wiki（存入門檻見 `rules/research-protocol.md`）
+4. 建立整理後的筆記（含完整 frontmatter）
+5. 建立相關 `[[wikilink]]`
+6. 更新 `wiki/INDEX.md`
+
+遇到不確定的路由判斷或破壞性操作，見 `rules/decision-framework.md`。
+
+## 語言
+
+所有筆記與互動一律使用**繁體中文（台灣用語）**。技術專有名詞保留英文原文。

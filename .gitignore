@@ -1,0 +1,8 @@
+# Obsidian Smart Connections 向量快取（可重建，體積大）
+.smart-env/
+
+# Obsidian 視窗狀態（每次開關都會變動）
+.obsidian/workspace*
+
+# macOS
+.DS_Store
