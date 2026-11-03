@@ -8,7 +8,7 @@ created: 2026-10-08
 description: "ArtCraft Apps 是免費開源的 Adobe Creative Cloud 替代方案，提供 PhotoCraft、VectorCraft、FilmCraft 等 7 款創作工具，涵蓋圖片編輯、向量繪圖、影片剪輯、RAW、PDF、動態圖像與排版，適合想尋找 Photoshop、Illustrator、Premiere Pro 替代軟體的使用者。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 網站連結 [https://getartcraft.com/apps](https://getartcraft.com/apps)
 

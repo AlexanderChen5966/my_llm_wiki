@@ -114,3 +114,4 @@ Subagent 內部可能搜尋 20 個檔案、執行 8 次工具、產生大量中�
 - [[agent-os-workstation-division]] — 工位分工原則（核查者不能是提煉者自己）
 - [[ideas/multi-agent-handoff-acceptance-workbench-agency-agents]] — 📎 2026-10-19 新增：Workbench 看板＋Agency Agents 角色模板，「產出＋檢查」兩角色起步（aiposthub 同作者兩篇，未實測）
 - [[ideas/claude-managed-agents-dynamic-workflows-every-2026-10]] — 📎 2026-10-19 新增：Managed Agents 動態流程上限 1,000 是規模上限非建議值；子代理 vs 動態流程的官方適用情境
+- [[anthropic-fold-subagents-back-to-main-agent]] — 📎 2026-10-30 新增：Anthropic 企業部署經驗的「收回多餘子代理」建議（補充，非更新）；⚠️ 與 [[claude-haiku-5-5-release-notes]]「小模型當子代理」定位有方向張力

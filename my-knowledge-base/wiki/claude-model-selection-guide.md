@@ -6,7 +6,7 @@ source: https://www.bnext.com.tw/article/90667/claude-model-comparison-opus-sonn
 type: article
 status: processed
 asset_value: 65
-updated: 2026-09-29
+updated: 2026-10-30
 ---
 
 Claude 模型陣容從三款擴充為四層級：Haiku 4.5、Sonnet 5、Opus 4.8，以及 2026 年 6 月推出、位階凌駕 Opus 之上的 Mythos 級模型 Fable 5，四者輸出成本最貴與最便宜相差達 10 倍。
@@ -56,7 +56,25 @@ Fable 5 內建安全備援機制：涉及資安/生物等高風險領域問題�
 
 Sonnet 5.5／Haiku 5.5 官方說「未來幾週」推出，未給日期，屆時再更新本段。
 
-> ⚠️ 2026-10-08 更新：Sonnet 5.5 已於 2026-09-28 發布（作者轉述官方，見 [[claude-models-real-task-eval-tokyo-trip]]）；Haiku 5.5 截至 10 月初仍未推出。Claude Code 內 Opus 5.5 與 Sonnet 5.5 的預設 effort 都是 medium。
+> 📎 2026-10-07 已更新：上句的「Haiku 5.5 未給日期」已過時——Haiku 5.5 於 2026-10-07（美東）正式發布，見下方〈2026-10-07 Haiku 5.5 發布〉。原句保留作歷史脈絡。
+
+> ⚠️ 2026-10-08 更新：Sonnet 5.5 已於 2026-09-28 發布（作者轉述官方，見 [[claude-models-real-task-eval-tokyo-trip]]）；Haiku 5.5 截至 10 月初仍未推出（⚠️ 此句已過時：Haiku 5.5 於 2026-10-07 發布，見下方〈2026-10-07 Haiku 5.5 發布〉）。Claude Code 內 Opus 5.5 與 Sonnet 5.5 的預設 effort 都是 medium。
+
+## 2026-10-07 Haiku 5.5 發布
+
+> 來源：TechOrange〈AI 小模型戰升溫，Anthropic 推 Haiku 5.5〉（2026-10-08，編譯 Anthropic 官方公告、SiliconANGLE、VentureBeat、WSJ；二手整理，數字未逐項對照官方頁面）。完整數據與案例見 [[claude-haiku-5-5-release-notes]]。
+
+| 項目 | Haiku 4.5（上表） | Haiku 5.5（2026-10-07） |
+|------|------|------|
+| 定價（輸入/輸出，每百萬 token，提示詞 ≤ 10 萬） | $1 / $5 | **$0.1 / $0.5**（降 90%；~~超過 10 萬再降 50%~~ ❌ 2026-10-30 對官方價目頁核對為反向：超過 10 萬 tokens 的請求輸入 $0.50／輸出 $2.50，是短區間的 5 倍，詳見 [[claude-haiku-5-5-release-notes]]；Anthropic 估平均任務成本約降 75%） |
+| OSWorld 2.1 離線子集（電腦操作） | 15.7% | **72.4%**（GPT-6 Luna 48.9%） |
+| Terminal-Bench 4.0 | — | 39.2%（最高推理強度；🔴 預設約 20%；GPT-6 Luna 16.4%） |
+| 官方定位 | 最快、最便宜 | 大量、高頻、成本敏感任務；**Opus 5.5／Sonnet 5.5 的子代理** |
+
+- **Sonnet 5.5 快取讀取費減半**：$0.20 → $0.10 每百萬 tokens（同日宣布）
+- **選型影響**：陣容排序中 Haiku 那一層應改讀為 Haiku 5.5（Mythos 5.1 ＞ Fable 5.1 ＞ Opus 5.5 ＞ Sonnet 5.5 ＞ Haiku 5.5）；範圍明確、量大的子任務可先試 Haiku 5.5，但 Sonnet 5.5 在電腦操作與複雜程式上仍明顯領先，需依成功率、執行時間與重試成本判斷
+- **未驗證**：基準與案例（Asana、Rogo、Cognition）皆為 Anthropic 與合作客戶說法；[[claude-models-real-task-eval-tokyo-trip]] 測的是 Haiku 4.5，結論不能直接套到 5.5
+- **張力**：官方把 Haiku 5.5 定位為子代理，同期卻建議收回多餘子代理，見 [[anthropic-fold-subagents-back-to-main-agent]]
 
 **陣容描述的更正（相對於上方 7/16 舊表）：**
 - 7/16 版把 Fable 5 稱為「Mythos 級」；但 9/23 官方家族排序中，Mythos 是 Fable 之上的**獨立一層**（Mythos 5.1 ＞ Fable 5.1 ＞ Opus 5.5 ＞ Sonnet 5 ＞ Haiku 4.5）。
@@ -65,7 +83,7 @@ Sonnet 5.5／Haiku 5.5 官方說「未來幾週」推出，未給日期，屆時
 
 ## C（關鍵行動）
 
-- [ ] 不確定該用哪個模型時，先用 Haiku 4.5 跑一輪日常任務，確認哪些環節「不夠用」再往上升級
+- [ ] 不確定該用哪個模型時，先用 Haiku 4.5 跑一輪日常任務，確認哪些環節「不夠用」再往上升級（📎 2026-10-07 起 Haiku 5.5 已發布，起手式可改用 Haiku 5.5）
 - [ ] 高複雜度且長時程的代理任務才考慮 Fable 5，並先確認公司是否有 ZDR 合規要求
 - [ ] 定期依任務重量切換模型，而非固定用同一款處理所有任務
 - [ ] 2026-09-23 起預設模型改成 Opus 5.5，舊的 Fable 5 升級判準改用 Fable 5.1
@@ -79,3 +97,5 @@ Sonnet 5.5／Haiku 5.5 官方說「未來幾週」推出，未給日期，屆時
 - [[claude-code-model-boomerang]] — 追蹤 session 被安全分類器/限額踢出主模型並一鍵切回，正對應本篇 Fable 5 遇高風險改跑 Opus 的備援機制
 - [[claude-opus-5-5-release-notes]] — 2026-09-23 Opus 5.5 發布：價格、跑分、API 破壞性變更與方案差異（本篇〈2026-09-23 陣容更新〉的詳細來源）
 - [[claude-models-real-task-eval-tokyo-trip]] — 2026-10 真實任務評測（5 模型、單一作者小樣本）：簡單任務分不出高下，差距在「承認不確定」與「題目沒講的事」；記載 Sonnet 5.5 於 9/28 發布
+- [[claude-haiku-5-5-release-notes]] — 📎 2026-10-30 新增：Haiku 5.5 發布（價格降 90%、OSWorld 72.4%、子代理定位、Sonnet 5.5 快取讀取費減半）；本篇〈2026-10-07 Haiku 5.5 發布〉的詳細來源
+- [[anthropic-fold-subagents-back-to-main-agent]] — 📎 2026-10-30 新增：Anthropic 建議收回多餘子代理，與 Haiku 5.5「小模型當子代理」定位有張力

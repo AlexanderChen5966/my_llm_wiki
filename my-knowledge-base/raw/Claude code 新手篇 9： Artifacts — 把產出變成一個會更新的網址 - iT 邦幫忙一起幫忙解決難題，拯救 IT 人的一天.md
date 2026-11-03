@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "1. 傳出去的那一份，不會再更新 你應該有遇到過這種事：一份報告傳給同事，十分鐘後發現有個數字錯了，改完再傳一次。檔名從「報告.html」變成「報告_最終版.html」，再來是「報告_最終版_V2.h..."
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 1
 

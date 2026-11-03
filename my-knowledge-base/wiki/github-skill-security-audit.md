@@ -74,3 +74,4 @@ HTTP、webhook、curl、fetch、requests、upload、send
 - [[claude-code-hooks-memory]] — advisory vs mandatory：本篇「別用自然語言請求、要直接移除程式碼」是同一原則
 - [[claude-code-skill-survivors-20-picks]] — Skill 淘汰訊號；安全性可作為第五個淘汰訊號
 - [[superpowers-skill-bloat-risk-tiering]] — 風險分級；第三方 Skill 審查強度也該依執行環境風險分級
+- [[claude-security-continuous-scanning-fix-tracking]] — 不同主題（程式庫持續掃描與修補追蹤），同屬安全面向的對照閱讀

@@ -8,7 +8,7 @@ created: 2026-10-19
 description: "Claude 官方分享六個社群作品，從野火分析、手繪西洋棋、120 頁筆記變字型，到電磁場、3D 心臟科教學與俳句動畫。一次看懂 Opus、Sonnet、Haiku 各自出現在哪些案例，以及如何從可驗收的小作品開始。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Claude 可以把一疊手寫筆記做成字型，也能協助把抽象知識做成可以操作的畫面。這次官方選出的六個社群作品，讓「用 AI 做點東西」有了具體輪廓。
 

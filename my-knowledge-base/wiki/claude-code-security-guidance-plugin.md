@@ -61,3 +61,4 @@ Claude Code CLI v2.1.144 以上的專案；想在生成當下而非 CI 階段就
 - [[claude-code-official-skills-top10-2026]] — 官方 Skill 生態速查，Security Review 是內建 Skill 與本外掛不同機制的對照
 - [[production-agent-architecture]] — Guardrails/HITL 的一般性工程設計，封鎖設計是其在資安領域的具體實作
 - [[claude-code-codex-sandbox-h5i]] — Claude Code/Codex 沙盒環境 + h5i：與本外掛互補的另一層防護（外掛攔截危險程式碼生成、沙盒限制執行環境）
+- [[claude-security-continuous-scanning-fix-tracking]] — Claude Security 雲端掃描服務（Enterprise 公開測試、不支援 ZDR）；與本外掛是不同部署路徑，條件不可互套

@@ -85,3 +85,4 @@ Moksa 撰寫的中文圈首篇 Auto Mode 深度教學，拆解啟用條件、Cla
 - [[agent-api-key-handoff-six-methods-risk]] — auto mode 預設允許讀 `.env`；依該篇，等於把金鑰貼進對話
 - [[prompt-injection-vs-jailbreak]] — classifier 看不到檔案與網頁內容的抗注入設計
 - [[agent-permission-and-os-sandbox]] — 字面比對的規則必然有洞，deny 是底線不是保險箱
+- 📎 2026-10-30：[[claude-code-artifacts-publish-update-share-guide]] — 同系列 G9：自己叫它做的新 artifact 發佈不跳詢問、不經 auto mode 審核（初始僅自己可見）

@@ -86,3 +86,4 @@ npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-fro
 - [[claude-code-design-skills-overview]] — 六款 Design Skill 精選，taste-skill 在其中
 - [[impeccable-style-ai-coding-guide]] — 程式碼品味 Skill，與 taste-skill 形成設計+工程雙規範
 - 📎 2026-10-19：[[claude-codex-video-toolchain-selection]] — 同一開發者 Leonxlnx 的產品宣傳動畫 Skill Cinetic（第三方、MIT、預設 Remotion 輸出）
+- 📎 2026-10-30：[[impeccable-style-ai-coding-guide]] — 已補 v4.x 更新（24 指令、PRODUCT／DESIGN.md、隱喻抽籤、4 版本實驗）；Impeccable 主打「流程」、Taste 主打固定風格規則

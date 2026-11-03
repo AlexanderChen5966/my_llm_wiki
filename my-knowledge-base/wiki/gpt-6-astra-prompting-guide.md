@@ -179,3 +179,4 @@ OpenAI 點出 Astra 的五項行為傾向，每一項給一段可直接寫進系
 - [[agent-era-prompt-structure]] — 通用層：模型越強越需要清楚的任務邊界
 - [[chatgpt-chat-work-codex-comparison]] — GPT-5.6 的 Sol／Terra／Luna 分級（與 GPT-6 三層不同代，2026-09-29 補）
 - [[llm-cost-optimization-strategies]] — 分層派工與每任務成本；>272K 加價門檻已在該條相關連結註記
+- 📎 2026-10-30：[[chatgpt-intelligent-ui-interactive-answers]] — GPT-6 的 Intelligent UI（互動回答）：⚠️ 選 Pro 檔（即 Astra）時**不支援**互動回答（2026-10-08 快照，作者引用 OpenAI 說明頁）

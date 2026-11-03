@@ -8,7 +8,7 @@ created: 2026-10-16
 description: "想用 ChatGPT、Claude 玩 Vibe Coding，卻不知道能做什麼？整理 10 種創意互動網站設計，從復古自拍亭、熱感應、音檔可視化到像素房間，附設計思路與可直接使用的 Prompt，帶你探索 AI 網頁設計的更多玩法。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 最近 Vibe Coding 越來越受到關注，透過 ChatGPT、Claude 等 AI 工具，即使不熟悉程式語言，也能用自然語言描述需求，讓 AI 協助製作網站。
 

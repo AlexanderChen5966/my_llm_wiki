@@ -114,3 +114,4 @@ asset_value: 62
 - [[claude-skills-ecosystem]] — GitHub 16 個高 star Skills Repo 四檔分類
 - 📎 2026-10-19：[[ideas/claude-code-animation-prompt-qa-delivery]] — 程式動畫的需求寫法與驗收（可搭配 remotion-best-practices、fixing-motion-performance）
 - 📎 2026-10-19：[[claude-codex-video-toolchain-selection]] — Remotion 專案內 `npx remotion skills add`、可重現規則（只由幀數驅動）與官方授權（≤3 名員工營利組織免費）見該條
+- 📎 2026-10-30：[[arc-ui-mcp-claude-code-component-workflow]] — Arc UI MCP：讓 Claude 先唯讀查詢現成元件再安裝（二手整理、未實測），與 Skills 互補

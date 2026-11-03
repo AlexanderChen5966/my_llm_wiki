@@ -7,7 +7,7 @@ created: 2026-10-01
 description: "Human + AI music production workflow for Suno - skills, templates, and tools - bitwize-music-studio/claude-ai-music-skills"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 ## Claude AI Music Skills
 

@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "LightCraft 是免費開源的照片管理與 RAW 修圖工具。從匯入、選片、曝光與白平衡到批次輸出，整理與 Lightroom 工作流程的差異，並說明 RAW 解碼、相機色彩與 AI 遮罩的限制。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 LightCraft 適合先用一組照片評估本機選片、調色與輸出流程。它把照片管理和非破壞修圖放在同一個開源工具中，對想減少重複操作的攝影者有吸引力。
 

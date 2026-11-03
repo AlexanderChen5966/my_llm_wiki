@@ -14,7 +14,7 @@ asset_value: 24
 
 | Skill | Stars | 特色 |
 |-------|-------|------|
-| **Impeccable** | 9,400 | 7 個領域參考檔案 + 20 個命令 + 反模式設計，基於 Anthropic 官方 frontend-design skill |
+| **Impeccable** | 9,400 | 7 個領域參考檔案 + 20 個命令（⏱ 2026-10-29 已更新：現行 24 個指令，見 [[impeccable-style-ai-coding-guide]]）+ 反模式設計，基於 Anthropic 官方 frontend-design skill |
 | **UI Skill** | 986 | 15 個 skill（含 SwiftUI），按需引用不用一次裝一整包 |
 | **Taste Skill** | 3,300 | 標榜「高品味」現代化設計，GitHub readme 有生成範例可預覽 |
 | **Better Icons** | 666 | MCP 工具，從 150+ 圖示集合（Lucide/Heroicons/Material 等）搜尋 200,000+ 圖示 |
@@ -45,7 +45,7 @@ asset_value: 24
 
 ## 原始摘要
 
-整理六款值得嘗試的 Claude Code Design Skill，包含 Impeccable（20 指令 + 反模式設計）、UI Skill（15 個含 SwiftUI 的按需引用 skill）、Taste Skill（標榜高品味現代設計）、Better Icons（MCP，20 萬+ 圖示搜尋）、Superdesign（與 IDE 整合的開源 marketplace）、Design Plugin（多版本 UI 比較並融合精煉）。
+整理六款值得嘗試的 Claude Code Design Skill，包含 Impeccable（20 指令 + 反模式設計；⏱ 2026-10-29 已更新：現行 24 指令）、UI Skill（15 個含 SwiftUI 的按需引用 skill）、Taste Skill（標榜高品味現代設計）、Better Icons（MCP，20 萬+ 圖示搜尋）、Superdesign（與 IDE 整合的開源 marketplace）、Design Plugin（多版本 UI 比較並融合精煉）。
 
 ## 相關連結
 
@@ -54,3 +54,4 @@ asset_value: 24
 - [[claude-skills-ecosystem]] — 更廣泛的 Skills 生態（含 GitHub 高 star Skill Repo 分類）
 - [[impeccable-style-ai-coding-guide]] — Impeccable 的深度解析條目
 - [[claude-skills-guide]] — Claude Skills 完整指南
+- 📎 2026-10-30：[[taste-skill-anti-slop-frontend]] — Taste Skill 的深度條目；與 Impeccable 的 v4.x 流程（問產品事實→隱喻抽籤→審查）互補

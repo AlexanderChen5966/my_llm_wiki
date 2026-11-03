@@ -67,3 +67,4 @@ GSD 2025 年底才出現，幾個月衝到 40k→64k stars。它的強大不在�
 - [[spec-driven-ai-workflow]] — 規格驅動工作流
 - [[ai-sdd-framework-comparison]] — SDD 四框架比較（ZeroSpec / OpenSpec / SpecKit / BMAD，GSD 可對照其定位）
 - [[concepts/agent-workflow-taxonomy]] — GSD 屬第 ⑤ 類「規格 / 工程流程」
+- 📎 2026-10-30：[[context-rot-seven-problems-new-chat-handoff]] — context rot 的 7 種使用者端徵兆與「新對話＋交接文件」做法（一般使用者版的同一思路）

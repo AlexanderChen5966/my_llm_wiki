@@ -1,6 +1,6 @@
 ---
 title: Claude MCP 完整列表
-date: 2026-10-08
+date: 2026-10-21
 tags: [ai/agent, ai/claude, ai/mcp]
 type: reference
 status: processed
@@ -8,7 +8,8 @@ source: ~/.claude.json、~/Library/Application Support/Claude/claude_desktop_con
 ---
 
 > 範圍：Claude Code（CLI）與 Claude Desktop 目前設定中的 MCP server
-> 最後更新：2026-10-08（初版：盤點本機設定檔＋claude.ai 帳號連接器；使用次數取自 Claude Code 對話紀錄的工具呼叫統計）
+> 最後更新：2026-10-21（新增 `blender`；claude.ai 連接器改版：新增 Slack、Microsoft 365，Supabase／Canva／Google 系列已不在清單；`godot-mcp-toolkit` 多一個 `失語者_2.5D` 專案）
+> 初版：2026-10-08
 > ⚠️ 本文件**只記名稱與用途**，API 金鑰／token 一律不記；需要時到下方〈設定檔位置〉查看
 
 **欄位說明**：Code ＝ Claude Code、Desktop ＝ Claude Desktop；範圍 `user` ＝ 所有專案可用、`project` ＝ 僅該資料夾、`帳號` ＝ 跟著 claude.ai 帳號走
@@ -30,9 +31,10 @@ source: ~/.claude.json、~/Library/Application Support/Claude/claude_desktop_con
 |------|------|------|---------|------|---------|
 | `evaluate` | TypeSafe **Jev**：回傳型別化判斷與機率（noul／choice／score），不生成文字；用於批次分類、評分、路由（搭配 `jev`、`jev-triage` skill） | — | stdio：`~/.local/bin/evaluate mcp`；需 OpenRouter 金鑰 | ✅ user | ✅ |
 | `playwright` | 瀏覽器自動化（`@playwright/mcp`）。設定綁 **b2b manager UI 測試框架包**：注入 `flutter-a11y-init.js`、1920×1080、開 vision／devtools、獨立 profile 與輸出資料夾 | latest | stdio：`npx -y @playwright/mcp@latest …` | ✅ user | — |
+| `blender` | **MCP for Blender**：驅動使用者開著的 Blender，`execute_blender_code` 以 bpy 執行任意 Python、`look` 截圖檢視成果、`get_scene_info`／`get_addon_status` 讀狀態；素材可從 Poly Haven／Sketchfab／Poly Pizza 匯入（`search_assets`→`import_asset`），或 `generate_3d` 文字／圖片生成單一模型（1–3 分鐘，可能扣點數）。需 Blender 端安裝 add-on 並啟動 | 2.2.2 | stdio：`uvx mcp-for-blender`；`DISABLE_TELEMETRY` 已設 | ✅ user | ✅ |
 | `pixelorama` | 像素畫編輯器 Pixelorama 的 MCP：畫布／圖層／影格／調色盤操作、繪圖、特效、動畫、匯出（GIF、Godot SpriteFrames／TileSet、Aseprite JSON） | 0.2.1 | stdio：`node ~/Tools/pixelorama-mcp/mcp-server/dist/index.js` | ✅ user | — |
 | `godot` | Godot 引擎操作（`@coding-solo/godot-mcp`） | latest | stdio：`npx -y @coding-solo/godot-mcp`；需 `GODOT_PATH` | ✅ project（`~`） | — |
-| `godot-mcp-toolkit` | Godot 引擎操作（`@npgamedev/godot-mcp-server`），**失語者**遊戲專案用；工具呼叫次數最多的 MCP | latest | stdio：`npx -y @npgamedev/godot-mcp-server` | ✅ project（`失語者_Godot/`） | — |
+| `godot-mcp-toolkit` | Godot 引擎操作（`@npgamedev/godot-mcp-server`），**失語者**遊戲專案用；工具呼叫次數最多的 MCP | latest | stdio：`npx -y @npgamedev/godot-mcp-server` | ✅ project（`失語者_Godot/`、`失語者_2.5D/`） | — |
 
 ---
 
@@ -52,12 +54,11 @@ source: ~/.claude.json、~/Library/Application Support/Claude/claude_desktop_con
 | 名稱 | 描述 | 狀態 | Code | Desktop |
 |------|------|------|------|---------|
 | `Claude Docs` | claude.ai 可協作文件：建立、批次編輯、留言、匯出 | ✅ 已授權 | ✅ | ✅ |
-| `Atlassian Rovo` | Jira（查詢／建立／編輯 issue、轉狀態、工時）、Confluence（頁面、留言、CQL 搜尋）、Compass、Teamwork Graph | ✅ 已授權 | ✅ | ✅ |
-| `Supabase` | 專案／分支管理、SQL、migration、Edge Functions、日誌與 advisor、產生 TS 型別 | ✅ 已授權 | ✅ | ✅ |
-| `Canva` | 設計 | ⏸ 未授權 | ✅ | ✅ |
-| `Gmail` | 郵件 | ⏸ 未授權 | ✅ | ✅ |
-| `Google Calendar` | 行事曆 | ⏸ 未授權 | ✅ | ✅ |
-| `Google Drive` | 雲端硬碟 | ⏸ 未授權 | ✅ | ✅ |
+| `Atlassian MCP` | Jira（查詢／建立／編輯 issue、轉狀態、留言）、Confluence（頁面、CQL 搜尋）、Loom、Teamwork Graph；改為三層架構：主要工具直接呼叫，其餘先 `discover` 再依風險用 `executeRead`／`executeWrite`／`executeDestructive`（舊名 `Atlassian Rovo`） | ✅ 已授權 | ✅ | ✅ |
+| `Slack` | Slack 工作區 | ⏸ 未授權 | ✅ | ✅ |
+| `Microsoft 365` | Outlook／Teams／OneDrive 等 | ⏸ 未授權 | ✅ | ✅ |
+
+> 2026-10-08 盤點時還在、本次已不在清單：`Supabase`（原已授權）、`Canva`、`Gmail`、`Google Calendar`、`Google Drive`（原皆未授權）。若仍需要，到 claude.ai 連接器重新加入
 
 ---
 
@@ -66,23 +67,27 @@ source: ~/.claude.json、~/Library/Application Support/Claude/claude_desktop_con
 | 名稱 | 描述 | 狀態 | Code | Desktop |
 |------|------|------|------|---------|
 | `claude-in-chrome` | 透過 Chrome 擴充功能操作使用者自己的 Chrome（沿用登入狀態）：點擊、填表、截圖、讀 console／network、錄 GIF；先呼叫 `tabs_context_mcp`，避免觸發 alert 對話框 | ✅ 使用中 | ✅ | — |
-| `Filesystem`（Desktop 擴充） | Anthropic 官方檔案系統擴充：讀寫、編輯、搜尋、目錄樹 | ⏸ 已安裝但**停用**（2026.7.10） | — | ⏸ |
+| `Filesystem`（Desktop 擴充） | Anthropic 官方檔案系統擴充：讀寫、編輯、搜尋、目錄樹 | ⏸ 已安裝但**停用**（`isEnabled: false`） | — | ⏸ |
 
 ---
 
 ## Claude Code 使用次數（對話紀錄統計）
 
+> 2026-10-21 重算：以 `~/.claude/projects/` **目前保留**的對話紀錄（含 subagent）計 `tool_use`，依 id 去重。舊對話會被自動清理，因此與 10-08 版數字不可直接相比（例如 Claude Docs 從 262 降到 4，是紀錄被清掉而非少用）
+
 | MCP | 工具呼叫次數 |
 |-----|------------|
-| godot-mcp-toolkit | 2094 |
-| claude-in-chrome | 1303 |
-| pixelorama | 493 |
-| Claude Docs | 262 |
-| godot | 96 |
-| Atlassian（Rovo 30＋紀錄中名為 `Atlassian_MCP` 68＋`atlassian` 7，後者目前設定已無） | 105 |
-| figma | 19 |
+| godot-mcp-toolkit | 4210 |
+| pixelorama | 975 |
+| claude-in-chrome | 306 |
+| blender | 48 |
+| Atlassian（`Atlassian_MCP` 37＋舊名 `Atlassian_Rovo` 12） | 49 |
+| godot | 32 |
+| playwright | 24 |
+| figma | 8 |
+| Claude Docs | 4 |
 
-> media-downloader、playwright、evaluate、telegram 在 Claude Code 紀錄中沒有呼叫（Desktop 的使用紀錄未統計）
+> media-downloader、evaluate、telegram 在保留的紀錄中沒有呼叫（Desktop 使用紀錄未統計）
 
 ---
 
@@ -90,11 +95,11 @@ source: ~/.claude.json、~/Library/Application Support/Claude/claude_desktop_con
 
 | 位置 | 內容 |
 |------|------|
-| `~/.claude.json` → `mcpServers` | Claude Code user 範圍（media-downloader、evaluate、pixelorama、playwright） |
+| `~/.claude.json` → `mcpServers` | Claude Code user 範圍（media-downloader、evaluate、pixelorama、playwright、blender） |
 | `~/.claude.json` → `projects.<路徑>.mcpServers` | Claude Code project 範圍（`~` 下的 godot） |
-| `<專案>/.mcp.json` | 專案共用設定（DownloadVideoPythonProject、失語者_Godot） |
+| `<專案>/.mcp.json` | 專案共用設定（DownloadVideoPythonProject、失語者_Godot、失語者_2.5D） |
 | `~/.claude/settings.json` → `enabledPlugins` | Plugin 開關（figma、telegram 帶 MCP；gopls／rust-analyzer 為 LSP） |
-| `~/Library/Application Support/Claude/claude_desktop_config.json` | Claude Desktop（evaluate、kyoto-assistant、media-downloader） |
+| `~/Library/Application Support/Claude/claude_desktop_config.json` | Claude Desktop（evaluate、kyoto-assistant、media-downloader、blender） |
 | `~/Library/Application Support/Claude/Claude Extensions/` | Desktop 擴充（Filesystem） |
 
 ---
@@ -104,9 +109,9 @@ source: ~/.claude.json、~/Library/Application Support/Claude/claude_desktop_con
 | 分類 | 數量 |
 |------|------|
 | 自建 | 2 |
-| 第三方本機套件 | 5 |
+| 第三方本機套件 | 6 |
 | Plugin 帶入 | 2 |
-| claude.ai 連接器 | 7（已授權 3、未授權 4） |
+| claude.ai 連接器 | 4（已授權 2、未授權 2） |
 | 內建整合 | 2（Filesystem 停用） |
-| **總計** | **18** |
-| 兩邊都有設定 | evaluate、media-downloader（＋所有 claude.ai 連接器） |
+| **總計** | **16** |
+| 兩邊都有設定 | evaluate、media-downloader、blender（＋所有 claude.ai 連接器） |

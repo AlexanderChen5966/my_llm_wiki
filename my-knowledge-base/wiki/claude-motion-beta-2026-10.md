@@ -177,3 +177,5 @@ vincent 拿到 Motion 動畫後，另外請 Claude Code 依 HTML 內容產生旁
 - [[openmontage-ai-video-agent-system]] — 用 coding agent 跑完整影片製作管線（Remotion／FFmpeg）的對照
 - [[html-as-ai-output-interface]] — 單一 HTML 封裝動畫與播放器（vincent 的 97 KB 單檔 HTML 是同一種形態）
 - 📎 2026-10-19：[[hyperframes-heygen-html-to-video]] — HyperFrames 專篇（Studio 即 Send to 目的地）；[[claude-code-pure-code-animation-practice]] — 自寫程式動畫的實作工作法（產品路線的對照）；韋惟珊（本條實測作者之一）另一篇 24 秒宣傳片實測也收在該條（不同主題）
+- [[motion-reference-easing-dictionary]] — 動態設計辭典（782 種動作與時長），可作下動畫指令的語彙參考
+- 📎 2026-10-30：[[claude-code-artifacts-publish-update-share-guide]] — Artifacts 發佈／更新／分享與樣板總覽（Claude Code 側用法）

@@ -112,3 +112,4 @@ Task: [具體設計需求]
 - [[taste-skill-anti-slop-frontend]] — Frontend 反 Slop 方法論（品味培養）
 - [[screenshot-to-enterprise-frontend-skill]] — 截圖轉 Enterprise Frontend 流程
 - [[concepts/agent-workflow-taxonomy]] — Agent 與工具分類（包含設計類工具）
+- 📎 2026-10-30：[[arc-ui-mcp-claude-code-component-workflow]] — 現成元件庫＋MCP 的落地做法（Arc UI；二手整理、未實測），含授權與驗收清單

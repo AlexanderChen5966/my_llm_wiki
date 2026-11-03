@@ -12,6 +12,8 @@ asset_value: 65
 
 已有詳細條目：[[research/claude-code-game-studios-multi-agent]]
 
+📎 2026-10-30：遊戲開發的另一條路——知識型技能庫＋路由技能，見 [[awesome-gamedev-agent-skills-router-pattern]]
+
 ## 補充資訊
 
 本文章版本（DeTools 介紹）補充了幾個原條目可能沒有的細節：

@@ -166,3 +166,4 @@ Plan B 的 7 個失敗全是同一型態 `not-available`——**guard 根本沒�
 - [[agent-plugins-open-standard]] — 開放標準把信任與安全刻意留白
 - [[github-skill-security-audit]] — 第三方擴充的實際安全事故
 - [[production-agent-architecture]] — 生產級 Agent 的 Guardrails
+- [[agentmail-agentid-agent-identity-oidc]] — 代理身分層（AgentID／OIDC）；身分之後的權限仍屬本篇的閘門設計

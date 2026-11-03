@@ -46,3 +46,4 @@ asset_value: 60
 - [[chatgpt-chat-work-codex-comparison]] — Chat/Work/Codex 三模式定位比較，可作為選擇進入 Codex 桌面版前的判斷依據
 - [[codex-plugins-12-guide]] — Codex 必裝 12 個外掛完整清單，補充本篇「技能/外掛程式」章節的具體選項
 - [[codex-onboarding-seven-layer-config]] — Codex 七層設定地圖心智模型（哪個設定該寫在對話/AGENTS.md/config.toml/Skills/Plugins/MCP/Memory 哪一層），與本篇桌面 UI 操作動線互補
+- [[ai-coding-environment-setup-github-vscode-claude-code-codex]] — Codex 之前的 Git／GitHub 環境前置

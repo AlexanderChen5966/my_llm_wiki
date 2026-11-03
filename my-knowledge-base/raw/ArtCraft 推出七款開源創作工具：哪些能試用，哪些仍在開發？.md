@@ -8,7 +8,7 @@ created: 2026-10-08
 description: "ArtCraft 以 Rust 重建影像、向量、影片、PDF 與排版工具，並提供 AI 代理操作方向。解析七款產品的開發狀態，避免把早期工具當成成熟替代品。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 ArtCraft 的七款創作工具在 X 引起討論，社群有人把它形容為「整套 Adobe 的開源實作」。 [官方產品頁](https://getartcraft.com/apps?ref=aiposthub.com) 實際列出的，是影像、向量、影片、照片、PDF、動態效果與頁面排版七類工具，而且各自處於不同開發階段。
 

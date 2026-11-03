@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "ChatGPT Intelligent UI 把回答變成圖表和小工具，免費版也有、Pro 檔反而沒有。附 5 個照抄就能用的提示詞、調少方法和三家比較。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 > **💡 核心結論速覽 (TL;DR)**
 > 

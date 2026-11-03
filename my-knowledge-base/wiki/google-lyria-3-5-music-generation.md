@@ -121,3 +121,4 @@ Sandbox、Yung Spielburg 用 Lyria 為《Dear Upstairs Neighbors》配樂）。
 ## 相關連結
 - [[gemini-omni-video-prompts]] — 影片生成的 prompt 結構化思考；與本篇同屬 Google 多模態生成閉環（文字 Gemini 3.5/3.7/3.8＋圖像 Imagen 3＋影片 Veo＋音樂 Lyria 3.5）
 - [[gemini-spark-personal-agent]] — Google 把能力推向大眾入口的同一套分發策略
+- [[bitwize-music-plugin-skills-mcp-architecture]] — Suno 側的 Claude Code plugin 架構參考（競品生態對照；README 自述，未驗證）

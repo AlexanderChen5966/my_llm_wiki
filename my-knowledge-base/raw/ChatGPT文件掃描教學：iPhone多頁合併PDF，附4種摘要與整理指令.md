@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "OpenAI為ChatGPT iOS版推出「Scan」文件掃描功能，可連續拍攝多頁紙本資料並自動合併成PDF上傳至對話，本文整理5步驟操作教學。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 2026.10.13 | [職場/工作術](https://www.bnext.com.tw/categories/digitalskill)
 

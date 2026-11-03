@@ -45,3 +45,5 @@ Token 消耗集中在「平行展開的調查類管線與實作」而非「思�
 - [[claude-fable-5-usage-guide]] — Fable 5 官方使用指南
 - [[claude-fable-5-power-tasks]] — Fable 5 值得衝的任務清單，貴模型搭架構+便宜模型維護的同源思路
 - [[agent-os-workstation-division]] — 工位分工模型（核查者不能是提煉者自己），角色分離的姊妹原則
+- [[anthropic-fold-subagents-back-to-main-agent]] — 📎 2026-10-30 新增：角色越多交接成本越高，Anthropic 建議把常接力的子代理收回主代理
+- [[claude-haiku-5-5-release-notes]] — 📎 2026-10-30 新增：Haiku 5.5 被官方定位為 Opus／Sonnet 的子代理，角色分級路由的新選項

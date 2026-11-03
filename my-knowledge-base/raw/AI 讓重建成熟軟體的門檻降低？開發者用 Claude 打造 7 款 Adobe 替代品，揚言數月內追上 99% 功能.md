@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "Adobe 長期以 Photoshop、Illustrator、Premiere 等 Creative Cloud 軟體主導創意工具市場，但現在一名軟體開發者試圖利用 AI 加速逆向工程，打造一套免費、開源的 Adobe 替代方案，甚至喊話要在數個月內達到接近完整的功能相容。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 ![](https://techorange.com/app/uploads/2026/10/164e82bc76f7e194-scaled.png)
 

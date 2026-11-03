@@ -91,3 +91,5 @@ asset_value: 70
 - [[multi-agent-cli-bridge]] — CCB 用 tmux 做多 Agent 工作區；本功能是官方原生的輕量替代（僅傳訊，不做工作區管理）
 - [[parallel-code-multi-agent-gui]] — 多 agent 平行開發 GUI，各自 worktree 隔離；本功能補上其缺的 worktree 間同步
 - [[claude-code-harness-internals]] — Harness 承擔所有狀態管理；跨 session 傳訊是 harness 層新增的通訊管道
+- [[agent-relay-shared-sessions-flows]] — 第三方 Agent Relay：跨機器訊息＋共享會話歷史＋Flows，可對照官方原生版
+- [[anthropic-fold-subagents-back-to-main-agent]] — 📎 2026-10-30 新增：何時該收回子代理、改用主代理＋Skills＋工具

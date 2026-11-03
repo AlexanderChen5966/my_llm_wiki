@@ -8,7 +8,7 @@ created: 2026-10-06
 description: "想叫AI做Excel儀表板，新增資料卻不會更新？實測Claude for Excel發現，與其指定公式，不如直接說清楚成果與驗收條件。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 [![](https://pk-img.learnin.tw/prod/photos/2026-09/img-1790646651-30210.gif)](https://edm.bnext.com.tw/martech-trends/?utm_source=web_bn&utm_medium=logo_banner&utm_campaign=2026_martech&utm_content=175750&utm_term=channel_all)
 

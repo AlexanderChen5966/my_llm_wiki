@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "繼用Claude復刻Adobe後，Brandon Thomas再推出對應Word、Excel與PPT的免費開源軟體，展現一人挑戰大廠核心產品的潛力。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 軟體工程師 [Brandon Thomas](https://www.linkedin.com/in/possibilistic) 在9月底用Anthropic的AI模型Claude，以程式語言Rust從頭重寫7款Adobe軟體並免費開源。相隔約一周，他把同一套做法搬到微軟Office，推出對應Excel的GridCraft、對應PowerPoint的DeckCraft與對應Word的WordCraft， [全部放上GitHub供人免費下載](https://github.com/storytold/gridcraft) 。
 

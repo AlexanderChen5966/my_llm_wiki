@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "OpenAI 在10月7日宣布 GPT-6 與 Intelligent UI 逐步開放給 ChatGPT 使用者，回答可結合文字、圖像、表單與互動工具。本文整理 Chat 模式、付費與免費方案的範圍，解釋44%提早起答的比較條件，分析教學、規劃與小工具的價值，以及漂亮介面仍需核對資料的原因。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 ChatGPT 的 Intelligent UI，讓回答開始變得像一個可以操作的工作介面。你不只讀一段文字，也可能看到圖表、選項與計算工具，在同一個回答裡改變輸入。
 

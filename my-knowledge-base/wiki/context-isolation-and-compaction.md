@@ -153,6 +153,7 @@ Day 14 離開 Context Engineering，改看個人如何使用 OpenAI／Anthropic�
 - [[agent-memory-lifecycle]] — Memory 與 Compaction 的界線
 - [[claude-5-context-engineering-rules]] — 官方 context engineering 規則
 - [[multi-agent-papers-three-elements]] — 多 Agent 的迴圈／提示／集約三要素
+- 📎 2026-10-30：[[context-rot-seven-problems-new-chat-handoff]] — 使用者端的 context rot 7 種徵兆（干擾／衝突／中毒／混淆／忽略／漂移／不足）與「新對話＋交接文件」做法（數位時代轉述 Every，二手）
 
 ## 補充資料：手動觸發 Compaction 的可複製 prompt（2026-08-18 併入）
 

@@ -133,3 +133,4 @@ Tim Wei「Claude Code 實戰手冊／新手篇」G8。從「AI 交出看起來�
 - [[claude-code-file-management]] — `settings.local.json` 等設定檔的版控取捨
 - [[agent-api-key-handoff-six-methods-risk]] — `Read(./.env)` deny 擋得到與擋不到的地方
 - [[claude-models-real-task-eval-tokyo-trip]] — 同系列番外：auto mode 沒擋 Sonnet 5 開 Safari、截螢幕，作者事後以 deny 規則封住
+- 📎 2026-10-30：[[claude-code-artifacts-publish-update-share-guide]] — 同系列 G9：Plan Mode 中第一次發佈 artifact 會先詢問

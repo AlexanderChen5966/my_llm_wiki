@@ -80,3 +80,4 @@ three.js 官方帳號在留言區建議「應該教 AI 盡可能使用**實例�
 ## 原始摘要
 
 數位時代（李先泰，2026-08-03）整理 Karpathy 2026-08-02 X 貼文。含實驗參數（Opus 5、three.js、100 萬 token／約 10 美元、約兩小時、5,500 行）、程序化生成手法、three.js 官方 instanced meshes 建議、鵜鶘 SVG 測試沿革（Simon Willison）、以及對「多模態感知與遊戲操作仍欠缺」的判斷。bnext 業配與延伸閱讀段落已略。
+- [[karpathy-four-output-formats-asd-ste100]] — 📎 2026-10-30 新增：同一作者同一論點的另一個切面——生成成本下降後，一次性客製工具（互動頁、解說影片）變得值得做

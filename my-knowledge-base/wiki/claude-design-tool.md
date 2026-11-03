@@ -2,7 +2,7 @@
 title: Claude Design：文字描述→設計稿的 AI 設計工具（Research Preview）
 date: 2026-06-15
 tags: [ai/claude, dev/flutter]
-source: https://medium.com/ddsakura-blog/claude-design-嘗鮮-我用它幫自己的-app-設計新功能-8b1791e8c325
+source: https://medium.com/ddsakura-blog/claude-design-嘗鮮-我用它幫自己的-app-設計新功能-8b1791e8c325 ; https://www.aiposthub.com/pm-test-claude-design-prd-to-clickable-prototype/
 type: article
 status: processed
 asset_value: 72
@@ -113,6 +113,7 @@ Step 4: Claude Code 實作
 - 📎 2026-10-19：[[claude-dashboards-beta-2026-10]] — 同為 Artifacts 範本、同受組織 Artifacts 開關控制；[[claude-cowork-merged-into-chat-2026-09]] — 09-16 Claude Design 整合進對話（本次關站的前一階段）
 - 📎 2026-10-19：同日官方公告（`dashboards-and-motion`，Team Lead 核對）說明 **Docs／Slides／Design 已脫離 beta**；另推出 Motion（解說動畫、MP4，Team／Enterprise beta），與設計畫布的原型、Export HTML 分工不同 → [[claude-motion-beta-2026-10]]
 - 📎 2026-10-19：rar.design 觀察 Opus 5.5 首週熱門動畫作品裡沒有 Claude Design 的作品，有講明介面的多半在 Claude Code 完成；作者認為 Claude Design 適合 UI 動效、行銷短動態（作者觀點，有倖存者偏差）→ [[claude-code-pure-code-animation-practice]]
+- 📎 2026-10-30：[[claude-code-artifacts-publish-update-share-guide]] — Claude Code 發佈 artifact 的前提（Pro 以上＋claude.ai 登入）、更新／分享機制與 `/design` 樣板用法（Tim Wei G9，2026-10 快照）；方案口徑與本條 10/23 官方說明頁不同面，勿互套
 
 ## 補充資料（來源：犬哥網站〈Claude Design 是什麼？〉）
 
@@ -223,3 +224,40 @@ Parrott 坦言**實作是否遵循設計「取決於模型」**，只是模型�
 - 下載後確認檔案能打開、素材齊全、負責人知道放在哪裡；重要決定（如核准依據）在期限前另存
 
 **待追蹤**：專案搬移方案官方「之後公布」——公布後回來補本段，並確認 12-14 後舊專案的取用方式。
+
+## 補充：10/23 官方口徑與實測（第十九批）
+
+> 來源：aiposthub（Philo，2026-10-23，「PM 實測」第一篇，實測日同日）。**作者聲明操作與記錄由 AI 助理（Claude）在作者的 Claude 帳號裡完成**，文中只寫實際看到的結果、沒測到的就寫沒測；本庫未獨立重做。方案、額度、關站時間可能變動。
+
+### 10/23 官方口徑（與導言並陳，不覆寫導言）
+- 實測當天 claude.ai/design 頂端橫幅：「Claude Design is moving to Artifacts in the Claude app. You can keep using this version until December 14.」（可用到 12/14，與上方關站段一致）
+- 官方說明頁（作者 10/23 讀，另引 10/8 官方部落格）：Docs／Slides／Design **已結束 beta**、**所有方案（含 Free）可用**、**Enterprise 預設自 10/15 開啟**、用量與 Claude 其他功能**共用額度**、無獨立額度；Claude Design 變成 Artifacts 裡的範本，可從對話、Artifacts 分頁與 Claude Code 開始
+- 與導言「Pro／Max／Team／Enterprise 方案皆可使用」並陳：導言為 **2026-06 研究預覽期**口徑，本段為 **2026-10 新口徑**，屬時效更新而非矛盾；Claude Code 發佈 artifact 的另一套前提見 [[claude-code-artifacts-publish-update-share-guide]]（Pro 以上＋claude.ai 登入）
+- 官方 Export（作者引說明頁、**未測**）：zip、PDF、PPTX、Google Slides、獨立 HTML；也可交給 Claude Code
+- 背景：Anthropic Labs 2026 年 4 月推出（4/17 官方影片）；10/2 官方影片「Build an App With Claude Design」（Anthropic 設計師示範：一句話做點擊原型、留言改細節、再說 build it）
+
+### 實測：寵物保險比價 App PRD（單次、非統計）
+- 設定：2026-10-23、claude.ai/design（頁面標 Beta）、模型顯示 **Opus 5.5（Medium）**、選「Mobile app design」模板、**單次單 PRD**（作者自寫示範 PRD，非真實需求；中文、iOS、單一版本、只做核心流程，含四條驗收）
+- 計時（從送出表單算起）：**67 秒**首畫面、**103 秒**檢查時仍在建元件、**142 秒**檢查時已完成；完成落在兩次檢查之間，故作者寫「兩分鐘左右」，作者稱不知是否常態
+- 四條驗收，**通過 3.5 條**（作者逐條點過）：
+
+| 驗收條件 | 結果 | 依據 |
+|---|---|---|
+| 1 比較表同時顯示保費、理賠上限、等待期 | 過 | 三家：保費 5,360／8,680／4,080；理賠上限 15／30／8 萬；等待期 30／15／60 天 |
+| 2 試算頁可調年齡與品種、保費跟著變 | **年齡過、品種未測（半條）** | 3 歲→10 歲：8,680→12,870（作者核算 6,800×1.10×1.16、×1.72 吻合）；品種為下拉，作者的操作工具選不動 |
+| 3 未勾同意條款按鈕鎖住 | 過 | 灰色、顯示「請先勾選同意條款才能送出」；勾選後可進成功頁 |
+| 4 四個畫面可點著走完 | 過 | 首頁→比較→試算→投保→成功頁 |
+
+- 作者結論：通過只代表「PRD 寫得出來的行為它做得出來」，不代表可上線；驗收條件寫得越具體越好驗
+
+### 風險（Claude Design 回覆末段「需要你確認的地方」自己列出）
+- **資料全是編造**：三家保單名稱與費率為示意資料，上線前須換真實內容
+- **自行加入 PRD 沒寫的欄位**：送出頁多了飼主姓名、手機（皆非必填）
+- **設計系統為空**：配色與字型為它自訂的暖色系；有設計系統要先接上
+- 操作坑（可能只是作者工具造成）：自動化工具把整份 PRD 打進單行提示框時換行被吃掉、只送出第一行，Claude Design 回「沒有看到 PRD」並跳出表單；改貼進表單正常
+
+### 未測項目
+第二輪修改（耗時、會不會動到別處）、匯出、交給 Claude Code、接設計系統、這一次用掉多少額度
+
+### 作者的 PM 用法（作者觀點）
+驗收條件寫成「能點出來驗證」；先讀回覆最後的「需要你確認」段，其中的假設就是要補的需求；第一版當討論材料不當定案。

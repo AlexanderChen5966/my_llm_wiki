@@ -82,3 +82,4 @@ od export html/mp4
 - [[api-cli-skills-agent-architecture]] — CLI 三層架構
 - 📎 2026-10-19：[[claude-motion-beta-2026-10]] — Claude Motion：原生 MP4 匯出，可交接 HyperFrames（與本條開源路線不同）
 - 📎 2026-10-19：[[hyperframes-heygen-html-to-video]] — HyperFrames 專篇（README 一手：Apache 2.0、Node.js 22+＋FFmpeg、三條安裝路徑、Studio）
+- 📎 2026-10-30：[[artcraft-open-source-adobe-alternatives-timeline]] — 另一條開源設計工具路線：ArtCraft 七款 Adobe 對應應用（Alpha／開發中）的狀態與時間線

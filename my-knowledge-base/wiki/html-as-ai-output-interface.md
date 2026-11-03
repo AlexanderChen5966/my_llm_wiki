@@ -178,3 +178,4 @@ Bento 是 **HTML 本身就是正本且可被 AI 編輯**（正本與產物合一
 
 🔑 **後者少了一次轉換，但代價是失去 md 的 diff 可讀性**——選哪條路取決於「這份簡報會不會進版控、需不需要 review 差異」。
 
+- [[karpathy-four-output-formats-asd-ste100]] — 📎 2026-10-30 新增：Karpathy 四級輸出格式階梯（ASD-STE100 → 圖 → HTML 互動頁 → Manim 影片），HTML 是第 3 級

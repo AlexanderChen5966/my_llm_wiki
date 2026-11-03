@@ -1,0 +1,82 @@
+---
+title: "生成方便貼到 Claude Slides 的彩色程式"
+source: "https://apppeterpan.medium.com/%E7%94%9F%E6%88%90%E6%96%B9%E4%BE%BF%E8%B2%BC%E5%88%B0-claude-slides-%E7%9A%84%E5%BD%A9%E8%89%B2%E7%A8%8B%E5%BC%8F-039acd430084"
+author:
+  - "[[彼得潘的 App / AI Neverland]]"
+published: 2026-10-24
+created: 2026-10-28
+description: "彼得潘很喜歡用 Claude Slides 製作投影片，因為它的原理是利用網頁程式製作投影片，可以方便地請 AI 添加傳統投影片做不到的網頁效果。"
+tags:
+  - "clippings"
+status: "inbox"
+---
+彼得潘很喜歡用 Claude Slides 製作投影片，因為它的原理是利用網頁程式製作投影片，可以方便地請 AI 添加傳統投影片做不到的網頁效果。
+
+比方輸入以下 prompt，馬上能在投影片顯示漂亮的程式。
+
+```cs
+加入以下程式，加上 syntax highlight，突顯 rotationEffect 和 offset 這兩行
+
+struct ContentView: View {
+    var body: some View {
+        Rectangle()
+            .frame(width: 200, height: 100)
+            .rotationEffect(.degrees(90))
+            .offset(x: 100)
+    }
+}
+```
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*_XF3ljnhYRjzVytvRwBMsg.png)
+
+不過下 prompt 請 AI 修改要消耗 token，而且還要耐心等待。彼得潘的投影片又常有大量程式，有沒有方法直接在 Claude Slides 貼上漂亮的程式呢?
+
+彼得潘跟 Claude 請教後，發現 Claude Slides 顯示的彩色程式其實是 html，只要找出它的寫法，即可做個工具，專門生成 html 格式的彩色程式 。
+
+## Get 彼得潘的 App / AI Neverland’s stories in your inbox
+
+Join Medium for free to get updates from this writer.
+
+怎麼找出 html 的寫法呢? 彼得潘從 Claude Slides 按 cmd + c 複製彩色程式，然後輸入以下 Claude 指導的指令找出 html。
+
+```cs
+osascript -e 'the clipboard as «class HTML»' \
+| perl -ne 'print chr foreach unpack("C*",pack("H*",substr($_,11,-3)))' \
+> /tmp/clip.html && cat /tmp/clip.html
+```
+
+找到的 html 如下，彩色程式的樣式藏在其中 Base64 編碼的內容。
+
+```cs
+<meta charset='utf-8'><span data-appifact-object="eyJhcHBpZmFjdCI6MSwia2luZCI6InNsaWRlcy1mcmFtZSIsImRhdGEiOnsiZnJhbWUiOnsiaWQiOiI3NDExZWY4YiIsIngiOnsiYW5jaG9yIjoibGVhZGluZyIsIm1hcmdpbiI6MTYwLCJvZmZzZXQiOjAsInNpemUiOjc0NH0sInkiOnsiYW5jaG9yIjoibGVhZGluZyIsIm1hcmdpbiI6MjYwLCJvZmZzZXQiOjAsInNpemUiOjM0OX0sIm5vZGUiOnsia2luZCI6InN0YWNrIiwiZGlyIjoidiIsImFsaWduIjoic3RyZXRjaCIsImdhcCI6NCwiY2hpbGRyZW4iOlt7ImtpbmQiOiJ0ZXh0Iiwicm9sZSI6ImJvZHkiLCJ0ZXh0Ijoic3RydWN0IENvbnRlbnRWaWV3OiBWaWV3IHtcbsKgwqDCoMKgdmFyIGJvZHk6IHNvbWUgVmlldyB7XG7CoMKgwqDCoMKgwqDCoMKgUmVjdGFuZ2xlKClcbsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoC5mcmFtZSh3aWR0aDogMjAwLCBoZWlnaHQ6IDEwMCkiLCJjb2xvciI6IiNmNGVlZGQiLCJ3cmFwIjoibm93cmFwIiwibWFya3MiOlt7InN0YXJ0IjowLCJlbmQiOjYsImNvbG9yIjoiI2ZmN2FiMiJ9LHsic3RhcnQiOjcsImVuZCI6MTgsImNvbG9yIjoiIzllZjFkZCJ9LHsic3RhcnQiOjIwLCJlbmQiOjI0LCJjb2xvciI6IiM5ZWYxZGQifSx7InN0YXJ0IjozMSwiZW5kIjozNCwiY29sb3IiOiIjZmY3YWIyIn0seyJzdGFydCI6NDEsImVuZCI6NDUsImNvbG9yIjoiI2ZmN2FiMiJ9LHsic3RhcnQiOjQ2LCJlbmQiOjUwLCJjb2xvciI6IiM5ZWYxZGQifSx7InN0YXJ0Ijo2MSwiZW5kIjo3MCwiY29sb3IiOiIjOWVmMWRkIn0seyJzdGFydCI6ODYsImVuZCI6OTEsImNvbG9yIjoiIzY3YjdhNCJ9LHsic3RhcnQiOjk5LCJlbmQiOjEwMiwiY29sb3IiOiIjZDBiZjY5In0seyJzdGFydCI6MTEyLCJlbmQiOjExNSwiY29sb3IiOiIjZDBiZjY5In1dLCJzdHlsZSI6eyJmb250U2l6ZSI6MjYsImxpbmVIZWlnaHQiOjEuMywiZm9udEZhbWlseSI6Im1vbm8ifX0seyJraW5kIjoidGV4dCIsInJvbGUiOiJib2R5IiwidGV4dCI6IsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoC5yb3RhdGlvbkVmZmVjdCguZGVncmVlcyg5MCkpIiwiY29sb3IiOiIjZjRlZWRkIiwid3JhcCI6Im5vd3JhcCIsIm1hcmtzIjpbeyJzdGFydCI6MTMsImVuZCI6MjcsImNvbG9yIjoiIzY3YjdhNCJ9LHsic3RhcnQiOjI5LCJlbmQiOjM2LCJjb2xvciI6IiM2N2I3YTQifSx7InN0YXJ0IjozNywiZW5kIjozOSwiY29sb3IiOiIjZDBiZjY5In1dLCJzdHlsZSI6eyJmb250U2l6ZSI6MjYsImZvbnRXZWlnaHQiOjcwMCwibGluZUhlaWdodCI6MS4zLCJmb250RmFtaWx5IjoibW9ubyIsImJhY2tncm91bmRDb2xvciI6IiNlOWI0NGMyOSIsInBhZGRpbmdUb3AiOjQsInBhZGRpbmdSaWdodCI6MTQsInBhZGRpbmdCb3R0b20iOjQsInBhZGRpbmdMZWZ0IjoxNCwiYm9yZGVyUmFkaXVzIjoxMH19LHsia2luZCI6InRleHQiLCJyb2xlIjoiYm9keSIsInRleHQiOiLCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAub2Zmc2V0KHg6IDEwMCkiLCJjb2xvciI6IiNmNGVlZGQiLCJ3cmFwIjoibm93cmFwIiwibWFya3MiOlt7InN0YXJ0IjoxMywiZW5kIjoxOSwiY29sb3IiOiIjNjdiN2E0In0seyJzdGFydCI6MjMsImVuZCI6MjYsImNvbG9yIjoiI2QwYmY2OSJ9XSwic3R5bGUiOnsiZm9udFNpemUiOjI2LCJmb250V2VpZ2h0Ijo3MDAsImxpbmVIZWlnaHQiOjEuMywiZm9udEZhbWlseSI6Im1vbm8iLCJiYWNrZ3JvdW5kQ29sb3IiOiIjZTliNDRjMjkiLCJwYWRkaW5nVG9wIjo0LCJwYWRkaW5nUmlnaHQiOjE0LCJwYWRkaW5nQm90dG9tIjo0LCJwYWRkaW5nTGVmdCI6MTQsImJvcmRlclJhZGl1cyI6MTB9fSx7ImtpbmQiOiJ0ZXh0Iiwicm9sZSI6ImJvZHkiLCJ0ZXh0IjoiwqDCoMKgwqB9XG59IiwiY29sb3IiOiIjZjRlZWRkIiwid3JhcCI6Im5vd3JhcCIsInN0eWxlIjp7ImZvbnRTaXplIjoyNiwibGluZUhlaWdodCI6MS4zLCJmb250RmFtaWx5IjoibW9ubyJ9fV0sInN0eWxlIjp7ImJhY2tncm91bmRDb2xvciI6IiMxNjIxM2YiLCJwYWRkaW5nVG9wIjoyNCwicGFkZGluZ1JpZ2h0IjozMiwicGFkZGluZ0JvdHRvbSI6MjQsInBhZGRpbmdMZWZ0IjozMiwiYm9yZGVyV2lkdGgiOjEsImJvcmRlclN0eWxlIjoic29saWQiLCJib3JkZXJDb2xvciI6IiMyYTNhNjYiLCJib3JkZXJSYWRpdXMiOjIwfX19LCJmcmFtZXMiOlt7ImlkIjoiNzQxMWVmOGIiLCJ4Ijp7ImFuY2hvciI6ImxlYWRpbmciLCJtYXJnaW4iOjE2MCwib2Zmc2V0IjowLCJzaXplIjo3NDR9LCJ5Ijp7ImFuY2hvciI6ImxlYWRpbmciLCJtYXJnaW4iOjI2MCwib2Zmc2V0IjowLCJzaXplIjozNDl9LCJub2RlIjp7ImtpbmQiOiJzdGFjayIsImRpciI6InYiLCJhbGlnbiI6InN0cmV0Y2giLCJnYXAiOjQsImNoaWxkcmVuIjpbeyJraW5kIjoidGV4dCIsInJvbGUiOiJib2R5IiwidGV4dCI6InN0cnVjdCBDb250ZW50VmlldzogVmlldyB7XG7CoMKgwqDCoHZhciBib2R5OiBzb21lIFZpZXcge1xuwqDCoMKgwqDCoMKgwqDCoFJlY3RhbmdsZSgpXG7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAuZnJhbWUod2lkdGg6IDIwMCwgaGVpZ2h0OiAxMDApIiwiY29sb3IiOiIjZjRlZWRkIiwid3JhcCI6Im5vd3JhcCIsIm1hcmtzIjpbeyJzdGFydCI6MCwiZW5kIjo2LCJjb2xvciI6IiNmZjdhYjIifSx7InN0YXJ0Ijo3LCJlbmQiOjE4LCJjb2xvciI6IiM5ZWYxZGQifSx7InN0YXJ0IjoyMCwiZW5kIjoyNCwiY29sb3IiOiIjOWVmMWRkIn0seyJzdGFydCI6MzEsImVuZCI6MzQsImNvbG9yIjoiI2ZmN2FiMiJ9LHsic3RhcnQiOjQxLCJlbmQiOjQ1LCJjb2xvciI6IiNmZjdhYjIifSx7InN0YXJ0Ijo0NiwiZW5kIjo1MCwiY29sb3IiOiIjOWVmMWRkIn0seyJzdGFydCI6NjEsImVuZCI6NzAsImNvbG9yIjoiIzllZjFkZCJ9LHsic3RhcnQiOjg2LCJlbmQiOjkxLCJjb2xvciI6IiM2N2I3YTQifSx7InN0YXJ0Ijo5OSwiZW5kIjoxMDIsImNvbG9yIjoiI2QwYmY2OSJ9LHsic3RhcnQiOjExMiwiZW5kIjoxMTUsImNvbG9yIjoiI2QwYmY2OSJ9XSwic3R5bGUiOnsiZm9udFNpemUiOjI2LCJsaW5lSGVpZ2h0IjoxLjMsImZvbnRGYW1pbHkiOiJtb25vIn19LHsia2luZCI6InRleHQiLCJyb2xlIjoiYm9keSIsInRleHQiOiLCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAucm90YXRpb25FZmZlY3QoLmRlZ3JlZXMoOTApKSIsImNvbG9yIjoiI2Y0ZWVkZCIsIndyYXAiOiJub3dyYXAiLCJtYXJrcyI6W3sic3RhcnQiOjEzLCJlbmQiOjI3LCJjb2xvciI6IiM2N2I3YTQifSx7InN0YXJ0IjoyOSwiZW5kIjozNiwiY29sb3IiOiIjNjdiN2E0In0seyJzdGFydCI6MzcsImVuZCI6MzksImNvbG9yIjoiI2QwYmY2OSJ9XSwic3R5bGUiOnsiZm9udFNpemUiOjI2LCJmb250V2VpZ2h0Ijo3MDAsImxpbmVIZWlnaHQiOjEuMywiZm9udEZhbWlseSI6Im1vbm8iLCJiYWNrZ3JvdW5kQ29sb3IiOiIjZTliNDRjMjkiLCJwYWRkaW5nVG9wIjo0LCJwYWRkaW5nUmlnaHQiOjE0LCJwYWRkaW5nQm90dG9tIjo0LCJwYWRkaW5nTGVmdCI6MTQsImJvcmRlclJhZGl1cyI6MTB9fSx7ImtpbmQiOiJ0ZXh0Iiwicm9sZSI6ImJvZHkiLCJ0ZXh0IjoiwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgLm9mZnNldCh4OiAxMDApIiwiY29sb3IiOiIjZjRlZWRkIiwid3JhcCI6Im5vd3JhcCIsIm1hcmtzIjpbeyJzdGFydCI6MTMsImVuZCI6MTksImNvbG9yIjoiIzY3YjdhNCJ9LHsic3RhcnQiOjIzLCJlbmQiOjI2LCJjb2xvciI6IiNkMGJmNjkifV0sInN0eWxlIjp7ImZvbnRTaXplIjoyNiwiZm9udFdlaWdodCI6NzAwLCJsaW5lSGVpZ2h0IjoxLjMsImZvbnRGYW1pbHkiOiJtb25vIiwiYmFja2dyb3VuZENvbG9yIjoiI2U5YjQ0YzI5IiwicGFkZGluZ1RvcCI6NCwicGFkZGluZ1JpZ2h0IjoxNCwicGFkZGluZ0JvdHRvbSI6NCwicGFkZGluZ0xlZnQiOjE0LCJib3JkZXJSYWRpdXMiOjEwfX0seyJraW5kIjoidGV4dCIsInJvbGUiOiJib2R5IiwidGV4dCI6IsKgwqDCoMKgfVxufSIsImNvbG9yIjoiI2Y0ZWVkZCIsIndyYXAiOiJub3dyYXAiLCJzdHlsZSI6eyJmb250U2l6ZSI6MjYsImxpbmVIZWlnaHQiOjEuMywiZm9udEZhbWlseSI6Im1vbm8ifX1dLCJzdHlsZSI6eyJiYWNrZ3JvdW5kQ29sb3IiOiIjMTYyMTNmIiwicGFkZGluZ1RvcCI6MjQsInBhZGRpbmdSaWdodCI6MzIsInBhZGRpbmdCb3R0b20iOjI0LCJwYWRkaW5nTGVmdCI6MzIsImJvcmRlcldpZHRoIjoxLCJib3JkZXJTdHlsZSI6InNvbGlkIiwiYm9yZGVyQ29sb3IiOiIjMmEzYTY2IiwiYm9yZGVyUmFkaXVzIjoyMH19fV0sImFzc2V0cyI6e319fQ==">struct ContentView: View {
+    var body: some View {
+        Rectangle()
+            .frame(width: 200, height: 100)
+            .rotationEffect(.degrees(90))
+            .offset(x: 100)
+    }
+}</span>%
+```
+
+看不懂沒關係，彼得潘的目的是請 AI 製作工具，讓我能貼上程式碼，生成彩色程式的 html，然後再貼到 Claude Slides。
+
+以下是 prompt 的內容。
+
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*aqt8qmOZ3pG6Ch-D75EHWA.png)
+
+Claude Opus 5.5 成功做出 Slides 程式碼貼上器，以後彼得潘在 Claude Slides 加入彩色程式終於不用再消耗 token 跟等待 AI 了。
+
+## [Slides 程式碼貼上器](https://peterpanswift.github.io/claude-slides-code-paster?source=post_page-----039acd430084-----------------------------------------)
+
+### 貼上程式碼 → 在預覽中點選要強調的行 → 按「複製」，再到 Claude Slides 貼上，就會變成有背景與語法顏色的程式碼框。
+
+peterpanswift.github.io
+
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*R4vQnV8IjjRz6wDfqLJLyg.png)
+
+完整程式的連結如下。
+
+## [GitHub - PeterPanSwift/claude-slides-code-paster: Paste code and get a syntax-highlighted code…](https://github.com/PeterPanSwift/claude-slides-code-paster?source=post_page-----039acd430084-----------------------------------------)
+
+### Paste code and get a syntax-highlighted code block for Claude Slides - PeterPanSwift/claude-slides-code-paster
+
+github.com

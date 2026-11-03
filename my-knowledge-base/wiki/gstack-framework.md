@@ -1,6 +1,7 @@
 ---
 title: gstack：YC CEO 的全流程 AI 代理開發框架
 date: 2026-05-14
+updated: 2026-11-03
 tags: [ai/agent, ai/claude]
 source: https://github.com/garrytan/gstack
 type: article
@@ -97,6 +98,12 @@ Think → Plan → Build → Review → Test → Ship → Reflect
 ```
 gstack 可把 CEO 計畫、設計文件、retro、開發者偏好推送到 private git repo，記憶跨機器同步。
 
+> 🔧 **GBrain 本體補充（2026-11-03，依 [官方 README](https://github.com/garrytan/gbrain)）**：GBrain 是獨立專案（MIT），gstack 只負責一鍵安裝與接上。架構分兩層：
+> - **內容層**：Markdown git repo
+> - **索引層**：PGLite（預設，零設定，約 5 萬頁內）或 Postgres＋pgvector（大量、多機）
+>
+> 搜尋是向量＋關鍵字混合（RRF 合併，可選 reranker）。embedding 預設 Voyage，也可用 OpenAI／Ollama 等，`--no-embedding` 則完全免 API key、只跑關鍵字。寫入時用 pattern matching 抽 `[[path/slug]]` 連結建 typed edges，不呼叫 LLM。`gbrain serve` 提供 MCP server。另有 cron 驅動的 dream cycle（補充頁面、去重、修引用、找矛盾）。安裝需 Bun，且只能從 GitHub 裝（npm 上同名套件無關）。
+
 ### 系統架構
 ```
 Claude Code（Think / Plan / Build / Review / Test / Ship Skill 群組）
@@ -109,7 +116,7 @@ Claude Code（Think / Plan / Build / Review / Test / Ship Skill 群組）
         ├── Shell 工具鏈 bin/
         │     ├── gstack-config、gstack-diff-scope
         │     └── gstack-model-benchmark（跨 Claude/GPT/Gemini 比較）
-        └── GBrain（可選）：pgvector 向量資料庫，跨 session 持久記憶
+        └── GBrain（可選）：Markdown repo＋PGLite／Postgres 混合搜尋索引，跨 session 持久記憶
 ```
 
 ## C（關鍵行動）

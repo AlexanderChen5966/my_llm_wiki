@@ -8,7 +8,7 @@ created: 2026-10-16
 description: "Claude Code UI 設計該裝哪些工具？逐項查核 X 熱傳的 10 個 GitHub 專案，分清 Skill、MCP、元件與特效，確認舊外掛、404 連結及授權差異，再用一個頁面驗收。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Claude Code UI 設計能借助外部工具改善，但熱門 GitHub 清單裡的十個專案，處理的是不同設計工作。
 

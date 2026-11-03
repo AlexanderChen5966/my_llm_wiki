@@ -40,3 +40,4 @@ AI coding agent 目前理解程式碼庫的預設方式是「grep 關鍵字→�
 - [[claude-fable-5-usage-guide]] — 同批社群討論串的省 Token 脈絡（Ponytail / pxpipe 並列提及）
 - [[production-agent-architecture]] — Agent 架構中對 context 管理與 token 效率的一般性討論
 - [[codegraph-ai-coding-agent]] — 同類型競品：CodeGraph（tree-sitter AST + SQLite，省 35% 成本/70% tool calls，另有獨立 86% token 節省 benchmark），可對照選型
+- [[github-hot-ai-tools-10-selection-2026]] — 十個 GitHub 熱門 AI 工具選型整理（本工具為其中「程式脈絡類」之一）

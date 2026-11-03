@@ -103,3 +103,4 @@ Context 是 AI 的短期記憶，到六成時注意力就開始下降；正確�
 - [[agent-memory-lifecycle]] — Auto Memory 的理論對應：Selection / Extraction / Recall / Consolidation 四層（🔀 三分流判斷法已移至 [[claude-code-auto-memory]]）
 - [[claude-code-session-handoff]] — 第三種工具：當下進度用一次性交接檔，不要寫進常駐的 CLAUDE.md 或 Auto Memory
 - [[claude-code-auto-memory]] — 🔀 **本條目拆出**：Auto Memory 的完整機制（儲存位置、200 行硬截斷、管理與停用、自訂路徑、三分流判斷法）
+- 📎 2026-10-30：[[context-rot-seven-problems-new-chat-handoff]] — 使用者端 context rot 7 種徵兆與「徵兆出現才重開、先寫交接文件」做法（二手轉述 Every）

@@ -128,3 +128,4 @@ asset_value: 60
 - [[multi-agent-cli-bridge]] — 進階：交接檔作為多 agent 接口的延伸
 - [[grad-thesis-claude-code-toolbox-series]] — ⚠️ 術語注意：該系列的「交班單」指 CLAUDE.md（長期規矩），不是本條目的交接檔
 - [[claude-code-billing-usage]] — 撞到五小時上限時的「優雅收尾」不保證跑測試或提交，接近上限前先要求交接摘要
+- 📎 2026-10-30：[[claude-code-artifacts-publish-update-share-guide]] — 同系列 G9：交接檔給下個對話的 Claude；artifact 網址給「人」看，換對話要改同一頁須貼網址或用 `/artifacts` 附加

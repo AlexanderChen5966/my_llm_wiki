@@ -8,7 +8,9 @@ source: /Users/alexander/Desktop/紀錄文件資料夾/實驗用文件/Skill存�
 ---
 
 > 完整 Skill 存檔位於：`/Users/alexander/Desktop/紀錄文件資料夾/實驗用文件/Skill存檔/`
-> 最後更新：2026-10-08（新增 `point-reading-diy` v0.3.2：卡米點讀筆 DIY 點讀包製作；**開發中、未安裝**，存檔於 `point-reading-diy/`）
+> 最後更新：2026-10-21（`point-reading-diy` v0.4.0：打包流程完成、Dear Zoo 實測成功；`handoff` 改名為 `multiagent-handoff` v0.5.0；v0.6.0 加「建議記憶」）；2026-10-20（新增 `handoff` v0.4.1：跨 AI agent 專案接力；7 個自訂 skill 改為**跨工具共用**安裝於 `~/.agents/skills/`，`ai-pair` 留在 `~/.claude/skills/`）
+>
+> **作用中安裝位置（2026-10-20 起）**：本體 `~/.agents/skills/`（multiagent-handoff／stack-review／requirements／doc-update／project-documentation／figma-to-requirements／cross-platform-archive-agent），Codex／Copilot CLI／opencode／Cursor 原生讀取，Claude Code 與 agy 經 symlink（`~/.agents/link-skills.sh`）；六工具實測各 1 份。`ai-pair` 為 Claude 專屬、不共用。詳見 SKILL_INDEX.md「作用中安裝位置」
 
 ---
 
@@ -50,20 +52,21 @@ source: /Users/alexander/Desktop/紀錄文件資料夾/實驗用文件/Skill存�
 | `zerospec-skills`                 | ZeroSpec Prompt Pack 改造為 Claude Code Skills；10 個指令（scan/build/spec/adr/sa/impl/drift/update/audit + 智慧入口）；含跨工具橋接（CLAUDE.md/GEMINI.md）、狀態自動偵測、Self-Review Protocol；同步至官方 v0.5.2 含 DRIFT/IMPL/Post-Edit Self-Check                                                                | 2.0.0     | 2026-06-01 |
 | `sanlong-pay-onboarding`          | sanlong（山隆 PAY，iOS+Android Flutter APP）**專案專屬**新人上手導覽。與 b2b-manager 那支**同架構、內容全異**：手機 APP／自製 SLRouter + NavStack／單一大型 SLController（3418 行，刻意設計非技術債）／無 screenutil。五份 reference 857 行；十道食譜。收錄專案特有地雷：`isDraggable: true` 會變底部彈出而非側滑、防重複提交擋在 SLController 而非 UI、待支付檢查是 APP 端本地 flag 不是 API 欄位、`FlavorConfig` 設了但沒被讀（實際生效是 `BASE_URL`）、flavor 名稱兩平台不一致（staging→iOS `stage`/Android `staging`；正式→iOS 預設 scheme `Runner`/Android `product`）、`.run/` 的 `additionalArgs` 不可複製到命令列（iOS `--target dev` 會被 `-t` 覆蓋，IDE 內無害因 scheme 來自 `buildFlavor`）。基準 `main@190038a9`。**測試**：事實面逐條驗證通過、10 題答案覆蓋率全中；自動觸發與實跑 build 未驗。**目前未安裝** | 1.0.0     | 2026-08-25 |
 | `b2b-manager-onboarding`          | b2b-manager（Flutter Web）**專案專屬**新人上手導覽。仿 ECPay `ecpay-api-skill`：SKILL.md 當決策樹路由，5 份 reference 做 progressive disclosure（day1-setup／codebase-map／first-task-recipes／conventions-gotchas／glossary-domain）。定位「路由器不是教科書」——專案已有 CLAUDE.md／AGENTS.md／DESIGN.md／docs/，新人卡在不知道讀哪份、什麼順序。三種入口（四小時一條龍／十分鐘版／單點查詢）＋10 題自我測試；硬性要求「絕不憑記憶回答，每個答案落地到檔案路徑」。⚠️ 內容價值全在具體行號，**不可跨專案共用**，其他專案複製結構重寫內容、命名沿用 `<repo 名>-onboarding`。**目前未安裝**（僅存檔） | 1.1.0     | 2026-08-25 |
+| `multiagent-handoff`              | 跨 AI agent 專案接力（Claude Code／Codex／Copilot CLI／opencode／agy／Cursor）：`save`／`resume` 換手，`delegate`／`report`／`review` 分派與驗收，`--run` 以非互動模式叫起指定 agent。**狀態以 git 為準**；分派基準用 `git stash create` 含當下未 commit 修改（`refs/handoff/<id>`），review 自動標 🟡 範圍外／🔴 禁止範圍；`--run` 以任務單是否變「已回報」判斷成敗（防 exit 0 假成功）。**實戰 SSGS-14167**：Copilot（claude-sonnet-5.5）＋Codex（gpt-5.6-terra）依序派工皆驗收通過；實戰修正 Codex sandbox 跑不了 `flutter analyze`（自動 `--add-dir` Flutter 工具鏈目錄）。`save → resume` 尚未實戰。v0.5.0 由 `handoff` 改名（避免與 Matt Pocock 的 `/handoff` 撞名）。作用中本體 `~/.agents/skills/multiagent-handoff/`，備份 `dev/multiagent-handoff/`；v0.6.0 加「建議記憶」銜接長期記憶 `~/.agents/memory/` | 0.6.0     | 2026-10-21 |
 
 ---
 
 ## 通用類（general）
 
-| 名稱 | 描述 | 版本 | 更新時間 |
-|------|------|------|----------|
-| `media-processor` | 媒體檔案處理（影片、音訊、圖片） | 2.0.0 | 2025-12-31 |
-| `sign-off-generator` | 專業簽核文件產生 | 1.0.0 | 2026-01-06 |
-| `document-translator` | 文件翻譯 | 1.0.0 | 無記錄 |
-| `translategemma-translator` | Gemma 模型輔助翻譯 | 1.1.0 | 無記錄 |
-| `discussion-organizer` | 學習討論筆記整理，四層判斷邏輯，5 分鐘完成 3-4 小時整理 | 1.0.0 | 2026-03-12 |
-| `cross-platform-archive-agent` | 跨平台壓縮打包，自動排除 OS 垃圾檔 | 1.0.0 | 2026-03-03 |
-| `point-reading-diy` | 🚧 **開發中、未安裝**。卡米點讀筆 DIY：整段錄音 → 切成一句一檔 → 審核網頁 → 對應「內容貼」碼號 → 打包 DAB 點讀包。有背景音樂時改用 Whisper 時間點切（切點取兩句間音量最低處，Whisper 會把拖長音與停頓算進同一個字）；審核結果綁定切檔版本，重切後不會誤用舊審核。實測《Dear Zoo》切成 18 段；暫停於打包前，等實體貼紙報碼確認書名貼命名與內容貼碼號 | 0.3.2 | 2026-10-08 |
+| 名稱                             | 描述                                                                                                                                                                                                                                                           | 版本    | 更新時間       |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- | ---------- |
+| `media-processor`              | 媒體檔案處理（影片、音訊、圖片）                                                                                                                                                                                                                                             | 2.0.0 | 2025-12-31 |
+| `sign-off-generator`           | 專業簽核文件產生                                                                                                                                                                                                                                                     | 1.0.0 | 2026-01-06 |
+| `document-translator`          | 文件翻譯                                                                                                                                                                                                                                                         | 1.0.0 | 無記錄        |
+| `translategemma-translator`    | Gemma 模型輔助翻譯                                                                                                                                                                                                                                                 | 1.1.0 | 無記錄        |
+| `discussion-organizer`         | 學習討論筆記整理，四層判斷邏輯，5 分鐘完成 3-4 小時整理                                                                                                                                                                                                                              | 1.0.0 | 2026-03-12 |
+| `cross-platform-archive-agent` | 跨平台壓縮打包，自動排除 OS 垃圾檔                                                                                                                                                                                                                                          | 1.0.0 | 2026-03-03 |
+| `point-reading-diy`            | ✅ **可用（測試版）、未安裝**。卡米點讀筆 DIY：整段錄音 → 切成一句一檔 → 審核網頁 → 對應「內容貼」碼號 → 打包 DAB 點讀包。有背景音樂時改用 Whisper 時間點切（切點取兩句間音量最低處，Whisper 會把拖長音與停頓算進同一個字）；審核結果綁定切檔版本，重切後不會誤用舊審核。新增 `pack.py` 打包（印刷號碼自動 +25000、打包後讀回驗證），卡米規則已報碼實測（普通書名貼檔名 `NNN-1-`）。**打包流程完成、Dear Zoo 實測成功**（18 段全數可點） | 0.4.0 | 2026-10-21 |
 
 ---
 
@@ -72,6 +75,6 @@ source: /Users/alexander/Desktop/紀錄文件資料夾/實驗用文件/Skill存�
 | 分類 | 數量 |
 |------|------|
 | pkm（知識管理） | 9 |
-| dev（開發） | 18（含 figma-to-flutter 退役；兩支 onboarding 未安裝） |
-| general（通用） | 7（point-reading-diy 開發中、未安裝） |
-| **總計** | **34** |
+| dev（開發） | 19（含 figma-to-flutter 退役；兩支 onboarding 未安裝；multiagent-handoff 2026-10-20 新增、10-21 改名） |
+| general（通用） | 7（point-reading-diy 可用測試版、未安裝） |
+| **總計** | **35** |

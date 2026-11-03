@@ -1,7 +1,7 @@
 ---
 title: 用 Claude Code 建立 LLM Wiki 取代 RAG
 date: 2026-05-25
-updated: 2026-08-03
+updated: 2026-11-03
 tags: [ai/claude, pkm/workflow, pkm/obsidian]
 source: Facebook 社群貼文
 type: article
@@ -129,7 +129,9 @@ Anthropic 官方觀察：能有效理解程式碼庫的公司共同做法是 CLA
 | **DeepWiki** | Cognition | 面向公開 GitHub repo，把網址 `github.com` 換成 `deepwiki.com` 即可產生 |
 | **AutoWiki** | Factory | 整合進 CI/CD，程式碼更新時自動重新生成 |
 | **OpenWiki** | LangChain | OSS，不只程式碼，還能匯入 Gmail/Notion/X；具「Personal Brain」功能 |
-| **GBrain** | Garry Tan | 只在 Git repo 內 Markdown 完成的簡易版本 |
+| **GBrain** | Garry Tan | 內容以 Git repo 內 Markdown 為主，另建 PGLite／Postgres 混合搜尋索引＋typed edges 圖譜（詳見下方校正）|
+
+> 🔧 **GBrain 描述校正（2026-11-03，依 [官方 README](https://github.com/garrytan/gbrain)）**：原文稱它是「只在 Git repo 內 Markdown 完成的簡易版本」，這只描述到內容層，不完整。GBrain 是兩層架構：Markdown repo 是檔案型知識的來源，另外會同步進 PGLite（預設，約 5 萬頁內）或 Postgres＋pgvector，做向量＋關鍵字混合搜尋與 typed edges 圖譜。只存在 DB 的頁面、修訂歷史不在 repo 裡，官方明講匯出 Markdown 不等於完整備份。另有 cron 驅動的 dream cycle 在背景補充、去重、找矛盾。本庫的評估是：完整功能不導入。免 key 的關鍵字模式對中文無效，裸 `[[slug]]` 連結能否解析也未證實。但只取語意搜尋層、搭配本機多語 embedding（如 bge-m3）是可行做法，要試跑過才決定。
 
 > ⚠️ **規模限制**：來源數量超過 **100 筆**時，需搭配搜尋工具使用——LLM Wiki 不是萬用取代方案。
 

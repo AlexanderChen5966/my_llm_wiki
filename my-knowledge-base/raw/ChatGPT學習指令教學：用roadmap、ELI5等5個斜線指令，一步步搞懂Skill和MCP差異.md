@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "想學 Skill 和 MCP，我只告訴 ChatGPT 想學什麼，再用 5 個快捷指令，讓 AI 一步步教我。過程和每步結果，整理給你。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 2026.10.13 | [職場/工作術](https://www.bnext.com.tw/categories/digitalskill)
 

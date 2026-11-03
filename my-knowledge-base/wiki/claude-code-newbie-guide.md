@@ -112,3 +112,5 @@ Portfolio v2 最終：一個 commit，27 個檔案改動（刪的比加的多）
 - [[claude-cowork-setup-guide]] — Claude Cowork 設定（進階：CLAUDE.md + 自動化）
 - [[claude-design-tool]] — Claude Design（UI 設計工作流）
 - [[claude-code-commands-reference]] — 三層命令體系速查表
+- [[ai-coding-environment-setup-github-vscode-claude-code-codex]] — 接入 Claude Code 之前的 VS Code／Git／GitHub 環境前置
+- 📎 2026-10-30：[[claude-code-artifacts-publish-update-share-guide]] — 同系列 G9：把產出發佈成會更新的網址（Artifacts）

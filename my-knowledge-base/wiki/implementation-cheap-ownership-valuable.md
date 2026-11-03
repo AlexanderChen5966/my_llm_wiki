@@ -189,3 +189,5 @@ LLM 打破了確定性契約——它們能產生**在結構上正確、語言�
 - [[ai-era-five-irreplaceable-human-jobs]] — 五種不可替代的人類工作
 - [[ai-presentation-four-layers-human-value]] — 「AI 管骨與皮，肉與靈魂靠人」的另一領域版本
 - [[devin-two-years-intelligence-saturation]] — 智慧飽和後差異化來自何處（與本篇「實作變便宜」互為因果的另一半）
+- [[ai-task-triage-and-human-reserved-decisions]] — 「責任不能外包」落成具體清單：五種保留決策，第五項即「承擔後果的人是誰」
+- 📎 2026-10-30：[[artcraft-open-source-adobe-alternatives-timeline]] — 「實作變便宜」的具體案例：一人用 AI 在數日至數週內公開十款開源應用，但完成度自評僅約 45%（專案自評，非第三方測量）

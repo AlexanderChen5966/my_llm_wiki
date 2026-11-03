@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "AI 自我複製研究測試便宜裝置上的模型執行與受控擴展。解析 Anthropic 實驗數字、能力預測與現實差距，整理家庭和小型辦公室可採取的裝置管理。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 AI 自我複製研究在 X 引起討論。Anthropic 把便宜電視盒連在一起執行模型，讓許多人擔心，家裡不起眼的連網裝置也會成為不受控制的運算來源。
 

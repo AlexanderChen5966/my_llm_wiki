@@ -8,7 +8,7 @@ created: 2026-10-08
 description: "企業 AI 最常見的問題，是回答流暢，卻不知道這個專案昨天已經改了方向。Atlassian 與 OpenAI 在 2026 年 10 月 6 日擴大合作，把模型能力與 Jira、Confluence 等工作脈絡連線起來。這則新聞的重點，是讓 AI 的判斷更接近團隊正在做的事。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 企業 AI 最常見的問題，是回答流暢，卻不知道這個專案昨天已經改了方向。Atlassian 與 OpenAI 在 2026 年 10 月 6 日擴大合作，把模型能力與 Jira、Confluence 等工作脈絡連線起來。這則新聞的重點，是讓 AI 的判斷更接近團隊正在做的事。
 

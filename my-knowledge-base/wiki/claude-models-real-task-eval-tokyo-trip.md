@@ -23,7 +23,7 @@ asset_value: 64
 **不適用 / 注意：**
 - 🔴 **樣本限制**：單一作者、單一份行程、每個模型每題只跑 1–2 次，四個任務共 30 次執行（含失敗與中途停掉的）。作者自承樣本小，結果只代表「在我這份行程上」，不能說「誰比較強」。
 - ⚠️ 全部寫死 `--effort high`，但 Claude Code 內 Opus 5.5 與 Sonnet 5.5 的**預設 effort 是 medium**，平常用的結果可能不同（作者未測）。
-- ⚠️ Haiku 4.5 不支援 effort 與 auto mode，條件和其他模型不同；Haiku 5.5 官方說幾週內推出，本次測的是 4.5。
+- ⚠️ Haiku 4.5 不支援 effort 與 auto mode，條件和其他模型不同；Haiku 5.5 官方說幾週內推出，本次測的是 4.5。（📎 2026-10-07 已更新：Haiku 5.5 已於 2026-10-07 發布，本次評測結論**僅適用 Haiku 4.5**，不可直接套到 5.5；見 [[claude-haiku-5-5-release-notes]]。）
 - ⚠️ 好不好看只有作者一人評（盲測可避免偏心，但仍是一人喜好）；地圖題 Fable 用了和標準答案同源的資料，0 誤差比的是「會去查」，不是「知道」。
 - ⚠️ **官方建議 vs 作者實測的立場差**：官方平台文件說「不確定先用 Opus 5.5」（見 [[claude-model-selection-guide]]），作者實測後建議「平常用 Sonnet 5.5，條件多、要多想一步再換 Opus 或 Fable」。這是官方預設與個人小樣本實測的立場差，不是事實矛盾。
 
@@ -118,3 +118,4 @@ Tim Wei 用自己 9 天東京行程 Excel，讓 Haiku 4.5、Sonnet 5、Sonnet 5.
 - [[claude-code-plan-mode-permission-rules-layering]] — 同系列 G8：deny 規則才是永久界線
 - [[xcode-mcp-test-report-fabrication]] — 同為「宣稱完成卻沒做」
 - [[agent-ux-status-transparency-maturity]] — 回報完成 ≠ 真的完成，狀態要可驗證
+- [[claude-haiku-5-5-release-notes]] — 📎 2026-10-30：Haiku 5.5 已於 2026-10-07 發布；本評測的 Haiku 4.5 結論不適用於 5.5

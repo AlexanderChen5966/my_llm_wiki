@@ -79,3 +79,4 @@ docker run -it --rm --name n8n -p 5678:5678 \
 - [[multimodal-multi-agent-extension]] — Day 25：同系統的多模態擴充版本
 - [[langchain-mcp-integration]] — MCP 與 LangChain 整合（另一種工具串接方式對照）
 - [[synthesis-multi-agent]] — Multi-Agent 系統知識精粹（本主題 7 篇整合）
+- [[github-hot-ai-tools-10-selection-2026]] — 十工具選型中 n8n 的定位與授權（fair-code）

@@ -56,3 +56,4 @@ asset_value: 55
 - [[vibe-to-agentic-engineering]] — 從 Vibe 到 Agentic 工程
 - [[loop-engineering-human-roles]] — Loop 時代人類三職責
 - [[fde-frontend-ai-career-transition]] — FDE 前線部署工程師：前端工程師在 AI 時代的具體轉型路徑（本篇「開發者價值」論點的職涯落地案例）
+- [[ai-task-triage-and-human-reserved-decisions]] — 「80%／20%」分工的通用版：三類任務盤點與五種不交給 AI 的決策

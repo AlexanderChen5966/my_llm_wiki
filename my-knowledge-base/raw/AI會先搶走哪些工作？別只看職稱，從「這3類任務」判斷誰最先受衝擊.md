@@ -8,7 +8,7 @@ created: 2026-10-05
 description: "AI正逐步改變既有職務內容，從12項日常工作拆解成3類任務，找出AI可取代、可協作與人類更具優勢的工作。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 > 引言：AI究竟會如何改變我們的工作？天下雜誌出版重磅新書《工作大重組》，前LinkedIn執行長萊恩．羅斯蘭斯基（Ryan Roslansky）與阿尼許．拉曼（Aneesh Raman）從LinkedIn超過十億會員的職場數據與第一線觀察，拆解技能、職涯與組織正在發生的結構性改變。書中提出一個重要觀點：AI不會一次取代一份工作，而是逐項改變工作裡的任務。你的工作中，哪些最危險、哪些反而更有價值？
 

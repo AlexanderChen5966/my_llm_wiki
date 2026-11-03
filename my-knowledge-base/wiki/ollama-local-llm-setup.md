@@ -112,3 +112,4 @@ Ollama 官方給的粗略比例：**`q8_0` 約使用 `f16` 一半的記憶體，
 
 - [[enterprise-rag]] - 企業私有知識庫 RAG 實作
 - [[dual-tool-strategy]] - 本地 + 雲端的成本分工策略
+- [[github-hot-ai-tools-10-selection-2026]] — 十工具選型中 Ollama＋Open WebUI 的搭配定位

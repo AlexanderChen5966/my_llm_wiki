@@ -72,3 +72,4 @@ Qiita 文章經 codelove.tw 翻譯（2026-08-01）。引用 [Anthropic Economic 
 - [[testing-your-ai-workflow-config-ci]] — 決定性測試 vs 需人工判斷；本篇「交叉審查找出 4 個 bug」是後者的實例
 - [[synthesis/synthesis-agentic-engineering]] — 角色轉型精粹；本篇五種工作是該精粹論點的具體展開
 - [[ai-code-review-safeguards]] — AI code review 護欄；本篇補上「同源 AI 自我審查會寬鬆」的具體觀察
+- [[ai-task-triage-and-human-reserved-decisions]] — 同命題的**任務盤點＋決策權限版**（三類任務分法、五種保留決策）

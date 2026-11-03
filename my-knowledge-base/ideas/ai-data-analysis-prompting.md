@@ -52,5 +52,6 @@ AI 說「好」或「差」時，追問：是跟過去表現、公司平均、�
 - [[ai-competitor-analysis-prompts]] — 分析型提示詞集
 - [[pdf-to-markdown-tools]] — 上游：財報 PDF 要先轉成結構化 Markdown，數字才不會在源頭就錯（該篇提示詞同樣強調「找不到就說找不到，絕對不要推算」）
 - [[prompt-injection-vs-jailbreak]] — 另一個方向的「別全信模型讀到的東西」
+- 📎 2026-10-30：[[ai-public-api-data-acquisition-youbike-verifiable-workflow]] — 上游的資料取得與清洗：保留原始檔、異常旗標、不補 0、離線 replay
 
 > ⚠️ 素材備註：此 raw 檔案尾端夾帶另一篇 QNAP AI NAS 專訪的完整內文（Web Clipper 抓錯的剪輯雜訊），與本條目無關，未納入。

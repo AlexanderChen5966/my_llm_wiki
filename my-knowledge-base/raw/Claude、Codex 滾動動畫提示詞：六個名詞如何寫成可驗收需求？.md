@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "Claude、Codex 滾動動畫提示詞怎麼寫？本文解釋六種效果，附可改寫的頁面需求，涵蓋觸發範圍、手機、鍵盤、減少動畫與具體驗收。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 想讓 AI 做一個「往下滑很有設計感」的網頁，結果卻常出現亂跳、難閱讀或停不下來的動畫。
 

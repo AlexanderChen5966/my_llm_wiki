@@ -8,7 +8,7 @@ created: 2026-09-30
 description: "AI Coding 新手如何設定環境？本文用白話解釋 GitHub、VS Code、Git、SSH、Claude Code 與 Codex，並整理正確安裝順序與完成檢查表。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 AI Coding 環境設定的目標，是讓 AI 能在一個可保存、可回復、可同步的專案裡工作。新手常直接安裝 Claude Code 或 Codex，等到 AI 改完檔案，才發現不知道怎麼保留版本，也不敢把結果上傳到 GitHub。
 

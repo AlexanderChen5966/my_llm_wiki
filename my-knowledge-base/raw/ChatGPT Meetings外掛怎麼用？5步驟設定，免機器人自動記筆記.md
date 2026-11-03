@@ -8,7 +8,7 @@ created: 2026-10-08
 description: "ChatGPT推出「Meetings」外掛Beta版，透過Mac麥克風與系統音訊收音，不必讓機器人加入通話，就能自動產出個人化摘要與待辦事項。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 [![](https://pk-img.learnin.tw/prod/photos/2026-09/img-1790646651-30210.gif)](https://edm.bnext.com.tw/martech-trends/?utm_source=web_bn&utm_medium=logo_banner&utm_campaign=2026_martech&utm_content=175750&utm_term=channel_all)
 

@@ -8,7 +8,7 @@ created: 2026-10-07
 description: "ChatGPT分支功能可以從對話中途另開新路線，又不影響原本對話。本文整理分支怎麼開、3種適用情境，以及如何把結論帶回主線。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 [![](https://pk-img.learnin.tw/prod/photos/2026-09/img-1790646651-30210.gif)](https://edm.bnext.com.tw/martech-trends/?utm_source=web_bn&utm_medium=logo_banner&utm_campaign=2026_martech&utm_content=175750&utm_term=channel_all)
 

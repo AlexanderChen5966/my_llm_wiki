@@ -144,3 +144,4 @@ my-plugin/
 - 原文**沒說**它是用 Mods 做的，本庫不把它寫成 Mod。同為官方外掛的另一例見 [[claude-code-security-guidance-plugin]]。
 
 > ⚠️ 2026-10-08：2026-10 起 plugin 也用來包裝分發 Mods（App 層擴充：常駐在 App 內、能記狀態、能畫介面），見 [[claude-code-mods-overview]]。
+- 📎 2026-11-03：大型 plugin 實例見 [[bitwize-music-plugin-skills-mcp-architecture]]（53 skills＋80+ tools MCP server，README 自述；最適合 Claude Max）。

@@ -62,3 +62,4 @@ status: processed
 - [[synthesis-practitioner-skills-design]] — 把隱性工程師判斷轉為顯性工作流（Matt Pocock 等實踐者方法）
 - [[openai-codex-record-replay]] — Codex Record and Replay 讓非技術用戶也能創建 Skill
 - [[concepts/agent-workflow-taxonomy]] — 六大類型導航地圖（本條目屬於⑥ Skills 工作流層）
+- 📎 2026-10-30：[[awesome-gamedev-agent-skills-router-pattern]] — 領域型技能庫（遊戲開發 76 技能）＋路由技能按需載入，與上述通用框架的另一種形態

@@ -116,3 +116,5 @@ Anthropic 的 `/code-review` 設計體現了六個重要的 review 工程原則�
 - [[claude-code-commands-2026]] — 2026 上半年新命令解析（含 /code-review 前身 /simplify）
 - [[harness-engineering]] — Harness Engineering 框架，更高層次的 review 系統設計視角
 - [[agents-md-guide]] — AGENTS.md 設計原則，與 REVIEW.md 分離概念互補
+- [[claude-code-review-ga-quick-standard-deep]] — 雲端 Code Review 正式服務（Team／Enterprise，Quick／Standard／Deep）；與本機 /code-review 是不同功能，勿混用
+- [[claude-code-team-layered-review-human-approval]] — 組織層合併治理：三輪上限與只審新差異，與本條 re-review 收斂規則互補（官方內部流程的二手轉述）

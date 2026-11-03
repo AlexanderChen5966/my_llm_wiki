@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "Arc UI MCP 讓 Claude Code 使用現成元件。本文整理安裝、元件引用、課程報名頁需求與維護檢查，區分免費與 Pro 授權，先做一致的網站介面。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 同樣請 Claude Code 做一個網站，有時它會寫出漂亮的首頁，有時卻把每個頁面都塞進相似的圓角卡片。等你要加上表單、錯誤提示與手機版，才發現各頁的按鈕大小、字體與間距都不同。
 

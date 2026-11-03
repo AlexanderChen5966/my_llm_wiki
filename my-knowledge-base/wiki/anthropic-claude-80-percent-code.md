@@ -65,3 +65,4 @@ Anthropic 把這個挑戰類比為**核武條約**，但更難：
 - [[agent-session-management]] — Agent Session 管理（Human-in-the-loop 的實際設計）
 - [[agentic-engineering-mindset]] — Agentic Engineering 哲學觀（Karpathy 的鬼魂比喻）
 - [[when-ai-builds-itself-reflection]] — 同報告的「執行 vs 判斷」心得反思
+- [[claude-code-team-layered-review-human-approval]] — Claude Code 團隊自述約九成程式由 Claude 撰寫之後，如何分層審查與保留人工核准（內部結果，不可套用他團隊）

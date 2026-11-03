@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "PhotoCraft 提供命令列與 MCP，讓 Claude 協助整理、修改和輸出圖片。從圖層盤點、單檔試跑到批次處理，說明提示詞、官方命令範例、工作副本與結果驗收，避免把連線成功當成任務完成。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Claude 搭配 PhotoCraft，適合先從有固定規格的圖片工作開始。例如整理同一組素材、套用相同調整，再依用途輸出檔案，可以減少重複點選。
 

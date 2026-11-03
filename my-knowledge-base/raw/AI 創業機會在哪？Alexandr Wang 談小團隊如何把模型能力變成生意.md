@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "AI 創業機會在哪？從 Alexandr Wang 的 YC 官方訪談，理解模型能力與應用落差、小團隊的 AI 代理分工，再用需求訪談、十筆案例與成本紀錄，驗證一項值得持續付費的服務。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Meta 首席 AI 官 Alexandr Wang 的一段訪談，讓 AI 創業的討論回到一個很實際的問題：工具已經很強，為什麼工作仍然這麼難完成？
 

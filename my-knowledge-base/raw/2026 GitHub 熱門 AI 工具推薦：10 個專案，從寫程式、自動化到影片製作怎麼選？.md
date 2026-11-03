@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "整理 10 個 GitHub 熱門 AI 工具，從 Graft、Agency Agents、Codebase Memory MCP、OpenMontage，到 n8n、Dify、OpenHands、Browser Use、Ollama 與 Open WebUI，比較用途、入門方式、費用與限制，幫你找到適合先試的一個。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 GitHub 熱門 AI 工具的示範常讓人心動：一句話改好程式、把資料搬進表格，甚至完成一支影片。
 

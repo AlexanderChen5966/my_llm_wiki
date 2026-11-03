@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "PhotoCraft 支援 PSD 不代表所有 Photoshop 效果都能完整交接。整理文字、遮罩、智慧物件與調整效果的往返檢查方法，解讀官方相容性測試，幫你判斷哪些文件適合先導入。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 PhotoCraft 可以開啟與儲存 PSD，適合先評估較單純的分層圖片工作。要交接需要持續修改的設計文件，則應檢查文字、遮罩與效果，並讓修改後的檔案回到接收者的工具中再次驗收。
 

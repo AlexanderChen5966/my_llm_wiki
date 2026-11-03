@@ -115,3 +115,5 @@ OpenAI 內部用 **capability overhang** 描述「絕大多數人只拿到產品
 - [[html-as-ai-output-interface]] — 讓輸出長出可操作結構
 - [[yc-designer-claude-curation-workflow]] — 設計師用 Claude 的實際工作流
 - [[claude-design-tool]] — Claude Design 的定位（「終於有一個東西可以開始嫌了」）
+- [[ai-task-triage-and-human-reserved-decisions]] — 同一觀察的通用框架：AI 逐項改變任務而非整個職稱，用三類任務盤點
+- 📎 2026-10-30：[[artcraft-open-source-adobe-alternatives-timeline]] — 開源 Adobe 替代品（ArtCraft）的狀態表與時間線，設計工具端的另一種變動

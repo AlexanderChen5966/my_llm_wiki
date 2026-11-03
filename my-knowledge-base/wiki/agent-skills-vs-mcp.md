@@ -122,3 +122,4 @@ asset_value: 75
 
 - [[agent-context-management]] — **Day 09**：把本篇的 Progressive Disclosure／Eviction 思想從 Skill 擴展到整個 Working Context——Selection / Compaction / Eviction / Rehydration 四層、Context Tier（Pinned/Active/Compressed/External）、Protected Fields、Soft Budget、Stub。本篇命名的 **Context Hoarding**，在該篇成為「只 Load 不 Evict」的第 4 號錯誤設計
 - [[agent-memory-lifecycle]] — **Day 10**：跨 Session 的 Memory 四層生命週期。其中明確劃出 **Memory ≠ Skill** 的界線——Skill 是「遇到某類任務該怎麼做」（可重用 Procedure），Memory 是「過去發生過什麼」（從 Experience 保留的 State）
+- 📎 2026-11-03：[[bitwize-music-plugin-skills-mcp-architecture]] — 實例：skills 呼叫 MCP tools 承載狀態查詢、skills 負責流程（README 自述）

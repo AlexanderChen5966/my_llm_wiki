@@ -32,9 +32,11 @@ Opus 5.5 是新的日常主力：官方說大部分工作追平 Fable 5.1，價�
 ### 1. 家族位置與規格（官方）
 
 - 家族排序：Mythos 5.1（只開放給審核通過的組織）＞ Fable 5.1 ＞ **Opus 5.5** ＞ Sonnet 5 ＞ Haiku 4.5
-- Sonnet 5.5、Haiku 5.5 官方說「未來幾週」推出，**沒有給日期**
+- Sonnet 5.5、Haiku 5.5 官方說「未來幾週」推出，**沒有給日期**（📎 2026-10-07 已更新：兩者皆已發布，見下方更新）
 
 > ⚠️ 2026-10-08 更新：Sonnet 5.5 已於 2026-09-28 發布（作者轉述官方，見 [[claude-models-real-task-eval-tokyo-trip]]），家族排序中 Sonnet 那一層應改讀為 Sonnet 5.5；Haiku 5.5 仍未推出。
+>
+> 📎 2026-10-07 已更新：Haiku 5.5 已於 2026-10-07（美東）發布（價格較 Haiku 4.5 降 90%、OSWorld 2.1 離線子集 72.4%、定位為 Opus 5.5／Sonnet 5.5 的子代理），家族排序中 Haiku 那一層應改讀為 Haiku 5.5；上方「仍未推出」為 10-08 前的歷史敘述。見 [[claude-haiku-5-5-release-notes]]。
 >
 > 📎 2026-10-08：同一篇真實任務評測中，Opus 5.5 與 Fable 5.1 四個任務的表現一直很接近，支持官方「Opus 5.5 大部分工作與 Fable 5.1 同級」的說法（單一作者、每題 1–2 次的小樣本）。
 
@@ -191,3 +193,5 @@ Pro／Max／Team 的五小時上限同步調高，並送一次可自選時間使
 - 📎 2026-10-19：[[ideas/claude-code-animation-prompt-qa-delivery]] — Opus 5.5 程式動畫：狀態清單＋時間表、三輪驗收、HTML／SVG／MP4 交付；[[claude-motion-beta-2026-10]] — Claude Motion 產品（Team／Enterprise）
 - 📎 2026-10-19：[[claude-code-pure-code-animation-practice]] — Opus 5.5 首週動畫案例與實作工作法（由時間算畫面、看樣片迴圈、子代理分工）；[[hyperframes-heygen-html-to-video]] — 益盛四支片的 token 實數（總計大多是快取讀取，輸出 token 只佔一小部分），可對照本條「驗收合格任務成本」
 - 📎 2026-10-19：[[opus-5-5-video-case-libraries]] — 社群案例規模參考（athemeroy 凍結快照 1,401 檔／1,119 yes+likely；yihui-dev 475 組提示詞）；🔴 README 自己說這些數字**不代表 Opus 實際用量**，分類器（Gemini 3.8 Flash）不證明模型呼叫，與本條「單一挑選案例不能證明重現率」一致
+- 📎 2026-10-30：[[claude-haiku-5-5-release-notes]] — Haiku 5.5 已於 2026-10-07 發布（價格降 90%、OSWorld 72.4%、子代理定位），修正本條「Haiku 5.5 未推出」的過時敘述
+- 📎 2026-10-30：[[artcraft-open-source-adobe-alternatives-timeline]] — ArtCraft 自稱用 Opus 5.5 以 Rust 重建七款 Adobe＋三款 Office 開源應用；⚠️ clean-room、「一個月 100%」皆為開發者單方放話，未驗證

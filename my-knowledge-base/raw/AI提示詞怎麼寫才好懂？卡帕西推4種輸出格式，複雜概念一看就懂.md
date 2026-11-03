@@ -8,7 +8,7 @@ created: 2026-10-02
 description: "AI回答老是落落長？OpenAI創始成員Karpathy分享4種神級輸出格式！本文附實測提示詞，教你輕鬆讓AI化身科普大師。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 AI提示詞怎麼寫，才能讓複雜概念變得簡單好懂？OpenAI創始成員、前特斯拉AI總監，也是「vibe coding」一詞提出者的卡帕西（Andrej Karpathy），2026年10月2日在 [X發文](https://x.com/karpathy/status/2105819303471976479?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E2105819303471976479%7Ctwgr%5E718b9f52568ede112978f9a9de9eb1919ea9fa9e%7Ctwcon%5Es1_&ref_url=https://www.bnext.com.tw/article/92477/karpathy-llm-output-formats-asd-ste100) 分享他的簡單解法：直接改變AI的輸出格式。
 

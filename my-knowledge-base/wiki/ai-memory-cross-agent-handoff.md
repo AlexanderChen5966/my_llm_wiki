@@ -176,3 +176,4 @@ hook 耗時實測：
 - [[agent-memory-lifecycle]] — Memory 的 Selection／Extraction／Consolidation（heuristic 模式缺的正是這些）
 - [[memharness-memory-reconstruction]] — 🔴 加記憶反而變差：靜態回放的問題
 - [[agent-memory-lifecycle]] — 消費端跨平台（Claude⇄ChatGPT App）搬家見該條 2026-09-29 補充段；本篇是開發工具之間的自動交接
+- [[agent-relay-shared-sessions-flows]] — 多人團隊代理交接的另一做法：共享會話歷史（歷史是證據、須核對現況）

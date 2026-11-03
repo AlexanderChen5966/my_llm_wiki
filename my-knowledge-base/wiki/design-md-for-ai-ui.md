@@ -34,3 +34,4 @@ DESIGN.md 是 Google Stitch 提出的純文字設計系統文件概念——對�
 - [[agents-md-guide]] — AGENTS.md 撰寫指南（DESIGN.md 的姊妹檔）
 - [[antigravity-cli-firebase-ai]] — 用 Stitch 產生 DESIGN.md 再對應成 Angular 元件的實作案例
 - [[open-design-claude-design-comparison]] — DESIGN.md 九段格式在 Open Design 生態的應用
+- 📎 2026-10-30：[[arc-ui-mcp-claude-code-component-workflow]] — 另一條守住 UI 一致性的路：以 MCP 查詢現成元件取代自行造元件

@@ -8,7 +8,7 @@ created: 2026-10-19
 description: "PhotoCraft 在幾天內復刻出 Photoshop 的主要功能，對上一個人做了十多年的 Photopea，現在誰比較能用？另有 Karpathy 的 AI 漏斗、Reflection AI 與 Nvidia、Grok Bot 路由、.agent 網域搶奪等本週 AI 大事。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 謝謝郵報讀者熱烈報名 **AI郵報 OPEN LAB 2026**  
 隨著講者、品牌與社群夥伴陸續加入，我們只能說： **12/5，會比你想的還有趣。**

@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "AI 小型模型的競爭，正從價格延伸到能承接多少實際工作。Anthropic 在美國時間 10/7 推出新 AI 模型 Claude Haiku 5.5，API 價格最高調降 90%，電腦操作測試表現更大幅超越前代，甚至領先 OpenAI GPT-6 Luna。隨著小型模型逐漸具備執行多步驟任務的能力，Haiku"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 AI 小型模型的競爭，正從價格延伸到能承接多少實際工作。Anthropic 在美國時間 10/7 推出新 AI 模型 Claude Haiku 5.5，API 價格最高調降 90%，電腦操作測試表現更大幅超越前代，甚至領先 OpenAI GPT-6 Luna。隨著小型模型逐漸具備執行多步驟任務的能力，Haiku 5.5 究竟適合接手哪些工作？
 

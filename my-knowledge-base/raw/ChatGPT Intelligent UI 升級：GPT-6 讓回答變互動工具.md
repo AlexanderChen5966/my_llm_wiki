@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "OpenAI 將 GPT-6 引入 ChatGPT，並推出 Intelligent UI，讓回答可直接呈現互動圖表、操作按鈕與填寫表單。本文拆解三項升級如何把 ChatGPT 從文字聊天工具推向可執行任務的互動介面。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 OpenAI 將 GPT-6 引入 ChatGPT，這次最值得注意的未必只是模型能力再升級，而是同步推出的 **Intelligent UI** 。ChatGPT 的回答不再局限於一段段文字，而可以直接包含互動圖表、可點選按鈕與可填寫表單。這代表 ChatGPT 正由「會回答問題的聊天工具」，走向「能把答案整理成操作介面的助手」。
 

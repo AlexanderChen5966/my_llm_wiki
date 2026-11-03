@@ -122,3 +122,5 @@ Hermes Agent（Nous Research，GitHub 4.8 萬顆星）提出一種新的 Skill �
 - [[claude-skills-deep-dive]] — Progressive Disclosure 三層機制（與 Hermes 第 3 層設計呼應）
 - [[skillopt-skill-optimization]] — SkillOpt：把 skill 文件當可訓練狀態最佳化
 - [[custom-gpt-gems-to-skills-migration]] — 自訂 GPT／Gems 遷移到 Skills 的跨廠商對照（2026-10-08 快照）
+- 📎 2026-10-30：[[awesome-gamedev-agent-skills-router-pattern]] — 「路由」模式的具體實例：76 個遊戲開發技能由路由技能依引擎與任務按需載入（二手介紹，2026-10-25 README 規模）
+- 📎 2026-11-03：[[bitwize-music-plugin-skills-mcp-architecture]] — 大型 plugin 實例：53 skills、tier 別名多模型分層、品質閘門與人工簽核（README 自述，未驗證）

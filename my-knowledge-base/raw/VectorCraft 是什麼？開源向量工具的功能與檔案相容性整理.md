@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "VectorCraft 是免費開源的向量繪圖工具，提供鋼筆、路徑、形狀運算與多尺寸輸出。整理 SVG、PDF、含 PDF 相容內容的 AI 檔案支援，並說明字型、效果與交接時應做的檢查。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 VectorCraft 是 ArtCraft 團隊的免費開源向量繪圖工具。它適合先用標誌、圖示或簡單海報，評估從繪製、修改到輸出的完整工作流程。
 
