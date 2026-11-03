@@ -164,6 +164,7 @@ ollama rm bge-m3 snowflake-arctic-embed2
 
 - 2026-11-03：開分支、完成計畫
 - 2026-11-03：完成 Phase 0–2，**結果 No-Go**（詳見下節）
+- 2026-11-03：**已撤除**。刪除 `~/gbrain-pilot`（兩個測試 brain、wiki 副本、測試紀錄），以 `bun remove -g gbrain` 移除 gbrain，以 `ollama rm` 刪除 bge-m3 與 snowflake-arctic-embed2，並關閉測試用的 Ollama server。`~/.gbrain` 從未建立；`~/.claude.json`、`~/.claude/CLAUDE.md`、`~/.claude/settings.json` 從未被寫入。Bun 1.4.4 保留
 
 ## Phase 2 測試結果（2026-11-03）
 
