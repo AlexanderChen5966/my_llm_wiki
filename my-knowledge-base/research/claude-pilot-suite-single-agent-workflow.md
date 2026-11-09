@@ -7,6 +7,8 @@ type: reference
 status: processed
 ---
 
+> 📌 2026-11-09：本文的「三模式」流程描述是 06 月的版本，最新開發流程（五情境＋流程 v3 的條件步驟）以 [[decision-framework]] 為準；本文的模型分級路由內容不受影響。
+
 評估 claude-pilot-suite 在「只用 Claude 一個 agent」情境下，如何透過 model tier 智慧路由（Haiku/Sonnet/Opus）搭配 ZeroSpec（Layer 0 上下文整備）優化現有三模式開發流程，達成省額度 + 品質保證的雙重目標。
 
 ## claude-pilot-suite 是什麼

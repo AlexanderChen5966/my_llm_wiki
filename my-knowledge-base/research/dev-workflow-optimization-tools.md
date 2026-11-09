@@ -1,7 +1,7 @@
 ---
 title: 開發流程優化工具評估：dotbabel、Matt Pocock Skills、Mem0、Claude Squad、CCB
 date: 2026-06-01
-updated: 2026-08-05
+updated: 2026-11-09
 tags: [ai/agent, ai/workflow, ai/claude]
 source: https://github.com/kaiohenricunha/dotbabel, https://github.com/mattpocock/skills, https://github.com/mem0ai/mem0, https://github.com/smtg-ai/claude-squad, https://github.com/SeemSeam/claude_codex_bridge
 type: reference
@@ -95,6 +95,8 @@ status: processed
 - `/tdd` 可作為模式 2 的開發方法升級
 - `/handoff` 讓 Claude → Codex 的上下文傳遞更有效率
 - `/grill-with-docs` 可強化 `/requirements` 前的需求釐清
+
+> 📌 **2026-11-09 狀態**：已部分採用（流程 v2）。共用的是 grilling、grill-me、diagnosing-bugs（上表的 `/diagnose`）、tdd、pr、writing-for-agents、retro 7 個，放 `~/.agents/skills/`；Matt 的 `/handoff` 已移除（與 multiagent-handoff 重複）；`/caveman`、`/to-prd`、`/to-issues` 未採用。詳見文末「2026-11-09 更新」。
 
 ### 3. Mem0 vs agentmemory — AI 持久記憶層比較
 
@@ -241,15 +243,15 @@ Antigravity (Free)→ 搜尋、大檔案閱讀、交叉驗證
 
 ### 現行流程（五情境）
 
-> ⚠️ **權威來源為 [[decision-framework]]「優先順序判斷 → 開發流程（五情境）」**。本節與其保持同步，2026-07-29 校準。
+> ⚠️ **權威來源為 [[decision-framework]]「優先順序判斷 → 開發流程（五情境）」**。本節與其保持同步，2026-11-09 校準（流程 v3；情境內的條件步驟只列在 decision-framework，這裡不重複）。
 
 | 情境 | 條件 | 流程 | Claude 額度消耗 |
 |---|---|---|---|
-| 1 | 簡單改動 | 直接手動修改 | 無 |
-| 2 | 需求明確（**無 UI**）| 〔讀〕**現況層** → `/requirements` → agent 開發 → `/stack-review` → `/doc-update` | 中（審查為主）|
-| 3 | 需求明確（**有 UI**）| `figma-to-requirements` → 〔讀〕**現況層** → `/requirements` → agent 開發 → `/stack-review` → `/doc-update` | 中 |
-| 4 | 複雜／高風險（**無 UI**）| 〔讀〕**現況層** → `/requirements` → `/ai-pair dev`（多模型協作審查）→ `/doc-update` | 高（多模型審查）|
-| 5 | 複雜／高風險（**有 UI**）| `figma-to-requirements` → 〔讀〕**現況層** → `/requirements` → `/ai-pair dev` → `/doc-update` | 高 |
+| 1 | 簡單改動 | 直接手動修改（外科式修改） | 無 |
+| 2 | 需求明確（**無 UI**）| 〔讀〕**現況層** → `/requirements` → agent 開發 → `/stack-review` → `/doc-update` → `pr` | 中（審查為主）|
+| 3 | 需求明確（**有 UI**）| `figma-to-requirements` → 〔讀〕**現況層** → `/requirements` → agent 開發 → `/stack-review` → `/doc-update` → `pr` | 中 |
+| 4 | 複雜／高風險（**無 UI**）| 〔讀〕**現況層** → `/requirements` → `/ai-pair dev`（多模型協作審查）→ `/doc-update` → `pr` | 高（多模型審查）|
+| 5 | 複雜／高風險（**有 UI**）| `figma-to-requirements` → 〔讀〕**現況層** → `/requirements` → `/ai-pair dev` → `/doc-update` → `pr` | 高 |
 
 > **〔讀〕現況層**（2026-07-30 加入五情境）= 讀取 `project-documentation` 產出的架構／API／變更歷程文件
 > （含**上游 repo**）。**是讀取而非執行步驟**，不產生交付物。詳見文末 2026-07-30 章節。
@@ -268,7 +270,7 @@ Antigravity (Free)→ 搜尋、大檔案閱讀、交叉驗證
 | **模式 1** 純手寫 | 情境 1 | 完全相同 |
 | **模式 2** 需求驅動 | 情境 2 + 3 | 有 UI 時前置 `figma-to-requirements` |
 | **模式 3** 複雜開發 | 情境 4 + 5 | 有 UI 時前置 `figma-to-requirements` |
-| **模式 4** TDD | ❌ **未納入** decision-framework | 本文提案，尚未採用（見該節說明）|
+| **模式 4** TDD | ❌ 未成為獨立情境 | 2026-11-09 起 `tdd` 成為情境 2～5 開發步驟內的條件選項（新程式時用），見 decision-framework「情境內的條件步驟」|
 
 ### 優化後各模式
 
@@ -343,6 +345,8 @@ ZeroSpec AGENTS.md ＋ DESIGN.md（Layer 0，所有 agent 共讀同一份專案�
 > **狀態（2026-07-29 確認）**：**暫不納入** [[decision-framework]] 的五情境，維持提案狀態。
 > 實際開發流程仍以五情境為準；`/tdd` 需要時可在情境 2/4 的 agent 開發階段直接套用，不必獨立成一個模式。
 > 若日後決定正式採用，**須先更新 decision-framework**（權威來源），再回頭同步本文。
+>
+> **2026-11-09 更新**：已照上面的條件處理——decision-framework 先改，`tdd`（新程式）與 `diagnosing-bugs`（bug 卡住）列為**情境內的條件步驟**，仍不另立第四個模式，與當初「開發方法不另立情境」的判斷一致。下方流程圖保留作歷史提案。
 
 ```
 /grill-with-docs → /tdd（紅綠重構循環）
@@ -773,3 +777,58 @@ Superpowers 的骨幹是 **red/green TDD 強制流程**（`test-driven-developme
 - [ ] 或 decision-framework 正式納入 TDD（屆時最關鍵的衝突消失）
 
 → 三者任一成立時值得重評；在此之前**只摘子模組，不裝整套**。
+
+---
+
+## 2026-11-09 更新：Matt Pocock 截長補短與借來的做法（流程 v2、v3）
+
+**本次為決策落地紀錄。** 權威流程已寫進 [[decision-framework]]「情境內的條件步驟」；完整規劃在桌面〈開發流程與MattPocock截長補短.md〉〈借來的做法整合方案.md〉，流程版本頁 https://claude.ai/artifact/TVWdDupHzBGXhF8nusPHPz 。
+
+### 原則：以五情境為骨幹，外部 skill 當零件插進固定位置
+
+不整套換掉、不另開平行流程。五情境綁著公司環境（Jira、`docs/shared/`、後端契約 hook、DESIGN.md、三層記憶），外部框架都沒有這些；外部補的是工程紀律。
+
+### v2：Matt Pocock skills（本文第 2 節的後續）
+
+| Matt skill | 採用方式 |
+|---|---|
+| grilling／grill-me | `/requirements` Step 1 需求模糊時追問（requirements 1.5.0） |
+| tdd、diagnosing-bugs | 開發步驟內的條件選項（新程式、bug 卡住） |
+| pr | `/doc-update` 之後寫 MR 說明 |
+| writing-for-agents、retro | 改 skill／AGENTS.md 時、session 結束時 |
+| matt-code-review 的 Spec 軸 | 吸收進 `/stack-review` 1.5.0：有任務文件時平行派 spec subagent |
+| handoff | **移除**（與 multiagent-handoff 重複） |
+| to-tickets、implement 等拆票組 | 只留在 b2b-manager，React 遷移結束後回顧 |
+
+7 個共用 skill 放 `~/.agents/skills/`（MIT，保留授權聲明），所有 agent 都讀得到。
+
+### v3：借來的做法
+
+| 做法 | 來源 | 落在哪 |
+|---|---|---|
+| 反合理化表 | Addy Osmani agent-skills（MIT） | 各 skill 結尾的「常見藉口」表，內容用自己的事故 |
+| source-driven | Addy | `/requirements` 1.6.0：框架用法依 lock 檔版本查官方文件，查不到標未驗證 |
+| doubt-driven | Addy | 新 skill `doubt-check` 0.1.0：開發中途單一高風險決定的對抗式複查 |
+| 外科式修改、step → verify | Karpathy 準則（無授權，只借觀念） | 個人層記憶、`/stack-review` 1.6.0 行層級檢查、任務文件每任務「驗證：」 |
+| `/ce-compound` | Every Compound Engineering（無授權，只借觀念） | `/doc-update` 1.2.0 Step 7 沉澱判斷，寫入前先給使用者看 |
+
+### 本文既有結論的變動
+
+- **模式 4 TDD**：仍不是獨立模式；`tdd` 改為情境內的條件選項（見上方模式 4 註記）
+- **Superpowers 摘用的三個子模組**：
+  - `verification-before-completion` → 部分由任務文件的「驗證：」欄與 `doubt-check` 涵蓋（沒有照搬五步）
+  - `systematic-debugging` → 改用 Matt 的 `diagnosing-bugs`
+  - `writing-plans` → 由 `/requirements` 的任務拆解＋「驗證：」承擔，不另裝
+- **Superpowers 重新評估的觸發條件**：「decision-framework 正式納入 TDD」**沒有成立**——納入的是**條件式** tdd，Superpowers 的骨幹是**強制** TDD，衝突仍在。維持「只摘子模組、不裝整套」
+
+### 驗證
+
+`~/.agents/experiments/workflow-bench/`：回放 SSGS-13687（修正前的 commit、只給使用者回報、隱藏驗收 14 個修正點），每版跑一次。
+
+| | v1 | v2 | v3 |
+|---|---|---|---|
+| 準確度 | 14/14 | 14/14 | 14/14 |
+| 費用 | $4.18 | $4.94 | $4.79 |
+| 多出來的東西 | — | spec 審查、MR 說明 | 沉澱判斷提議了一條專案規則（已採用，寫進 b2b-manager `list-page-header.md` 與 `AGENTS.md`） |
+
+這張卡太簡單，準確度量不出差異；doubt-check、source-driven 沒有觸發條件，要等實際任務。

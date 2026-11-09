@@ -95,8 +95,22 @@ Review 發現的問題目前散在對話裡，session 結束即消失。
 - 前提假設：後續由其他 Claude 模型（Sonnet / Opus / Haiku）接手長期運作
 - 涉及修改既有 Skill 檔案時，先備份或走版本控制再動手
 
+## 後續狀態（2026-11-09）
+
+本文是 07-08 的評估，內文保留原樣。四個缺口到 2026-11-09 的進度（流程 v2、v3，見 [[decision-framework]]、[[dev-workflow-optimization-tools]] 文末）：
+
+| 缺口 | 狀態 | 怎麼補的 |
+|---|---|---|
+| 1. 路由判斷仍在腦中 | ✅ 部分 | decision-framework 寫明「情境內的條件步驟」與情境 2/3 vs 4/5 的分界（一般任務遇到單一高風險決定用 doubt-check，一開始就知道動多個風險區塊才走 ai-pair）。本文建議的「影響檔案數、是否跨層」等量化訊號沒有採用，改以風險清單判斷 |
+| 2. Skills 一致性健檢 | ⏳ 未做 | 沒有做全庫一次性健檢；改成每次改 skill 時同步 Skill存檔、`SKILL_INDEX.md`、`skills-list.md`，並用 workflow-bench 回放比對版本 |
+| 3. 驗證迴圈未原則化 | ✅ | `/stack-review` 有任務文件時平行派 spec subagent（新 context、對照任務文件而非開發過程）；新增 `doubt-check`，reviewer 只拿產物＋契約、不拿結論 |
+| 4. 經驗未沉澱成規則 | ✅ | `/doc-update` Step 7 沉澱判斷：門檻三條＋選最便宜的形式（測試 → 專案規則 → 三層記憶 → 文件 → 公司知識），寫入前先給使用者看；第一個實例是 SSGS-13687 的清除鍵規則 |
+
+本文的前提「後續由便宜模型照制度長期運作」沒有變；實際做法是把判斷寫進 skill 與 decision-framework，而不是另建 lessons 檔案（三層記憶已承擔這個角色）。
+
 ## 相關連結
 
+- [[decision-framework]] — 流程 v3 的權威來源（含本文缺口 1、3、4 的落地）
 - [[multi-model-orchestration-expansion-plan-2026-07-08]] — 延伸規劃：三個工具（fox-ai-roundtable / notebooklm-kit Codex 端 / claude-pilot-suite）的具體擴充設計，含成本護欄修正
 - [[fable-advisor-subagent-skill]] — 缺口 3（驗證迴圈原則化）的具體實作範例：Opus 統籌 + Sonnet worker + Fable 5 決策點顧問
 - [[claude-fable-5-usage-guide]] — 官方使用指南：effort / 驗證迴圈 / 修正提示詞 / memory

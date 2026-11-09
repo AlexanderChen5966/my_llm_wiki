@@ -1,6 +1,7 @@
 ---
 title: AI 輔助開發流程地圖：六個失敗點與對應知識資產
 date: 2026-06-24
+updated: 2026-11-09
 tags: [ai/agent, ai/claude, dev/architecture, pkm/workflow]
 type: concept-synthesis
 sources:
@@ -20,7 +21,7 @@ AI 輔助開發的知識庫條目常以工具名稱分類（Superpowers、Loop E
 
 這份文件是導航地圖，不重複各條目細節；每格連到既有 wiki 條目。
 
-對照你的開發流程：`figma-to-requirements` → `/requirements` → `agent 開發` → `/stack-review`（或 `/ai-pair`）→ `/doc-update`，六類知識分別對應流程的不同環節。
+對照你的開發流程（2026-11-09 起為流程 v3，權威來源 [[decision-framework]]）：`figma-to-requirements` → `/requirements`（＋grilling）→ `agent 開發`（＋tdd／diagnosing-bugs／doubt-check）→ `/stack-review`（規範 ∥ spec）或 `/ai-pair` → `/doc-update`（＋沉澱判斷）→ `pr`，六類知識分別對應流程的不同環節。
 
 ---
 
@@ -47,23 +48,37 @@ figma-to-requirements
 /requirements
   └── 失敗點①：規格模糊 → 66% 錯誤源於此
       關鍵知識：[[synthesis-spec-driven-workflow]]、[[persistent-markdown-planning-skill]]
+      v2／v3 落地：需求模糊 → grilling 追問（只問人能決定的事）
+                   框架用法依版本查官方文件，查不到標未驗證（source-driven）
+                   每個任務寫可檢查的「驗證：」（step → verify，也補失敗點③的驗收條件）
 
 agent 開發（一般）
   └── 失敗點②③：沒有工程紀律 + 迴圈失控
       關鍵知識：[[claude-code-community-workflow-2026]]（社群共識 100 分）、[[loop-engineering-6-components]]
+      v2／v3 落地：外科式修改（每一行變更對應需求）、新程式用 tdd、bug 卡住用 diagnosing-bugs
+                   高風險單一決定 → doubt-check（新 context reviewer 只拿產物＋契約，最多 3 輪）
 
 /ai-pair dev（複雜/高風險）
   └── 失敗點②④：需要強制多模型審查
       關鍵知識：[[ai-pair-skill]]、[[harness-engineering]]
+      分界（2026-11-09）：一開始就知道會動多個風險區塊才走；單一高風險決定用 doubt-check
 
 /stack-review
   └── 失敗點④：輸出品質驗證
       關鍵知識：[[claude-code-review-harness-principles]]、[[synthesis-agentic-engineering]]
+      v2／v3 落地：規範審查 ∥ spec 審查（對照任務文件，結果分開列）；行層級變更範圍、框架出處檢查
+
+/doc-update ＋ pr
+  └── 失敗點⑤：教訓留在對話裡，下次重犯
+      v3 落地：沉澱判斷（不明顯、長期有用、忘了會出事才留；測試 → 專案規則 → 三層記憶 → 文件 → 公司知識）
+               pr 寫 MR 說明，把「這次改動的經過」留在 MR，不塞進記憶
 
 跨 Session / 長專案
   └── 失敗點⑤：脈絡斷裂
       關鍵知識：[[claude-code-handoff-memory-strategy]]、[[claude-code-large-codebase]]
 ```
+
+> 新增的零件都是**情境內的條件步驟**，不改五情境骨架；觸發條件見 [[decision-framework]]。v3 的實測（回放 SSGS-13687）：三版準確度相同，v3 的沉澱判斷實際提議並促成了一條專案規則，見 [[dev-workflow-optimization-tools]] 文末。
 
 ---
 
@@ -74,6 +89,7 @@ agent 開發（一般）
 | **規格工具（①）vs Skills（②）** | 規格解決「AI 不知道要做什麼」；Skills 解決「AI 知道要做什麼但不知道怎麼做才對」。兩者缺一不可，組合使用最強 |
 | **Loop Engineering（③）vs Harness（④）** | Loop 設計的是「讓 AI 自動往前跑的機制」；Harness 設計的是「跑完之後怎麼驗證品質」。前者追求自動化，後者追求可靠性 |
 | **ai-pair（④）vs /stack-review（④）** | ai-pair 是多模型**同時開發+審查**（異構協作降低同質性偏見）；stack-review 是開發後的**獨立審查**。複雜任務用 ai-pair，一般任務用 stack-review |
+| **doubt-check（②④）vs stack-review（④）** | doubt-check 是開發**中途**、針對**單一**高風險決定的對抗式複查，改起來還便宜；stack-review 是做完後看**整個 diff**。前者擋方向錯，後者擋品質漏 |
 | **Superpowers（②）vs gstack（②）** | Superpowers 解決「保證不寫廢 code」（紀律強制）；gstack 解決「判斷值不值得寫」（戰略視角）。最強組合是兩者並用：gstack 管策略，Superpowers 管紀律 |
 | **vibe coding vs agentic coding（⑥）** | 成熟度差異，不是工具差異。Vibe 適合 PoC/原型；Agentic 適合要上線的產品。見 [[vibe-vs-agentic-coding-maturity]] |
 

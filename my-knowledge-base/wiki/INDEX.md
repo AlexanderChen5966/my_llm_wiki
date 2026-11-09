@@ -740,7 +740,7 @@ status: processed
 | [[concepts/meta-ai-engineering-methodology]] | meta-synthesis（4 精粹）| AI 輔助工程的本質是「三層職責分離」：意圖層（人必須擁有）→ 治理層（人設計）→ 執行層（AI 主導）；意圖層的缺失無法被下層彌補 |
 | [[concepts/agent-workflow-taxonomy]] | concept-synthesis（導航地圖）| Agent 工具分屬六大抽象層（①框架 ②協定 ③編排 ④記憶 ⑤規格 ⑥Skills）；多數系統是疊加非六選一，選型先問「壞掉最壞是什麼」；含總表 + 選型決策樹 + Sakana Fugu 學習式編排補充層（Fugu/Fusion/ai-pair 三者對照：編排邏輯是否被訓練）|
 | [[concepts/agent-handoff-memory-patterns]] | concept-synthesis（8 來源）| 跨 session 與跨工具的狀態傳遞五模式：①檔案型（HANDOFF.md/GSD）②提示詞摘要 ③Framework 持久化 ④外部記憶伺服器（agentmemory）⑤異步狀態釋放；Claude Auto Memory 不跨工具；**序列接力讀完整 HANDOFF vs 並行協作共讀精簡 REVIEW_FILE 邏輯相反**（並行各讀 = token ×N 陷阱）|
-| [[concepts/ai-dev-workflow-taxonomy]] | concept-synthesis（導航地圖）| AI 開發失敗的六個根本原因：①上下文不完整（規格工具）②無工程紀律（Skills）③執行迴圈失控（Loop）④輸出品質無保證（Review）⑤跨 Session 失憶（Context）⑥心智模型錯誤（Mindset）；對應開發流程各環節，含選型思考樹 |
+| [[concepts/ai-dev-workflow-taxonomy]] | concept-synthesis（導航地圖）| AI 開發失敗的六個根本原因：①上下文不完整（規格工具）②無工程紀律（Skills）③執行迴圈失控（Loop）④輸出品質無保證（Review）⑤跨 Session 失憶（Context）⑥心智模型錯誤（Mindset）；對應開發流程各環節（2026-11-09 更新為流程 v3：grilling／tdd／diagnosing-bugs／doubt-check／spec 審查／沉澱判斷各補哪個失敗點），含選型思考樹 |
 | [[concepts/agent-engineering-vocabulary-layers]] | concept-synthesis（導航地圖）| LLM 120 圖卡 #101-120 的 Agent 工程詞彙**平鋪成一條編號序列，混平了四個抽象層**——這正是中文圈用詞混亂的來源。歸位為①範式（Loop/Harness/Context Engineering）②機制（Agent Loop/Tool Use/CUA/World Models）③實體（Scaffold/Memory/壓縮/編排/Eval/Observability）④應用（Coding Agent/Multi-Agent/RACG/Long-Horizon/多模態/OpenClaw），逐格標覆蓋深度 🟢13 超過圖卡／🟡4 分散無專篇／🔴3 真缺口。🔑 **三張範式卡沒有順序**，用前須自行補上本庫已查證的 Prompt→Context→Harness→Loop；🔑 **#108 卡片講能力、本庫講「Tool Call 只是工作單」的七層**；⚠️ #106/#117 分層記憶敘事有 memharness 反面證據。🔴 三個真缺口（World Models／Long-Horizon Agent／RACG）**指向同一方向：本庫強在單次任務可靠性、弱在跨時程自主性** |
 
 ---
