@@ -8,7 +8,7 @@ created: 2026-10-06
 description: "Gridex 整合多種資料庫、AI 對話與 MCP 工具，支援 macOS、Windows 和 Linux。本文解釋讀寫權限、操作紀錄與本地憑證，區分本地應用和模型資料傳送的範圍。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Gridex 是原生資料庫 IDE，也就是整合查詢、資料瀏覽與結構管理的開發工具。它加入 AI 對話與 MCP 伺服器，讓使用者可以用自然語言查詢，也能讓外部代理連接已設定的資料庫。
 

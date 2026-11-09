@@ -8,7 +8,7 @@ created: 2026-10-20
 description: "Gemini 程式繪畫近期訊息與實際用途解析，從官方資料看懂功能、使用條件與限制，提供臺灣讀者評估工作流程的具體方法。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Gemini 程式繪畫示範最近在 X 引起討論。原作者 Surya 表示，串文中的作品由程式製作，並分享 534 幅畫作的範例與程式。
 

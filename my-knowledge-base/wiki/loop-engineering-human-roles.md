@@ -64,8 +64,24 @@ Loop Engineering 的核心轉變不是「AI 取代人類」，而是**創造價�
 - [ ] 定期「手讀」部分 AI 生成的程式碼，防止 Comprehension Debt 累積
 - [ ] 在 Loop 設計中保留人工確認節點（HITL），不要讓 Loop 完全不需要你
 
+## 補充資料
+
+### 日常操作層：從認知卸載到認知投降（Addy Osmani，二手）
+
+來源：aiposthub〈AI 代理接手工作，如何保留批判性思考？〉（2026-11-05，轉述 Osmani 2026-11-03〈Critical thinking when agents do the work〉；**Osmani 原文未讀、未驗證**，且多數觀點為站方引申）。與上文 T 一致：上文講「認知投降」概念，這裡補日常做法。
+
+- **光譜**：認知卸載 → AI 輸出變成下一步的前提 → 認知投降
+- **交辦前先寫**：已知情況、假設、目標、範圍、完成條件
+- **決策卡**：讀提案時先列出「AI 替我做了哪些決定」
+- **檢查亮綠燈要問「它證明了哪件事」**；用自己的話轉述，找出理解缺口
+- **意圖負債（Intent Debt）**：目標、限制、決策理由沒有留下。與理解債對偶——理解債是讀的人不懂，意圖負債是寫的當下沒留下為什麼
+- **四句交辦模板**：核對假設、列出支持與削弱的證據、寫明前提、列出需由人負責決定的事項
+
+站方原創的活動報名頁情境、YouTube 嵌入連結不收。
+
 ## 相關連結
 
+- 📎 2026-11-05：[[boris-cherny-prompt-to-verification]] — 上批已補 Osmani 的「目標＋完成標準＋停止條件」模板（提示詞層驗收）；本篇補充段是人這一側的思考角度，兩者互補
 - [[loop-engineering-6-components]] — Loop Engineering 完整框架（六大組件/Worker+Verifier/三護欄）
 - [[loop-engineering-implementation-patterns]] — Claude Code 迴圈協議實作（CLAUDE.md + Stop hook）
 - [[agentic-engineering-mindset]] — Karpathy 的鬼魂比喻 + 品味不可外包

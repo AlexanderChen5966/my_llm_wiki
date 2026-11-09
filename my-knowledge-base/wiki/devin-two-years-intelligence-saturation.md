@@ -127,3 +127,4 @@ Cognition 把教練功能放進產品：Devin 可以**指出提示寫得太簡�
 - [[seven-agent-software-factory]] — ⚠️ 對照：本篇的 Kaplan **明確不喜歡「software factory」比喻**，理由是工廠意味重複生產而編碼代理價值在高度客製
 - [[synthesis-llm-cost-routing]] — 成本路由精粹；本篇的「智慧飽和」為其提供了新的上游前提
 - [[agent-memory-lifecycle]] — 📎 2026-10-19：該條補充段收錄 Cognition 的 Devin Dreaming 與 Agent Memory Repo（Markdown＋Git 記憶、背景合併／查矛盾／淘汰過時；官方說法經 aiposthub 轉述，未實測）
+- [[devin-macos-vm-ios-simulator-foldable-testing]] — 📎 2026-11-03：Devin 雲端 macOS VM 做 iOS 模擬器測試與錄影證據的邊界（iPhone Duo 展示）

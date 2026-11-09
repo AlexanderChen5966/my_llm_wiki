@@ -73,6 +73,7 @@ Finder 整合提供即時檔案操作捷徑。
 ### 7. 未發表的程式碼線索
 
 程式碼追蹤顯示正準備支援下一代主要模型（可能是 Gemini 4），並出現 Nano Banana 2.5 Flash 的升級跡象。
+📌 2026-11-03 校正：Gemini 4 Argon 已於 **2026-09-30 發表、10-13 全面開放**（來源：數位時代 https://www.bnext.com.tw/article/92758/gemini-4-argon-prompting-guide，2026-10-22；文末自註初稿為 AI 編撰；僅取發表與開放日期，上方「可能是 Gemini 4」為當時傳聞原文保留）。
 
 ## C（關鍵行動）
 
@@ -97,3 +98,4 @@ macOS 版供美國 AI Ultra 用戶）與仍在封測（上述全部新功能，�
 - [[obsidian-knowledge-base-planning]] — vault 架構規劃；影響資料夾 scope 該怎麼切
 - [[agent-permission-and-os-sandbox]] — 資料夾層級 scope 屬於其中的權限邊界設計
 - [[agent-os-workstation-division]] — 「AI 作業系統」競賽的整體分工視角
+- [[google-computer-use-api-artemis-android-agents-snapshot-2026-11]] — Gemini API 層的 Computer Use 已 GA（2026-11-05 快照，二手轉述）；與本篇桌面版 app 的封測屬不同層級

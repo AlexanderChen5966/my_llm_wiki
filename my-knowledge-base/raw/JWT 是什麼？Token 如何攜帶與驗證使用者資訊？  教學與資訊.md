@@ -8,7 +8,7 @@ created: 2026-10-27
 description: "JWT（JSON Web Token）是一種以 JSON 表示並可簽章或加密的 Token 格式，常用於網站與 API 傳遞聲明。本文說明 JWT 的三段結構、簽章不等於加密、如何驗證，以及使用時常見的安全陷阱。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 登入網站後，伺服器或 API 常需要一種方式，讓後續請求知道「這是誰、允許做什麼」。JWT 是常見的 Token 格式之一，但它並不是加密的身分證，也不是拿到就能直接信任的資料。理解它如何編碼、簽章與驗證，才能避免把登入系統做得方便卻不安全。
 

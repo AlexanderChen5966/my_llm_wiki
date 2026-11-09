@@ -221,3 +221,7 @@ npx remotion render ProductLaunch out/overlay.mov --image-format=png --pixel-for
 - [[ideas/lottie-animation-skill]] — Lottie 動畫格式；Remotion 接 Lottie 時 expression 不保證逐幀一致
 - [[ideas/claude-code-animation-prompt-qa-delivery]] — 程式動畫的需求寫法、驗收與交付格式
 - 📎 2026-10-19：[[opus-5-5-video-case-libraries]] — Opus 5.5 影片案例庫與七條製作路徑（含 Manim 解說路徑）；[[ideas/ai-3d-code-structure-vs-appearance-acceptance]] — 3D 結構 vs 外觀驗收；[[chatgpt-blender-mcp-3d-dashboard-case-study]] — blender-mcp 舊名下的 Codex 實測案例
+
+- 📎 2026-11-04：[[generative-video-pre-production-planning]] — 生成式影片的前置規劃（Nibs 分鏡＋Blender 灰模預演）
+- 📎 2026-11-04：[[conversational-video-editing-handoff]] — 第 6 節同類（ChatCut／Palmier Pro）的後續案例：Cardboard 外掛與 CapCut × Codex，先對話粗剪、再回時間軸精修
+- 📎 2026-11-05：[[motion-engineering-claude-five-department-video]] — 流程面：導演／美術／動畫／技術／審片五階段，每階段留檔案、先做一幕

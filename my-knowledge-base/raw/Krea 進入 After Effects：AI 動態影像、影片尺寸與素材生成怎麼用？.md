@@ -8,7 +8,7 @@ created: 2026-10-07
 description: "Krea 推出 After Effects 擴充工具，將 AI 素材生成與代理操作帶進剪輯流程。本文整理支援版本、安裝入口、帳號與網路需求，以及生成影片與可編輯圖層之間的差別。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 影片工作者常要在生成工具、下載資料夾與 After Effects 之間來回切換。Krea 推出的擴充工具，把 AI 工作入口放進 After Effects，讓創作者在熟悉的環境提出素材與動態設計要求。
 

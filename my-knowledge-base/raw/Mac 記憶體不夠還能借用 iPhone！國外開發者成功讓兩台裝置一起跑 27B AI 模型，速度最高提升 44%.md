@@ -8,7 +8,7 @@ created: 2026-10-06
 description: "想讓 Mac 本機 AI 模型跑得更快，或是讓原本跑不起來的模型成功運行，多數人想到的應該都是換一台記憶體更大的 Mac。不過，現在有開發者真的實現了你可能都曾想過的想法：讓手邊的 iPhone 也一起幫忙跑 AI。這個開源專案叫做 Backburner。開發者只用一條 USB-C 線，把 iPhone 17 Pro Max 接上 M4 Pro MacBook Pro，就成功讓兩台裝置分工處理 AI 模型。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 想讓 Mac 本機 AI 模型跑得更快，或是讓原本跑不起來的模型成功運行，多數人想到的應該都是換一台記憶體更大的 Mac。不過，現在有開發者真的實現了你可能都曾想過的想法：讓手邊的 iPhone 也一起幫忙跑 AI。
 

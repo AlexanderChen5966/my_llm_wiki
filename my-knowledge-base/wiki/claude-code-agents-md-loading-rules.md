@@ -116,6 +116,8 @@ Claude reads `AGENTS.md` from your next session on.」
 - [[claude-code-file-management]] — 哪些 Claude Code 設定檔該 commit（`CLAUDE.local.md` 的定位）
 - [[claude-md-guide]] — CLAUDE.md 本身的份量與寫法
 - [[claude-code-mods-overview]] — 據官方入門指南（數位時代轉述），Claude Code 的 AGENTS.md 支援與 `/diff` 面板本身就是用 Mods 做的
+- [[agents-md-untrusted-directory-hijack-forever-research]] — 讀到不可信 AGENTS.md 的後果：Forever 公開研究（真實事件為被攔下的安裝嘗試，其餘為受控測試）
+- 📎 2026-11-04：[[claude-md-guide]] 補充段 — aiposthub 二手整理官方 memory 文件：條件明載「工作目錄及上層」、`.claude/CLAUDE.md` 計入阻擋檔案、另有 `/config` 的 `claude-md-and-agents-md` 入口；並陳：新文稱用 `/memory` 查載入路徑，本條引官方稱 AGENTS.md 不出現在 `/memory`／`/context`，不裁決
 
 ## 原始摘要
 

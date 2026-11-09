@@ -8,7 +8,7 @@ created: 2026-10-27
 description: "Gemini 4 Argon提示詞怎麼寫？本文整理6段式提示詞框架與範例，以及LOW、MEDIUM、HIGH思考層級的選擇方式。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Google於2026年9月30日發表旗艦推理模型Gemini 4 Argon，主打複雜軟體工程、深度推理，以及能自主執行多步驟任務的AI代理（agent）應用；這款模型自10月13日起全面開放，提示詞工具平台PrompTessor隨即發布一份使用指南，作者Rizki Murtadha整理Google官方開發者文件、模型規格與提示詞設計技巧，歸納出一套適用於Argon的提示詞框架。
 

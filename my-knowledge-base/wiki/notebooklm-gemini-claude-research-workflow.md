@@ -2,7 +2,7 @@
 title: NotebookLM / Gemini / Claude 三 AI 分工術：券商分析師用 Markdown 接力的產業研究工作流
 date: 2026-07-24
 tags: [ai/workflow, pkm/workflow, type/how-to]
-source: https://www.bnext.com.tw/article/91590/notebooklm-gemini-claude-ai-research-workflow
+source: https://www.bnext.com.tw/article/91590/notebooklm-gemini-claude-ai-research-workflow; https://www.aiposthub.com/gemini-notebook-textbooks-free-catalog-citations/
 type: article
 status: processed
 asset_value: 64
@@ -44,6 +44,17 @@ asset_value: 64
 - 確認手中書籍是否支援：Google Play 圖書詳細資料頁看 **「Tools」徽章**是否含 Gemini Notebook
 - ⚠️ 官方定位為**跨產品線長期計畫**，未來延伸至 Gemini App 與搜尋 AI Mode，來源將擴展至第三方訂閱內容、商業研究報告與專業教科書
 - ⚠️ 美國限時贈書活動（促銷碼 `EXPERTINTELLIGENCE`）**台灣尚未開放**
+
+### 延伸：教科書目錄上線（2026-10-29 公告；2026-11-03 併入）
+
+來源：https://www.aiposthub.com/gemini-notebook-textbooks-free-catalog-citations/（aiposthub，Philo；轉述 Google 官方部落格 2026-10-29 公告）。這是上面「來源將擴展至專業教科書」**預告的實現（更新，非改口）**。
+
+- **範圍**：新增**數百本**美國與印度教科書，供應商為 OpenStax、Open Textbook Library、S Chand Publishing；入口為筆記內 **Add sources → Textbooks**。目錄為 2026-10-29 當時範圍
+- 🔴 **「免費」只指這批目錄教科書的加入**，與上面 Expert Intelligence 的**已購 Google Play 電子書**（需真正擁有、符合資格）取得條件不同，**不得混用「免費」**；也不代表整個服務或生成額度無限免費
+- 🔴 **台灣**：公告未承諾含台灣指定版本、繁中書目或每本書的地區條款；課程指定版本要先查目錄，找不到只能當補充閱讀
+- 回答附**內文引用與來源連結**，可產生讀書指南、練習測驗、字卡；權利上「可加入閱讀」不等於可下載、公開張貼或轉售
+- 讀書流程（**作者建議，非實測、未量測成績**；平均數／中位數為文中虛構示例）：指南整理範圍 → 測驗測理解 → 字卡回想，錯題回原文核對；引用是核對入口，不是零錯誤保證；外語教材請保留原術語
+- 命名：Gemini Notebook＝舊 NotebookLM，檢索兩名並用。相關：[[gemini-study-notebooks]]（學習筆記本，本篇是其「來源端」擴充）
 
 ## 原始摘要
 

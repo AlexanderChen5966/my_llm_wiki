@@ -80,8 +80,39 @@ Boris 的說法是，模型在沒有這些提示的狀態下「**其實聰明一
 
 bnext（李先泰，2026-07-30）報導 Y Combinator Startup School 2026 對談（2026-07-28 公開，主持人 Diana Hu）。Boris Cherny 進 Anthropic 前在 Meta 當了五年首席工程師，著有《Programming TypeScript》。文末留下一個開放問題：**如果每一代模型都要重刪一次規範檔、每一到三代要重做一次評測集，真正會累積下來的資產是什麼？** Boris 的線索是建議 CS 學生別只學電腦科學，還要養出設計判斷、商業判斷與跟使用者對話的能力——**會折舊的是規範檔與評測集，留得住的是判斷該往哪裡優化的那個人**。（bnext 業配與延伸閱讀段落已略）
 
+## 補充：Addy Osmani 的目標＋完成標準＋停止條件模板（2026-11-04 併入）
+
+來源：aiposthub（Philo，2026-11-04）〈Claude 提示詞越長越好？Addy Osmani 建議把重點放回目標與驗收〉（https://www.aiposthub.com/claude-overprompting-goals-verification-addy-osmani/ ），原文為 Addy Osmani 2026-10-29 X 貼文〈You're probably overprompting Claude〉。⚠️ **二手整理**：Addy 原貼為轉述，範例表格為作者依原則自編，非官方測試。
+
+與本條 T（「刪完之後該投資的是驗證」）是同一論點的不同發言人。這一段補的是「驗證」怎麼寫成一次可交代的提示：
+
+| 項目 | 內容 |
+|---|---|
+| 目標 | 一句話講清楚要達成什麼 |
+| 完成標準 | 什麼狀態才算做完（可被檢查的條件） |
+| 停止條件 | 何時該停、**不可改動的內容**、**需先詢問才能動的界線** |
+| 要求附證據 | 要求模型附上**實際執行的檢查與輸出**，而不是只說「已檢查」 |
+
+- **不再重複叮嚀**：新模型（來源以 Opus 5.5＋Claude Code 為例）不需要「仔細思考、逐步分析」這類重複提醒。
+- **需求未明時**：先讓模型訪談、產出規格，再開新對話執行。
+- **界線提醒**：`/goal` 由另一個模型依「對話中已呈現的證據」判斷是否達成；Auto mode 管的是**動作審核**，不管**成果是否正確**——兩者不能互相取代，見 [[claude-code-goal-command]]、[[claude-code-auto-mode-permissions]]。
+- **刪舊指令**：用「同一任務前後比較」，與本條的 ablation 同精神。
+- ⚠️ 來源引述「Claude Code 曾對 Opus 5、Fable 5 移除超過八成系統提示、評測無可測退步」——**限於特定模型與評測範圍，不可類推到其他模型或任務**（本條 T 的「80%」亦同）。
+
+### /effort 建議值並陳（不裁決）
+
+| 出處 | 建議 | 脈絡 |
+|---|---|---|
+| 本段（Addy／aiposthub 二手） | `/effort medium` 起試 | Claude Code 的 `/effort`，以 Opus 5.5 為例 |
+| [[claude-opus-5-prompting-guide]]「補充資料：effort 階梯」 | 起點預設 `high`，再依自己的評測往兩邊調 | Opus 5，官方《Prompting Claude Opus 5》（TechNews 轉述） |
+| [[claude-code-model-and-thinking-depth]] | 記載 Opus 5.5 API 預設 effort 由 high 改為 medium | Opus 5.5，API 預設值 |
+
+三者對應的模型版本（Opus 5 與 5.5）與介面（Claude Code `/effort` 與 API 預設）不同，**不能直接視為互相矛盾**；日後以官方現行文件為準再定。
+
 ## 相關連結
 
+- [[claude-opus-5-prompting-guide]] — effort 建議值並陳的另一端（起點 high）；官方 8 重點
+- [[claude-code-model-and-thinking-depth]] — Claude Code 的 `/model` 與 thinking／effort 兩個旋鈕
 - [[claude-5-context-engineering-rules]] — Thariq Shihipar 的官方部落格版（**同一事件的另一視角**：那篇講「新規則是什麼」，本篇講「為什麼刪、怎麼測、刪完往哪走」）
 - [[claude-md-optimization-techniques]] — CLAUDE.md 技巧；本篇的「六個月汰舊」「重複踩坑才加回」可直接套用其技巧 6
 - [[synthesis/synthesis-claude-md]] — CLAUDE.md 方法論精粹
@@ -89,3 +120,4 @@ bnext（李先泰，2026-07-30）報導 Y Combinator Startup School 2026 對談�
 - [[obligations-as-code-tedium-is-stability]] — 「verifier 必須可判定」與本篇「讓它有辦法自己檢查成果」是同一命題
 - [[loop-engineering-6-components]] — 長時自走 Agent 的迴圈設計
 - [[anthropic-claude-ai-perf-sprint-metric-first-loop]] — Anthropic 官方實證案例：先證明量尺與用戶感受相關，再讓 AI 跑「只降不升」的最佳化循環——「賭注從指令移到驗證」的生產環境版本（2026-09-29 新增）
+- 📎 2026-11-04：[[claude-md-guide]] 補充段 — 「Stop and ask when」5 條具體停止條件（CLAUDE.md 層；本篇 Addy 模板是提示詞層，方向一致）

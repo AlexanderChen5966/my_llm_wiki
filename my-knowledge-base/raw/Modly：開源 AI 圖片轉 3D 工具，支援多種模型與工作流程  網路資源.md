@@ -8,7 +8,7 @@ created: 2026-09-29
 description: "Modly 是開源本機 AI 3D 生成工具，可將圖片轉成 3D 網格模型，支援 Hunyuan3D、TripoSG、Trellis2 GGUF 與視覺化工作流程。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 網站連結 [https://github.com/lightningpixel/modly](https://github.com/lightningpixel/modly)
 

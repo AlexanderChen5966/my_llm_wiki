@@ -147,6 +147,7 @@ paths:
 - [[claude-code-context-management]] — Context 管控策略與 AGENTS.md 整合
 - [[claude-code-file-management]] — 哪些 Claude Code 設定檔該 commit
 - [[addyosmani-engineering-skills]] — Addy Osmani 的工程師 Skill 套件（含 AGENTS.md 結構）
+- [[agents-md-untrusted-directory-hijack-forever-research]] — 安全注意：Downloads 等不可信目錄裡的 AGENTS.md 可能被代理當成操作依據（Forever 研究）
 
 ## 補充資料
 

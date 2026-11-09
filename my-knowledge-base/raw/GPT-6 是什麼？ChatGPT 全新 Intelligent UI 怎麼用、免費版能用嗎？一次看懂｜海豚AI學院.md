@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "OpenAI 推出新版 GPT-6，讓 ChatGPT 能直接呈現互動圖表、操作工具與視覺化解說，本文帶你了解新功能、實際用法、免費資格與升級建議。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 ## 文章重點
 

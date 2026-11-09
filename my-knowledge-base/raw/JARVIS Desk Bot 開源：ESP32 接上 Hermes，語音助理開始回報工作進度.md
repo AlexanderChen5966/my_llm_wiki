@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "JARVIS Desk Bot 將 ESP32 桌面機器人接上 Hermes，加入本機語音辨識、語音回報與背景工作。本文分清裝置和伺服器的工作，並說明本機語音與完全離線的差別。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 語音助理最讓人不確定的時刻，往往是說完要求後一直沒有反應。
 

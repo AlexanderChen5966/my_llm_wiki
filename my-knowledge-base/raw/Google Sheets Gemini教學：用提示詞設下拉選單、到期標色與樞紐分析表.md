@@ -8,7 +8,7 @@ created: 2026-10-29
 description: "實測用一組提示詞整理待辦追蹤表，分享多項修改的核准流程、可直接套用的指令，以及圖表更新與復原限制。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 [![](https://pk-img.learnin.tw/prod/photos/2026-09/img-1790646651-30210.gif)](https://edm.bnext.com.tw/martech-trends/?utm_source=web_bn&utm_medium=logo_banner&utm_campaign=2026_martech&utm_content=175752&utm_term=channel_all)
 

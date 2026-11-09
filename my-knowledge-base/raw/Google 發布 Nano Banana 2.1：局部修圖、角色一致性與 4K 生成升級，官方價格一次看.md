@@ -8,7 +8,7 @@ created: 2026-10-07
 description: "Google 推出 Nano Banana 2.1，改善局部修圖、角色一致性、文字呈現與自然感。搭配官方圖片及發布動畫，整理 1K 至 4K 價格、使用入口與舊模型遷移日期。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Nano Banana 2.1 是 Google 新推出的圖片生成與編輯模型，可以根據文字描述製作圖片，也能接收原圖，透過對話反覆修改。這次更新集中在視覺品質、指令遵循、圖片中的文字，以及多次修改後的角色一致性，延續高效率的產品定位。
 

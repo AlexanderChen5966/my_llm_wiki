@@ -104,4 +104,6 @@ asset_value: 29
 - [[html-as-ai-output-interface]] — 單一 HTML 當交付物的讀者端價值（本條交付段補上「HTML 要交代依賴、MP4 不能取代來源」）
 - [[claude-opus-5-5-release-notes]] — Opus 5.5 互動教學頁範本與 Artifact 方案、前置開關
 - 📎 2026-10-19：[[claude-code-pure-code-animation-practice]] — 本條的實作版（3 個獨立實測：縮圖總表＋膠卷自查、骨架＋子代理分工審查、另找 AI 驗收）；[[hyperframes-heygen-html-to-video]] — HyperFrames 專篇；[[claude-codex-video-toolchain-selection]] — 渲染引擎與剪輯工具選型
+- 📎 2026-11-05：Rory Flynn 食譜 30 秒 HTML/JS 解說動畫（Opus 5.5，aiposthub 轉述，單一來源、站方未實測）為同方法的食譜情境
 - 📎 2026-10-19：[[opus-5-5-video-case-libraries]] — Opus 5.5 影片案例庫（yihui-dev 475 組提示詞收藏 vs athemeroy 研究快照）；拿案例庫提示詞改寫時，先確認提示詞是否完整、製作路徑是否真的是程式繪製
+- 📎 2026-11-05：[[motion-engineering-claude-five-department-video]] — 同站作者的五階段製作流程（導演／美術／動畫／技術／審片），wiki 版

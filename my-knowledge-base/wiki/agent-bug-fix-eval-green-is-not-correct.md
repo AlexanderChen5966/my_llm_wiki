@@ -155,4 +155,5 @@ Day 14 開始管權限：「先來擋掉那幾道下去就回不來的指令。�
 - [[wayfinder-decision-map-workflow]] — 🔑 收錄「**TDD 的理由是「AI 骨子裡是作弊仔」會生出配合錯誤答案的假測試**」，與本篇「改測試讓它變綠是最好走的一條路」互為佐證
 - [[agent-control-layer-permission-hooks-planning]] — 權限層：為什麼改測試前該有一道關卡
 - [[devin-two-years-intelligence-saturation]] — Frontier Code 可合併性評測與 benchmark 的侷限
+- [[claude-formal-verification-oss-fuzz-rocq-scope]] — 📎 2026-11-05 新增：另一種「通過」的讀法——Rocq 檢查器接受的只是「不崩潰」命題，不等於功能正確或程式庫安全
 - [[ideas/harness-layer-research-agentbug-smith-mosib]] — 📎 2026-10-19 新增：AgentBug-Smith「重現 ≠ 修復」與本篇「綠燈 ≠ 改對」呼應；⚠️ 該篇是 harness 錯誤評測集，本篇是 agent 修 bug 的驗收，不混為一談

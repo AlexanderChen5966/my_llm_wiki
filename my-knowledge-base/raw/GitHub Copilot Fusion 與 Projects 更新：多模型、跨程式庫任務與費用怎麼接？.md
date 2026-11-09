@@ -8,7 +8,7 @@ created: 2026-10-29
 description: "GitHub Copilot Fusion 正式開放，Projects 進入公開預覽。解析三種模型協作、第三方評測、跨程式庫交接、適用工具與優惠截止日，幫團隊比較交付品質和完整成本。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 一項功能若同時改到網站與後端，開發者除了寫程式，還要反覆交代兩個專案的關係。Copilot Fusion 與 Projects 這次更新，把選模型和安排跨專案工作接在一起，想減少這段交接成本。
 

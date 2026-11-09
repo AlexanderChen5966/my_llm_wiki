@@ -161,3 +161,4 @@ Agent 生成/修改程式碼
 - [[xcode-mcp-hidden-state-and-authorization]] — Xcode MCP 是接到活 IDE 的 bridge；Mobile MCP 繞過 IDE 直接操作裝置層（2026-09-29 新增）
 - [[agent-permission-and-os-sandbox]] — Mobile MCP 建議用專用裝置＝隔離（2026-09-29 新增）
 - [[fara-computer-use-agent]] — 相反路線：純截圖 VLM（Fara-7B、Apple MintAct），不讀 accessibility tree（2026-09-29 新增）
+- [[devin-macos-vm-ios-simulator-foldable-testing]] — 雲端路線：Devin 在 macOS VM 以 Computer Use 操作 iOS Simulator 並錄影；無 USB 實機、影片不能當實機證據（2026-11-03 新增）

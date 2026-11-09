@@ -169,4 +169,5 @@ profile 的規則是「deny 家目錄 → allow 工作目錄」，後面的規�
 - [[claude-code-codex-sandbox-h5i]] — 沙箱隔離的實作選項比較
 - [[agent-error-recovery-taxonomy]] — Permission Denied 為何不該 Retry
 - [[github-skill-security-audit]] — 「跟 AI 說別回傳」無效，要靠機制而非提示
+- [[agent-operated-tools-permission-and-acceptance-snapshot-2026-10]] — 📎 2026-11-05 新增：四個代理操作工具（Cursor／Unreal／FigCraft／Framer）的權限面對照，快照式
 - [[agent-api-key-handoff-six-methods-risk]] — 同一觀察（子行程繼承環境變數、點名指令攔得住但腳本攔不住）擴展到 Claude Code、Codex、Gemini CLI、Copilot、Cursor，附各家設定名稱

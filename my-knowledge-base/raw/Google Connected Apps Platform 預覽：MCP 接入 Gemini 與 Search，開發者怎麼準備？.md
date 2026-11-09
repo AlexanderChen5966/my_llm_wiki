@@ -8,7 +8,7 @@ created: 2026-10-29
 description: "Connected Apps Platform 進入預覽，讓開發者把服務接進 Gemini 與 Search。解析遠端 MCP、Android MCP、授權、互動介面 beta 與審核上架流程，分清準備條件和開放限制。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 使用者在對話裡問訂位，服務商若還得請他跳回自己的網站，任務就多了一次切換。Connected Apps Platform 想讓開發者把這些服務接進 Gemini 與 Search。
 

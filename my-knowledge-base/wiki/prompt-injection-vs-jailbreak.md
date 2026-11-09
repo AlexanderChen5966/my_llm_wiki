@@ -127,3 +127,4 @@ Prompt Injection 只是從另一個方向利用「LLM 很擅長從 Context 中�
 - [[human-in-the-loop-langchain]] — 高風險動作的人工確認實作
 - [[mcp-chatgpt-connector-not-safe-fix]] — MCP connector 的權限風險實例
 - [[ai-terms-analogy-scaffolding]] — 同系列 Day 05–09
+- [[agents-md-untrusted-directory-hijack-forever-research]] — 真實案例：Downloads 內的 AGENTS.md（Source）誘導代理改全域設定／端點（Sink）；證據分真實事件與受控測試

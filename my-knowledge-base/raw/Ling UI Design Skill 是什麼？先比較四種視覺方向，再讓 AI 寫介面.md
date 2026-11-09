@@ -8,7 +8,7 @@ created: 2026-10-06
 description: "Ling UI Design Skill 搭配 Ming-Image-0.1-Design 產生介面設計方向，先看圖再實作。本文整理 Clean、Warm、Dark、Bold 四種風格，以及生成設計稿與可用網頁的差別。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Ling UI Design Skill 是一套讓程式代理先探索介面視覺方向的工作指引。它可以搭配 Ming-Image-0.1-Design 圖像模型，先產生不同風格的設計稿，讓使用者選定方向後，再進入程式實作。
 

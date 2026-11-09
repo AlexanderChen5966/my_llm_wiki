@@ -8,7 +8,7 @@ created: 2026-10-20
 description: "Google AI Studio 宣布 AI Pro 訂閱者可在 Build 與 Playground 使用 Gemini 4 Argon。本文說明原型製作與模型測試的差別，以及訂閱權益和正式 API 部署該如何分開確認。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 AI Studio Argon 這次的更新，讓 Google AI Pro 訂閱者多了一個開發入口：可以在 Build 與 Playground 使用 Gemini 4 Argon，而不只在一般對話裡體驗模型。
 

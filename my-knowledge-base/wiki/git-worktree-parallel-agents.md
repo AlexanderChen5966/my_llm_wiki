@@ -156,3 +156,4 @@ moksaweb 作者的描述很具體：**「改完 Feature A 等跑測試的時候�
 - [[herdr-agent-terminal-multiplexer]] — 並行之後的「我看不到誰在等我」問題
 - [[claude-code-cost-optimization-7-tips]] — 並行的 token 成本控制
 - 📎 2026-10-19：[[claude-code-projects-redesign-2026-09]] — 桌面版補充段依據的 04-14 改版之後的 09-17 Projects 重構；[[claude-code-commands-reference]] — `/btw` 與 side chat 同概念
+- 📎 2026-11-05：[[grok-build-multi-agent-worktree-state-guide]] — worktree 隔離之後的管理層：會話／分支／目錄三者分工、狀態表、完成點與合併驗收

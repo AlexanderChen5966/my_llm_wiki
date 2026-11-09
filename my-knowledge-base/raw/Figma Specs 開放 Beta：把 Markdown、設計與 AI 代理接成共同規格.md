@@ -8,7 +8,7 @@ created: 2026-10-16
 description: "Figma Specs 把 Markdown、設計參照與團隊討論放進共同規格。看懂 MCP 代理交接、Beta 開放權限、手動編輯與 AI 點數差別，再用小功能驗證成果。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Figma Specs 想解決的，是需求文件、設計畫面與 AI 代理各自握有一部分資訊，卻沒有共同依據的問題。
 

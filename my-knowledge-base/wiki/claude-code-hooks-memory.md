@@ -249,6 +249,7 @@ Claude Code                        → 看 CLAUDE.md
 ```
 
 ⚠️ Claude Code 官方文件明載它讀的是 `CLAUDE.md` **不是** `AGENTS.md`。（此即 `app01-double` 專案採用的架構：`CLAUDE.md` 用 `@AGENTS.md` import 共用規則）
+> 📎 2026-11-04：據 aiposthub 整理，2.1.277 之後規則為無 CLAUDE.md 時載入 AGENTS.md，原句保留，待查官方現行文件。見 [[claude-code-agents-md-loading-rules]]、[[claude-md-guide]]。
 
 ### Hooks 的定位（本條目主體的再確認）
 

@@ -82,8 +82,8 @@ Format: 8 panels, 370x320px each, suitable for LINE stickers
 
 ## 相關連結
 
-- [[chatgpt-image-prompts-130]] — **更新更完整的 130 組合集**（bnext article/90908，2026-09-10）：
-  本條目是框架論述，該條目是提示詞合集與查詢入口
+- [[chatgpt-image-prompts-130]] — **更新更完整的 130→170 組合集**（bnext article/90908，2026-09-10 初版，2026-11-05 更新到 170 組）：
+  本條目是框架論述，該條目是提示詞合集與查詢入口。📎 2026-11-05：本條目 77 個提示詞區塊中 **76 個已逐字收進 130／170 版**（Agent A 程式比對），本條目留下的獨有資產是框架論述與公式，不是提示詞
 - [[chatgpt-images-2-5-sketch-and-api-models]] — **後續版本**：Images 2.5 的四大新功能與 API 模型（本條目為 2.0 前代提示詞）
 - [[gemini-omni-video-prompts]] — Gemini 影片生成六維度框架（影片版 Prompt 結構）
 - [[ai-prompt-map-100-workflows]] — AI 100 個工作流 Prompt 地圖

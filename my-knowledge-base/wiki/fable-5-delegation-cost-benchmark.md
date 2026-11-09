@@ -133,3 +133,4 @@ Cognition 工程師 Joon Hee Lee 於 2026-07-13 在公司官方部落格發表�
 - [[claude-fable-5-power-tasks]] — Fable 5 高難度任務案例
 - [[opensquilla-intelligent-model-router]] — 🔑 **同機制的開源實作**：Devin Fusion 的「lightweight classifiers during task execution」＝ SquillaRouter 的 on-device LightGBM+ONNX 逐 turn 難度分類（T0–T3）。**想要自動難度路由不必用 Devin，但兩者共同的缺口相同——路由準確率均無公開驗證**；且 OpenSquilla 是微核心 agent 本體、非 Claude Code 外掛，採用等於換 harness
 - [[fable5-subagent-model-routing-design]] — Claude Code 上**手動**實作角色分級路由的配方（judge/builder/worker，`model:` 只寫在 agent frontmatter）；零遷移成本的層級 1 做法
+- [[codex-2026-10-feature-updates]] — 📎 2026-11-03 新增：Codex 快取更新（子代理重用上下文＋延長快取＋快取路由）與 Devin Fusion 的持久化 cached context 概念呼應；同樣主張以「通過驗收的完成數」衡量

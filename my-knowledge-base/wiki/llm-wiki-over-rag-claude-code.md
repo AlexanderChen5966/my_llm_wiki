@@ -171,3 +171,4 @@ openwiki/
 - [[tpki-tri-pattern-knowledge-index]] — TPKI：整合 LLM Wiki + Hermes + GBrain 的三模式索引架構
 - [[enterprise-rag]] — 如果確實需要 RAG 的企業場景參考
 - [[claude-code-obsidian-setup]] — Claude Code + Obsidian 完整建構指南
+- [[llm-wiki-second-brain-claude-code-obsidian]] — 同模式的可安裝 skill 包版（claude-skills 的 llm-wiki：斜線指令、子代理、Python 腳本）

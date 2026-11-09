@@ -93,3 +93,4 @@ asset_value: 70
 - [[claude-code-harness-internals]] — Harness 承擔所有狀態管理；跨 session 傳訊是 harness 層新增的通訊管道
 - [[agent-relay-shared-sessions-flows]] — 第三方 Agent Relay：跨機器訊息＋共享會話歷史＋Flows，可對照官方原生版
 - [[anthropic-fold-subagents-back-to-main-agent]] — 📎 2026-10-30 新增：何時該收回子代理、改用主代理＋Skills＋工具
+- [[grok-bot-cloud-agent-product-overview]] — 📎 2026-11-03 新增：該條「BDK 代理通訊擴充」補充段——Cursor BDK 代理諮詢 Grok Bot，同樣要求訊息自成完整任務、遠端回覆只當參考

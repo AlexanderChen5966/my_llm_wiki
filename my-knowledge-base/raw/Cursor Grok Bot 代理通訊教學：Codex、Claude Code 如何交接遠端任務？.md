@@ -8,7 +8,7 @@ created: 2026-10-16
 description: "Cursor Grok Bot近期消息與實際用途解析，從官方資料看懂功能、使用條件與限制，提供臺灣讀者評估工作流程的具體方法。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Cursor Grok Bot 的代理通訊文件，讓本機助手可以請另一個 Bot 提供資訊或協助。近期 X 使用者分享 Codex、Claude Code 與 Grok Bot 交接的體驗，引起討論。
 

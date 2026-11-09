@@ -8,7 +8,7 @@ created: 2026-09-24
 description: "Google 推出 Gemini 3.8 Flash TTS 與 Flash-Lite TTS，新增自訂聲線、逐句語氣控制與雙人對話。本文整理兩款模型差異、繁體中文支援、AI Studio 試用方式、程式串接費用與聲音複製限制。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 把文章轉成語音，過去通常是選一個預設聲線，再調整語速和音高。Google 在 2026 年 9 月 23 日推出 Gemini 3.8 Flash TTS 與 Gemini 3.8 Flash-Lite TTS，進一步讓使用者設計聲線、逐句安排表演方式，也能讓兩個角色依照同一份劇本對話。Google AI Studio 官方帳號在 [X 公告](https://x.com/GoogleAIStudio/status/2102781516107370894?ref=aiposthub.com) 中，將它們稱為目前最具表現力的語音生成模型。
 

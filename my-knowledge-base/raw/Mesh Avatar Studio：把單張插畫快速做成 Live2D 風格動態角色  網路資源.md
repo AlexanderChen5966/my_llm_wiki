@@ -8,7 +8,7 @@ created: 2026-10-06
 description: "Mesh Avatar Studio 是開源 AI 動態角色製作工具，可透過 Claude Code、Codex 將單張人物插畫轉成 Live2D 風格 2D Avatar。支援眨眼、Lip Sync、轉頭、呼吸與頭髮動態，並提供即時預覽與控制點微調，適合 VTuber 與虛擬角色創作者快速製作動態頭像。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Mesh Avatar Studio 是一個協助使用者將單張人物插畫製作成 Live2D 風格動態角色的開源工具。它結合 Claude Code 或 Codex 等程式代理人，以及在本機執行的編輯器：代理人會依照插畫建立角色骨架、圖層與控制點，使用者再透過即時預覽調整細節，讓角色能眨眼、說話、轉動頭部、呼吸，並呈現頭髮擺動等動態效果。對想讓靜態立繪快速動起來的創作者來說，這套流程能協助處理角色切圖與初始設定，再由使用者自行修整。
 

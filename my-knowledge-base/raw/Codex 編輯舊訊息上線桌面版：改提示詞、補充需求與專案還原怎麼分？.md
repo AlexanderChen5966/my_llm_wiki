@@ -8,7 +8,7 @@ created: 2026-10-28
 description: "Codex 編輯舊訊息已公布支援桌面版。比較修提示詞與補充新需求的時機，說明檔案差異、外部動作與成果驗收為何仍須另行確認，幫團隊保留清楚的決策脈絡。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Codex 編輯舊訊息是 10 月 19 日在 X 公布的一項桌面版更新。OpenAI 的 Tibo 表示，使用者現在可以在同一個對話串修改先前的訊息。
 

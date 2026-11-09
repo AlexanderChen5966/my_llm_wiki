@@ -8,7 +8,7 @@ created: 2026-10-08
 description: "Hairline 將等角線條圖形、互動動畫與 AI 程式助手技能結合，可產生獨立 HTML。本文說明內建圖形、開源授權與適合的設計用途。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 一套名為 Hairline 的開源工具近日在 X 引起討論。它以簡潔線條描繪立體圖形，再讓圖形隨滑鼠位置改變。作者也提供給 AI 程式助手使用的技能，讓設計描述能轉成網頁動畫。
 

@@ -8,7 +8,7 @@ created: 2026-10-05
 description: "Image Blaster 是以 Claude Skills 打造的開源 Image to 3D 工具，可將單張圖片轉成 3D 場景、物件模型、Gaussian Splat 與音效素材。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 網站連結 [https://github.com/neilsonnn/image-blaster](https://github.com/neilsonnn/image-blaster)
 

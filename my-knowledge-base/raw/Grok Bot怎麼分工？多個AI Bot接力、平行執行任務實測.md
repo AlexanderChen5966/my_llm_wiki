@@ -8,7 +8,7 @@ created: 2026-10-02
 description: "Grok Bot可以建立多隻AI bot，讓它們自己分工、接力、同時開工。實測怎麼組一支AI團隊，以及哪些工作最適合交給它。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 [![](https://pk-img.learnin.tw/prod/photos/2026-09/img-1790646651-30210.gif)](https://edm.bnext.com.tw/martech-trends/?utm_source=web_bn&utm_medium=logo_banner&utm_campaign=2026_martech&utm_content=175749&utm_term=channel_all)
 

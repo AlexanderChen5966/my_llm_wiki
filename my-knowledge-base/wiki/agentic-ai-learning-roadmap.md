@@ -65,6 +65,15 @@ Prompt Engineering（Stage 2）→ Context Engineering（Stage 3+）→ Harness 
 
 ## 補充資料
 
+### 校正：2026-11-05 快照的 Track 順序與新增階段
+
+來源：aiposthub〈AI Agent 怎麼學？繁中 GitHub 學習地圖〉（2026-11-05，同一 repo；站方示範為原創，順序會隨 repo 更新，**以 repo 當前為準**）。上文 2026-05 的表格與 T 不改，僅列差異：
+
+- **入口多了「日常使用者指南」**，之後才分 Track A／Track B
+- **Track A 順序為 A1、A2、Stage 5、A3**（Stage 8 建議後接），上表未列 Stage 5 的插入
+- **Track B 為 Stage 3、4、5、6、7、7.5、8**，多了 Stage 7.5 與 Stage 8
+- **第一個專案**：以「每週公告摘要」練習，驗收記錄輸入範圍、交付檔、錯誤修改、時間與費用；教材為 MIT 授權
+
 ### 等級評估：Agentic Engineering 的 8 個等級
 
 來源：《Agentic Engineering 的 8 個等級》（DeTools 工具翼零，2026-03-20，翻譯自 Bassim Eledath）

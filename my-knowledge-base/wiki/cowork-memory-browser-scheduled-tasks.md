@@ -85,6 +85,30 @@ asset_value: 58
 - [ ] 去記憶設定把 Topics 逐則看一遍——它們是短檔案，可讀可改可刪
 - [ ] 內建瀏覽器初期只在受信任網站使用；不要為了方便去授權銀行／郵件／SSO
 
+## 補充資料：「功能怎麼選」2026-11-04 官方文件查詢快照（二手）
+
+> 來源：aiposthub（Philo，2026-11-04）〈Claude 功能怎麼選？〉，依 11 月官方文件重整 Anatoli Kopadze 的 5 月 X 功能清單（2026-05-22，17 項）；**二手整理，本庫未對官方文件核對**。方案預設值有時效，文內明說與 5 月原貼已不同，**以 11/4 為準、須標日期**。此處 Projects 指 **claude.ai 的 Projects**（對話專案），與 Claude Code 的 Projects 是兩回事。
+
+**卡點→功能對照（這篇的原創價值）**
+
+| 你卡在 | 用 |
+|---|---|
+| 每次重貼背景 | Projects |
+| 跨對話的個人偏好 | Memory |
+| 重複流程 | Skills |
+| 成果散落各處 | Artifacts |
+| 資料在其他系統 | Connectors |
+| 多步驟交辦 | Cowork |
+
+**試跑法**：選一份固定的週報，試跑一週；第一輪記錄「每次要補什麼」，第二輪看手動修正是否變少。
+
+**記憶預設值（11/4 快照，與上文 8/25 的差異）**
+- 11/4 文章寫 **Free／Pro／Max／Ultra 記憶預設開啟、Team／Enterprise 由管理者控制**；相對上文 8/25 的「Free／Pro／Max 預設開啟」只多列了 **Ultra**，**Ultra 的內容本庫未查**，不自行解釋。
+- 專案可使用「專案＋帳戶層」記憶、**不使用其他專案的記憶**，可關閉 `Use account memory`；過往對話搜尋給付費方案、有專案邊界。
+- Artifacts：現有 Docs／Slides／Design 範本，Free 可建立（細節見 [[claude-code-artifacts-publish-update-share-guide]]）。
+- ⚠️ **本機 Cowork 不使用聊天記憶、雲端 Cowork 可用**——這句**部分回答**了上方 10/8 留下的待查（舊本機任務是否用共用記憶），但**僅此一個二手來源（aiposthub 轉述官方文件），不可寫成定論**；10/6 後新任務一律雲端，「本機 Cowork」只剩舊任務。
+- 整篇偏入門、案例單一；Projects 全部保留於 Cowork 併入 Chat 之後，見 [[claude-cowork-merged-into-chat-2026-09]]。
+
 ## 相關連結
 
 - [[external-memory-layer-exploration-tax]] — 🔑 **方向一致的獨立論證**：記憶該是「純文字、可審核、可攜」的外部檔案；官方把記憶做成「使用者打得開、改得動的短檔案」正是這個方向

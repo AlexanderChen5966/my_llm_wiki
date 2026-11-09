@@ -8,7 +8,7 @@ created: 2026-10-20
 description: "ESP32 iPhone Agent 用 AirPlay 看畫面、USB 模擬輸入，讓 AI 操作真實 iPhone。本文依新版官方文件整理手機 App、Mac 建置與使用限制，釐清 7 美元板子和完整成本的差別。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 ESP32 iPhone Agent 是一個開源專案，利用約 7 美元的 ESP32-S3 開發板，把 iPhone 畫面交給視覺模型，再透過滑鼠與鍵盤輸入操作手機。
 

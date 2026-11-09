@@ -251,3 +251,4 @@ Jason Liu 點名的迷思：**很多人把推理強度全開到最高（x-high�
 - [[claude-code-commands-reference]] — 命令速查表
 - [[agentic-engineering-sop]] — 六階段 SOP（Goals 對應 Tasks/ROADMAP 設計）
 - [[dual-tool-strategy]] — Gemini CLI + Claude Code 分工策略
+- [[codex-2026-10-feature-updates]] — 📎 2026-11-03 新增：Codex 2026-10 快取有效用量更新（Work 與 Codex 共用用量，與本頁額度段一致無改口）＋Composer Predictions、編輯舊訊息

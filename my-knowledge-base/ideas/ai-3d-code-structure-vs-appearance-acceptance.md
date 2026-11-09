@@ -9,12 +9,13 @@ source:
   - https://www.aiposthub.com/gemini-desk-photo-threejs-racing-game/
   - https://www.aiposthub.com/voyager-3d-model-product-commercial-guide/
   - https://www.aiposthub.com/manimgx-python-agent-animation-rendering-benchmark/
+  - https://www.aiposthub.com/gemini4-argon-blender-mcp-cathedral-3d-scene/
 type: idea
 status: processed
 asset_value: 21
 ---
 
-> 🔴 **來源集中**：6 篇全部出自 **aiposthub／Philo**（2026-10-10～10-15），文末互為延伸閱讀（CD 盒 → 3JSBench；Blender MCP → 3JSBench；桌面賽車 → Blender MCP；ManimGX → Blender MCP）。「先結構後外觀、多角度看、保留可編輯來源、一次改一項」是**同一作者把同一套驗收框架套到不同工具**，不能算多個獨立佐證。6 篇**全部沒有實測**（作者在各篇自承：書桌場景是假設案例、「本文未測試作者示範的裝置適配」「未宣稱已替讀者完成產品實測」「本站未完成相同成品」）。
+> 🔴 **來源集中**：7 篇全部出自 **aiposthub／Philo**（2026-10-10～10-24；第 7 篇 Gemini 4 Argon 教堂為官方示範影片的二手轉述），文末互為延伸閱讀（CD 盒 → 3JSBench；Blender MCP → 3JSBench；桌面賽車 → Blender MCP；ManimGX → Blender MCP）。「先結構後外觀、多角度看、保留可編輯來源、一次改一項」是**同一作者把同一套驗收框架套到不同工具**，不能算多個獨立佐證。7 篇**全部沒有實測**（作者在各篇自承：書桌場景是假設案例、「本文未測試作者示範的裝置適配」「未宣稱已替讀者完成產品實測」「本站未完成相同成品」；教堂篇：本站無實測，原文自述非獨立品質測試）。
 >
 > 🔴 **3JSBench 是單一社群來源**（僅 General Context Labs 的 X 討論串，查詢日 2026-10-10；**沒有 repo、論文或官網**），**沒有排名、模型名單或分數**，作者也刻意不推冠軍。
 >
@@ -74,6 +75,7 @@ asset_value: 21
 
 - **桌面賽車**（Genevieve，**Gemini 4 Argon，不是 Claude**＋Blender MCP＋Three.js；aiposthub 未實測，原作者未公開成本、修改輪數、成功率）：照片缺背面、厚度與尺寸，**模型補的是推測**，先決定做創作原型還是精確重建；可玩原型另外要驗**碰撞形狀（≠ 外觀）**、操控方向與鏡頭一致、「完成一圈」的判定（防倒車刷圈）、手機能同時按加速與轉向
 - **Voyager**（創作代理；aiposthub 依官方案例 voyager.so/blog/3d-model-to-product-commercial 整理，作者自承本站未完成相同成品；產品細節與價格交代很少）：🔑 **手上有可信的產品模型時要保留幾何，不要讓文字生影片重新猜一次產品**；第一輪只檢查模型、不做動畫
+- **Gemini 4 Argon 教堂**（官方示範影片，aiposthub 2026-10-24 二手轉述；Argon 在 Antigravity 內自主迴圈操作 Blender MCP，由 Nano Banana 圖片起手；本站無實測）：🔑 **成品影片只證明選定視角**，不能證明網格品質、可修改性或成本；另要驗物件分層、相機參數（複雜相機配置）、音軌來源與控制參數（音訊反應燈光）、改色換字後能否重新輸出；官方未公開人工介入、嘗試次數、成本與音訊演算法（「未公開」，不推論）；Blender MCP 為第三方社群專案、可執行 Blender Python，有權限風險；素材授權另查。與桌面賽車互補：這是第一個「官方示範影片」案例，與其他六篇同作者同框架，不算獨立佐證
 
 ## C（連結與應用）
 
@@ -92,6 +94,7 @@ asset_value: 21
 - **aiposthub〈Gemini 桌面賽車示範…〉（Philo，2026-10-15）**：只取一行情境；大量「設計建議，不代表原作者採用」的內容未展開。延伸閱讀（含 Gemini Pixel CAD）未收。
 - **aiposthub〈Voyager 教學…〉（Philo，2026-10-10）**：只取「保留幾何」一行；15 秒三鏡頭流程、提示詞範例未展開。
 - **aiposthub〈ManimGX 動畫教學…〉（Philo，2026-10-13）**：工具事實補在 [[claude-codex-video-toolchain-selection]] 第 2 節附註；本條只列為同叢集來源。
+- **aiposthub〈Gemini 4 Argon 生成 3D 教堂…〉（Philo，2026-10-24，官方 X 貼文 10-22）**：只取 §5 一行（成品影片只證明選定視角＋四項工程檔驗收）；驗收表（影片可見 vs 工程檔須確認）、小場景試做與記錄成本建議與既有 §4 重疊未重列。訂閱呼籲與延伸閱讀未收。
 
 ## 相關連結
 
@@ -100,3 +103,4 @@ asset_value: 21
 - [[claude-code-pure-code-animation-practice]] — BitsMinds 測試：「評估動畫要看動起來對不對，只比截圖會看走眼」；看樣片迴圈
 - [[opus-5-5-video-case-libraries]] — 歸因驗收（這支片是誰、用什麼做的），和本條的結構驗收互補
 - [[claude-codex-video-toolchain-selection]] — ManimGX、MCP for Blender 的工具事實、授權與安裝前檢查
+- [[ideas/code-drawn-art-vs-generated-images-handoff]] — 同一作者把「可修改、可交接、保存來源」套到程式繪畫（2026-11-03 加，不算獨立佐證）

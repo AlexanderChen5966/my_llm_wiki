@@ -2,7 +2,7 @@
 title: Voicebox：整合聲音複製、全域聽寫與 MCP Agent 語音輸出的本機開源工具
 date: 2026-07-20
 tags: [ai/mcp, ai/workflow]
-source: https://tools.wingzero.tw/article/sn/3989
+source: https://tools.wingzero.tw/article/sn/3989; https://www.aiposthub.com/fluidvoice-fluid1-local-dictation-transcription-cleanup/
 type: reference
 status: processed
 asset_value: 57
@@ -54,6 +54,16 @@ DeTools 介紹：Voicebox 本機開源 AI 語音工具，整合 7 套 TTS 引擎
 
 適合的情境：需要**大量產生同一個角色聲音**（先錄幾秒，之後用文字批次生成旁白）；
 若在做 AI 影片自動化，可把腳本生成結果直接交給它，再送進字幕／對嘴／剪輯流程。
+
+## 附註：同類工具 FluidVoice（2026-10-15 狀態；2026-11-03 併入）
+
+來源：https://www.aiposthub.com/fluidvoice-fluid1-local-dictation-transcription-cleanup/（aiposthub，Philo；方法建議文，**非實測**，文中明講未量測任何電腦成績）。與上方「全域聽寫」同屬本機語音輸入一類，可對照：Voicebox＝Whisper 辨識＋本機 LLM 修整；FluidVoice＝Fluid Speech Mini 辨識＋Fluid-1 後處理。
+
+- **Fluid-1 是文字後處理，不是聽寫模型**：官方 token/s（M5 Max 2,000+ 為廠商宣稱、僅後處理測試）不等於辨識正確率或聽寫速度；評估看「錄完到可用文字」的總時間與人工修改量
+- 平台（2026-10-15）：Mac 可下載，需 macOS 15.0+；Windows、iPhone（TestFlight）仍在測試階段，模型與功能不可推定相同
+- 費用與隱私：工具官方標示免費＋開源，預設本機處理；但可選雲端供應商，**選用後內容外送、費用另計**，不能沿用「全程不離開裝置」
+- 中文須自測；風險：後處理可能把句子修順卻改掉否定／條件（「先不要刪除」vs「刪除」），驗收看名稱、日期、否定語氣
+- 同樣的驗收邏輯可套用到 Voicebox 的本機 LLM 修整步驟（推論，來源未測 Voicebox）
 
 ## 相關連結
 

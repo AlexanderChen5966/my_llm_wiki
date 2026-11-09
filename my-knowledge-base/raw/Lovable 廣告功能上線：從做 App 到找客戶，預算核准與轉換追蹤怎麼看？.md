@@ -8,7 +8,7 @@ created: 2026-10-16
 description: "Lovable 廣告連接 Google、YouTube、Facebook 與 Instagram。看懂成長方案、轉換追蹤、人員核准，以及廣告費與生成點數的分工。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Lovable 廣告功能把做完應用後的下一個問題接進對話：如何找到第一批願意註冊、預約或購買的人。
 

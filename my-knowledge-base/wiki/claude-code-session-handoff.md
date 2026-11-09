@@ -129,3 +129,5 @@ asset_value: 60
 - [[grad-thesis-claude-code-toolbox-series]] — ⚠️ 術語注意：該系列的「交班單」指 CLAUDE.md（長期規矩），不是本條目的交接檔
 - [[claude-code-billing-usage]] — 撞到五小時上限時的「優雅收尾」不保證跑測試或提交，接近上限前先要求交接摘要
 - 📎 2026-10-30：[[claude-code-artifacts-publish-update-share-guide]] — 同系列 G9：交接檔給下個對話的 Claude；artifact 網址給「人」看，換對話要改同一頁須貼網址或用 `/artifacts` 附加
+- 📎 2026-11-03：[[codex-2026-10-feature-updates]] — ⚠️ 對照：Codex 桌面版「編輯舊訊息」官方只確認文字可改，**沒有承諾還原檔案**，不能當成 `/rewind`
+- 📎 2026-11-05：[[harness-engineering-long-running-agents-handoff]] — 長任務整條流程版：交接表五欄（成果／證據位置／實際狀態／下一步／待決事項）、製作與驗收分開、中斷接續試跑（二手整理）

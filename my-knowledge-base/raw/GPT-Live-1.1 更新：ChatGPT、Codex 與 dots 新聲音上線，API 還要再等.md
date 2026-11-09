@@ -8,7 +8,7 @@ created: 2026-10-16
 description: "GPT-Live-1.1 於 2026 年 10 月 15 日開始推出，更新 ChatGPT、Codex 與 dots 的語音體驗。本文整理新增語言音色、Quip 分工、雙向對話、語音切換位置與 API 尚未開放的差別。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 GPT-Live-1.1 這次更新的重點，是讓語音對話的聲音與節奏更自然。對習慣邊說邊補充、需要打斷助理的人，輪流說話的感覺往往和答案內容一樣重要。
 

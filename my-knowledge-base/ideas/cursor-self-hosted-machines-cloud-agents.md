@@ -12,4 +12,5 @@ Cursor 於 2026-09-02 推出 Self-Hosted Machines，讓 Cloud Agents 的「工�
 
 ## 相關連結
 - [[agent-permission-and-os-sandbox]] — Agent 執行環境的權限與沙箱隔離，與 Self-Hosted Worker 的資料邊界問題相關
+- [[agent-operated-tools-permission-and-acceptance-snapshot-2026-10]] — 📎 2026-11-05 新增：Cursor Computer Use（自架節點上操作桌面 App）的權限授予與驗收，與其他代理操作工具並列對照
 - [[agent-readiness-cloudflare-audit]] — 企業導入 Agent 前的稽核判準，可與本篇「資安逐項確認清單」交叉參考

@@ -8,7 +8,7 @@ created: 2026-09-24
 description: "Godot 遊戲開發教學：用 Claude Code 從零做出能玩的遊戲，引擎怎麼選、怎麼接上 Godot、提示詞怎麼下，附實際卡住的地方與解法。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 ## 前言
 

@@ -7,7 +7,7 @@ created: 2026-10-27
 description:
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 ## awesome-gamedev-agent-skills
 

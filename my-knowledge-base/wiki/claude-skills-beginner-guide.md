@@ -42,6 +42,7 @@ AI 熟練度五層級（L1-L5）：
 ### 建立 Skill 的步驟
 
 Anthropic 官方 `skill-creator` Skill 入口：`Customize → Skills → + → Browse → Anthropic & Partners`
+（📎 2026-11-04：據 AI 郵報整理，claude.ai 入口已改名為 Plugins（Skills 與 Connectors 併入同頁），11/9 起 Free/Pro/Max/Ultra/Team 預計全面開放、Enterprise 11/30 預設啟用；為預計日期、二手來源，11/9 後需複核）
 
 ### SKILL.md 四段結構
 

@@ -8,7 +8,7 @@ created: 2026-10-20
 description: "Devin iPhone Duo 開發展示在 macOS 雲端建置與驗證折疊 App，並提供操作影片。本文說明模擬器環境、狀態切換案例、交辦方式、影片證據與仍需實機驗證的範圍。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Devin iPhone Duo 測試展示，把折疊手機開發常遇到的問題具體拍了出來：App 在展開時看起來正常，折到一半、關起來，再打開，原本的操作還接得下去嗎？
 

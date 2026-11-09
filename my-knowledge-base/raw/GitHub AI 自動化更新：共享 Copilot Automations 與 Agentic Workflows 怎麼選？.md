@@ -8,7 +8,7 @@ created: 2026-10-29
 description: "GitHub AI 自動化新增共享 Copilot Automations，Agentic Workflows 也正式開放。比較擁有者、權限、執行環境和費用，了解何時用共享流程，何時接進 Actions。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 每天自動整理問題，和把一套測試流程交給團隊共同維護，看起來都叫自動化，實際需要的管理方式卻不同。GitHub AI 自動化這次更新，同時補上兩種路徑。
 

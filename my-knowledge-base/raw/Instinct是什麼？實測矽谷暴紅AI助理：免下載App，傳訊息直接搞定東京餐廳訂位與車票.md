@@ -8,7 +8,7 @@ created: 2026-10-05
 description: "估值100億美元的AI助理Instinct不用裝App，傳訊息就能訂位、刷卡。筆者實測2天訂好東京燒肉、壽司與箱根車票，也抓到它先估再查的毛病。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 《數位時代》近期試用AI助理 [Instinct](https://instinct.com/) 後，把一趟5天的東京、箱根行程整個丟給它。 **它不用下載App，用iMessage或WhatsApp傳訊息就能指揮** ，2天內實際訂了燒肉、壽司與箱根來回車票，顯示它確實有擔任AI助理的實戰力。
 

@@ -8,7 +8,7 @@ created: 2026-10-07
 description: "Genex 推出 MIT 授權桌面遊戲開發工具，可接 Claude Code、Codex 或本地模型，產出 Three.js 網頁遊戲。本文整理支援系統、模型與素材成本，以及實驗性自我修改功能的限制。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 想做一款小遊戲，除了生成程式，還要處理畫面、素材、執行錯誤與檔案管理。Genex 新推出的桌面版，把這些工作放進同一個介面，讓代理在本機專案中建立與修改遊戲。
 

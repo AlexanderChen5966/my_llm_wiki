@@ -8,7 +8,7 @@ created: 2026-10-08
 description: "Google 官方展示 Antigravity 使用 Stitch MCP 和 Android CLI 外掛，把設計轉為原生介面、驗證模擬器並送到實機。解析展示能說明的流程能力。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Google Antigravity 的新展示把 Android 開發流程接了起來。AI 從設計取得資訊，建立原生介面，在模擬器驗證，再把最後版本跑到真實手機上，讓「生成程式」與「能在裝置使用」有了更清楚的連線。
 

@@ -8,7 +8,7 @@ created: 2026-10-30
 description: "Tak 分享用 Fable 製作藝術史短片，以同一場景與貓的副線連接不同風格。本文整理成片觀察，附本站不同題材的分鏡練習，未宣稱取得原作者完整 prompt。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 同一個場景連續換畫風，觀眾仍能追蹤故事，是因為有熟悉的主體留在畫面裡。Tak 的藝術史短片，以人物和貓讓快速的風格變化有了觀看線索。
 

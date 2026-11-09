@@ -8,7 +8,7 @@ created: 2026-09-29
 description: "Kling 4.0 預定 2026 年 10 月推出，單次最長 30 秒、支援 10 關鍵幀與 4K。本文整理 Flash、Omni Reference、2 分鐘延長與同業差異。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Kling 4.0 是快手旗下 Kling AI 即將推出的新一代 AI 影片模型。官方預定在 2026 年 10 月正式上線，Kling 4.0 Flash 已於 9 月 28 日先向部分使用者開放。
 

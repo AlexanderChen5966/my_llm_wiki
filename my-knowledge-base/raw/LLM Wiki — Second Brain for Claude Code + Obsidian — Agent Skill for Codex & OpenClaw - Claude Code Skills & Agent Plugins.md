@@ -8,7 +8,7 @@ created: 2026-11-03
 description: "Use when building or maintaining an Obsidian second brain that an LLM keeps up to date, or when ingesting a paper, article or book into it. Ingests. Agent skill for Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 ## LLM Wiki — Second Brain for Claude Code + Obsidian
 

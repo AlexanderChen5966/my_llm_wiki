@@ -127,4 +127,5 @@ claude plugin install figma@claude-plugins-official
 ## 相關連結
 
 - [[figma-ai-make-mcp-design-agent]] — Figma AI 生態總覽（已簡述 Claude Code 串接 Figma MCP 兩種方式）；本篇是深入實作版，補足規則檔全文、元件庫命名策略、seat/額度細節與 self-healing loop 五步
+- [[agent-operated-tools-permission-and-acceptance-snapshot-2026-10]] — 📎 2026-11-05 新增：同一護欄（只在副本／分支／草稿試）套到 FigCraft、Framer 等其他設計與網站工具，含發布與分享的資料路徑風險
 - [[grok-bot-figma-screenshot-voice-workflow]] — 同批「Grok Bot 工作流」是可跨工具遷移的下指令方法論（截圖定範圍+語音改稿），本篇是特定工具（Claude Code + Figma MCP）的規則檔/元件庫設定實作教學，層次不同，不重複

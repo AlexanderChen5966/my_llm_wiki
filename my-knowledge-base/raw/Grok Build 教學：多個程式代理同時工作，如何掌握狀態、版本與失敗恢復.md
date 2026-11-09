@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "Grok Build 多段程式工作怎麼管理？從確認版本、寫完成標準，到會話、分支與 worktree 的差異，教你建立狀態表、驗收修改、恢復失敗工作並保留交接證據。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Grok Build 把程式代理放進終端機，讓它能讀取專案、修改檔案與執行檢查。多段工作一起進行時，最大的難題往往是掌握狀態。
 

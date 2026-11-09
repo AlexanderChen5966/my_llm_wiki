@@ -8,7 +8,7 @@ created: 2026-10-29
 description: "Huashu Design 3.0 透過六個候選、參考板與外觀帳本，改善 AI 設計反覆使用同一種樣式的問題。本文整理10月23日公開介紹與版本時序，說明簡報、原型及動畫的交付檢查，以及安裝依賴和素材權利。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 你請 AI 做一份簡報，隔天再做活動網頁，兩份成品卻用了相似的奶油底色、大標題和裝飾。
 

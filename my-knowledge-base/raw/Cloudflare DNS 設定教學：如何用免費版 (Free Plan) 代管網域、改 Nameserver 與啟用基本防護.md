@@ -8,7 +8,7 @@ created: 2026-10-06
 description: "Cloudflare 免費方案（Free Plan）中，提供了 DNS 代管（Cloudflare DNS） 等基礎功能，讓大家可以把網域的解析交由 Cloudflare 管理，同時也能視需求啟用 Proxy/CDN 與 SSL/TLS 等基本防護設定。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 DNS 設定是許多網站管理者在「網站要上線、要搬家、要接第三方服務」時最常卡關的一步。原因很簡單：DNS 就像網域的「總機」，它決定使用者輸入網址時要被導向哪台主機、信件要交給哪個郵件伺服器、以及 CDN/防護服務要如何介入。只要 DNS 或 Nameserver 設錯，輕則解析延遲、設定看似完成卻不生效，重則網站打不開、SSL 憑證異常、信件收發中斷等問題，影響往往立刻發生，卻又不容易第一時間定位原因。
 

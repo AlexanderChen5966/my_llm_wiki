@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "Tim Sweeney 在 X 談 Epic AI 開發轉向。本文分清管理方向與尚未公布的產品，從 Unreal 團隊角度整理小任務試行、品質驗收與開發時間的比較方法。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Epic AI 開發轉向訊息在 X 引發大量討論。Tim Sweeney 表示，團隊正在重新調整開發流程，目標是運用 AI 製作更多、更好的內容。
 

@@ -8,7 +8,7 @@ created: 2026-09-24
 description: "Jakub Krehel Skills 是專為 AI Coding Agent 打造的 UI/UX 設計 Skills，涵蓋 UI、Typography、Colors、Accessibility、Layout 與產品文案。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 網站連結 [https://github.com/jakubkrehel/skills](https://github.com/jakubkrehel/skills)
 

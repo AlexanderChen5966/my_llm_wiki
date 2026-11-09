@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "GaussiAnimate 把動態 4D 捕捉轉成可控制角色。本文說明骨架、衣物變形與動作匹配的關係，以及創作者怎樣檢查可編輯性與輸入限制。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 GaussiAnimate 的動態角色展示最近在 X 引起討論。人物換了動作，寬鬆衣物仍保留捕捉時的細節，讓人想到影視、遊戲與虛擬角色製作。
 

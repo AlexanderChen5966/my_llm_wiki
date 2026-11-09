@@ -8,7 +8,7 @@ created: 2026-10-08
 description: "Cookie、Session 與 Token 常一起出現在登入流程中，卻不是同一種東西。本文用實際請求流程說明三者的差異，以及網站如何安全地記住登入狀態。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 登入網站後切換頁面，不必每次都重新輸入帳號密碼；隔天再回到某些網站，甚至仍然保持登入。這些服務如何記得「剛才登入的人是誰」？
 

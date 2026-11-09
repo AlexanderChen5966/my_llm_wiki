@@ -8,7 +8,7 @@ created: 2026-10-27
 description: "Game Art Style 將真實遊戲畫面整理成可搜尋的視覺圖鑑，依像素、筆觸、材質與 3D 表現等方向探索風格，適合遊戲美術、概念設計與獨立開發者找靈感、比較視覺案例。網站提供原始來源與權利說明；圖像可供參考，不代表可直接下載、重製或商用。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 網站連結 [https://gameartstyle.loopyhop.com/](https://gameartstyle.loopyhop.com/)
 

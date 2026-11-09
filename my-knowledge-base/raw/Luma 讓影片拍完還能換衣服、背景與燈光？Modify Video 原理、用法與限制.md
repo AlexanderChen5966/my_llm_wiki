@@ -8,7 +8,7 @@ created: 2026-09-29
 description: "Luma 官方展示拍攝後更換服裝、背景與燈光，不用重回片場。拆解 Modify Video、時間一致性、身分保留與重拍邊界。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 影片拍完後，客戶才發現外套顏色不對、背景不符新版活動，或主光的氣氛太冷。傳統做法可能是重回片場，或讓 VFX 團隊逐鏡處理抠像、tracking、rotoscoping、光影和合成。
 

@@ -127,3 +127,4 @@ claude --setting-sources project --strict-mcp-config
 - [[taste-skill-anti-slop-frontend]] — 同樣是「去 AI 感」，不同媒材（前端介面）
 - [[claude-code-commands-reference]] — Claude Code 指令與旗標速查
 - [[claude-code-agents-md-loading-rules]] — 同類隔離做法（`--strict-mcp-config --mcp-config <空設定>`）
+- [[drawio-skill-editable-architecture-diagrams]] — 對照：另一個 draw.io skill 的無實測工具導覽（可編輯、來源追蹤、增量更新為宣稱）；本條為實測實證結論

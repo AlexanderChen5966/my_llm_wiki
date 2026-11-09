@@ -8,7 +8,7 @@ created: 2026-10-14
 description: "Eleven 逆向工程工具是 macOS 應用程式，讓 ACP 代理協助閱讀程式、追查參照與提出修改。整理檔案支援、人工核准、版本差異及雲端模型資料流向，瞭解適合的使用情境。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 沒有原始碼的程式出了問題，開發者仍可能需要知道某個功能實際怎麼運作。
 

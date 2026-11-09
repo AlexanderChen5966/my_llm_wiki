@@ -2,7 +2,7 @@
 title: awesome-gamedev-agent-skills：以「路由技能」按需載入的跨引擎遊戲開發技能庫
 date: 2026-10-30
 tags: [ai/agent, ai/workflow]
-source: https://tools.wingzero.tw/articles/4122
+source: https://tools.wingzero.tw/articles/4122; https://github.com/gamedev-skills/awesome-gamedev-agent-skills; https://www.aiposthub.com/genex-ai-game-builder-desktop/
 type: reference
 status: processed
 asset_value: 27
@@ -31,7 +31,7 @@ asset_value: 27
 1. **理解結構**（依 README 描述）：76 個技能涵蓋
    - 引擎：Godot、Unity、Unreal、Ebitengine、Phaser、PixiJS、three.js、Bevy、pygame、LÖVE、Defold、Roblox
    - 跨引擎概念：角色移動、輸入、物理、動畫、Shader、存檔、對話、關卡設計、效能調校
-   - 遊戲類型：Roguelike、RPG、平台跳躍、塔防
+   - 遊戲類型：Roguelike、RPG、平台跳躍、塔防（📌 依一手 README 更正：實為 9 種，另有 fps-shooter、card-game、visual-novel、survival-crafting、puzzle，見文末補充）
    - 工作流程：Game Jam、快速原型、itch.io／Steam 發布
 2. **路由運作範例**：Godot 角色加二段跳 → 載入角色移動＋平台遊戲指引；Unity RPG 背包 → 載入 ScriptableObject、RPG、存檔；切換新任務時路由重新挑選
 3. **安裝**：專案提供 skills CLI 快速安裝，可先列出內容、指定單一代理、或只裝路由器與特定引擎技能；README 標示需 Node.js 22.20 以上（先查專案的安裝與相容性文件）
@@ -47,6 +47,30 @@ asset_value: 27
 ## 原始摘要
 
 介紹 `gamedev-skills/awesome-gamedev-agent-skills`：跨引擎的遊戲開發技能庫，以通用 SKILL.md 格式、路由技能依引擎與任務按需載入。README 列 76 個技能（截至 2026-10-25），採 Apache-2.0。作者強調它不是新引擎、也不能自行產生完整遊戲。
+
+## 補充資料：GitHub 一手 README（2026-10-27 快照；2026-11-03 併入）
+
+來源：https://github.com/gamedev-skills/awesome-gamedev-agent-skills（README 本文，作者未見實測；README 內 Demo 自標「illustrative」，**路由準確度與技能品質仍未驗證**，上方「未驗證」註記維持）。以下數字與版本皆為 2026-10-27 快照，以倉庫與 `docs/VERSION-SUPPORT.md` 為準。
+
+- **「74」與「76」不矛盾**：README 標題與 GitHub 描述欄寫「74 game-dev skills」是過期字串；README 本文（banner、導言、快速安裝、Catalog、Repository layout）全寫 **76**，與本條一致。唯一的 74 在 Demo 範例輸出「skipping the other 74 skills」（76 減去載入的 2 個，內部自洽）
+- **分類數（合計 76）**：引擎 48（Godot 16／Unity 8／Unreal 6／Ebitengine 1／Web 6／Other 11）＋跨引擎概念（Disciplines）15＋遊戲類型（Genres）9＋工作流程（Workflows）4
+- **遊戲類型為 9 種**（更正上方 R 步驟的 4 種）：platformer、roguelike、rpg、fps-shooter、tower-defense、card-game、visual-novel、survival-crafting、puzzle；工作流程 4 種：game-jam、prototype-fast、steam-publish、itch-publish
+- **逐引擎釘版**：Godot 4.7、Unity 6.3 LTS（6000.3）、Unreal 5.8、Ebitengine v2.10.5（Go 1.25+）、Phaser 4.2、PixiJS 8.22、three.js r186、Bevy 0.20、pygame-ce 2.5.8、LÖVE 11.5、Defold 1.14.0；Roblox 未列版本。每個技能依官方文件撰寫、釘到指定引擎版本，並以 `scripts/validate-skills.py` 驗證器檢查；基準與升級政策在 `docs/VERSION-SUPPORT.md`
+- **兩種安裝法**：①`npx skills add gamedev-skills/awesome-gamedev-agent-skills`（Node.js 22.20+；`--list` 預覽、`-g` 全域、`-a <agent>` 指定）；②Claude Code plugin marketplace（`claude plugin marketplace add …`＋`claude plugin install gamedev@…`），可分包只裝 `router` 加 `godot`／`unity`／`unreal`／`ebitengine`／`web-engines`／`other-engines` 其中之一
+- **各代理 skills 目錄對照**：Claude Code `.claude/skills/`；Codex／Gemini CLI／GitHub Copilot／Antigravity 共用 `.agents/skills/`；Cursor `.cursor/skills/`（也讀 `.agents/skills/`）；Windsurf `.devin/skills/`（也讀 `.windsurf/skills/`）；Cline `.cline/skills/`；Kiro `.kiro/skills/`；Oh My Pi `.omp/skills/`（也讀 `.agents/skills/`）。細節見倉庫 `docs/COMPATIBILITY.md`
+- **路由規則**：引擎選擇互斥（只選一個，由 `project.godot`、`*.uproject` 等指紋判斷，判不出就詢問），概念／類型／流程技能為疊加；完整演算法在 `router/SKILL.md`
+- **`create-game-assets` 定位**：README 寫為 art direction＋production pipeline（鎖定視覺目標→建素材家族→確定性正規化→在遊戲內檢查），與上方「只提供工作流程指引」一致
+- **維護者與授權**：Abhishek Barali；Apache-2.0＋NOTICE（含商標說明）；另有網頁版目錄 gamedev-skills.github.io/awesome-gamedev-agent-skills
+
+### 相關工具：Genex 桌面版（2026-10-06）
+
+來源：https://www.aiposthub.com/genex-ai-game-builder-desktop/（aiposthub，Philo；轉述 Genex 官方頁面，**作者未實測**，結語為建議）
+
+- 定位：MIT 授權的**桌面前端**，把畫面、素材、錯誤與檔案管理收進同一介面，接 Claude Code／Codex 或 Ollama／Bonsai 本地模型，在本機專案產出 **Three.js 網頁遊戲**，可匯出靜態內容
+- 與本條**互補、層級不同**：本庫是「給代理的引擎知識」，Genex 是「承載代理的介面」，可疊用；與 [[ideas/claude-code-game-studios-note]]（多 Agent 流程分工）也不同層
+- 平台：macOS 與 Linux 已提供，**Windows 標示「後續推出」**；Unity／Unreal／原生應用只列為後續方向，不是現在可輸出（皆 2026-10-06 當時狀態）
+- 成本：**MIT 不等於全免費**——用 Claude Code／Codex 仍消耗原訂閱額度，本地模型自負硬體，額外素材生成可能走 Genex 外掛的付費服務；代理自我調整框架為實驗功能、預設需主動開啟，不保證每次修改安全
+- 分享前須檢查素材權利、載入資源與瀏覽器相容性
 
 ## 相關連結
 

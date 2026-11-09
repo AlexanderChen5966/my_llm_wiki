@@ -58,6 +58,7 @@ Skills 生態到 2026 已不是「東西多 = 強」，而是「選得準 = 強�
 - [[superpowers-framework]] — obra/superpowers 深度解析
 - [[claude-code-commands-2026]] — 2026 命令演進與 Skills 統一架構
 - [[agent-skills-vs-mcp]] — Skills vs MCP 選擇判斷
+- [[llm-wiki-second-brain-claude-code-obsidian]] — alirezarezvani/claude-skills 內 llm-wiki skill 的具體案例（Obsidian 第二大腦維護器）
 
 ## 補充資料（來源：Claude Code Skills GitHub 收藏深度研究報告）
 

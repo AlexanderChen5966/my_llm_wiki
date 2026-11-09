@@ -21,7 +21,7 @@ asset_value: 72
 **適用：** 開發要跨多個 agent 平台發布的 Skill/MCP 組合；評估第三方外掛的信任風險；理解 agent 生態的標準化進程
 
 **不適用 / 注意：**
-- ⚠️ **Anthropic 不在發布名單中**（發布即支援的客戶端為 ChatGPT／Codex、Cursor、GitHub Copilot、Kiro、VS Code，AWS 與 Google 各自在旗下產品導入）——Claude Code 的 plugin 生態目前仍是自有格式，見 [[claude-code-plugins-guide]]
+- ⚠️ **Anthropic 不在發布名單中**（發布即支援的客戶端為 ChatGPT／Codex、Cursor、GitHub Copilot、Kiro、VS Code，AWS 與 Google 各自在旗下產品導入）——Claude Code 的 plugin 生態目前仍是自有格式，見 [[claude-code-plugins-guide]]　📎 2026-11-05 可能已過時（見文末「補充資料」：Anthropic 已把 Agent Skills 治理移轉給 AAIF，但那是 Skills 而非 Plugins 1.0，兩者關係未經查證）
 - 標準才 1.0，市集經營、信任機制、安全把關全未定案
 
 ## R（規格範圍與留白）
@@ -61,7 +61,7 @@ asset_value: 72
 - [ ] 要跨平台發布 Skill/MCP 組合時，改以 `plugin.json` 為根的 Agent Plugins 格式打包
 - [ ] 🔴 **不要因為「符合標準」就信任外掛**——1.0 不含信任機制，且已有偽造 Skills 通過資安掃描的前例
 - [ ] 安裝第三方外掛前仍走人工唯讀審查（見 [[github-skill-security-audit]]）
-- [ ] 注意 Anthropic 不在此標準的發布陣營，Claude Code 外掛仍走自有格式——跨兩邊發布目前需各做一份
+- [ ] 注意 Anthropic 不在此標準的發布陣營，Claude Code 外掛仍走自有格式——跨兩邊發布目前需各做一份　📎 2026-11-05 可能已過時
 - [ ] 觀察後續：市集治理與簽章機制由誰主導，是這個標準真正的成敗點
 
 ## 相關連結
@@ -74,3 +74,15 @@ asset_value: 72
 - [[ai-skills-mcp-plugins-agents-comparison]] — Skills/MCP/Plugins/Agents 四者定位比較
 - [[claude-code-plugins-guide]] — 補充資料：Claude 外掛提交入口的 Plugin Bundle（MCP 伺服器＋Agent Skills）與本篇定義一致
 - [[custom-gpt-gems-to-skills-migration]] — 自訂 GPT／Gems 遷移到 Skills 的跨廠商對照（2026-10-08 快照）
+
+## 補充資料
+
+### 2026-10-22：Anthropic 把 Agent Skills 的名稱與基礎設施捐給 AAIF
+
+來源：aiposthub〈AAIF 納入代理開放專案〉（2026-10-23；依 Anthropic 公告與 AAIF 部落格，二手整理、**原文未驗證**）。
+
+- Anthropic 於 2026-10-22 宣布把 Agent Skills 的**名稱、標誌、GitHub 組織與網域**捐給 Linux Foundation 旗下 AAIF。這是**治理移轉，不是新功能**（2025-10 初始技能、2025-12 開放標準）
+- 官方提到的版本化發布、提案流程、安全指引仍屬**未來規畫**
+- 四個專案分屬不同層次：Skills＝任務知識、Open Responses＝模型介面統一、OpenEnv＝訓練／評估環境、OpenSandbox＝執行沙箱生命週期；其中 OpenSandbox 不等於 AAIF 的 Sandbox 成熟階段。「一次只換一層」的接法為作者自述情境，非官方整合案例
+- 本篇主題 Agent Plugins 1.0（封裝格式）與此處 Skills 治理是不同事件，Anthropic 與 Plugins 1.0 的關係本批無新資訊
+- 並陳：Skills 標準化推廣的方向，與 [[agent-skill-evaluation-tools-comparison]] 補充段所引 Vercel「AGENTS.md 勝過 skills」評測立場有張力，皆為特定環境結果，不裁決

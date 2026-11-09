@@ -98,6 +98,8 @@ Claude Code 有兩個**分開的**旋鈕，大部分新手裝好之後就再也�
 
 ## 相關連結
 
+- [[boris-cherny-prompt-to-verification]] — 2026-11-04 補充段並陳 `/effort` 建議值（medium 起試 vs Opus 5 起點 high），不裁決
+
 - [[claude-model-selection-guide]] — 模型選型的既有整理；本篇補上 `opusplan` 的選單陷阱與 API 價目量級
 - [[claude-opus-5-prompting-guide]] — effort 五階（low→max）與 `xhigh`／`max` 停用 thinking 的官方行為
 - [[claude-fable-5-usage-guide]] / [[claude-fable-5-power-tasks]] / [[fable-5-delegation-cost-benchmark]] — Fable 的適用場景與方案可用性

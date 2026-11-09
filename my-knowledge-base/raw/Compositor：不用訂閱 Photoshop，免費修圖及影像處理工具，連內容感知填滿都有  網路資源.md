@@ -8,7 +8,7 @@ created: 2026-09-22
 description: "Compositor 是免費開源的 macOS Photoshop 替代方案，提供 Layers、Masks、Curves、Content-Aware Fill、Spot Healing、Clone Stamp 與 Remove Background 等功能。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 網站連結 [https://github.com/robbietilton/Compositor](https://github.com/robbietilton/Compositor)
 

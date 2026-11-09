@@ -8,7 +8,7 @@ created: 2026-10-08
 description: "Cursor 宣布可從 iOS App 控制電腦上的代理，檢視進度、回覆和開始新任務。解析手機控制與執行位置的差別，以及適合哪些開發情境。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Cursor 新增了從手機控制電腦代理的方式，讓開發者離開桌面後，仍能檢視工作、回覆問題或啟動新任務。手機成為控制入口，原本在電腦上的工作可以繼續被管理。
 

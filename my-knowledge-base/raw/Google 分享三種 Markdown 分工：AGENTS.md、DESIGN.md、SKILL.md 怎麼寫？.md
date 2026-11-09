@@ -8,7 +8,7 @@ created: 2026-10-30
 description: "Google Cloud 分享團隊使用 Markdown 指導程式代理的分工方式。專案共通規則、介面設計與特定任務步驟各自保存，能減少同一段對話背負過多不相干要求的情況。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Google Cloud 分享團隊使用 Markdown 指導程式代理的分工方式。
 

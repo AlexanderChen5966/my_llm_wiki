@@ -259,3 +259,4 @@ asset_value: 80
 - [[claude-motion-beta-2026-10]] — 產品路線（Claude Motion）vs 本條的自寫程式路線
 - [[claude-opus-5-5-release-notes]] — Opus 5.5 發布資訊與「驗收合格任務成本」
 - 📎 2026-10-19：[[opus-5-5-video-case-libraries]] — 兩份 Opus 5.5 影片案例庫（yihui-dev 提示詞收藏 vs athemeroy 研究快照）、七條製作路徑與歸因驗收；[[ideas/ai-3d-code-structure-vs-appearance-acceptance]] — 3D 作品結構與外觀分開驗收（3JSBench，單一社群來源）
+- 📎 2026-11-05：[[motion-engineering-claude-five-department-video]] — 五階段責任分工與修改紀錄，可與本條工作法搭配做專案管理

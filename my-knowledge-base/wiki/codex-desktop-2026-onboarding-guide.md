@@ -47,3 +47,4 @@ asset_value: 60
 - [[codex-plugins-12-guide]] — Codex 必裝 12 個外掛完整清單，補充本篇「技能/外掛程式」章節的具體選項
 - [[codex-onboarding-seven-layer-config]] — Codex 七層設定地圖心智模型（哪個設定該寫在對話/AGENTS.md/config.toml/Skills/Plugins/MCP/Memory 哪一層），與本篇桌面 UI 操作動線互補
 - [[ai-coding-environment-setup-github-vscode-claude-code-codex]] — Codex 之前的 Git／GitHub 環境前置
+- [[codex-2026-10-feature-updates]] — 📎 2026-11-03 新增：桌面版 2026-10 新功能（Composer Predictions、快取有效用量、編輯舊訊息）與各自的使用判準

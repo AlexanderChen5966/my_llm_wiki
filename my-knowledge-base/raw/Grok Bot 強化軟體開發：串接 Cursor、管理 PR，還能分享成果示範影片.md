@@ -8,7 +8,7 @@ created: 2026-10-02
 description: "Grok Bot 強化軟體開發，可交接 Cursor 任務、透過 GitHub 與 Origin 管理 PR，並分享示範影片。解析官方案例、工程範本與驗收限制。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Grok Bot 正進一步把軟體開發的不同環節接在一起。官方於台灣時間 2026 年 10 月 1 日凌晨公布更新，表示 Bots 可以將程式任務交給 Cursor，透過 GitHub 與 Origin 外掛管理 PR，也能分享做出來的成果示範影片。PR 是 Pull Request 的縮寫，可理解為「把程式修改交給團隊檢查、申請合併」的提案。 [Grok Bot 官方公告](https://x.com/bot/status/2105373767568621895?ref=aiposthub.com) 列出的三項能力，涵蓋任務交辦、修改管理與成果展示。
 

@@ -2,7 +2,7 @@
 title: 自訂 GPT 與 Gemini Gems 退場：跨廠商遷移到 Skills 對照（2026-10）
 date: 2026-10-08
 tags: [ai/agent, ai/workflow, type/comparison]
-source: https://www.bnext.com.tw/article/92451/custom-gpt-migrate-plugin-skill; https://www.bnext.com.tw/article/91895/gemini-gems-spark-skills; https://www.aiposthub.com/google-gemini-skills-gems-transition/（引 Google 官方 support.google.com/gemini/answer/18560919、17094296、17102773，Workspace Studio 說明 18336943）
+source: https://www.bnext.com.tw/article/92451/custom-gpt-migrate-plugin-skill; https://www.bnext.com.tw/article/91895/gemini-gems-spark-skills; https://www.aiposthub.com/google-gemini-skills-gems-transition/（引 Google 官方 support.google.com/gemini/answer/18560919、17094296、17102773，Workspace Studio 說明 18336943）; https://www.bnext.com.tw/article/92466/gemini-skills-how-to-write-free
 type: article
 status: processed
 asset_value: 64
@@ -37,7 +37,7 @@ OpenAI 與 Google 在同一時期把「綁在單一助理角色」的客製化�
 | 退役／轉換 | 既有 GPT **2026-12-11** 退役；符合延期資格且申請獲准的 Enterprise 工作區可延到 **2027-02-11** 🟡 | 個人帳號 **2026-11** 起；Workspace 商務／企業／非營利 **2027-03**；教育帳號 **2027-06**；現有 Gems 與支援的知識檔**由系統自動轉成 Skills，不是單純停用** 🟢 |
 | 遷移方式 | **建立者手動**：「我的 GPT → 遷移到外掛程式」，依建立者陸續開放 🟡（作者帳號已看到按鈕＝部分實測） | **系統自動轉換**；也可提前手動「設定 → Skills → 手動建立」 🟢🔵 |
 | 目標格式 | **Plugin**（容器）：指令 → Skill、知識檔 → 參考檔、已連接 Apps 併入 Plugin 🟡 | **Skill**：`SKILL.md`＋同資料夾參考檔；資料夾名＝Skill 名；名稱自動轉成全小寫加連字號（如 `article-editor`） 🔵 |
-| 會遺失或須重建 | **不會搬**：原選定的模型、過往對話紀錄、**Custom Actions**（串接公司 API 或自訂服務須另外重建）；遷移後舊 GPT 在退役前仍可用，但**唯讀不可編輯** 🟡 | **暫不支援**：Canvas、Deep Research、影片與音樂生成、引導式學習；分享 Skill、加入 Drive 檔、Gemini Notebook 列為「接下來幾週」（截至 10-01）；Workspace Studio「Ask a Gem」步驟到 2027-03 停止，須改用「Ask Gemini」（Workspace Studio Skills 預計 2026-10-05 起逐步開放） 🟢 |
+| 會遺失或須重建 | **不會搬**：原選定的模型、過往對話紀錄、**Custom Actions**（串接公司 API 或自訂服務須另外重建）；遷移後舊 GPT 在退役前仍可用，但**唯讀不可編輯** 🟡 | **暫不支援**：Canvas、Deep Research、影片與音樂生成、引導式學習；分享 Skill、加入 Drive 檔、Gemini Notebook 列為「接下來幾週」（截至 10-01；📅 2026-10-09 數位時代仍寫「後續逐步加入」，**尚未見上線**，GitHub 檔案也仍未支援）；Workspace Studio「Ask a Gem」步驟到 2027-03 停止，須改用「Ask Gemini」（Workspace Studio Skills 預計 2026-10-05 起逐步開放） 🟢 |
 | 呼叫方式 | 對話中直接叫出 Plugin 或 Skill，Skill 也可能被自動套用 🟡；ChatGPT Skills 慣例為 `@skill名稱` ⚪ | 輸入「/」手動選；或依名稱與描述自動套用已啟用的 Skill；可停用不想自動套用的 Skill；同一對話可組合多個 Skill 🟢 |
 | 費用與條件 | 原文未載明；ChatGPT Skills Beta 限工作與教育方案 ⚪（見 [[chatgpt-skills-usage-guide]]） | **聊天中使用 Skills 免費**，只有 Spark 任務與排程需 Google AI Pro／Ultra；條件：年滿 18、個人帳號、開啟 Gemini Apps 活動記錄（Keep Activity） 🟢 |
 | SKILL.md 相容性 | ChatGPT Skills 以 `SKILL.md` 為入口、採 Agent Skills 開放格式 ⚪；Plugin 容器與 Agent Plugins 1.0（`plugin.json`）的關係**原文沒寫** | 下載的 Skill zip 內含 `SKILL.md`，資料夾結構與 Claude、Codex 相容 🔵；「Gemini 已支援匯入其他平台的 SKILL.md」🟡（數位時代轉述、未附來源）；⚠️ **Skill 內腳本不能對外部網站發請求** 🟢 |
@@ -66,6 +66,18 @@ OpenAI 與 Google 在同一時期把「綁在單一助理角色」的客製化�
 - **數位時代〈自訂GPT怎麼遷移？GPT轉Skill、Plugin步驟與停用時間一次看〉**（韋惟珊，2026-10-01）：轉述 OpenAI 公告的自訂 GPT 退役時程與「遷移到外掛程式」流程，列出會搬與不會搬的內容，建議把萬用 GPT 拆成多個 Skill；文中 Gemini 時程與另兩篇一致。原文沒附 OpenAI 官方連結。
 - **數位時代〈Gems怎麼轉Skills？3招備份技巧打包AI提示詞〉**（蘇柔瑋整理，2026-10-01，文末自註初稿為 AI 編撰）：引 Google 官方 support 18560919 的分批時程，提供手動複製、Google Takeout、AI 打包三種備份法，並以截圖示範手動重建 Skill 與資料夾結構。
 - **aiposthub〈Google Gemini 推出 Skills：常用指令用「/」呼叫，Gems 將分階段退場〉**（Philo，2026-10-01）：Skills 於 2026-09-30 進入 Gemini 聊天；整理呼叫方式、載入機制、使用條件、功能落差清單、腳本限制與 Workspace Studio 遷移，每項附 Google 官方 support 頁。
+
+## 補充資料：Gemini Skills 數位時代整理（2026-10-09 來源；2026-11-03 併入）
+
+來源：https://www.bnext.com.tw/article/92466/gemini-skills-how-to-write-free（數位時代，蘇柔瑋整理・編輯；**文末自註「本文初稿為 AI 編撰」**；資料來源列 Google 官方部落格與說明中心，但文內未附連結，屬 🟡 媒體轉述。以下只列本條原先未載或僅簡述的項目，時程與前表無出入）
+
+- **同時最多啟用 100 個 Skill**：建立數量不限，達上限須先停用一個才能啟用新的
+- **呼叫方式預告改變**：現為輸入「/」，Google 預告之後改用「@」（尚未實施，前表仍以「/」為準）
+- **Workspace 時程**：Gemini App 的 Skills 自 **2026-10-13** 起向 Workspace 帳號陸續推出、預計 **11 月中旬**完成（與前表 Gems 退場日 個人 2026-11／商務企業非營利 2027-03／教育 2027-06 並陳，兩者是不同事項：前者是 Skills 開放、後者是 Gems 退場）；工作與學校帳號實際可用以帳號顯示為準
+- **官方 8 項撰寫技巧**（對應 [[skill-md-writing-techniques]]）：①名稱以動詞開頭、全小寫連字號、避免 helper／tools／data 等空泛字（如 `plan-meal-from-recipe`）；②描述寫「能做什麼＋Use when…」，上限 1,024 字元；③針對一類重複工作設計，不寫單次任務；④依精準度調整詳細度（創意任務留空間、財務／格式轉換／會議紀錄寫明確步驟）；⑤直接提供輸出範本；⑥列常見錯誤與禁止事項；⑦長流程用核取清單拆步驟；⑧規定資料缺漏時的處理（缺日期要詢問、不得自行推估）。範例 `summarize-meeting-decisions`
+- **上傳規格**：SKILL.md／含 SKILL.md 的資料夾／ZIP；所有檔案合計 ≤100 MB；支援 .txt／.md／.csv／.json 等純文字與 PDF／JPG／PNG；**二進位 Office 檔（.doc／.docx／.xlsx）不支援**；腳本不得對外請求（與前表一致）；**檔案上傳建立 Skill 目前僅限網頁版與 Mac App**；更新附檔須重傳完整 Skill
+- **其他**：GitHub 檔案尚未支援；無獨立的 Skill 對話紀錄頁（對話混在一般聊天側邊欄）；建立方式 4 種（請 Gemini 建立／Create with Gemini／改推薦範本／手動建立或上傳）
+- **相容性維持 🟡**：該文「可匯入其他平台 SKILL.md」與本條前表同為數位時代轉述，**不構成獨立佐證**，不升級；須符合 Gemini 名稱、結構與格式規範
 
 ## 相關連結
 

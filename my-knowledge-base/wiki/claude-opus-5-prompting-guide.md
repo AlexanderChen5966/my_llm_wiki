@@ -174,6 +174,8 @@ bnext（2026-07-29）整理 Anthropic 官方文件《Prompting Claude Opus 5》�
 
 ## 相關連結
 
+- [[boris-cherny-prompt-to-verification]] — 2026-11-04 補充段並陳不同來源的 `/effort` 建議值（Addy Osmani 二手整理：medium 起試，Claude Code／Opus 5.5 脈絡），與本條補充段的「起點 high」對照，不裁決
+
 - [[claude-fable-5-usage-guide]] — 🔴 **本頁上方調和的對造**：Fable 5 建議 fresh-context verifier 子代理；兩者差別在驗證對象（單步產出 vs 長流程漂移）
 
 - [[claude-md-optimization-techniques]] — **本篇是其「世代反轉清單」的官方依據**：移除重複驗證、子代理上限、語氣放弱全部對得上

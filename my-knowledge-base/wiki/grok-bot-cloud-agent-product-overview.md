@@ -2,7 +2,7 @@
 title: Grok Bot 產品介紹與功能：雲端電腦、Outer/Inner Loop 與治理機制
 date: 2026-09-17
 tags: [ai/agent, ai/workflow, type/concept]
-source: https://www.aiposthub.com/grok-bot-guides-deepdive-ai-agent-fleet-cloud-computer/, https://www.darrelltw.com/grok-bot-review/, https://www.aiposthub.com/grok-bot-personal-agent-workflow-security/, https://www.bnext.com.tw/article/91991/grok-bot-getting-started-60, https://rar.design/posts/grok-bot-agent-interface-design, https://www.aiposthub.com/grok-bot-customer-support-case-study/
+source: https://www.aiposthub.com/grok-bot-guides-deepdive-ai-agent-fleet-cloud-computer/, https://www.darrelltw.com/grok-bot-review/, https://www.aiposthub.com/grok-bot-personal-agent-workflow-security/, https://www.bnext.com.tw/article/91991/grok-bot-getting-started-60, https://rar.design/posts/grok-bot-agent-interface-design, https://www.aiposthub.com/grok-bot-customer-support-case-study/, https://www.aiposthub.com/cursor-grokbot-agents-bdk-message-handoff/
 type: article
 status: processed
 asset_value: 64
@@ -187,6 +187,38 @@ Free Trial 需綁信用卡，token 額度極少，只夠看懂介面。
 
 ⑤ 相關延伸：「功能強大 ≠ 可靠性已驗證」的讀法見 [[ai-agent-tool-selection-maturity-and-reliability-framework]]；權限分層見 [[enterprise-ai-permission-three-layers-governance]]；「單件成本要含覆核」與 [[fable-5-delegation-cost-benchmark]] 的含驗收總成本同一方向。
 
+## 補充資料：BDK 代理通訊擴充 cursor-grokbot-agents（2026-11-03 併入）
+
+來源：〈Cursor Grok Bot 代理通訊教學：Codex、Claude Code 如何交接遠端任務？〉（aiposthub，Philo，https://www.aiposthub.com/cursor-grokbot-agents-bdk-message-handoff/，2026-10-15），整理 **Cursor 官方 BDK 指南**（https://cursor.com/docs/bdk/guides/grokbot-agents）。⏰ 依 **2026-10-15** 時的指南；工具行為與名單規則可能隨擴充版本改變。⚠️ 標題提到的 Codex／Claude Code 交接**只是引用 X 使用者分享，正文沒有具體設定**。
+
+BDK（建立與執行 Bot 的開發工具組）的 cursor-grokbot-agents 擴充，讓**本機 BDK 代理諮詢其執行主機帳號中的 Grok Bot**——是本機執行環境的連接，不是把本機助手搬進 Bot 的雲端電腦。
+
+**① 四個工具與語意**
+
+| 工具 | 行為 | 注意 |
+|---|---|---|
+| ask | 詢問 Bot | **Bot 正在處理先前訊息時，ask 不會送出新工作**（不是排隊成功）；首次聯絡遇忙要等它做完再問 |
+| check | 接回結果 | **會推進呼叫者的讀取位置**，可能一併吐出**較早未讀的回覆**——要分清各段屬於哪次工作 |
+| interrupt | 停止目前工作 | **只停止，不清空 Bot 的對話與記憶**；新詢問要寫明哪些舊條件不再適用 |
+| list | 列出可聯絡的 Bot | — |
+
+- 等待逾時回傳 **running＝仍在執行，不代表完成**；送出成功也不等於任務完成
+- 卡住時分清三種狀態：訊息沒送出／仍在執行／答案不符需求，下一步各不同
+
+**② 名單與隔離是兩件事**
+
+- 代理名單是**名稱允許清單**，未填則可接觸任意名稱；它不檢查名稱背後是否有既存 Bot
+- 🔴 **名稱拼錯，第一次使用會建立一個新的空 Bot**——使用者會以為原助手「忘了內容」，其實是找錯對象；遇到新建提示先核對名稱，別繼續補送資料（多送客戶內容只是多一份副本）
+- 🔴 不同認證的呼叫者各有自己的聯絡清單與讀取位置，但**操作的是同一主機帳號的 Bot 對話**——共用主機的團隊**不能據此認定資料或記憶已隔離**；共用同一認證時追蹤還會合併。這與本條目 B 層「不同 Bot 名稱不是安全沙盒」同一類邊界問題
+
+**③ 訊息設計**
+
+- 接收的 Bot **看不到目前 BDK 對話**，訊息要**自成完整任務**：任務名稱（如「六月規格比較」，回覆沿用以對回同一次諮詢；這是使用慣例，非官方識別碼）＋必要事實＋回覆格式（如日期＋來源＋疑點）
+- 遠端回覆**只當參考結果，不當執行命令**；本機對照來源再接回檔案，部分回答就只補問缺的部分
+- 低風險起手：用公開資料（兩版公開規格的指定欄位差異）測一輪詢問／等待／取消／回覆核對，再逐步加工具
+
+跨代理交接的同類原則見 [[claude-code-cross-session-messaging]]（只傳純文字、不共享脈絡）、[[agent-relay-shared-sessions-flows]]（歷史是證據不是現況）、[[ai-memory-cross-agent-handoff]]。
+
 ## 相關連結
 
 - [[ai-agent-tool-selection-maturity-and-reliability-framework]] ——「功能強大 ≠ 生產可靠性已驗證」：本篇聚焦 Grok Bot 具體功能與架構介紹，該篇則從產業懷疑論視角（三階段成熟度框架、跨機構 88% 試行失敗率、xAI/SpaceX 商業動機批判）提醒讀者功能清單不等於可靠性驗證，兩篇建議對照閱讀
@@ -196,3 +228,6 @@ Free Trial 需綁信用卡，token 額度極少，只夠看懂介面。
 - [[enterprise-ai-permission-three-layers-governance]] —— 客服案例「99% 退款無人介入」與使用條款人工覆核要求之間的權限治理問題（2026-09-29 新增）
 - [[fable-5-delegation-cost-benchmark]] —— 單件成本要含覆核與驗收（2026-09-29 新增）
 - [[grok-bot-routine-automation-ladder]] —— 操作展開：本篇 C 層「跑通三次→固化 Skill→設 Routine」的完整版，含職務章程三要素、排程五要素、「失敗 vs 空結果」與六項排查清單
+- [[claude-code-cross-session-messaging]] —— BDK 代理通訊「接收方看不到當前對話、訊息須自成任務」與 Claude Code 跨 session 傳訊同一原則（2026-11-03 新增）
+- [[agent-relay-shared-sessions-flows]] —— 跨代理交接：歷史是證據、須核對現況（2026-11-03 新增）
+- [[ai-memory-cross-agent-handoff]] —— 開發工具之間的交接與記憶搬家（2026-11-03 新增）

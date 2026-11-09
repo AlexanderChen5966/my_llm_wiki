@@ -55,3 +55,4 @@ Claude Code Agent Teams 是官方多 Agent 協作功能：Team Lead（你）分�
 
 - [[claude-code-agent-teams-practical-examples]] —— 官方 Agent Teams「怎麼用」的 4 個實戰範例（本條目談「何時該用」，兩者互補）
 - [[claude-code-projects-redesign-2026-09]] —— 2026-09-17 Projects 重構把同一套「何時該平行」的判斷交給雲端 Coordinator，本條目的判準在那裡變成「該不該讓它開新 Thread」
+- [[grok-build-multi-agent-worktree-state-guide]] —— 同一個「並行不一定更快、成本在整合」的判斷，落到狀態表與合併後驗收的實作層（2026-11-05 新增）

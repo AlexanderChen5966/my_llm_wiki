@@ -93,6 +93,7 @@ Karpathy 方法的核心是**分工，不是工具**——人負責輸入，AI �
 - [[karpathy-llm-wiki-improvements]] — 結構缺陷分析：語意 wikilink / Vault Linker / Penfield 持久化後端
 - [[llm-wiki-over-rag-claude-code]] — 取代 RAG 的實作：選型對照表、Ingest/Query/Lint 三操作、log.md（AV 75）
 - [[karpathy-ai-knowledge-base-workflow]] — 六步驟工作流與不寫程式的三步驟簡化版；AI/人工筆記分離提醒（AV 72）
+- [[llm-wiki-second-brain-claude-code-obsidian]] — 可安裝 skill 包版（claude-skills llm-wiki；未納入本精粹的 7 篇，供後續更新參考）（AV 80）
 - [[llm-wiki-code-as-source-of-truth-case-study]] — 真實 dogfooding：83 筆 4 天腐化、兩層 Lint 的關鍵區分（AV 62）
 - [[okf-open-knowledge-format]] — 🔑 **Karpathy LLM-Wiki 模式被 Google 正式化為開放標準**（OKF，2026-06-12 Apache-2.0）：本質就是「裝滿 Markdown 的資料夾 + YAML frontmatter」，用「格式作為唯一契約」解決廠商鎖定
 - [[karpathy-opus5-lotr-3d-case]] — 🆕 Opus 5 兩小時 5,500 行《魔戒》3D；🔴 **LLM 無法自審成品**（拿不到驗收的感官通道）

@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "Codex Composer Predictions 在 Pro 開放測試，可依對話建議下一則訊息。本文整理可用範圍，以表單修復示範如何接受、改寫或跳過建議，避免把協作捷徑變成多餘工作。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 Codex Composer Predictions 會根據目前的對話，建議你接著傳給代理的訊息。它幫忙起草下一句話，最後送出什麼仍由使用者決定。
 

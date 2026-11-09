@@ -8,7 +8,7 @@ created: 2026-10-21
 description: "Gradio 互動式報表適合已有 Python 分析程式、想讓同事自行篩選資料的人。用 10 筆合成訂單示範 Codex 需求寫法、KPI 驗算、CSV 下載與分享方式，附可執行範例。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 已有 Python 程式算出訂單金額，卻常因同事換地區、換日期，又要重跑一次，這正是 Gradio 互動式報表能接手的工作。
 

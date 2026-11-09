@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "Gemini Skills 免費開放，Gems 11月起退場。技能要怎麼寫，Gemini才會在對的時候自動套用？整理官方撰寫指南8招與使用條件。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 對經常使用 Gemini 的人來說，反覆輸入相同的提示詞、格式、語氣與工作規則，是最常見的重複操作模式。Google 在 2026 年 9 月 30 日正式將 **Gemini Skills** 帶進一般 Gemini 聊天，讓使用者把經常重複指令儲存成 Skill，之後由 Gemini 自動判斷套用，或在對話中手動呼叫。
 

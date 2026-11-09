@@ -8,7 +8,7 @@ created: 2026-10-08
 description: "Microsoft AI 這次把語音生成的需求分成兩條路：重視音質的 MAI-Voice-2.1，以及重視反應速度與大量使用的 MAI-Voice-2.1-Flash。對做有聲內容與客服對話的團隊而言，同一個「AI 配音」需求，其實可能需要很不同的模型。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Microsoft AI 這次把語音生成的需求分成兩條路：重視音質的 MAI-Voice-2.1，以及重視反應速度與大量使用的 MAI-Voice-2.1-Flash。對做有聲內容與客服對話的團隊而言，同一個「AI 配音」需求，其實可能需要很不同的模型。
 

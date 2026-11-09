@@ -23,13 +23,13 @@ status: processed
 
 ### 五大主流框架比較
 
-| Framework | Stars | 風格 | 適合 |
-|-----------|-------|------|------|
-| **Superpowers** (obra/superpowers) | 226k | 完整 SDD 流程，自動觸發 | 想要從想法到審查後程式碼一條龍 |
-| **Karpathy 準則** (multica-ai/andrej-karpathy-skills) | 174k | 4 條簡單規則 | 覺得 Superpowers 太重，需要低門檻起點 |
-| **Matt Pocock Skills** (mattpocock/skills) | 中等 | 小而可組合，反對大包系統 | 想保留控制權，按需組合 |
-| **GStack** (garrytan/gstack) | 110k | 角色分工（產品/設計/工程/QA）| 習慣用「誰負責這塊」方式思考 |
-| **GSD Core** (open-gsd/gsd-core) | 中等 | Context rot 防護，子代理新視窗執行 | 長時間 session 的品質保護 |
+| Framework                                           | Stars | 風格                      | 適合                        |
+| --------------------------------------------------- | ----- | ----------------------- | ------------------------- |
+| **Superpowers** (obra/superpowers)                  | 226k  | 完整 SDD 流程，自動觸發          | 想要從想法到審查後程式碼一條龍           |
+| **Karpathy 準則** (multica-ai/andrej-karpathy-skills) | 174k  | 4 條簡單規則                 | 覺得 Superpowers 太重，需要低門檻起點 |
+| **Matt Pocock Skills** (mattpocock/skills)          | 中等    | 小而可組合，反對大包系統            | 想保留控制權，按需組合               |
+| **GStack** (garrytan/gstack)                        | 110k  | 角色分工（產品/設計/工程/QA）       | 習慣用「誰負責這塊」方式思考            |
+| **GSD Core** (open-gsd/gsd-core)                    | 中等    | Context rot 防護，子代理新視窗執行 | 長時間 session 的品質保護         |
 
 ### 各框架核心機制
 

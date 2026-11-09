@@ -8,7 +8,7 @@ created: 2026-10-07
 description: "Google 在 Hugging Face 提供 DiarizationLM-Gemma-4-E4B-v1，以語言模型修正既有逐字稿的說話者標記。本文解釋後處理流程、官方評測與語言限制，區分它與直接聽音檔的語音模型。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 會議逐字稿的字可能轉對，說話者卻標錯：主管的回答被放到提問者名下，後續摘要就會連責任歸屬一起弄錯。Google 在 Hugging Face 提供 DiarizationLM-Gemma-4-E4B-v1，針對這類標記問題做後處理。
 

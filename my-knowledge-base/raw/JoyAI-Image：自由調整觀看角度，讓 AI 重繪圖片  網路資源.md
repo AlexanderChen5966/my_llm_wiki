@@ -8,7 +8,7 @@ created: 2026-10-27
 description: "JoyAI-Image 是京東開源的多模態影像模型家族，結合圖片理解、文字生成圖片與依指令編輯圖片等能力，並主打空間推理、文字排版、多視角生成與局部修改。專案採 Apache 2.0 授權，提供模型權重與推論程式；實際部署需要 CUDA GPU。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 網站連結 [https://github.com/jd-opensource/JoyAI-Image](https://github.com/jd-opensource/JoyAI-Image)
 

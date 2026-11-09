@@ -8,7 +8,7 @@ created: 2026-10-30
 description: "Gemini Notebook 教科書目錄新增數百本美國與印度教材，可加入後產生附引用的回答、指南、練習題和字卡。解析免費範圍、版本核對、回查原文與台灣教材條件，避免把摘要當成完整學習。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 準備考試時，AI 回答得再完整，只要內容不是老師指定的那一本課本，整理筆記仍可能偏離範圍。Gemini Notebook 教科書這次把一批教材直接放進來源目錄，讓學生能先選書再提問。
 

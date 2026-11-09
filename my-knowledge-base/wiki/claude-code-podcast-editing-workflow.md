@@ -55,3 +55,4 @@ Podcast 剪輯真正花時間的不是「輸出」，而是在冗長音檔裡反
 
 - [[claude-code-advanced-workflow]] — Claude Code 進階工作流程，本篇「先建議、後人工核准」的分階段設計可與該篇的通用工作流程原則互相參照
 - [[claude-code-file-management]] — Claude Code 檔案管理實務，可補充本篇逐字稿/時間碼/多軌音檔整理的檔案組織方式
+- 📎 2026-11-04：[[conversational-video-editing-handoff]] — 影片側的同類原則：對話出粗剪、用時間碼修稿、精修回時間軸（Cardboard、CapCut × Codex）

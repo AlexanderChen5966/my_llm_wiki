@@ -125,3 +125,4 @@ Auto Memory **不在**專案的 `.claude/` 資料夾，而是在 Home 目錄：
 - [[cowork-memory-browser-scheduled-tasks]] — 對照 Claude Chat／Cowork 側的記憶（Topics 亦為可讀可改的短檔案，但那套只適用雲端執行的任務）
 - [[external-memory-layer-exploration-tax]] — ⚠️ **更上層的設計問題**：記憶該不該屬於模型周圍的系統、信任分級（記憶是報告不是指令）、年齡影響信心而非存在
 - [[concepts/agent-handoff-memory-patterns]] — 跨 session／跨工具狀態傳遞五模式中「Framework 持久化」那一類的產品實例
+- 📎 2026-11-04：[[claude-md-guide]] 補充段 — 並陳：本條稱 200 行截斷未寫進官方文件；aiposthub 2026-11-04 稱官方 memory 文件現已載明（前 200 行或 25KB、先到為準），不裁決，待查官方現行文件；另提醒雲端／背景環境的 auto memory 設定可能不同

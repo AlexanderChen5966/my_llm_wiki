@@ -399,3 +399,5 @@ agent 真正需要的是**理解系統的路徑**：清楚的專案結構、聚�
 來源：aiposthub〈Harness-Zero 是什麼？把 AI Agent 的 Harness 教進模型〉（2026-09-29）。🔴 **論文出處待查**（剪藏只寫「2026 年 9 月的 arXiv 預印本」，沒有編號、作者或連結）；數字為**論文自報、single-run、未經同儕審查與外部複現**。
 
 Harness-Zero 讓強 reviewer 在訓練階段扮演專用 harness，把它誘發的行為（先檢查再修改、儲存後重讀等）改寫成最小 harness（一個 system prompt＋一支 Bash 工具）能執行的軌跡，再用 LoRA SFT 蒸餾進 Qwen3.5-9B，部署時只留最小 harness。三領域 macro-average 從 23.3 升到 44.3（高於掛專用 harness 的 41.7），但 **USPTO 30.0 仍低於專用 harness 的 38.0**。這是上方「越做越薄」的一種具體機制，但邊界很清楚：權限、金流、刪除、法遵、不可逆動作仍要留在 deterministic enforcement，與本頁 Guides × Sensors 裡 Computational（由程式確定性執行）那一類控制的分工不衝突；部署時也仍保留最小 harness，**不是「harness 已不需要」**，而是重劃「可學的習慣」與「必須強制的規則」的邊界。完整拆解（含 Perplexity 從中途錯誤學習的第二案例）見 [[agent-trajectory-distillation-harness-zero-perplexity]]。
+
+📎 2026-11-05 延伸：長任務跨輪次的初始化、狀態保存、獨立驗收與中斷接續，見 [[harness-engineering-long-running-agents-handoff]]（二手整理，一手 Anthropic 兩篇研究未核對）。

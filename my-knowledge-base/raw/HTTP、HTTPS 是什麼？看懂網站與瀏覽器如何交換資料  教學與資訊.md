@@ -8,7 +8,7 @@ created: 2026-10-06
 description: "每次開啟網頁，瀏覽器與網站都透過 HTTP 交換請求與回應。本文從 request、response、常見方法與狀態碼，說明 HTTP 如何運作，以及 HTTPS 如何透過 TLS 保護傳輸。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 每天打開網站、送出登入表單，或在網頁上搜尋資料，背後都有瀏覽器與網站彼此「對話」的過程。這種對話最常使用的規則，就是 HTTP。
 

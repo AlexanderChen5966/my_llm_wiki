@@ -8,7 +8,7 @@ created: 2026-10-16
 description: "FluidVoice 在本機完成語音辨識與文字整理，但 Fluid-1 不是聽寫模型。說明平台條件、文字吞吐與錄音時間差別，並用中文口述測試語意保留及實際修改成本。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 FluidVoice 把語音輸入的兩個步驟放在同一個工具：先聽出文字，再整理成能貼進應用程式的句子。
 

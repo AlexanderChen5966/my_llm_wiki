@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "Lux In Music 怎麼在 Apple Silicon Mac 本機生歌？整理 YuE2 模型下載驗證、歌詞與風格設定、逐軌修改、WAV 儲存及授權限制，帶你從短段落開始建立可比較的創作流程。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Lux In Music 把 AI 生歌帶到 Mac 本機：歌詞、風格與模型可以放在自己的電腦，透過瀏覽器介面開始生成音樂。
 

@@ -8,7 +8,7 @@ created: 2026-10-07
 description: "Higgsfield 推出 Ads Studio，可整理品牌資料並生成多版靜態廣告。本文整理 Brand Kit、產品匯入與素材工作流程，並解釋為何廣告圖產量、ROAS 導向與實際銷售成效不能畫上等號。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 電商行銷需要持續測試新素材，但把同一產品做出多種視覺與文案，常耗去不少設計時間。Higgsfield 新推出 Ads Studio，把品牌資料與靜態廣告生成串在一起，主打快速產出可測試的版本。
 

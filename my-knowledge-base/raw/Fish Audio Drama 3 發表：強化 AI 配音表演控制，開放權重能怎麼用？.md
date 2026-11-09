@@ -8,7 +8,7 @@ created: 2026-10-19
 description: "Fish Audio Drama 3 於 10 月 13 日推出，主打情緒控制與開放權重。解析 AI 配音示範、英文發音評測、商業授權限制，以及中文創作者該怎麼測試。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 同一句「我沒事」，可以是安慰，也可以是忍住眼淚的逞強，Fish Audio Drama 3 想處理的就是這種差別。
 

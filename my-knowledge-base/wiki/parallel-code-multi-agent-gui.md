@@ -60,3 +60,4 @@ Parallel Code 是一個開源 GUI 應用程式，能讓多個 AI 編碼代理（
 - [[codex-plugin-for-claude-code]] — 在 Claude Code 內直接呼叫 Codex
 - [[claude-code-dynamic-workflows]] — Claude 原生的平行 subagent 機制
 - [[synthesis-multi-agent]] — Multi-Agent 系統知識精粹（本主題 7 篇整合）
+- [[grok-build-multi-agent-worktree-state-guide]] — 不靠 GUI 時的並行管理做法：狀態表、完成定義與合併後驗收

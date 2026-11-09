@@ -8,7 +8,7 @@ created: 2026-10-29
 description: "Forever Security 發現 Downloads 中的 AGENTS.md 曾誘導程式代理安裝惡意套件，並重建 Codex、Claude Code 攻擊鏈。解析真實事件與測試差別、設定檔風險及工作目錄檢查方法。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 把下載的壓縮檔交給 AI 整理，看起來只是省下找檔案的時間。但代理從哪個資料夾開始工作，也可能決定它先讀到 AGENTS.md 裡誰寫的指示。
 

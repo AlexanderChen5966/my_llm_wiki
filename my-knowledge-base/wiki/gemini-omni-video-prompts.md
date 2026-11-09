@@ -79,3 +79,5 @@ tools.wingzero.tw，2026-09-09，<https://tools.wingzero.tw/articles/4057>（站
 
 - [ ] 製作 App Store 截圖影片時：先套六維度框架再生成，Veo 3.1 優先
 - [ ] 製作社群內容時：Gemini Omni + 六維度，重點放在「情緒」和「音效」
+
+- 📎 2026-11-04：[[generative-video-pre-production-planning]] — 影片生成前置規劃（角色表／事件／道具狀態／灰模預演），與六維度框架互補

@@ -8,7 +8,7 @@ created: 2026-09-23
 description: "Figma Weave 可把 Figma frame 接進 AI 工作流，批次製作品牌一致的社群圖、在地化素材與影片。本文解析適用情境、限制與導入步驟。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 過去用 AI 做大量行銷素材，最麻煩的通常不是生成速度，而是每張圖都要重新校正字體、Logo、留白和版面。Figma 在 2026 年 9 月把 Figma frame 與 Weave 工作流接得更緊：設計師可以把既有版型複製到 Weave，選定哪些文字與圖片是可替換輸入，再用同一個流程產生不同市場、尺寸或活動版本。
 

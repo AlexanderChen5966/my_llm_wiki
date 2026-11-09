@@ -8,7 +8,7 @@ created: 2026-10-06
 description: "drawio-skill 能把自然語言、程式碼與基礎設施設定轉成可編輯的 draw.io 圖。本文介紹架構圖、來源追蹤、增量更新與圖表檢查，說明它和一般 AI 生圖有何差別，以及如何評估成果。"
 tags:
   - "clippings"
-status: "inbox"
+status: processed
 ---
 AI 可以畫出漂亮的架構圖，但你要修改一條箭頭或更換服務名稱時，常常只能重新生成整張圖片。drawio-skill 近期在 X 被分享，提供了另一條路：把文字、程式碼與系統設定轉成可編輯的 draw.io 文件，讓方塊、連線與結構都能繼續修改。
 

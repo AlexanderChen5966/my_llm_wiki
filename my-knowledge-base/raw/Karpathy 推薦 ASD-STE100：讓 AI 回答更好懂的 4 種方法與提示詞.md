@@ -8,7 +8,7 @@ created: 2026-10-07
 description: "Karpathy 推薦 ASD-STE100 改善 AI 回答。本文解釋受控英文、80% 風格要求與中文用法，整理文字、圖解、互動網頁及影片的選擇方式、可複製提示詞，並對照官方 AI 白皮書說明限制。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 ASD-STE100 是一套讓英文技術文件更清楚的寫作標準。AI 研究者 Andrej Karpathy 建議借用它的規則，改善語言模型的回答，並進一步把複雜內容轉成圖解、互動網頁與解說影片。
 

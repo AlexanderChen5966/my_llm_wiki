@@ -229,3 +229,49 @@ Karpathy 把 CLAUDE.md 設計為「AI 使用說明書」，核心是避免常見
 **關鍵設計思路**：不是告訴 AI「要做什麼」，而是告訴 AI「不要做什麼」——負面清單（NEVER 區塊）比正面清單更有效，因為 AI 的預設行為往往是好的，需要約束的是它會過度做的事。
 
 這與本條目的核心技巧（明確 NEVER 區塊）一致，也與 [[impeccable-style-ai-coding-guide]] 的設計哲學相同。實際規則內容詳見 GitHub：`andrej-karpathy-skills/CLAUDE.md`。
+
+## 補充資料（來源：CLAUDE.md 怎麼寫？5 種任務模板、規則與停止條件完整教學）
+
+> 來源性質：aiposthub（Philo，2026-11-04）二手整理，引用官方 memory 文件（code.claude.com/docs/en/memory）；作者未附版本號，載入門檻屬版本相依快照。下方「5 種任務模板」是**作者自編範本，非官方**。與本條 T（具體可驗證規則）一致，補的是「按任務分段寫」與「停止條件」兩個角度。
+
+### 5 種任務模板（作者自編，依專案類型挑必要段落，不是五份都塞進同一檔）
+
+基礎版骨架：`Commands`（install／dev／test／lint／build）、`Structure`、`Working rules`、`Done when`（相關測試通過、lint 與型別檢查通過、回報改動檔案／驗證結果／未驗證風險）。
+
+| 模板 | 重點規則（原文為英文，此處摘要） |
+|---|---|
+| 前端功能 | 先重用既有元件與 design token；涵蓋 loading／empty／error／disabled／success；保留鍵盤導覽與焦點樣式；驗證桌面與手機；靜態層級對了才加動畫 |
+| 後端 API | 在邊界驗證輸入；沒有 spec 就保留既有回應欄位；錯誤可行動但不洩漏 secret；補授權／無效輸入／重複請求測試；改 schema 前說明遷移或回滾影響 |
+| 測試任務 | 先重現再改碼；斷言行為而非實作細節；涵蓋一個正常案例加邊界／失敗案例；**不為了讓測試通過而刪除失敗測試**；記錄確切指令與結果 |
+| 資料庫修改 | 先看既有 schema 與 migration 慣例；可回復的 schema 變更與資料回填分開；沒有明確核准不跑正式環境變更；說明鎖、相容性、回滾風險；滾動部署時驗證新舊版本 |
+| PM 驗收 | 每個改動對應一條驗收標準；模糊的產品決策標出來不要猜；備齊正常／空／錯誤／權限狀態的證據；已確認結果與假設分開；缺少會實質改變體驗的決策就停 |
+
+### 「Stop and ask when」5 條（停止條件比「請小心」可執行）
+
+1. 需求互相衝突，或驗收標準無法測試
+2. 改動需要刪除使用者資料或改寫共享歷史
+3. 缺少憑證、正式環境存取或商業決策
+4. 在範圍內改動後，測試仍因不明原因失敗
+5. 最小的安全修法會超出要求的範圍
+
+原文說好的停止條件**不會讓 Agent 每步都問**，只攔不可逆、涉及權限、會改變產品方向的情況。注意層次：這是放在 **CLAUDE.md 層**的規則；[[boris-cherny-prompt-to-verification]] 併入的 Addy Osmani「目標＋完成標準＋停止條件」是**提示詞層**，方向一致但只有概念沒有具體條目。
+
+### 載入機制的補充細節（數字與本庫既有條目一致者已標註）
+
+- **AGENTS.md 載入條件**：官方支援，但預設要「**工作目錄及上層**」都沒有 `CLAUDE.md`、`.claude/CLAUDE.md`、`CLAUDE.local.md` 才載入（`.claude/CLAUDE.md` 計入，既有判定表無此列）；既有專案不能推定新建 AGENTS.md 會一起生效。方向與 [[claude-code-agents-md-loading-rules]]（2.1.277 實測）一致
+- **讓兩者一起載入**：`/config` 的 Project instructions 選 `claude-md-and-agents-md`，或用 `@AGENTS.md` 匯入（後者與 [[agents-md-guide]] 2026-09-23 修訂一致）。`/config` 入口與 loading-rules 記的 `pluginConfigs["agents-md@builtin"].options.instructionFiles` 是否為同一設定的兩種入口，**未核對**
+- **MEMORY.md 載入量**：每次對話開始載入前 200 行或前 25KB，先到者為準（與既有條目一致，見 [[claude-code-auto-memory]]）；不會把 CLAUDE.md 變成只能寫 200 行
+- **CLAUDE.md「少於 200 行」**：官方建議、不是硬上限（與既有條目一致，context 成本目標值）
+- **import 不減 context**：用 `@` import 拆檔有助整理，但被匯入內容仍一起載入，不會自動減少背景文字用量
+- **雲端／背景環境的 auto memory 設定可能不同**，不能因桌面上有筆記就推定所有工作階段都會自動寫入（既有 auto-memory 條目只記 machine-local）
+- 其餘（CLAUDE.md 是 context 不是強制機制、要擋用權限或 PreToolUse Hook；Rules／Skills／Hooks 分工）與既有條目一致，不重述，見 [[steering-claude-seven-carriers]]
+
+### 並陳不裁決的兩處（未連網核對官方 memory 文件）
+
+- **(a) `/memory` 能否看到 AGENTS.md**：新文說用 `/memory` 查看實際載入路徑；[[claude-code-agents-md-loading-rules]] 引官方稱 AGENTS.md **不出現在 `/memory` 與 `/context`**。兩說並存，待查官方現行文件
+- **(b) MEMORY.md 200 行截斷是否寫進官方文件**：[[claude-code-auto-memory]] 稱該截斷未寫進官方文件（GitHub issue #25006）；新文稱官方 memory 文件已載明。可能是文件後來更新，**不裁決**，2026-11-04 aiposthub 稱官方 memory 文件現已載明
+
+### 其他（與本條既有內容差異較小）
+
+- 4 個常見失敗：把 CLAUDE.md 當知識庫（完整文件留 `docs/`，CLAUDE.md 只指路）、規則只有抽象形容詞（改成執行 `npm test` 與 `npm run lint` 並回報未驗證項目）、安全要求只寫成文字、一次加入過多規則（先從啟動／測試／禁止事項／完成標準四類開始，重複犯錯再補）
+- 排除：「上線前 8 項檢查」圖僅有圖說無文字；訂閱呼籲

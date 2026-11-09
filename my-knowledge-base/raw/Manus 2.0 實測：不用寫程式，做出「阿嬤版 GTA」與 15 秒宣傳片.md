@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "Manus 2.0 能把遊戲想法做到哪一步？實測阿嬤送便當 3D 遊戲與 15 秒宣傳片，公開兩組提示詞、約 135 分鐘工作時間、6,970 點用量，並整理雙人、排行榜與剪輯的限制。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 **#ManusPartner｜本文為 Manus 合作內容。**
 
