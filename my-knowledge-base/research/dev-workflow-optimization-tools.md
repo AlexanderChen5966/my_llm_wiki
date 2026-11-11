@@ -782,7 +782,7 @@ Superpowers 的骨幹是 **red/green TDD 強制流程**（`test-driven-developme
 
 ## 2026-11-09 更新：Matt Pocock 截長補短與借來的做法（流程 v2、v3）
 
-**本次為決策落地紀錄。** 權威流程已寫進 [[decision-framework]]「情境內的條件步驟」；完整規劃在桌面〈開發流程與MattPocock截長補短.md〉〈借來的做法整合方案.md〉，流程版本頁 https://claude.ai/artifact/TVWdDupHzBGXhF8nusPHPz 。
+**本次為決策落地紀錄。** 權威流程已寫進 [[decision-framework]]「情境內的條件步驟」；完整規劃在桌面〈開發流程升級_2026-11-09/開發流程與MattPocock截長補短.md〉〈開發流程升級_2026-11-09/借來的做法整合方案.md〉，流程版本頁 https://claude.ai/artifact/TVWdDupHzBGXhF8nusPHPz 。
 
 ### 原則：以五情境為骨幹，外部 skill 當零件插進固定位置
 

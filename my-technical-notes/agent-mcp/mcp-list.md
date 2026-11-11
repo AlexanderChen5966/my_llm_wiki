@@ -8,7 +8,8 @@ source: ~/.claude.json、~/Library/Application Support/Claude/claude_desktop_con
 ---
 
 > 範圍：Claude Code（CLI）與 Claude Desktop 目前設定中的 MCP server
-> 最後更新：2026-10-21（新增 `blender`；claude.ai 連接器改版：新增 Slack、Microsoft 365，Supabase／Canva／Google 系列已不在清單；`godot-mcp-toolkit` 多一個 `失語者_2.5D` 專案）
+> 最後更新：2026-11-10（新增 `GitLab` 官方 MCP，Code 與 Desktop 皆設定並完成 OAuth 授權，server 19.6.0-pre 實測可讀 slc-dev 專案）
+> 前次更新：2026-10-21（新增 `blender`；claude.ai 連接器改版：新增 Slack、Microsoft 365，Supabase／Canva／Google 系列已不在清單；`godot-mcp-toolkit` 多一個 `失語者_2.5D` 專案）
 > 初版：2026-10-08
 > ⚠️ 本文件**只記名稱與用途**，API 金鑰／token 一律不記；需要時到下方〈設定檔位置〉查看
 
@@ -33,6 +34,7 @@ source: ~/.claude.json、~/Library/Application Support/Claude/claude_desktop_con
 | `playwright` | 瀏覽器自動化（`@playwright/mcp`）。設定綁 **b2b manager UI 測試框架包**：注入 `flutter-a11y-init.js`、1920×1080、開 vision／devtools、獨立 profile 與輸出資料夾 | latest | stdio：`npx -y @playwright/mcp@latest …` | ✅ user | — |
 | `blender` | **MCP for Blender**：驅動使用者開著的 Blender，`execute_blender_code` 以 bpy 執行任意 Python、`look` 截圖檢視成果、`get_scene_info`／`get_addon_status` 讀狀態；素材可從 Poly Haven／Sketchfab／Poly Pizza 匯入（`search_assets`→`import_asset`），或 `generate_3d` 文字／圖片生成單一模型（1–3 分鐘，可能扣點數）。需 Blender 端安裝 add-on 並啟動 | 2.2.2 | stdio：`uvx mcp-for-blender`；`DISABLE_TELEMETRY` 已設 | ✅ user | ✅ |
 | `pixelorama` | 像素畫編輯器 Pixelorama 的 MCP：畫布／圖層／影格／調色盤操作、繪圖、特效、動畫、匯出（GIF、Godot SpriteFrames／TileSet、Aseprite JSON） | 0.2.1 | stdio：`node ~/Tools/pixelorama-mcp/mcp-server/dist/index.js` | ✅ user | — |
+| `GitLab` | GitLab 官方 MCP Server（Beta）：專案、issue、MR、pipeline 等；OAuth 授權（Code 用 `/mcp` → Authenticate，Desktop 首次啟動開瀏覽器）。官方標示需 Premium／Ultimate＋GitLab Duo，`slc-dev` 實測可用（2026-11-10）；另有 Duo flow 工具，會耗 GitLab credits，啟動前要先問使用者 | Beta | Code：http `https://gitlab.com/api/v4/mcp`；Desktop：stdio `npx -y mcp-remote https://gitlab.com/api/v4/mcp` | ✅ user | ✅ |
 | `godot` | Godot 引擎操作（`@coding-solo/godot-mcp`） | latest | stdio：`npx -y @coding-solo/godot-mcp`；需 `GODOT_PATH` | ✅ project（`~`） | — |
 | `godot-mcp-toolkit` | Godot 引擎操作（`@npgamedev/godot-mcp-server`），**失語者**遊戲專案用；工具呼叫次數最多的 MCP | latest | stdio：`npx -y @npgamedev/godot-mcp-server` | ✅ project（`失語者_Godot/`、`失語者_2.5D/`） | — |
 
@@ -95,11 +97,11 @@ source: ~/.claude.json、~/Library/Application Support/Claude/claude_desktop_con
 
 | 位置 | 內容 |
 |------|------|
-| `~/.claude.json` → `mcpServers` | Claude Code user 範圍（media-downloader、evaluate、pixelorama、playwright、blender） |
+| `~/.claude.json` → `mcpServers` | Claude Code user 範圍（media-downloader、evaluate、pixelorama、playwright、blender、GitLab） |
 | `~/.claude.json` → `projects.<路徑>.mcpServers` | Claude Code project 範圍（`~` 下的 godot） |
 | `<專案>/.mcp.json` | 專案共用設定（DownloadVideoPythonProject、失語者_Godot、失語者_2.5D） |
 | `~/.claude/settings.json` → `enabledPlugins` | Plugin 開關（figma、telegram 帶 MCP；gopls／rust-analyzer 為 LSP） |
-| `~/Library/Application Support/Claude/claude_desktop_config.json` | Claude Desktop（evaluate、kyoto-assistant、media-downloader、blender） |
+| `~/Library/Application Support/Claude/claude_desktop_config.json` | Claude Desktop（GitLab、evaluate、kyoto-assistant、media-downloader、blender） |
 | `~/Library/Application Support/Claude/Claude Extensions/` | Desktop 擴充（Filesystem） |
 
 ---
@@ -109,9 +111,9 @@ source: ~/.claude.json、~/Library/Application Support/Claude/claude_desktop_con
 | 分類 | 數量 |
 |------|------|
 | 自建 | 2 |
-| 第三方本機套件 | 6 |
+| 第三方本機套件 | 7 |
 | Plugin 帶入 | 2 |
 | claude.ai 連接器 | 4（已授權 2、未授權 2） |
 | 內建整合 | 2（Filesystem 停用） |
-| **總計** | **16** |
-| 兩邊都有設定 | evaluate、media-downloader、blender（＋所有 claude.ai 連接器） |
+| **總計** | **17** |
+| 兩邊都有設定 | evaluate、media-downloader、blender、GitLab（＋所有 claude.ai 連接器） |
