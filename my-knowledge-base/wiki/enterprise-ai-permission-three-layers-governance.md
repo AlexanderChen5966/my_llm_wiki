@@ -147,6 +147,17 @@ Credential Inventory 只記 Metadata、憑證遷移必須「先加新、驗證�
 完成九件事」驗收。安全面則指出 Prompt Injection 的隱晦來源是 RAG 文件與 Tool Result，因此要建立
 Instruction 與 Data 的 Trust Boundary，並讓 Tool 授權按 User → Role → Allowed Tool → Data Scope 判斷。
 
+## 補充資料
+
+**2026-11-19 補充（來源：AI 郵報 Philo〈LangChain 公開公司代理五大元件：員工身分、共用記憶與背景工作怎麼接？〉https://www.aiposthub.com/langchain-company-harness-identity-memory-sandbox-schedules/ ，2026-10-27；轉述 LangChain 官方 company harness 文章與 Managed Deep Agents 文件，二手）**
+
+- **真實公司的 System／User 分層案例**：LangChain 三個內部代理（業務 GTM Agent、工程 OpenSWE、行銷 Content Studio）共用五元件：Slack 入口、身分、雙層記憶、沙箱、排程。🔑 **身分是逐工具、逐啟動方式決定，不是整個代理選一種**
+- OpenSWE：同事私訊時以 **OBO（代表使用者）** 開 PR；背景程式審查改用**自己的 GitHub App 身分**——事後才分得出「排程做的」與「某員工做的」
+- 業務代理：Salesforce 用固定服務身分；電子郵件代表呼叫者本人且**只在私訊提供**。行銷代理：Notion 代表使用者、公司社群帳號用固定憑證，但特定寫入**另有白名單**——對應本條「Service Account 只解決系統身分，不等於 RBAC」
+- **記憶也要分層**：代理層（全域）vs 使用者層；使用者記憶預設只在私訊開放、共享頻道／API 呼叫預設關；一般 API 金鑰不等於可辨識個人；停用記憶 ≠ 刪除檔案；工作區 API 管理者仍可讀所有討論串
+- 沙箱外的 **secret proxy** 依目的主機／路徑規則在連線時注入憑證，沙箱內只放替代值；但不代替服務端權限限制，外連網路政策另設
+- 排程與事件觸發「時間到不會產生新授權」：觸發條件與操作範圍要寫進工作定義。底座 Managed Deep Agents 仍為公開測試
+
 ## 相關連結
 - [[agent-tool-authorization-gatekeeper]] — Tool 層授權把關；🔑 本篇補上 Platform／System／User 三層不可互換的上位框架
 - [[agent-permission-and-os-sandbox]] — 權限的技術實作層（sandbox、OS 邊界）；本篇是治理／組織層

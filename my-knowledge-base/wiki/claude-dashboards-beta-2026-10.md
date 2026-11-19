@@ -91,3 +91,4 @@ Claude Dashboards 把「提問 → 查資料 → 畫圖」接成一條流程，�
 - 📎 2026-10-19：[[claude-motion-beta-2026-10]] — 同一頁公告的 Motion（Team／Enterprise beta，方案與本條不同）
 - 📎 2026-10-30：[[chatgpt-intelligent-ui-interactive-answers]] — ChatGPT 側的對應功能（互動回答長在回答裡）與 Claude Artifacts／Gemini Canvas 三家對照（2026-10-08 快照）
 - 📎 2026-10-30：[[claude-code-artifacts-publish-update-share-guide]] — Artifacts 發佈／更新／分享機制與四個樣板（Dashboard 樣板仍 beta、需接資料來源）；[[claude-for-excel-formula-dashboard-outcome-prompting]] — 相鄰但不同產品：Excel 增益集做公式儀表板
+- 📎 2026-11-19：[[claude-whiteboards-sheets-data]] — 2026-11-10 起 Dashboards 改名 **Claude Data 並正式供應**，新增認證查詢與即時分享（兩者仍 beta）；Enterprise 11/19 起預設開啟（與本條「Enterprise 預設關閉」時點不同）

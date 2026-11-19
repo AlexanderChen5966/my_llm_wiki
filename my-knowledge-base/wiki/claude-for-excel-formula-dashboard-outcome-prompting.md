@@ -65,3 +65,4 @@ Excel「常用」分頁右側「增益集」→ 搜尋 Claude → 「Claude by A
 - [[claude-dashboards-beta-2026-10]] — 相鄰但不同產品：Claude app 的 Dashboards（接資料倉儲、存於 Artifacts），非 Excel 增益集；不可互相取代
 - [[claude-cowork-setup-guide]] — Cowork 也能產出格式化 Excel（工具不同，Excel 為輸出格式）
 - [[claude-code-artifacts-publish-update-share-guide]] — 另一種「會更新」的產出：發佈為網址
+- 📎 2026-11-19：[[claude-whiteboards-sheets-data]] — Claude 內建的 Sheets（beta，基本試算表）；官方說要完整 Excel 能力就匯出或改用本條的 Claude for Excel，兩者是不同入口

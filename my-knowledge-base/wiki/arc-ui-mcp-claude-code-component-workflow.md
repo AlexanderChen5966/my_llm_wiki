@@ -74,3 +74,4 @@ asset_value: 27
 - [[agent-skills-vs-mcp]] — MCP（查詢元件）與 Skills（工作規範）的分工
 - [[context7-mcp-server-guide]] — 同為「讓 AI 先查官方文件再動手」的 MCP 用法
 - 📎 2026-10-30：[[claude-code-ui-design-tools-10-repos-fact-check]] — 同作者的 10 個 UI 設計專案查核（Arc UI 不在十項內，本篇為其延伸閱讀；截至 2026-10-15 狀態）
+- 📎 2026-11-19：[[ai-ui-acceptance-unslop-and-design-reference]] — 說出元件名字（Modal／Popover／Tooltip／Toast）或把行為寫清楚的小實驗，與元件互動驗收表

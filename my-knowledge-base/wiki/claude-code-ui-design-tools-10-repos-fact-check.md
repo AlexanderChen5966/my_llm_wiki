@@ -71,3 +71,4 @@ Philo（aiposthub，2026-10-15）。逐項查核 X 熱傳十專案的現況與�
 - [[arc-ui-mcp-claude-code-component-workflow]] — 同作者的 Arc UI MCP 元件流程（不在十項之內；本篇以延伸閱讀指向它）
 - [[frontend-agent-skills-30-picks]] — 弱連結：skills.sh 前端 Skills 30 選，不同清單（兩者無共同專案名），不併
 - [[design-md-for-ai-ui]] — 弱連結：同向（設計系統／規則先於生成）
+- 📎 2026-11-19：[[ai-ui-acceptance-unslop-and-design-reference]] — 同站（aiposthub）的 UI 驗收系列：unslop 九項、狀態表、元件互動驗收

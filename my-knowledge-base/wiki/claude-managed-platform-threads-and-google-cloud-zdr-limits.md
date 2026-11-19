@@ -74,6 +74,14 @@ asset_value: 24
 - 排除：Google Cloud 篇文末「訂閱 AI 郵報」導流與站內「延伸閱讀」（OpenAI Google Cloud 合作、Managed Agents）；Message Threads 篇的站內延伸閱讀。
 - 未查：Google 官方比較文件原文；Message Threads 官方文件原文；Vertex／Bedrock 專屬條目庫內沒有。
 
+**2026-11-19 補充（來源：AI 郵報 Philo〈Claude Managed Agents 開放自架私人測試：控制服務、憑證與紀錄放在哪裡？〉https://www.aiposthub.com/claude-managed-agents-self-hosted-control-plane/ ，2026-11-13；二手，未對一手核對）**
+
+- **反方向的同一課題**：自架 Claude Managed Agents（2026-11-12，**私人測試**需洽詢）把控制服務 `cma-server`（API、代理循環、儲存）、憑證與工作歷史移進企業環境——範圍比先前只自架工具沙盒更大
+- 🔴 **自架 ≠ 資料不出去**：官方文件明寫每次模型呼叫都會送出當下累積的對話**含工具輸入與結果**；內部工具讀到的內容會跟著下一次推論外送。推論可選 Anthropic 或其他支援提供者／自家閘道；ZDR 仍依既有組織協議等條件，不因自架自動取得
+- 儲存：PostgreSQL 16+；**未設資料庫時用記憶體，重啟會遺失**；備份／復原、OpenTelemetry 監控平台的權限與保留期限都要自己定
+- 憑證分三種用途（應用→控制服務、伺服器→推論、工作程序→取任務的環境金鑰）；工具工作程序**不提供命令隔離**、會繼承所在程序權限與網路，需自備可丟棄容器／VM；不同信任等級要分開部署
+- 對本條目 C 的延伸：導入前除了問「ZDR 承不承接」，也要問「工具結果會不會進推論請求」
+
 ## 相關連結
 
 - [[claude-connector-auth-and-long-task-tasks-elicitations]] — 同批姊妹條目：連接器授權路徑與長任務的補問

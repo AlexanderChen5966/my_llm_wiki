@@ -8,7 +8,7 @@ created: 2026-11-04
 description: "Graphify 是開源的 AI 程式助理技能，用 tree-sitter 把程式庫解析成知識圖譜，再讓 Claude Code、Codex 等代理查詢。本文依官方 README 與基準測試，說明安裝、資料去向、適用情境，以及效益數字的限制。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Graphify 在 2026 年 10 月 18 日晚上又在 X 上被轉了出來，Sumanth\_077 的貼文約有 590 個讚、3.1 萬次瀏覽，重點只有一句：在程式助理裡輸入 /graphify，就能把整個專案變成可查詢的知識圖譜。
 

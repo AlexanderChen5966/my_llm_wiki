@@ -34,6 +34,15 @@ ADK 2.0 把多 Agent 協作的控制流從「LLM 口頭協調」搬進「程式�
 
 Google ADK 2.0 Beta 研究（Simon Liu）：ADK 1.x 以 `LlmAgent` 為核心，讓協調者 LLM 自己決定 transfer 給哪個 sub-agent，流程隱式、不可靠；ADK 2.0 改為「圖中心」，`Workflow(edges=[...])` 把平行、路由、迴圈全部寫死在程式碼，LLM 只在節點內決策。節點可以是純 function，是一等公民。
 
+## 補充資料
+
+**2026-11-19 補充（來源：AI 郵報 Philo〈Google ADK2.14.0 穩定化執行介面：多次評測、工具比對與升級限制怎麼看？〉https://www.aiposthub.com/google-adk-python-214-multi-run-evaluation-upgrade/ ，2026-11-09）**
+
+- 2.x 已走到 **2.14.0（2026-11-07）**：本機／E2B／Daytona 執行環境、A2A 整合（CLI 可產生 agent card）轉穩定；檔案工具可分塊串流讀。官方自報 30 節點、200 回合工作流快 23%、尖峰記憶體少 9%（單一流程，未核對）。新增 TeamsRunner 接 Microsoft Teams
+- ⚠️ **升級不是零修改**：16 項轉穩定的工具集不再受舊的實驗功能停用旗標阻擋（且無警告）；RunSkillScriptTool 不再收任意 `command` 字串，只收經驗證的腳本路徑＋參數；列舉型工具參數改傳 enum 成員（比較要用成員或 `.value`）
+- 🔴 **回退要連資料一起規畫**：Firestore 新序列化寫過的會話，2.13.0 以前讀不了（追加事件也算新寫入）；PostgreSQL 新表 JSON 欄改 `json`、舊 `jsonb` 表照舊
+- 多次評測與合併規則的細節見 [[agent-eval-regression-testing]] 補充資料
+
 ## 相關連結
 
 - [[agent-framework-stability-comparison]]

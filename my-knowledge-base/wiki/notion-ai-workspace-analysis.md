@@ -40,3 +40,4 @@ Notion 的護城河不是 AI 模型能力，而是「AI 嵌入位置」。當其
 - [[cognitive-hub]] — 外部化活記憶的設計模式
 - [[wenhao-yu-ai-workflow]] — 個人 AI 工作流的另一種實踐
 - [[notion-3-7-agent-skills]] — Notion 3.7 Agent Skills：頁面即 Skill、權限即執行權、匯出 SKILL.md 的同步落差（2026-09-23 新增）
+- 📎 2026-11-19：[[claude-whiteboards-sheets-data]] — 反方向對照：Claude 把白板、試算表、資料儀表板搬進 AI（「工作留在 Claude 裡」），Notion 則是把 AI 嵌入既有工作區

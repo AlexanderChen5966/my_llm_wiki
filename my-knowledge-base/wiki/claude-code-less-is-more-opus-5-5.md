@@ -80,3 +80,4 @@ Anthropic 工程部落格（10/13）稱每日合併程式碼變更從 2026 年 5
 - [[agent-permission-and-os-sandbox]] — 字面比對的規則必有洞，deny 是底線、沙盒才是環境邊界
 - [[claude-code-projects-redesign-2026-09]] — projects 協調者＋平行 threads
 - [[claude-code-hooks-memory]] — hooks 機制
+- 📎 2026-11-19：[[claude-code-cloud-scheduled-tasks-practice]] — 雲端 session＋Scheduled tasks 的實戰：本機設定帶不過去要 commit 進 repo、API 憑證（模型看不到金鑰）vs 環境變數、本機規劃雲端執行

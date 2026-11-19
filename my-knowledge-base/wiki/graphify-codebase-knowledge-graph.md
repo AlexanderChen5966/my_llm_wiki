@@ -186,6 +186,14 @@ Run --method--> .run() --calls--> LinuxContainer
 
 ⚠️ 成本誠實話：建圖 5 秒，真正的分析花了大半天。價值不在省分析時間，在於**沒有圖連該從哪個檔開始都不知道**——把「該讀哪幾個」從 335 縮到 4，對接手陌生專案來說這一步最貴。
 
+**2026-11-19 補充（來源：AI 郵報 Philo〈Graphify 是什麼？把程式庫變成知識圖譜，讓 Claude Code、Codex 查圖而不是翻檔案〉https://www.aiposthub.com/graphify-code-knowledge-graph-ai-coding-agent-guide/ ，2026-10-20，依官方 README／BENCHMARKS 整理的二手文）**
+
+- **讓代理「先查圖」的 always-on 設定**：`graphify claude install`／`graphify codex install` 寫入小設定；Claude Code、Gemini CLI 是**掛鉤型**（搜尋類工具呼叫、逐檔讀原始碼前提醒改走圖查詢），Codex／OpenCode／Cursor 是**指示檔型**（寫進 AGENTS.md、`.cursor/rules`）。會改動代理設定與專案檔，裝完先看版控 diff；`graphify uninstall [--purge]` 一次移除。本機 CLI 與 MCP 的指示不同，AGENTS.md 只挑一條查詢路徑。Codex 要先在 `~/.codex/config.toml` 的 `[features]` 設 `multi_agent = true` 才能平行抽取
+- **保持新鮮**：`graphify hook install` 在 commit／切分支後重建，但 `git pull` 後要自己跑 `graphify update`；升版後快取格式可能改，大專案第一次建圖會整個重抽。查詢結束碼 0＝有答案、3＝名稱不明確（列候選不亂猜）、4＝找不到
+- **資料去向**：程式碼本機 tree-sitter 不出機器；影音先本機 faster-whisper 轉錄；文件／PDF／圖片交給當前代理的模型（無頭模式需 API 金鑰）。`GRAPHIFY_BACKEND=ollama` 全本機、`=none` 只留程式碼圖；**Kimi 金鑰會送到中國的 Moonshot 伺服器**。無遙測，但每次查詢都記進 `~/.cache/graphify-queries.log`（可用環境變數關）。雲端版 Graphify Cloud 的資料處理沒有公開說明
+- **官方基準（作者自測、小樣本）**：約 100 萬行的 ERPNext、6 題、LLM 對照事實清單評分，關鍵事實涵蓋率 grep＋閱讀 **70.8% → 加圖查詢 82.0%**，每次查詢約 14 萬 token。只能證明「方向有幫助」，不能換算成自家省多少；README「雲端版省 80% token」無測試條件，屬宣傳
+- 🔴 **授權修正**：本文正文寫的 MIT 已過時——**0.9.25（2026-07-22）起改為 Apache-2.0**（多了專利條款，用 MIT 評估過的法務要重看）。2026-10-20 約 12.9 萬星、最新 0.9.92；倉庫已移到 Graphify-Labs 組織。星數與版本為原文所述，未另行核對
+
 ## 相關連結
 
 - [[refactor-with-claude-code-measured-by-graph]] — 同系列 0814 篇：那顆 92 方法 / 76.7% 佔比的 VC 重構實錄，是本篇對照組

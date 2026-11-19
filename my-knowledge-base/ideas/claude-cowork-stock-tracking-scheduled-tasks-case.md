@@ -26,3 +26,4 @@ asset_value: 18
 
 - [[claude-cowork-merged-into-chat-2026-09]] — Cowork 併入 Chat（介面名稱以此為準）
 - [[cowork-memory-browser-scheduled-tasks]] — Cowork 排程任務功能（本案例是其具體應用，互補）
+- 📎 2026-11-19：[[claude-code-cloud-scheduled-tasks-practice]] — 同題材（台股盤前整理）改用 Claude Code 雲端排程＋GitHub＋獨立核對程式，有一週 42 數字比對結果

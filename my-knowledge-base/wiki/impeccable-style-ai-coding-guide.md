@@ -45,6 +45,7 @@ Impeccable Style 涵蓋命名規範、架構偏好、工程原則，強調簡潔
 - [[claude-skills-ecosystem]] — Skills 在 AI 開發工作流中的位置
 - 📎 2026-10-30：[[taste-skill-anti-slop-frontend]] — 同為去 AI 味的前端設計 Skill；Impeccable 主打「流程」（問產品事實→隱喻候選→抽籤→審查），Taste 主打固定風格規則，兩者互補
 - 📎 2026-10-30：[[claude-code-design-skills-overview]] — 六款 Design Skill 精選，Impeccable 的指令數該篇寫 20 個，已過時（現 24 個）
+- 📎 2026-11-19：[[ai-ui-acceptance-unslop-and-design-reference]] — unslop 的「換名測試」與本篇「改名後是否成立」是同一把尺；unslop 也禁止「拿一種流行換另一種」
 
 ## 補充資料（來源：pbakaus/impeccable GitHub README，2026-05）
 

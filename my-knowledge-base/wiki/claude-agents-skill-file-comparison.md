@@ -86,6 +86,16 @@ ETH Zurich 2026 研究發現讓很多人意外：
 2. **自動觸發**：frontmatter 的 `description` 決定何時載入，description 寫強勢一點（Claude Code 傾向少觸發）
 3. **存取控制**：`disable-model-invocation: true` / `user-invocable: false` / `allowed-tools` — 細粒度控制
 
+## 補充資料
+
+**2026-11-19 補充（來源：iT 邦幫忙「Claude Code 實戰手冊」新手篇 G10〈CLAUDE.md、Memory、Skill 差在哪？讓 Claude 每次照同一套做事〉https://ithelp.ithome.com.tw/articles/10424843 ，依 2026-10 官方文件與 v2.1.302 整理）**
+
+- **六種「把資訊交給 Claude」的分工表**：這次就好→直接打／每次對話都要知道的規矩→`CLAUDE.md`／關於你這個人→Memory／這次做到哪→交接檔（見 [[claude-code-session-handoff]]）／有時才用、一用就整套→skill／一定要每次做到→hooks。官方觸發時機：**同一套做法貼到第三次**才做成 skill；「還在手動微調的流程＝skill 該改版了」
+- 🔴 **做法散三處的實例**：作者動畫 skill 一週後仍是第一天規格，新規矩寫在 147 行筆記、另幾條在 Memory。整併後 `SKILL.md` 170→**49 行**（只放必守規則＋步驟＋參考檔清單）、細節拆進 `reference/` 六檔＋`template/`＋`scripts/`；必守規則放最上面（壓縮後每個 skill 只保留前 5,000 tokens）
+- **實測觀察**：作者 8 月底起 skill 載入 21 次，自己打 `/` 叫 0 次——多數是模型自選；但同一句話換 Haiku 就沒自動載入 `page-style`，要保證套用就明確 `/名稱`
+- **常見坑**：`.claude/commands/` 已併入 skills（同名時 skill 優先）；**自訂 skill 會蓋掉同名內建指令**（如 `usage`）；雲端 routine 讀不到 `~/.claude/skills/`，要 commit 進專案；同對話改了 `SKILL.md` 不會重讀；frontmatter 拼錯不報錯；新建 skills 資料夾要 `/reload-skills`；舊版（claude.ai 同步來的同名 skill）要關掉，否則可能被挑到
+- 叫 Claude 代寫 skill 時，它**不會主動加 `disable-model-invocation: true`**，有後果的（交接、commit、發文）要自己補
+
 ## 相關連結
 
 - [[claude-md-optimization-techniques]] — CLAUDE.md 精簡化六大技巧（< 200 行、NEVER/ALWAYS 格式、任務路由表）
@@ -94,3 +104,5 @@ ETH Zurich 2026 研究發現讓很多人意外：
 - [[claude-skills-guide]] — Claude Skills 完整指南：能力包型 + 軟編排型
 - [[zerospec]] — ZeroSpec 以 AGENTS.md 為核心的 Layer 0 上下文整備框架
 - [[context-engineering-fundamentals]] — 多 Agent 拓撲與 context 管理理論基礎
+- [[claude-code-session-handoff]] — 同系列 G5：交接檔是產出，G10 的 `/handoff` skill 是怎麼產
+- [[claude-code-less-is-more-opus-5-5]] — CLAUDE.md 只留程式碼看不出來的事；強制要求交給 hooks／deny 規則

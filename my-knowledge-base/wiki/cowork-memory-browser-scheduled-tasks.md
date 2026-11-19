@@ -120,3 +120,4 @@ asset_value: 58
 - [[prompt-injection-vs-jailbreak]] — 🔑 內建瀏覽器面對的正是 Prompt Injection（藏在被讀取的資料裡），與 Jailbreak 來源不同
 - [[jailbreak-four-cases-and-guardrail-layers]] — 「交叉比對動作與原始指令」屬於多層防線的一層
 - [[chatgpt-chrome-extension-guide]] — 對照另一家的瀏覽器整合路線
+- 📎 2026-11-19：[[claude-code-cloud-scheduled-tasks-practice]] — Claude Code 側的雲端排程（原 Routines，現稱 Scheduled tasks）：每次新開雲端 session、材料靠 GitHub；與 Desktop 排程、CLI `/loop`（電腦關就停）區分

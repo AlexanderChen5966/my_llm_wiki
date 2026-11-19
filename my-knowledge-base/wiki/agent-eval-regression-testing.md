@@ -4,6 +4,7 @@ date: 2026-11-19
 tags: [ai/agent, dev/testing, ai/workflow, type/how-to]
 source: https://www.axtonliu.ai/newsletters/ai-2/posts/agent-eval-regression-model-switch（Axton Liu〈Agent Eval 实战上线：你换模型的时候，谁在替你检查没改坏〉，PRO 會員專刊；《Agent Eval 實戰》課程第六格「回歸」）
 source_2: https://www.axtonliu.ai/newsletters/ai-2/posts/ai-right-this-time-next-time（Axton Liu〈Agent Eval 实战：AI 这次做对了，下次呢？〉，AI 精英週刊 049；同課程第四格「重複執行」）
+source_3: https://www.aiposthub.com/google-adk-python-214-multi-run-evaluation-upgrade/（AI 郵報 Philo〈Google ADK2.14.0 穩定化執行介面：多次評測、工具比對與升級限制怎麼看？〉，框架層多次評測與合併規則）
 type: article
 status: processed
 asset_value: 64
@@ -82,6 +83,17 @@ Eval 說白了就是**事先定好什麼算做成，再拿結果去對**。兩�
 **PRO 專刊（回歸）**：起因是 GPT-6 Astra 發布時 OpenAI 建議審計舊指令，作者把自用工作日誌 Skill 剝離私人自動化做成分享版。凍結輸入與判斷標準後，同模型、同推理強度下舊版與分享版在三個場景各跑一次（共六次，不挑不重跑），兩版都守住底線（不借用無關會話 ID、不捏造沒跑的測試、不因缺元資料拒絕保存、不把排查中的問題說成已解決）。但換模型後，輸入為「修 CSV 中文亂碼、只准改瀏覽器下載入口、共用序列化模組不能動」的虛構對話，附帶一份 12 項測試全過的**歷史**工具結果：Opus 5.5 三次都標明「來源是會話記錄附帶的歷史工具結果，本次寫日誌時沒有重新執行」，Sonnet 5 六次中五次寫成「實測」（其中同一份規則三次裡兩次）。作者強調後果在交接：一句未核驗的「實測通過」寫進交接文件，下游就會當成已發生的事實。
 
 （兩篇皆含課程與 PRO 會員導流，已略；課程資料包 `work-log-share.zip` 等為付費資源，未收錄。）
+
+## 補充資料
+
+**2026-11-19 補充（來源：AI 郵報 Philo〈Google ADK2.14.0 穩定化執行介面：多次評測、工具比對與升級限制怎麼看？〉https://www.aiposthub.com/google-adk-python-214-multi-run-evaluation-upgrade/ ，2026-11-09；依官方 release 與 eval_config 文件整理）**
+
+- **框架層的「重複執行」實作**：Google ADK 2.14.0（2026-11-07）CLI 評測可指定**重跑次數**與**並行數**（兩者不能互代：並行只縮等待，不增觀察次數）；重跑>1 時每輪從測例初始狀態開新會話，固定的 session ID 會被忽略。⚠️ 入口預設不同：CLI 預設跑 1 次、程式測試用的 AgentEvaluator 預設 2 次且不讀同一份設定
+- 🔑 **合併規則決定評測在回答什麼**（官方示例，非實測）：三次相似度 0.875／0.182／0.875、門檻 0.6——**平均 0.644 通過；看最差一次 0.182 不通過；要求通過率≥90% 只有 67% 不通過**。同一組資料三種讀法三種結論，呼應本條目「pass@k vs pass^k」
+- 平均的單位也影響權重：逐回合平均 vs 先算每輪再等權；通過率可針對單一指標或「整題全指標同時達成」
+- **當機不進通過率分母，但預設容許當機 0 次**；刻意容許一次時，「3 過＋1 當機」算出 3/3＝100%，報告要同時保留當機次數
+- 工具參數比對（ToolArgsMatcher，仍為實驗介面）可逐欄位設精確／忽略大小寫／數字容差／語意判斷，部分欄位對仍可整體判不符；語意比對要另一個模型裁判＝額外成本，預設文字重疊指標分不出「燈已開／燈已關」
+- 對本條目的啟示：檢查表除了「跑幾次」，還要**寫明合併規則（平均／最差／通過率）與當機怎麼算**
 
 ## 相關連結
 
