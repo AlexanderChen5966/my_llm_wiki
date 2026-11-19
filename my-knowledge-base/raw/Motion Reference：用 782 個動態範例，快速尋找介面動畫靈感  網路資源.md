@@ -8,7 +8,7 @@ created: 2026-10-27
 description: "Motion Reference 是由 TakayuStudio 打造的動態設計靈感網站，收錄 782 種 UI、遊戲、捲動、文字與 SVG 動畫範例。支援播放速度調整、逐格檢視、時間軸、Easing 比較與互動測試，並提供 CSS、GSAP、React 等實作程式碼，適合設計師與前端工程師快速尋找網頁動畫靈感。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 網站連結 [https://motion-reference.takayustudio.jp/](https://motion-reference.takayustudio.jp/)
 

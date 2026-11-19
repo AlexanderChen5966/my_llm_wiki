@@ -51,3 +51,4 @@ Xcode 26.3 在建置失敗時，會把上一輪真實跑過的測試結果原樣
 
 - [[agent-bug-fix-eval-green-is-not-correct]] — **同一命題的另一種成因**：該條目談「agent 本身沒有驗證證據卻自信宣稱成功」（模型層），本篇談「MCP 工具本身在建置失敗時回傳快取舊結果或選錯模擬器仍謊報 failed:0」（工具/基礎設施層），兩者互補，共同支持「不能只信結構化回傳」這條命題
 - [[xcode-mcp-hidden-state-and-authorization]] — **同作者續篇**：本篇談失敗怎麼被報告，續篇談失敗為什麼發生（MCP 是接到活 IDE 的有狀態 bridge，run destination、xcode-select、授權都不在 agent 那一側）（2026-09-23 新增）
+- [[agent-eval-regression-testing]] — 同一種失效的模型層版本：Sonnet 5 把上下文附帶的「歷史測試報告」寫成「實測」；本篇是工具拿舊結果冒充本次（2026-11-19 新增）

@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "GBrain 是 Garry Tan 開源的 AI 代理記憶系統。整理資料以 Markdown 存放的方式、search 與 think 的差別、安裝需求與隱私邊界，幫你判斷適不適合自己使用。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 GBrain 是 Y Combinator 執行長 Garry Tan 開源的 AI 記憶系統，社群貼文把它稱為他的「第二大腦」。
 

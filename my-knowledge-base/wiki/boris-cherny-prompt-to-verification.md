@@ -121,3 +121,4 @@ bnext（李先泰，2026-07-30）報導 Y Combinator Startup School 2026 對談�
 - [[loop-engineering-6-components]] — 長時自走 Agent 的迴圈設計
 - [[anthropic-claude-ai-perf-sprint-metric-first-loop]] — Anthropic 官方實證案例：先證明量尺與用戶感受相關，再讓 AI 跑「只降不升」的最佳化循環——「賭注從指令移到驗證」的生產環境版本（2026-09-29 新增）
 - 📎 2026-11-04：[[claude-md-guide]] 補充段 — 「Stop and ask when」5 條具體停止條件（CLAUDE.md 層；本篇 Addy 模板是提示詞層，方向一致）
+- 📎 2026-11-19：[[claude-code-less-is-more-opus-5-5]] — Lydia Hallie 演講：同方向（少叮嚀、靠驗證），另補安全軸（可逆性判準、deny／沙盒）與驗證點三層落點（指令／hooks／CI）

@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "Images 2.6 拼貼動畫教學，從一句口播拆成視覺隱喻，到透明紙片、定格組裝與 5 秒無聲 MP4。附實作成片、可複製提示詞、原版 Codex Skill 安裝方式，以及官方 GIF 圖片與影片示範。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Images 2.6 拼貼動畫教學，可以先從一個很小的任務開始：把「一句想法，組裝成一支短片」做成五秒畫面，墊在口播下面。這類補充畫面就叫 B-roll，適合在說話時呈現一個動作或比喻。
 

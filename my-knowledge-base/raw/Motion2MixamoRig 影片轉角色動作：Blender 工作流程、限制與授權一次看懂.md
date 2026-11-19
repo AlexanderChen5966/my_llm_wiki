@@ -8,7 +8,7 @@ created: 2026-10-14
 description: "Motion2MixamoRig 可把單人影片或照片中的姿勢轉到 Mixamo 骨架角色，輸出 Blender、Unity 可讀的檔案。整理熱門示範的實際流程、素材要求、實驗性限制及不同資產的授權邊界。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 讓一個遊戲角色走路、轉身或跳舞，常需要先找到合適的動作素材。
 

@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "Henge 的技術底盤來自作者的前作 Husk，Husk 今年 9 月上線，讓 iPhone 直接執行 Android 遊戲與應用，靠自建轉換層運作，沒有完整開機 Android。Henge 的建置文件明列它直接編入 Husk 的 StikJIT（iOS 上的 JIT 即時編譯工具）、網路堆疊 libslirp 與"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 很多人可能都想過 Apple 的行動處理器效能不錯，要跑 macOS 其實夠用，但就是看蘋果願不願意罷了（後來就有了 Macbook Neo 就是用手機處理器）。近日一個 11 月 2 日才出現的 GitHub 專案「Henge」把「iPhone 跑 macOS」蘋果不願意給你的功能做成成可安裝的軟體。開源模擬器 Henge 由 11 月 6 日發布 0.1 版，直接在 iPhone 與 iPad 上安裝蘋果的 macOS，不需要 Mac、不需要越獄；11 月 7 日跟進的 0.2 版更把最新的 macOS 27（Golden Gate）也塞進了手機。開發者 Leviidev 不是第一次做這種事，他上個月剛用同一套底層技術讓 iPhone 跑起 Android。  
 

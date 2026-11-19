@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "ChatGPT Images 2.6 新增 GIF 動畫、參考圖片與更快的編修。整理 Flare、Sunburst 的用途、使用入口與官方速度主張，並說明如何用商品圖檢查多輪修改的一致性。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 做一套商品圖，最耗時的往往是第二輪修改：換背景後，產品細節也跟著變了。ChatGPT Images 2.6 這次把更新重點放在更快生成、持續編修和 GIF 動畫。
 

@@ -180,3 +180,4 @@ expect(response).toBeDefined();   // 能執行到目標程式碼，但什麼都�
 - [[puppeteer-browser-automation]] — 瀏覽器自動化執行層
 - [[claude-gh-ci-monitoring]] — Claude × GitHub 的 CI／issue 回寫鏈路（補充資料那條全自動鏈路的機制面）
 - [[llm-judge-confidence-cascade]] — 評審本身也需要被驗證：便宜評審在風格精緻的錯誤答案上高信心仍會錯
+- [[agent-eval-regression-testing]] — 📎 2026-11-19 新增：個人層級的最小 Eval 做法（事先定完成條件、只看存檔輸出不看 AI 自我總結、重複執行與換模型回歸）

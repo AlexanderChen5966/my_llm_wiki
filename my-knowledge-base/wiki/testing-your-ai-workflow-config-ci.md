@@ -106,3 +106,4 @@ MikeWang Claude Code 系列連載第 13 篇（Medium，2026-07-17）。承接前
 - [[boris-cherny-prompt-to-verification]] — 「投資驗證」與本篇「守門員也要被守」同源；但注意評測集會折舊，**決定性測試比 LLM eval 長壽**
 - [[ai-code-review-safeguards]] — AI code review 護欄
 - [[claude-md-optimization-techniques]] — 「屢次違反的規則轉成 Hook」；本篇補上「轉成 Hook 之後要怎麼確保它沒壞」
+- [[agent-eval-regression-testing]] — 📎 2026-11-19 新增：需要 LLM 在場的那一半怎麼守——固定輸入＋檢查表，改規則或換模型前後各跑一次做回歸

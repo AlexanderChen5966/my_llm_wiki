@@ -86,3 +86,4 @@ Moksa 撰寫的中文圈首篇 Auto Mode 深度教學，拆解啟用條件、Cla
 - [[prompt-injection-vs-jailbreak]] — classifier 看不到檔案與網頁內容的抗注入設計
 - [[agent-permission-and-os-sandbox]] — 字面比對的規則必然有洞，deny 是底線不是保險箱
 - 📎 2026-10-30：[[claude-code-artifacts-publish-update-share-guide]] — 同系列 G9：自己叫它做的新 artifact 發佈不跳詢問、不經 auto mode 審核（初始僅自己可見）
+- 📎 2026-11-19：[[claude-code-less-is-more-opus-5-5]] — 「做錯一次收得回來嗎？」判準：不可逆的寫 deny（在分類器前生效）；權限管不到 npm test 跑起的腳本，須沙盒／雲端框住環境；projects 雲端 session 不套用 repo deny 與 hooks

@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "Notion ChatGPT 原生編輯器把頁面放到對話旁，支援建立、修改與資料庫整理。一次看懂方案、建議模式、工作區權限與仍須回 Notion 完成的操作。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 把 AI 整理好的會議紀錄貼回團隊文件，看起來只差一次複製，實際上還要重排格式、補上負責人，再確認同事看到的是不是最新版。
 

@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "Anthropic 分析 207,049 筆科學工作對話，研究者使用 Claude 的主要任務集中於分析與寫作。本文說明樣本單位、學科差異、時間與產出情境的假設，以及研究團隊如何評估實際效益。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 科學研究包含閱讀、分析、寫作與實驗，這些工作使用 AI 的方式可能差很多。
 

@@ -8,7 +8,7 @@ created: 2026-11-11
 description: "現在很多人都會想用用看 Claude、Codex、Grok Bot、OpenClaw、Meta Muse 等之類的 AI 代理工具，但不是每個人都有想法，知道這些 AI 代理（AI Agent）可以用在哪些地方，又或是自己想試的都已經試完了，沒有其他更多想法，這時 AgentUseCases.ai 就是非常不錯的靈感平台。AgentUseCases.ai 目前已經收集超過 2,000 個 AI 代理實際應用案例，而且會根據使用的 AI 代理工具分類，你可以直接找到自己有在用的那一款。不僅如此，它還標榜每天都會更新，像昨天就新增了 21 個新案例，這點相當不錯。也有提供每日電子報的功能，會每天發送 5 個 AI 代理實際應用案例，幫助你隨時都有靈感。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 現在很多人都會想用用看 Claude、Codex、Grok Bot、OpenClaw、Meta Muse 等之類的 AI 代理工具，但不是每個人都有想法，知道這些 AI 代理（AI Agent）可以用在哪些地方，又或是自己想試的都已經試完了，沒有其他更多想法，這時 AgentUseCases.ai 就是非常不錯的靈感平台。
 

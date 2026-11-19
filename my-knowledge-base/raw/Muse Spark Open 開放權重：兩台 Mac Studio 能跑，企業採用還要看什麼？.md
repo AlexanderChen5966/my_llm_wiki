@@ -8,7 +8,7 @@ created: 2026-10-16
 description: "Muse Spark Open 於 2026 年 10 月 15 日開放權重，主打程式開發與長任務，也能在兩台 M5 Ultra Mac Studio 執行。本文說明設備條件、商用授權、自行部署與雲端服務的選擇。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Muse Spark Open 把大型 AI 模型帶到兩台 M5 Ultra Mac Studio，開發者因此多了一條自行部署的路。對不想每次把資料送到外部模型服務的團隊，這項更新有實際意義。
 

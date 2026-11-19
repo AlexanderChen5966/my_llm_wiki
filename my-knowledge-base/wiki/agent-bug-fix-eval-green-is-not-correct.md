@@ -157,3 +157,4 @@ Day 14 開始管權限：「先來擋掉那幾道下去就回不來的指令。�
 - [[devin-two-years-intelligence-saturation]] — Frontier Code 可合併性評測與 benchmark 的侷限
 - [[claude-formal-verification-oss-fuzz-rocq-scope]] — 📎 2026-11-05 新增：另一種「通過」的讀法——Rocq 檢查器接受的只是「不崩潰」命題，不等於功能正確或程式庫安全
 - [[ideas/harness-layer-research-agentbug-smith-mosib]] — 📎 2026-10-19 新增：AgentBug-Smith「重現 ≠ 修復」與本篇「綠燈 ≠ 改對」呼應；⚠️ 該篇是 harness 錯誤評測集，本篇是 agent 修 bug 的驗收，不混為一談
+- [[agent-eval-regression-testing]] — 📎 2026-11-19 新增：同屬「做對一次不算數」的不寫程式版——原樣重跑＋換新材料的四行記錄表、換模型前後用同一張檢查表做回歸

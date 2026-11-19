@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "Google 推出 Gemini Omni 1.2 Flash，原生影片最長十五秒、720p 每秒 0.07 美元。本文拆解參考素材、多輪修改、帳號入口與驗收方式，保留高速動作、語音與素材權利限制。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 影片生成能否實際交件，往往取決於片長、修改次數與預算能否一起控制。
 

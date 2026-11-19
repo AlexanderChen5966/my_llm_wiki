@@ -88,3 +88,4 @@ Claude Code 2.1.283（changelog 2026-09-25，官方）新增 `/doctor prompt-aud
 - [[llm-cost-optimization-strategies]] — 另一個 `/claude-api prompt-audit`（提示詞層），依本機 changelog 為不同指令
 - [[claude-code-commands-reference]] — `/add-dir` 等指令速查
 - [[superpowers-skill-bloat-risk-tiering]] — 未安裝的 `superpowers:*` 引用也被抓出；Skill 膨脹與風險分級
+- 📎 2026-11-19：[[claude-code-less-is-more-opus-5-5]] — Lydia Hallie 把 `/doctor prompt-audit` 列為「刪叮嚀」第一步；CLAUDE.md 只留程式碼看不出來的事

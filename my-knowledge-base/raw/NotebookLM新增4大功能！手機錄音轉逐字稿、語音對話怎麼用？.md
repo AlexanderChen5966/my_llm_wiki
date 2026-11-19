@@ -8,7 +8,7 @@ created: 2026-10-28
 description: "Gemini Notebook推出即時語音對話、手機錄音、互動式學習總覽與簡短影片摘要4項新功能，本文整理各功能的操作步驟，並實測中文使用情形。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 [![](https://pk-img.learnin.tw/prod/photos/2026-09/img-1790646651-30210.gif)](https://edm.bnext.com.tw/martech-trends/?utm_source=web_bn&utm_medium=logo_banner&utm_campaign=2026_martech&utm_content=175752&utm_term=channel_all)
 

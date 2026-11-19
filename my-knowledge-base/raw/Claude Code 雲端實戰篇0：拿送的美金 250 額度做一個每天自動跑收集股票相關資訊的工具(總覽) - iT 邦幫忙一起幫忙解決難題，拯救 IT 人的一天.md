@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "為什麼想測 9 月底，Claude Code 的雲端 session 正式推出，Pro 和 Max 訂閱者可以領一筆只能用在雲端的額度，我的 Max 方案領到美金 $250，11/5 到期。領取期限已..."
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 0
 

@@ -73,3 +73,4 @@ asset_value: 70
 - [[llm-judge-confidence-cascade]] — 量化「LLM judge 有噪聲」在哪些任務最大：推理、程式、風格欺騙、無參考答案的文章（CMU 研究，原論文待查）
 - [[ai-architecture-diagram-tool-vs-instruction-comparison]] — 評估 Skill／MCP／外掛時排除環境干擾的隔離旗標：`--setting-sources project --strict-mcp-config`（避開 `--safe-mode`，它會連待測對象一起停用）（2026-09-29 新增）
 - [[anthropic-claude-ai-perf-sprint-metric-first-loop]] — 棘輪（門檻只降不升）在生產環境效能最佳化的應用，與本篇 Skill 評分的棘輪是同一機制的另一個領域（2026-09-29 新增）
+- [[agent-eval-regression-testing]] — 不靠工具的手動最小版：重複執行記錄表與換模型回歸檢查表（2026-11-19 新增）

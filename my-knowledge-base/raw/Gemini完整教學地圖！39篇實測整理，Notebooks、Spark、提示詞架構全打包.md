@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "本文彙整39篇Gemini實戰教學，從方案挑選、打造Notebooks知識庫，到深度整合Workspace辦公環境，輕鬆建立專屬的AI工作流。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 [![](https://pk-img.learnin.tw/prod/photos/2026-09/img-1790646651-30210.gif)](https://edm.bnext.com.tw/martech-trends/?utm_source=web_bn&utm_medium=logo_banner&utm_campaign=2026_martech&utm_content=175753&utm_term=channel_all)
 

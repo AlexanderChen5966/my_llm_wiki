@@ -119,3 +119,4 @@ Tim Wei 用自己 9 天東京行程 Excel，讓 Haiku 4.5、Sonnet 5、Sonnet 5.
 - [[xcode-mcp-test-report-fabrication]] — 同為「宣稱完成卻沒做」
 - [[agent-ux-status-transparency-maturity]] — 回報完成 ≠ 真的完成，狀態要可驗證
 - [[claude-haiku-5-5-release-notes]] — 📎 2026-10-30：Haiku 5.5 已於 2026-10-07 發布；本評測的 Haiku 4.5 結論不適用於 5.5
+- [[agent-eval-regression-testing]] — 📎 2026-11-19：另一組換模型小規模實測（Opus 5.5 vs Sonnet 5，差在是否區分歷史結果與實測），附換模型前的回歸檢查表做法

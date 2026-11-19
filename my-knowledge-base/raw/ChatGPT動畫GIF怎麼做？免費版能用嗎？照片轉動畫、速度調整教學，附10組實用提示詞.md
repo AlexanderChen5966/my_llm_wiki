@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "ChatGPT也能製作GIF動畫了！本文整理免費版使用方式、照片轉GIF教學，並提供10組實用提示詞，教你生成社群表情圖案、產品動畫與動態圖片。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 [![](https://pk-img.learnin.tw/prod/photos/2026-09/img-1790646651-30210.gif)](https://edm.bnext.com.tw/martech-trends/?utm_source=web_bn&utm_medium=logo_banner&utm_campaign=2026_martech&utm_content=175753&utm_term=channel_all)
 

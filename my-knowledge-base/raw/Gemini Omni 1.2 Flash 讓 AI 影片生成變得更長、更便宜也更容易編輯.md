@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "對經常使用 AI 生成影片的創作者來說，最熟悉的挫折莫過於故事正要進入高潮時，畫面卻戛然而止。如今，Google 希望改善這個問題。該公司正式推出新一代 AI 影音生成模型 Gemini Omni 1.2 Flash，不僅延長影片生成時長，也進一步強化後製編輯與畫面一致性能力，讓 AI 影片創作流程更貼近專業製作需求。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 <iframe frameborder="0" src="https://b23c481491af617ed5836837a9f7d16d.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html" title="第三方廣告內容" width="728" height="90" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="private-state-token-redemption" aria-label="廣告"></iframe>
 

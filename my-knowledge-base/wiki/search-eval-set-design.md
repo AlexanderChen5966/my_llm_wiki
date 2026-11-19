@@ -165,3 +165,4 @@ q14 Kubernetes 的 Pod 不斷重啟要怎麼排查？   semantic score = 0.85
 - [[agent-bug-fix-eval-green-is-not-correct]] — 最小 eval case 與 SWE-bench 的 FAIL_TO_PASS／PASS_TO_PASS
 - [[rag-retrieval-augmented-generation]] — RAG 四步 pipeline 與可追溯性
 - [[agent-skill-evaluation-tools-comparison]] — Skill 的 eval 工具（同樣的「先建秤」思路）
+- [[agent-eval-regression-testing]] — 📎 2026-11-19 新增：同一原則用在提示詞／Skill：先定完成條件再跑，換一份沒參與調整的新材料防過度擬合

@@ -8,7 +8,7 @@ created: 2026-10-06
 description: "Muse Gadgets SDK 讓 ESP32 與 Linux 裝置接入 Muse，近期 DIY AI 伴侶在 X 引起討論。本文解析韌體、帳號、配對與雲端分工，說明為何開源 SDK 不等於把大型模型放進小晶片。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 一塊小型開發板，加上螢幕、按鈕與麥克風，就能做出一個看得見表情的 AI 裝置。近期 X 上的 DIY 展示，讓 Muse Gadgets SDK 受到關注。這個官方開源專案提供 ESP32 與 Linux 路線，讓開發者把自己的硬體連到 Muse。
 

@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "這是「Claude Code 雲端實戰」系列的第 1 篇。第 0 篇從頭講了整個專案：用雲端 session 從零做一個每天整理台股盤前資訊的工具，再用排程任務讓它每個交易日自己跑（https://i..."
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 0
 

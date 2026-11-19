@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "Google ADK2.14.0加入多次評測與工具參數比對，穩定化執行介面。拆解平均分、最差值、通過率，以及Firestore回退與技能腳本升級限制。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Google ADK2.14.0 要處理的一個問題，是代理把任務做對一次，還不能說明下一次也能完成。若每次選的工具或參數不同，團隊需要保留重跑的落差，才能判斷改版是否改善。
 

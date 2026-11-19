@@ -7,7 +7,7 @@ created: 2026-11-11
 description: "同样的输入，Opus 5.5 三次五行全找到，换成 Sonnet 5，六次里有五次把没跑过的测试写成了“实测”。9 月月度课《Agent Eval 实战》已在 PRO 资源库上线，这篇专刊讲换模型时怎么做回归检查。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 这个练习，我提前在对话窗口里试做过。输入是同一段对话，检查表是同样五行。Opus 5.5 跑了三次，五行全找到。换成 Claude Sonnet 5，六次输出里有五次，把第四行写成了“实测”。
 
