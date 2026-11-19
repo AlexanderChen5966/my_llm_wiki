@@ -12,3 +12,4 @@ GitHub repo awesome-agentic-ai-zh（作者 WenyuChiou）的「研究者延伸路
 
 ## 相關連結
 - 與同 repo 的 teacher 分支共用主路線骨架，但安全重點與工具清單完全不重疊，未合併（此為 mark-only，未建條目）
+- 2026-11-19：新版相對 2026-06 舊版的變化對照，已補進 [[agentic-ai-researcher-roadmap]] 的「補充資料」段（該條目主體為舊版三模型分工內容）

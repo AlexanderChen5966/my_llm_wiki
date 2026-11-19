@@ -33,4 +33,23 @@ status: processed
 | Tier 1 | Claude Desktop + NotebookLM |
 | Tier 2+ | Claude Code（批次自動化需求） |
 
+## 補充資料
+
+**2026-11-19 補充：來源頁面改版（2026-09-03 剪存版；https://github.com/WenyuChiou/awesome-agentic-ai-zh/blob/main/branches/for-teacher.md）**
+
+新版整頁重寫，定位改為「**AI 先做草稿，教師負責決定能不能用**」；起點從「Claude.ai＋NotebookLM 免 setup」改為「只需一個**學校核准的 AI 工具**」。上方的 Tier 表、3 個 prompt 範本、三大情境細項為 2026-06 舊版內容，新版已改動如下：
+
+| 項目 | 舊版（2026-06） | 新版（2026-09） |
+|---|---|---|
+| 層級建議 | Tier 0／1／2+ 表 | 移除；改為「只做一次備課停在網頁工具、每週重跑才走 Track A 並先問校方 IT」 |
+| Prompt 範本 | 教案大綱／Rubric／學生回饋整理（貼學生作業片段） | 第一個練習（虛構的國小影子活動，含 Learning Objective、兩層 Scaffolding、Formative Assessment、Exit Ticket）＋Rubric 草稿＋常見錯誤整理；全用虛構內容，不推測學生身分、能力、健康或特教需求 |
+| 工具／資源 | superpowers、Claude Code、hf agents-course、llm-universe、awesome-chatgpt-prompts | 新增 Claude for Teachers、ChatGPT for Teachers（皆限通過驗證的美國 K-12）、Gemini Notebook（原 NotebookLM）；llm-universe 換 hello-agents（CC BY-NC-SA 4.0）；新增 microsoft/ai-agents-for-beginners、anthropics/skills（逐資料夾授權）；prompt 庫改為 f/prompts.chat |
+| 必修閱讀 | Effortless Academic | UNESCO GenAI 教育指引、歐盟執委會教師倫理指引、TeachAI School Toolkit（先讀自己學校政策） |
+| 使用情境 | 三分支細項＋Chen 2020／Mittal 2024 文獻 | 精簡為備課與教材／課堂與學習支援／行政與溝通；新增「不要讓 AI 假裝診斷學生」 |
+
+- **新增五條安全線**：先看校方政策 → 不放學生資料（練習用虛構內容）→ 教師保留決定權（成績、紀律、升學、特教由合格人員決定）→ 每次 Human Review（事實、引用、偏見、年齡適切、無障礙、課程目標）→ 向學生說清楚可用範圍與揭露方式。
+- **新增八個核心詞**：Learning Objective、Scaffolding、Rubric、Formative Assessment、AI Literacy、Student Data、Human Review、Academic Integrity。
+- **進階自動化要可中斷**：`選取資料 → 移除不必要資訊 → AI 草擬 → 人工檢查 → 批准 → 發布`；課程 Agent 不要一開始就給 LMS 寫入權限；工具不支援所在地區時不繞過限制。
+- **法規說法改寫**：舊版直接點名 FERPA／GDPR／《個資法》要注意；新版改為「是否適用由校方與合格人員判斷，本頁不是法律意見」。
+
 相關：[[agentic-ai-researcher-roadmap]]

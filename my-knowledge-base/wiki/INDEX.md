@@ -481,7 +481,7 @@ status: processed
 | [[agenvoy-go-agent-platform]]            | Agenvoy：Go 打造的個人 AI Agent，七大模型自動路由 + OS 原生沙箱 + 自建工具 + 本身即 MCP server；重點學 ask_user 異步設計（狀態釋放到磁碟，回覆才 resume）|
 | [[spec-driven-ai-workflow]]              | 規格驅動工作流：spec-kit / OpenSpec（規格先行）+ Superpowers（工程紀律）                                                       |
 | [[agentic-ai-learning-roadmap]]          | AI Agent 7 階段學習地圖（8 個等級成熟度評估）+ 5 大工具比較，Track A（CLI）/ Track B（Builder）
-| [[agentic-ai-researcher-roadmap]] | 研究者用 AI 路線圖：Claude 規劃/Codex 批次程式/Gemini 長稿三模型分工 + 文獻RAG/投稿工具清單 |                                      |
+| [[agentic-ai-researcher-roadmap]] | 研究者用 AI 路線圖：Claude 規劃/Codex 批次程式/Gemini 長稿三模型分工 + 文獻RAG/投稿工具清單；📎 補充：2026-09 改版轉向查證優先（citation 逐條核對、unsupported 標記、八核心詞、IRB／私人資料上傳前確認、DVC／MLflow／Zenodo 可重現工具），三模型分工與 Tier 表已移除 |                                      |
 | [[agentic-engineering-mindset]]          | Agentic Engineering 哲學觀：Karpathy 的鬼魂比喻 + Bounded Context 護城河，品味與理解不可外包                                     |
 | [[agentic-engineering-patterns]]         | Simon Willison 實用工程模式指南：程式碼囤積、AI 應提升品質、compound engineering loop                                           |
 | [[agentic-engineering-sop]]              | Agentic Engineering 六階段實戰 SOP：Spec/Plan/Tasks 三層落檔 + 三種 AI 員工 + 三層安全網（含 CLAUDE.md 範本、sub-agent 範本、回滾決策表）   |

@@ -96,6 +96,26 @@ status: processed
 - [[claude-code-advanced-workflow]] — Claude Code 進階技巧
 - [[synthesis/synthesis-agentic-engineering]] — Agentic engineering 精粹
 
+## 補充資料
+
+**2026-11-19 補充：來源頁面改版（2026-09-03 剪存版；https://github.com/WenyuChiou/awesome-agentic-ai-zh/blob/main/branches/for-researcher.md）**
+
+新版整頁重寫，**定位從「三模型分工提升產出」改為「查證優先」**：「不是要讓 AI 替你當研究者」，而是找到資料、看懂資料，再確認答案真的有資料支持。上方 T 的三模型分工、工具分工表、必練流程、6 個維護者 skill、Tier 0–3 表在新版**全部移除**（保留原文作為 2026-06 版紀錄，不代表現行建議）。
+
+| 項目 | 舊版（2026-06） | 新版（2026-09） |
+|---|---|---|
+| 入口 | 先完成 A3／Stage 7 | 不寫程式者可直接做第一個練習（瀏覽器＋一篇公開 paper） |
+| 起手工具 | 階段 × 工具表、Tier 0–3 | 三選一：Gemini Notebook（NotebookLM 於 2026-07-16 改名）／Zotero／PaperQA2 |
+| 工具表 | Stars 數 | 編輯推薦度＋授權／限制欄（2026-08-29 查核）；新增 asreview、DVC、MLflow、Zenodo、repo2docker；open_deep_research 已封存，降為「歷史參考」⭐⭐⭐；flonat/claude-research 改列 flonat/flonat-research |
+| 跨 paper synthesis | 5–10 篇 PDF 餵 Gemini 問 disagree | 先問每篇各說什麼，再比較同意／衝突／條件差異；不要先寫完整故事再找引用 |
+| 必修閱讀 | Effortless Academic、Sant'Anna 指南 | 官方文件：Gemini Notebook citation 與隱私、Zotero、PaperQA2、DVC、Zenodo |
+
+- **新增第一個練習**：用《Attention Is All You Need》問三題，每答附 citation、逐條點開核對原文，找不到證據標「unsupported／未支持」，不得補不相干引用。
+- **新增八個核心詞**：Source、Claim、Citation、Source Verification、Literature RAG、Reproducibility、Private Data、Human Review（citation 只是路標，不保證支持主張）。
+- **新增資料保護要求**：上傳前確認授權／著作權與工具條款（公開可讀≠可交給另一個服務）；私人資料先確認 IRB、機構政策、合約與資料擁有者同意；MLflow 不寫密鑰或受試者資料；Zenodo metadata 會公開；AI-Scientist-v2 授權要求揭露機器產生的稿件。
+- **可重跑紀錄**：保存資料版本、environment、seed、prompt、模型／工具版本、輸出與人工修改；結語「沒有任何工具可以代替 IRB、資料治理、作者責任或領域專家的判斷」。
+- 另見新版摘要筆記 [[ideas/awesome-agentic-ai-zh-for-researcher]]。
+
 ## 相關連結
 
 - [[paper-radar-literature-monitor]] — 開源自架論文雷達：RSS 自動抓取＋按讚/略過回頭微調排序權重，任何有 RSS 的領域可 fork
