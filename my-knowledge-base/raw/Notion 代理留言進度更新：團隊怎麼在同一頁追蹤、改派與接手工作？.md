@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "Notion 代理留言加入進度回覆與頁面狀態，團隊能從任務卡追蹤、補充與接手。本文拆解 Claude 任務板案例的方案、權限、用量與成果審查，分清工作回報和完成結果。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 使用 Notion 代理留言交辦工作之後，最難掌握的常常是中間那段時間。任務還沒交回來，其他人卻已經需要知道進度，才排得出自己的下一步。
 

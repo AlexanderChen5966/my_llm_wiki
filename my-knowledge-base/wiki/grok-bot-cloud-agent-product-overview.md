@@ -221,6 +221,7 @@ BDK（建立與執行 Bot 的開發工具組）的 cursor-grokbot-agents 擴充�
 
 ## 相關連結
 
+- 📎 2026-11-19：[[cloud-computer-agent-delegation-handoff]] — 使用端做法：Pine／Perplexity Computer 的任務單、交接點（登入／送出／付款分開確認）、檢查點分數≠完成率
 - [[ai-agent-tool-selection-maturity-and-reliability-framework]] ——「功能強大 ≠ 生產可靠性已驗證」：本篇聚焦 Grok Bot 具體功能與架構介紹，該篇則從產業懷疑論視角（三階段成熟度框架、跨機構 88% 試行失敗率、xAI/SpaceX 商業動機批判）提醒讀者功能清單不等於可靠性驗證，兩篇建議對照閱讀
 - [[grok-bot-figma-screenshot-voice-workflow]] —— 窄角度案例：SpaceXAI 設計師用截圖＋語音驅動 Figma Bro 的下指令方法論，是本篇「設計團隊落地案例」的細節延伸
 - [[grok-bot-cursor-five-product-decisions-colleague-pilled]] —— 窄角度案例：Cursor 產品負責人還原 Grok Bot 七周開發的 5 個「同事腦」反直覺決策，可與本篇的雲端電腦架構設計互相印證
@@ -231,3 +232,4 @@ BDK（建立與執行 Bot 的開發工具組）的 cursor-grokbot-agents 擴充�
 - [[claude-code-cross-session-messaging]] —— BDK 代理通訊「接收方看不到當前對話、訊息須自成任務」與 Claude Code 跨 session 傳訊同一原則（2026-11-03 新增）
 - [[agent-relay-shared-sessions-flows]] —— 跨代理交接：歷史是證據、須核對現況（2026-11-03 新增）
 - [[ai-memory-cross-agent-handoff]] —— 開發工具之間的交接與記憶搬家（2026-11-03 新增）
+- [[grok-bot-multi-agent-workflow]] —— 多 bot 接力／平行與拆 bot 三條件、10-01 Cursor＋GitHub／Origin PR＋示範影片更新、HarnessRouter（Bot → 其他執行環境，與 BDK 方向相反）（2026-11-19 新增）

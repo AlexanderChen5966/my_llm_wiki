@@ -8,7 +8,7 @@ created: 2026-11-04
 description: "OpenAI Google Cloud 合作把 Astra、Sol、Luna 與 Codex 工作流程帶進 Model Garden。本文分清選定企業私有預覽、未來全面開放、Marketplace 採購與雲端承諾支出，並核對尚未推出的資料保護功能。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 企業想把另一家的 AI 放進工作流程，常常得先過採購、帳號權限與資料管理，模型分數只是其中一關。
 

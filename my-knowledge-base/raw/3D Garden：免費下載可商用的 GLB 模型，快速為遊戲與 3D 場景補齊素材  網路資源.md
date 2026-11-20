@@ -8,7 +8,7 @@ created: 2026-11-19
 description: "3D Garden 是提供免費 3D 模型下載的素材庫，模型以適合網頁使用的 GLB／glTF 為主，可用於 Three.js、Blender、Unity、Godot 等創作流程。網站提供分類、標籤與主題合集搜尋，並允許個人及商業專案使用，適合需要快速為遊戲、網頁或互動場景補充 3D 素材的創作者。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 網站連結 [https://www.3dgarden.app/](https://www.3dgarden.app/)
 

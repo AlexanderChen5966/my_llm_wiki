@@ -8,7 +8,7 @@ created: 2026-10-08
 description: "OpenAI 將 API 應用程式介面的五個付費用量層級整併為 Build、Launch、Grow，Grow 的累計付款資格門檻降至 500 美元。本文區分資格、用量限制與實際帳單。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 OpenAI 在 10 月 6 日透過開發者官方帳號宣布，API 的付費用量層級由五個整併為三個：Build、Launch 與 Grow。API 是讓程式呼叫模型的應用程式介面，這套層級影響開發者可使用的服務用量。
 

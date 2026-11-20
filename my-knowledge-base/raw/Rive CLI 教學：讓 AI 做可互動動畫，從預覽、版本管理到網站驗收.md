@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "Rive CLI 如何讓 AI 製作可互動動畫？從建立專案、分清 RML 與 .riv、撰寫狀態指令，到桌機手機驗收、網站整合與版本管理，帶你完成第一張可交接的動畫卡。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Rive CLI 讓設計動畫的工作多了一條入口：你可以用文字描述與可編輯檔案，把 AI 接進互動動畫的製作流程。
 

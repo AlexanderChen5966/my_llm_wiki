@@ -4,6 +4,7 @@ date: 2026-08-17
 tags: [ai/claude, ai/workflow]
 source: https://www.bnext.com.tw/article/91882/claude-text-watermark（數位時代，含官方說明、Business Insider 退訂報導與技術社群批評）
 source_2: https://codelove.tw/@tony/post/3KKAR3（譯自 dev.to/sylwia-lask：機制推測與程式碼浮水印的疑問）
+source_3: https://www.aiposthub.com/pangram-4-1-ai-detector-range-confidence-limits/（aiposthub〈Pangram 4.1 更新了什麼？〉，2026-10-21；補充資料：統計式偵測器對照）
 type: article
 status: processed
 asset_value: 72
@@ -112,6 +113,14 @@ dev.to 作者最感興趣的部分——**在程式碼裡，模型能選擇的�
 ### 對本知識庫的直接影響
 
 本庫的 wiki 條目由 Claude 撰寫、內容來自使用者蒐集的素材，屬於「Claude 從頭寫較長文字」的類型，**理論上會帶浮水印**。實務上：① 這些是個人知識庫、非對外出版物 ② 條目大量引用原文與技術識別字，選字自由度較低 ③ 依官方界線，**驗出也只能證明「Claude 可能參與過」**。⚠️ 但若日後要把條目內容用於對外發表（部落格、投稿），值得先確認該場合的 AI 使用規範。
+
+**2026-11-19 補充：統計式偵測器的對照——Pangram 4.1（來源：aiposthub〈Pangram 4.1 更新了什麼？AI 偵測加入不確定範圍，老師與編輯該怎麼讀分數〉，https://www.aiposthub.com/pangram-4-1-ai-detector-range-confidence-limits/ ，2026-10-21）**：二手整理官方模型卡、X 貼文與準確度文章，數字皆 Pangram 自家評測。本條浮水印靠金鑰檢驗，Pangram 則是**沒有金鑰的統計預測**，兩者邊界不同。
+
+- **輸出是比例不是機率**：以句子片段標「人寫／AI 輔助／AI 生成」，文件層 `fraction_ai` 是**以字元加權、被判成 AI 的比例**；Human 需 ≥90% 字元判人寫、AI 需 ≥80% 判 AI，其餘 Mixed。4.1 對不確定（或 150 字以下）的文件顯示範圍，如「最佳估計 4%、可能 0–15%」——上限已跨過 Human 門檻
+- **4.1 不是全面進步**：英文人寫誤判 0.0164%→0.0090%，但英文 AI 漏判 0.3396%→0.3652%、多語 AI 漏判 1.24%→1.99%；Gemini、Grok 系列漏判上升。「校準更好」只是貼文宣稱，模型卡沒有校準評測；不同資料集的誤判率差到 4 倍，不能互比
+- 🔴 **呼應本條「偵測到 ≠ AI 寫了全部」**：被 AI 大幅改寫的文章約 41% 判成人類、只做潤飾的 99.45% 判人類——它回答「文字像誰寫的」，不回答「有沒有用 AI」
+- 範圍外：程式碼、機器翻譯、參考文獻、制式文字、食譜、數學為主內容；詩誤判最高。中文有支援但沒分繁簡、沒列樣本數
+- **用法**：決定「要不要多看一眼」，不決定「要不要處分」；導入前先拿已知作者的中文舊稿跑一遍，可疑稿件要第二人複核並給申訴機會
 
 ## 相關連結
 

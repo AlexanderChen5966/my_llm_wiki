@@ -7,6 +7,7 @@ source:
   - https://rain.tips/2026/08/25/claude-code-remotion-codex-animation-workflow/
   - https://www.aiposthub.com/finch-remotion-editing-styles-raw-footage-guide/
   - https://www.aiposthub.com/cinetic-claude-code-product-animation-skill-guide/
+  - https://www.aiposthub.com/claude-blender-mcp-japan-station-six-days-fact-check/
 official_refs:
   - https://github.com/remotion-dev/remotion/blob/main/LICENSE.md（remotion.dev/license 轉址至此；2026-10-19 Team Lead 核對）
   - https://www.remotion.dev/docs/ai/skills（經 rain.tips 轉述，未核對）
@@ -208,6 +209,25 @@ npx remotion render ProductLaunch out/overlay.mov --image-format=png --pixel-for
 - **aiposthub〈Remotion Editing Styles 教學…〉（Philo，2026-10-10）**：Finch 技能的交付物、安裝、審剪輯計畫、分開驗收、交接。作者明言未實跑；作者自擬的作文課提示詞與驗收表未收；Skill Shot 14 課程推廣、訂閱 AI 郵報未收。
 - **aiposthub〈Cinetic 是什麼？讓 Claude Code 製作產品宣傳動畫的 Skill〉（Philo，2026-10-08）**：Cinetic 流程、安裝、環境、測試平台、四支示範、授權。作者未實測；本文自擬的中文企劃只取方法不收全文；站內延伸閱讀未收。
 
+## 補充資料
+
+**2026-11-19 補充（來源：aiposthub〈Claude 在 Blender 建日本車站花六天？19 項說法核對與 Blender MCP 警告〉，Philo，2026-11-13，https://www.aiposthub.com/claude-blender-mcp-japan-station-six-days-fact-check/）**——作者讀兩邊頁面整理（資料時間 2026-11-10 晚間），**未安裝、未測試**；本條未再回一手核對：
+- 🔑 **Blender MCP 有兩個，名字很像但不是同一個**：Blender 官方 **Blender Lab「MCP Server」**（blender.org/lab/mcp-server）vs 社群版 **MCP for Blender**（ahujasid/mcp-for-blender，原 blender-mcp，README 寫與 Blender 基金會無關）。這回答了 [[claude-code-pure-code-animation-practice]] 第 11 節「Blender 官方 MCP 是不是同一個」：**官方版確實存在**，「官方」不一定是誤稱，但個別案例用哪一個仍要看原作者怎麼說
+- 對照（第 9 節「② 權限與隱私」「③ 系統需求」的延伸）：
+
+| 項目 | 官方 Blender Lab MCP Server | 社群版 MCP for Blender |
+|---|---|---|
+| 需求 | Blender **5.1+**；外掛、LLM 客戶端、MCP 伺服器三樣自己裝（Blender 沒有內建連 LLM）；示範客戶端是 llama.cpp；新客戶端可用 `.mcpb` 套件 | Blender 3.0+、Python 3.10+、uv |
+| 授權 | 頁面沒寫（作者沒查原始碼） | MIT（33,861 星，11/10） |
+| 警告 | 執行 LLM 產生的程式碼「**沒有任何防護**」，資料可能被刪或傳到遠端 → 建議**虛擬機或沒有敏感資料的電腦** | `execute_blender_code` 可跑任意 Python → 使用前務必先存檔 |
+| 其他風險 | — | `BLENDER_MCP_SAFE_MODE=1` **預設關**；**socket 伺服器沒有驗證也沒有加密**，能連到該連接埠的人都能執行 Python → 維持 localhost；**預設送最小匿名使用紀錄**，`DISABLE_TELEMETRY=true` 關閉 |
+| 功能 | 自然語言操作 Python API、查文件、分析檔案（範例是資料塊改名、場景除錯，**沒有整個場景建模範例**） | 物件／材質、執行 Python、視覺驗證（`look` 多角度截圖＋渲染）、Poly Haven／Sketchfab、Meshy／Tripo／Hyper3D Rodin／Hunyuan3D 生成（Premium 不用自備金鑰，價格未查） |
+
+- ⚠️ **先存檔不等於安全**：存檔只保住檔案，官方提到的「傳到遠端」要靠隔離環境
+- 社群版 Quickstart 是 `curl … | sh`／`irm … | iex`（下載腳本再執行）；不想跑腳本可直接 `uvx mcp-for-blender setup`
+- **19 項說法核對結論**（IG 貼文把荒船泰廣的 35.7 秒車站影片包裝成教學導流）：準確 9、要加註 6、不準 3、查不到 1。不準多半因為用了作者補充前的資訊——作者自己說**參考葦沢かもめ的 note 做法、一直下具體修改指示、花了 6 天**，「材質全部程序化」說過頭、近景樹用現成素材；「最多人用的是開源 Blender MCP」查不到（星數≠使用量）；作者**沒說接的是哪個 MCP**（他參考的文章用官方版）
+- 參考文章的「AI 自檢說沒問題、實際 45 處穿模」例子屬驗收主題，見 [[ideas/ai-3d-code-structure-vs-appearance-acceptance]]
+
 ## 相關連結
 
 - [[hyperframes-heygen-html-to-video]] — HyperFrames 專篇：README 一手、三條安裝路徑、Studio、益盛四支片實測
@@ -225,3 +245,4 @@ npx remotion render ProductLaunch out/overlay.mov --image-format=png --pixel-for
 - 📎 2026-11-04：[[generative-video-pre-production-planning]] — 生成式影片的前置規劃（Nibs 分鏡＋Blender 灰模預演）
 - 📎 2026-11-04：[[conversational-video-editing-handoff]] — 第 6 節同類（ChatCut／Palmier Pro）的後續案例：Cardboard 外掛與 CapCut × Codex，先對話粗剪、再回時間軸精修
 - 📎 2026-11-05：[[motion-engineering-claude-five-department-video]] — 流程面：導演／美術／動畫／技術／審片五階段，每階段留檔案、先做一幕
+- 📎 2026-11-19：[[claude-video-animation-prompts]] — 需求面：動效名稱庫（Motion Prompt）、Motion Design Skill 狀態回饋、Huashu-motion／Moritz 發布片需求單；第 5 節 Hairline 的需求寫法補充也在該條

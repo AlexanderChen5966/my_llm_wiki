@@ -8,7 +8,7 @@ created: 2026-10-05
 description: "RevPDF 是支援 Windows、macOS、Linux、Android 與 iOS 的本機 PDF 編輯器，提供文字編輯、OCR、PDF 比較、轉檔、壓縮、簽名與永久遮蔽等功能。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 網站連結 [https://revpdf.com/](https://revpdf.com/)
 

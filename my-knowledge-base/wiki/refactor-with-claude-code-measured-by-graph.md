@@ -145,3 +145,4 @@ characterization test 與「先立測試再重構」的經典出處是 Michael F
 - [[wayfinder-decision-map-workflow]] — 垂直切片與「一場 session 最多解一張票」
 - [[claude-code-large-codebase]] — 大型專案的配置策略
 - [[rust-hot-path-optimization-ai-review]] — 另一個「拒絕 AI 未要求的相依變更」實例
+- [[ai-code-migration-maintenance-verification]] — 📎 2026-11-19：AI 改舊程式碼的驗證——搬遷要相同輸入相同輸出、刪除要正式流量證據

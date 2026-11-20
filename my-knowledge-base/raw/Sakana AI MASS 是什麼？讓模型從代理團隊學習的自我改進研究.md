@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "Sakana AI MASS 讓同一模型組成代理團隊，改進工作流程，再從團隊紀錄中學習。本文拆解兩層循環、研究基準每輸出 token 得分提升 1.2–1.6 倍的口徑、軟體工程測試限制，以及一般團隊可借鏡的交接與驗收做法。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 當 AI 寫出一份研究報告，最難的工作往往才開始：誰來判斷它的推理和結果是否可靠？
 

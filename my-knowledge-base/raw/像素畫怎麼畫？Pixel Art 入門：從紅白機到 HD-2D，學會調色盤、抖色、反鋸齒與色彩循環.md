@@ -8,7 +8,7 @@ created: 2026-09-30
 description: "像素藝術（Pixel Art）是在有限的格子與顏色裡刻意決定每一格的畫法。本文從 1978 年街機、紅白機講到 2018 年 HD-2D，拆解色相偏移、抖色、反鋸齒、色彩循環四個技法，並整理 Aseprite、Pixelorama、Photoshop 的上手方式與 16×16、4 色的練習法。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 從一支 100 秒像素動畫的幕後講起，拆解像素藝術四十年的歷史、四個核心技法與新手起步練法
 

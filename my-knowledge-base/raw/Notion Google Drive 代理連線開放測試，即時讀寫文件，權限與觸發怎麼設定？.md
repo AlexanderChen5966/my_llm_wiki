@@ -8,7 +8,7 @@ created: 2026-11-05
 description: "Notion Google Drive 代理連線可即時搜尋、建立與更新文件。本文整理測試版的帳號條件、有限與完整存取差異、Notion Agent 和 Custom Agent 設定，以及資料夾觸發、支援格式和連線問題。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Notion Google Drive 代理讓文件工作有了新的接法。團隊工作在 Notion，文件卻留在 Drive，找到資料後還得開另一套工具，將會議決定寫回文件或試算表。
 

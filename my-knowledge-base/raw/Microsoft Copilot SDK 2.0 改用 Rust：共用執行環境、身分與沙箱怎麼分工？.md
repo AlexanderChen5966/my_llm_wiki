@@ -8,7 +8,7 @@ created: 2026-11-19
 description: "替每一位聊天使用者啟動一個容器，能隔開工作環境，卻也讓簡單問題背上啟動時間與維運成本。Microsoft Copilot SDK 2.0 要解決的，就是每段對話都得綁住一套基礎設施的限制。了解功能開放條件、操作範圍與團隊試行方法，依官方公告釐清適用情境。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 替每一位聊天使用者啟動一個容器，能隔開工作環境，卻也讓簡單問題背上啟動時間與維運成本。Microsoft Copilot SDK 2.0 要解決的，就是每段對話都得綁住一套基礎設施的限制。
 

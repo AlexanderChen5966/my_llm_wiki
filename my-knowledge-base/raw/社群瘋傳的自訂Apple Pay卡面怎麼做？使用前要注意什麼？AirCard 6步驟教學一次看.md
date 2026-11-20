@@ -8,7 +8,7 @@ created: 2026-10-08
 description: "社群上瘋傳的自訂Apple Pay卡面，可以靠開源工具AirCard就能完成，本文一次整理6步驟教學以及注意事項。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 最近Threads、Instagram上掀起一股Apple Pay卡面改造風潮。有人把信用卡換成自家寵物的插畫，有人選擇粉嫩色系的卡通圖案，還有人把錢包裡的信用卡全部換成統一風格。這些照片也讓不少網友好奇：Apple Pay的卡面到底怎麼改？
 

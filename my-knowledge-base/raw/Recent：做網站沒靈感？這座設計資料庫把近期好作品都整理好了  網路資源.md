@@ -8,7 +8,7 @@ created: 2026-09-22
 description: "Recent 是人工策展的設計靈感平台，收錄 Web Design、UI/UX、Branding、Typography、Motion、3D 與 App Screenshots 等優秀案例，適合設計師與 AI Coding 開發者快速尋找高品質視覺參考與網站設計靈感。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 網站連結 [https://recent.design/](https://recent.design/)
 

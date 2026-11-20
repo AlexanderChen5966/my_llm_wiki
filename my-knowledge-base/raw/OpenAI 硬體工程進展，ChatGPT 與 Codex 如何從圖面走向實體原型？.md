@@ -8,7 +8,7 @@ created: 2026-11-05
 description: "OpenAI 硬體工程公布掌上 Codex 原型與產業合作。本文拆解設計、製造及 BenchCAD 評測的差別，整理團隊評估 AI 工程助手時可用的驗收方法。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 把一句想法變成能拿在手上的裝置，中間通常隔著外殼、電路、軟體與工廠。OpenAI 硬體工程最新示範，把這些工作放進同一條 AI 協作流程，做出一台可以和 Codex 說話的小型裝置。
 

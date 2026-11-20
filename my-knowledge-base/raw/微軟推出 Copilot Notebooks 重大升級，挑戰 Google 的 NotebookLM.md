@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "近年來，以生成式 AI 為核心的知識管理工具蓬勃發展。其中，Gemini Notebook（前身為 Google NotebookLM）憑藉著出色的主題研究、多源文件分析以及高質量的 AI 驅動摘要功能，迅速成為知識工作者與研究人員的熱門選擇。然而，面對這股 AI 筆記工具的浪潮，微軟也推出了競品「Copilot Notebooks」，並展現出強烈的後發先至企圖心。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 近年來，以生成式 AI 為核心的知識管理工具蓬勃發展。其中，Gemini Notebook（前身為 Google NotebookLM）憑藉著出色的主題研究、多源文件分析以及高質量的 AI 驅動摘要功能，迅速成為知識工作者與研究人員的熱門選擇。然而，面對這股 AI 筆記工具的浪潮，微軟也推出了競品「Copilot Notebooks」，並展現出強烈的後發先至企圖心。
 

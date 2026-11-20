@@ -90,6 +90,7 @@ Server 類型：**Remote Server**（官方主推，免本機安裝）vs **Deskto
 
 - [[claude-code-figma-mcp-write-setup]] — Specs 代理用量與其 seat／額度門檻並列參考
 - [[open-design-claude-design-comparison]] — Open Design vs Claude Design 設計工具比較（同屬 AI 設計工具生態）
+- 📎 2026-11-19：[[agent-native-design-canvas-pen-dev-paper]] — 反方向的路線：不是把 agent 請進 Figma，而是把設計檔做成 agent 讀得懂的 JSON 放進 repo（pen.dev）；缺即時共編與 prototype
 - [[spec-first-ai-coding-workflow]] — Spec-first AI 編碼流程（有提及 MCP Figma，本篇為 Figma 側完整說明）
 - [[claude-code-plugins-guide]] — Claude Code Plugin 系統（Figma Plugin 即透過此安裝）
 - [[claude-design-tool]] — Anthropic Claude Design（另一 AI 視覺設計工作台對照）

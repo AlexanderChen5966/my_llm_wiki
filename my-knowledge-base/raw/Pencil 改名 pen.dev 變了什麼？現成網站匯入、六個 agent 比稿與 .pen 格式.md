@@ -8,7 +8,7 @@ created: 2026-09-24
 description: "pen.dev 就是原本的 Pencil，9 月 17 日推出的新版主打把任何網頁匯入成可編輯圖層，改完再推回程式碼。桌面版可用 ChatGPT 或 Claude 訂閱登入，最多六個 agent 平行出稿，設計檔是能放進 Git 的 JSON。軟體目前免費，但還沒有即時共編與 prototype。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 網頁抓進畫布變成可編輯圖層、ChatGPT 與 Claude 訂閱直接登入、設計檔放進 repo 給 agent 讀：新版的功能、限制與適合誰
 

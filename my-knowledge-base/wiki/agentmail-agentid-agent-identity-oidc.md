@@ -44,3 +44,4 @@ AgentMail 於 2026-10-06 推出 AgentID，讓 AI 代理以**獨立的 OIDC 身�
 
 - [[agent-tool-authorization-gatekeeper]] — 工具授權閘門；身分層之後的權限控制屬於這一層
 - [[agent-permission-and-os-sandbox]] — 代理權限與沙箱
+- [[web-auth-oauth-oidc-jwt-basics]] — 📎 2026-11-19：OIDC／ID Token 與 JWT 驗證的通用基礎（人類使用者登入版）

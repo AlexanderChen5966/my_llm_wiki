@@ -8,7 +8,7 @@ created: 2026-10-08
 description: "LlamaIndex 推出 OpenDocRouter，以同一介面切換文件解析模型。本文分析 PDF 轉 Markdown、版面定位、ParseBench 成本口徑、缺頁檢查、快取保存與計費，說明文件 AI 的品質與成本取捨。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 把 PDF 交給 AI 之前，文件往往需要先轉成可讀取的文字與結構。不同解析模型對表格、公式與多欄排版的表現各有差異，開發者也得分別處理部署、費率與請求格式。LlamaIndex 在 2026 年 10 月 7 日推出 OpenDocRouter，把多種開放與商用模型放進同一套文件解析介面，讓選擇與比較變得更容易。
 

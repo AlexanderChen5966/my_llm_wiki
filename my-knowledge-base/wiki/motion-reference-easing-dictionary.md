@@ -51,3 +51,4 @@ asset_value: 30
 
 - [[claude-motion-beta-2026-10]] — Claude 寫程式做動畫的產品，可用本辭典的語彙下指令
 - [[claude-code-pure-code-animation-practice]] — 純程式碼動畫實作，辭典可作為動效詞彙來源
+- 📎 2026-11-19：[[claude-video-animation-prompts]] — 另一份動效名稱庫 Motion Prompt（英日文 144 個，附可重建規格與 MIT 程式碼），與本辭典互補

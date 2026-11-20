@@ -8,7 +8,7 @@ created: 2026-10-01
 description: "Pipecat 是以 Python 建置的開源 Voice AI 框架，可串接語音辨識、LLM、語音合成、WebRTC 與多模態服務，打造即時語音助理與 Multi-Agent 系統。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Pipecat 是一套以 Python 建置的開源框架，讓開發者打造即時語音助理、多模態對話應用與多代理人系統。它負責串接語音辨識、語言模型、語音合成、音訊與視訊傳輸等元件，並把對話流程組合成可調整的管線。相較於只接上一個 AI 模型的聊天範例，Pipecat 更著重在即時互動、服務整合與部署彈性；開發者可以依照產品需求挑選不同供應商與傳輸方式。
 

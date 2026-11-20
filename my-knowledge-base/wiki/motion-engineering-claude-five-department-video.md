@@ -74,3 +74,4 @@ aiposthub〈Motion Engineering 教學〉整理 Mori 的 X 長文：把 Claude �
 - [[hyperframes-heygen-html-to-video]] — 另一條 HTML→deterministic MP4 的渲染路徑
 - [[claude-motion-beta-2026-10]] — 注意：Claude Motion 是 Anthropic 產品（`/motion`），**不是**本條的 Motion Engineering 方法論，名稱相近勿混
 - [[conversational-video-editing-handoff]] — 剪既有素材的對話式流程，與本條「從零做可修改動畫」相對
+- 📎 2026-11-19：[[claude-video-animation-prompts]] — 把動畫要求講清楚：Motion Prompt 144 個動效名稱、LottieFiles 狀態回饋規則、Huashu-motion 先比三方向關鍵影格，可放進本條導演／美術階段

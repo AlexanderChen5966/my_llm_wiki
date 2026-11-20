@@ -8,7 +8,7 @@ created: 2026-11-04
 description: "OpenAI 低資源程式語言研究，把 AI 寫程式的焦點帶向 COBOL、Fortran 與 Visual Basic 等舊系統。本文說明 MultiLangBench 的資料庫測試、COBOL 搬遷如何保留原有行為，以及模型成績與成本的正確讀法，並整理企業建立小範圍驗證的方法，幫助讀者分清研究進步與實際上線之間的差距。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 一筆金額少一位小數，程式仍可能正常跑完，帳務卻已不同。OpenAI 低資源程式語言研究處理的，正是「能執行」和「結果相同」之間的差別。
 

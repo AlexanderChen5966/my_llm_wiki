@@ -83,6 +83,16 @@ bitwize-music 是一個 **Claude Code plugin**：把一段對話轉成從概念�
 
 bitwize-music-studio/claude-ai-music-skills（GitHub README，2026-10 快照）：Claude Code plugin，把對話轉成專輯製作流程；53 skills、Python MCP server 80+ tools、opus 7／sonnet 30／haiku 16 的模型分層、歌詞 13 點／音訊 7 點品質閘門、10 個領域子代理並行研究加人工簽核；最適合 Claude Max，Pro 多曲目會碰速率限制；develop 為開發分支、main 為穩定版；CC0 授權。
 
+## 補充資料
+
+**2026-11-19 補充（來源：GitHub junhao-ye/suno-lyrics-skill README（繁中版），https://github.com/junhao-ye/suno-lyrics-skill/blob/main/README.zh-TW.md ）**：README 轉述，未安裝試用。
+
+- **同領域的對照組：單一 skill 而非 53 個**。suno-lyrics-skill 是一個 Codex skill，只管 Suno Custom Mode 的四個欄位（Lyrics／Style of Music／Exclude Styles／Title），另有續寫、純音樂與故障排查
+- 🔑 **回傳「最小必要輸出」**：要整首歌才給四欄，只要歌詞或風格就只回那一欄——路由寫在 `SKILL.md`，知識拆進 `references/`（段落標籤、歌詞技法、風格配方、排查、範例），另有 `SPEC.md`（行為預期）與 `SOURCES.md`（來源）
+- **修壞掉的欄位，不整份重寫**：生成只差一點時保留有效欄位，只改出問題的那欄，結果比較穩
+- 純音樂需求要避免在正向提示裡寫人聲描述；不模仿在世藝人聲音，改描述速度、人聲質感、樂器、年代、製作質感
+- 作者明說 Suno 有隨機性，skill 目標是減少跑偏，不保證精確控制
+
 ## 相關連結
 
 - [[agent-skill-design-patterns]] — Skill 設計模式，可對照本案的角色式 skills 與品質閘門

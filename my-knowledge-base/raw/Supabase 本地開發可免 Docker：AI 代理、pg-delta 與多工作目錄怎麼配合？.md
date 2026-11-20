@@ -8,7 +8,7 @@ created: 2026-10-06
 description: "Supabase Select 2026 公布原生本地開發、pg-delta 宣告式資料結構與程式化設定。本文整理 alpha 限制，說明 AI 代理如何在獨立工作目錄測試後端，以及兩種 MCP 的差別。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Supabase 是提供資料庫、登入與其他後端服務的平台。2026 年 10 月 2 日的官方發布，將更多後端設定放進程式專案，並讓本地服務能以原生程序執行，降低 AI 程式代理建立測試環境的門檻。
 

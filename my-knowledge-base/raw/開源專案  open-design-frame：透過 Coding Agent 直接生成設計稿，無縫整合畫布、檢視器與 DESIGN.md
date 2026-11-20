@@ -8,7 +8,7 @@ created: 2026-10-02
 description: "不囉唆，先給 Github 連結，但請大家給專案一顆星星，並且努力用它，幫助你的工作上能夠做得更好，有任何 bug issue 請發 Github，感謝大家！"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 ![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*TfaKnzSMfKWSpsdwkJEFGw.png)
 

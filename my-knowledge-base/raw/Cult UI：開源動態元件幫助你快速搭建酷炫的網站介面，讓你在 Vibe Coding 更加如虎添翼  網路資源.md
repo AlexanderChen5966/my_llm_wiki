@@ -8,7 +8,7 @@ created: 2026-11-19
 description: "Cult UI 是一套面向 React 開發者的開源介面元件收藏庫，主打可以直接加入專案的 shadcn/ui 元件與細緻的動態效果。它適合想加快介面製作、又希望保留程式碼自行調整的前端開發者。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 網站連結 [https://github.com/nolly-studio/cult-ui](https://github.com/nolly-studio/cult-ui)
 

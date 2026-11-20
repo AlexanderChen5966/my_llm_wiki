@@ -165,3 +165,4 @@ asset_value: 24
 - [[claude-motion-beta-2026-10]] — 同一份 Anthropic 公告的 Motion
 - [[claude-design-tool]] — Claude Design，三家對照中 Artifact 側的設計工具
 - [[claude-model-selection-guide]] — 模型與思考程度選擇
+- [[generative-ui-a2ui-open-intelligent-ui]] — 📎 2026-11-19：開發者端的生成式介面（A2UI 1.0 協定、CopilotKit Open Intelligent UI 模板），同一條「介面≠正確」論點

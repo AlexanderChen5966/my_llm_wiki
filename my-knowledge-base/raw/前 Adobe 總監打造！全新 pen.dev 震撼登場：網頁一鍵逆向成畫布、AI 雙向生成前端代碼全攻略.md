@@ -8,7 +8,7 @@ created: 2026-09-22
 description: "由前 Adobe XD / Flash 核心主管 Tom Krcha 創立、a16z speedrun 押注的全新 pen.dev 正式發表！主打「絕不從零開始」，支援將任何線上網站或 localhost 本地服務一鍵逆向還原為可編輯向量圖層；首創 Code on Canvas 讓畫布直接運行 JavaScript 並自動生成 UI 滑桿控制項；深度支援 Component Slots 插槽、Vibe Shaders 與深淺色 Design Tokens。更原生支援 MCP 協定，串聯 Claude Code 與 Cursor，實現 Design ↔ Code 雙向閉環。本文提供最詳盡的架構拆解、隱藏功能盤點與手把手實戰教學！"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 ---
 

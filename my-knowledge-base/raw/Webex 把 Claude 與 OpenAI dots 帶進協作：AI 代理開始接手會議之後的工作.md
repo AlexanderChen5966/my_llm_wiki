@@ -8,7 +8,7 @@ created: 2026-10-08
 description: "Cisco 在 WebexOne 發表代理式協作更新，Claude 預計加入團隊空間與會議，Webex 脈絡已可接入 OpenAI dots。本文分析共享脈絡、多步驟任務、權限與驗收方法，並釐清 Dialog、翻譯代理及 RoomOS 27 的開放時程。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 工作最容易卡住的地方，往往是會議結束以後。大家同意了方向，資料卻散在聊天紀錄、試算表與不同部門的系統裡。AI 可以整理一份漂亮的摘要，真正執行時，仍得有人找數字、確認版本、把決定送到下一個工具。Cisco 在 2026 年 10 月 7 日的 WebexOne 發表新一輪代理式協作功能，瞄準的就是這段交接。
 

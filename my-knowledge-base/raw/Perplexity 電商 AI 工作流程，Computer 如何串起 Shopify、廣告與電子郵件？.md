@@ -8,7 +8,7 @@ created: 2026-11-05
 description: "Perplexity 電商 AI 讓 Computer 串起 Shopify、Meta 廣告與 Klaviyo。本文拆解競品研究、素材、頁面與投放的交接，說明官方龍蝦品牌案例的收入與 ROAS 數字，以及團隊如何安排審核與成效回報。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 電商品牌每天需要把銷售資料、廣告素材與郵件活動接起來。哪一款商品值得主打、該對誰說、廣告要連到哪個頁面，通常分散在不同工具與負責人的工作裡。
 

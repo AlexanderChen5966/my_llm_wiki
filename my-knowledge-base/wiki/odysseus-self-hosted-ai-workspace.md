@@ -68,3 +68,4 @@ docker compose up -d --build
 - [[local-llm-deployment-overview]] — 本地 LLM 部署方案對比
 - [[ollama-2026-complete-guide]] — Ollama 設定（Odysseus Cookbook 的底層）
 - [[hermes-agent]] — Hermes Agent（另一個開源 AI 工作區方案）
+- [[self-hosted-agent-workspace-approval-licensing]] — 📎 2026-11-19：OpenBot 1.0 與 Open WebUI 0.13.1，自架工作區接程式代理後的核准、資料路徑與授權分層

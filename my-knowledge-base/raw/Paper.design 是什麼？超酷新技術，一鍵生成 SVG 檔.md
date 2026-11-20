@@ -8,7 +8,7 @@ created: 2026-09-24
 description: "Paper 不只是 AI 設計工具，它新的功能還能直接輸出 SVG 檔。這篇帶你看懂 Paper 的 SVG 能力、適合哪些情境，以及為什麼這對設計師與前端協作特別有感。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Paper 有一個超實用的新功能： **它可以直接把畫布裡的內容輸出成 SVG。**
 

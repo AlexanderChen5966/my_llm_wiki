@@ -6,6 +6,7 @@ source: https://www.aiposthub.com/ai-ui-unslop-four-x-posts-names-numbers-checkl
 source_2: https://www.aiposthub.com/agents-md-interface-copy/（aiposthub／Philo〈AGENTS.md 怎麼減少介面廢話？一句英文指令、兩種頁面的測試與取捨〉，2026-11-11）
 source_3: https://www.aiposthub.com/ai-design-reference-validation/（aiposthub／Philo〈AI 設計參考怎麼給？從靜態截圖、動態影片到互動狀態的驗收清單〉，2026-11-11）
 source_4: https://www.aiposthub.com/fable-52-ui-component-inventory/（aiposthub／Philo〈Fable 5.2 設計展示怎麼看？31 張卡片、元件清單與互動驗收〉，2026-11-12）
+source_5: https://tools.wingzero.tw/articles/4075（wingzero／赤紅翼零〈Recent：做網站沒靈感？這座設計資料庫把近期好作品都整理好了〉，2026-09-21；補充資料）
 official_refs:
   - https://github.com/heydamir/unslop
   - https://component.gallery/
@@ -150,6 +151,14 @@ AI 說完成後先測：最主要操作 → 空資料 → 長文字 → 取消�
 - **〈AI 設計參考怎麼給？〉（2026-11-11）**：Adrien Ninet 設計參考清單、Fayaz 介面展示（皆創作者展示、非本站實測）；先寫要借什麼；側欄狀態表；影片要補觸發條件；FAQ（不一定要影片、尊重素材權利、先測主要操作）。
 - **〈Fable 5.2 設計展示怎麼看？〉（2026-11-12）**：Dom 11/10 拆帳 App 元件展示 24 秒影片；31 張卡片去重 29 種、25 張在 shadcn/ui 有同類（相似≠抄襲）、6 張沒有（數字加減、語音播放、倒數、星等、步驟清單）；Opus 5.5 名稱清單實驗 12 vs 27；四元件互動驗收表。
 
+## 補充資料
+
+**2026-11-19 補充（來源：wingzero〈Recent：做網站沒靈感？這座設計資料庫把近期好作品都整理好了〉，https://tools.wingzero.tw/articles/4075 ，2026-09-21）**：工具介紹文、未實測。
+
+- **給參考時的找圖來源**：Recent（https://recent.design/ ）人工策展、品質優先，2026 年重啟後正式接替 Godly；分 Web／Interface／Branding／Typography／Motion／Illustration・3D 等類，網站區可依 AI、SaaS、Ecommerce 等產業篩
+- 另收 **OG Images** 與 **App Store Screenshots**（依 App 類型分），可補本條「給截圖」來源（Behance／Dribbble／Mobbin）沒涵蓋的上架頁與分享圖
+- 用法與本條 T 一致：先挑幾個喜歡的版面／字體／配色／動態案例，**拆成具體的設計方向**再交給 AI，而不是只說「做一個漂亮的 SaaS 網站」
+
 ## 相關連結
 
 - [[emil-design-engineer-skills]] — 設計工程師把隱性判斷（ease-out vs ease-in、半透明陰影 vs 實線邊框）做成 Skills，與 unslop 同為「把設計判斷寫成 AI 可遵循的規則」
@@ -163,3 +172,4 @@ AI 說完成後先測：最主要操作 → 空資料 → 長文字 → 取消�
 - [[agents-md-guide]] — AGENTS.md 本體；本條介面文案規則的放置處
 - [[ai-flavor-removal-writing-skills]] — 文字版的去 AI 味，與 UI 模板感是同一類問題
 - [[agent-eval-regression-testing]] — 「做對一次不代表下次」：本條各實驗每組只跑 3～5 次，結論同樣只適用那幾次
+- 📎 2026-11-19：[[ai-design-skills-anti-template]] — 驗收工具補充：Hallmark 三層檢查與八種寬度、Huashu Design 設計體檢、Jakub Krehel `interface-review`／`break`

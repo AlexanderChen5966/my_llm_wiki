@@ -8,7 +8,7 @@ created: 2026-11-19
 description: "Ryan 與 Sarah 用 AI 輔助打造 Cat on Chair，將番茄鐘加入貓咪陪伴、收集與獎勵機制。創辦人表示，某個近 30 日銷售區間超過 1.8 萬美元；8 至 9 個月累積銷售近 8 萬美元、下載超過 12.7 萬次。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 我覺得 Cat on Chair 最有意思的地方，是它沒有重新發明計時器，而是替專注加上一個會陪你的角色。當工作工具多了一點情緒和期待，使用者也更願意回到它身邊。
 

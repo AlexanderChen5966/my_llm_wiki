@@ -8,7 +8,7 @@ created: 2026-10-21
 description: "Pinokio 多人模式讓本機 AI 使用者追蹤專案、加入社群並交換工作流程。本文解釋通知方式、成果重現條件、帳號選擇，以及本機運算與公開分享的界線。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Pinokio 多人模式面對的，是把 AI 工具裝進電腦之後，還不知道怎麼完成作品的問題。接下來要找模型、調整工作流程，遇到錯誤時還得知道去哪裡問。
 

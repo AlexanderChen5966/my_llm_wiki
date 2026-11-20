@@ -8,7 +8,7 @@ created: 2026-11-19
 description: "荒船泰廣的 Claude × Blender 日本車站影片 31.6 萬次觀看。整理六天與三處修正、IG 貼文 19 項說法核對，以及官方版與社群版 Blender MCP 的警告與安裝步驟。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 11 月 6 日，日本影像導演荒船泰廣在 X 貼出一支 35.7 秒的日本車站動畫，說是用 Claude Opus 5.5 接 Blender 做的；到 11 月 10 日晚間，這則貼文有 31.6 萬次觀看。之後有 IG 貼文把它整理成「Claude 在 Blender 裡自己蓋的車站」，並談到怎麼接 Blender MCP。我們回到一手來源，重讀作者的三則 X 貼文、他參考的 note 文章、GitHub README 和 Blender 官網，再逐項核對。先說結論（資料時間：2026 年 11 月 10 日晚間（台北））：
 

@@ -7,7 +7,7 @@ created: 2026-10-05
 description: "*我只是想做一個自訂個人檔案。結果我把它徹底做過頭了。**不想讀？可以，沒關係。但你會錯過很多有趣的洞見。總之，這是我的個人檔案連結：*https://github.com/georgekobaidze---## 目錄- [我想做一個簡單的 GitHub 自訂個人檔案。但事情很快..."
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 [小編精選 - 技術文章翻譯](https://codelove.tw/@tony) · [10月02日](https://codelove.tw/@tony/post/xLorNq "2026-10-02 16:04:05")
 

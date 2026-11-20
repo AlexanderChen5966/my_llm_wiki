@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "Open WebUI0.13.1讓程式代理進模型選單，搭配Tether連上自己的電腦。拆解工具核准、提示快取、檔案預載、資料庫升級與企業授權差異。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Open WebUI0.13.1 想接住的工作，是讓聊天介面能接著處理專案。模型需要拿得到檔案、執行工具，並把進度留在同一處，否則對話與電腦裡的改動仍得靠人搬運。
 

@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "PentAGI 是可自行部署的多代理資安評測工具。本文核對版本日期、模型與隔離條件，說明如何在合法授權環境評估證據、報告與成本。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 PentAGI 在 2026 年 10 月 12 日的 X 分享中再次受到關注，社群把它形容成能自主完成資安工作的開源 AI 工具。
 

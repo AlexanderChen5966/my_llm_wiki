@@ -90,3 +90,4 @@ Day 10：捨 Next.js 改用 Vite SPA＋單一 Express，主因是 MCP／OAuth �
 - [[self-built-mcp-server-237-lines]] — Python SDK、stdio 版本的自建 MCP server 對照
 - [[aeo-implementation-llms-txt]] — Day 10 提到的 llms.txt
 - [[vite-frontend-build-tool]] — Vite 建置工具
+- [[web-auth-oauth-oidc-jwt-basics]] — 📎 2026-11-19：OAuth 2.0＋OIDC 授權碼流程、PKCE、JWT 驗證的通用基礎

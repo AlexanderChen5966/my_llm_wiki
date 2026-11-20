@@ -8,7 +8,7 @@ created: 2026-10-27
 description: "OAuth 2.0 是讓應用程式在使用者授權下取得有限資源存取權的框架；「使用 Google 登入」通常會搭配 OpenID Connect（OIDC）確認身分。本文拆解兩者分工、授權碼流程、Access Token 與 ID Token 的差異，以及 state、PKCE 等安全機制。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 許多網站都有「使用 Google 登入」按鈕。按下之後，使用者通常會被帶到 Google 確認帳號，再回到原網站；網站並沒有取得你的 Google 密碼。這個過程背後常同時用到 OAuth 2.0 與 OpenID Connect（OIDC），但兩者解決的問題並不相同。
 

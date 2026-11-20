@@ -8,7 +8,7 @@ created: 2026-11-19
 description: "Hugging Face 在十一月十六日把語言模型路由交給 OpenRouter。解析跨供應商重試、價格政策、自備金鑰改動、帳單與資料流向，並區分仍走原管道的圖片影音生成。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Hugging Face 現在能用同一把金鑰，透過 OpenRouter 呼叫開放權重語言模型。對已經串接服務的開發者來說，程式可能照常運行，背後替你處理請求的供應商卻有了新的選擇方式。
 

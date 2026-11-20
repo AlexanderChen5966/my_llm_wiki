@@ -8,7 +8,7 @@ created: 2026-10-20
 description: "OpenDesign Motion 把動態設計帶進開源設計工作區，可使用不同模型製作可編輯動畫與 MP4。本文整理官方版本更新、適用情境與影片交付的檢查重點。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 OpenDesign Motion 把 AI 影片創作的重點，移到做完之後還能不能修改。對需要反覆換文案、調節奏或改尺寸的團隊，這比一次生成漂亮的發布影片更接近日常工作。
 

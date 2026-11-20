@@ -115,3 +115,4 @@ AI 為了讓程式碼看起來邏輯自洽，會捏造不存在的 npm 套件或
 - [[rust-hot-path-optimization-ai-review]] — 真實案例：拒絕會靜默降版相依套件的 AI 修正，補上「CI 綠燈也抓不到的相依版本死角」
 - [[claude-code-review-ga-quick-standard-deep]] — 雲端 Code Review 正式服務的三檔深度；該服務不跑測試、不批准 PR，人工與測試仍不可省
 - [[claude-code-team-layered-review-human-approval]] — Claude Code 團隊的分層審查：依風險決定零／一／兩位人工核准，AI 核准不能頂替要求中的人工核准
+- [[ai-code-migration-maintenance-verification]] — 📎 2026-11-19：舊碼面的對應——AI 搬遷與清理技術債的驗證（行為不變、刪除要執行證據）

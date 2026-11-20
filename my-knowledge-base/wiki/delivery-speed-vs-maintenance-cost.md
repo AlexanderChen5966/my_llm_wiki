@@ -115,3 +115,4 @@ AI 真正變便宜的是什麼？樣板碼、DTO、migration、寫過 40 次的 
 - [[vibe-vs-agentic-coding-maturity]] — 從 vibe 到 agentic 的成熟度分級
 - [[agent-bug-fix-eval-green-is-not-correct]] — 🔑 「測試有過就 LGTM」的機器版本：綠燈不等於改對
 - [[ai-era-quality-assurance-test-oracle]] — 測試比程式碼長 5 倍時該問的問題
+- [[ai-code-migration-maintenance-verification]] — 📎 2026-11-19：維護端的 AI 做法——搬遷保留行為、技術債清理附正式流量證據

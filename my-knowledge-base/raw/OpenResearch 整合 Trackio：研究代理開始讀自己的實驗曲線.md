@@ -8,7 +8,7 @@ created: 2026-11-05
 description: "OpenResearch 整合 Trackio，把實驗曲線與代理工作紀錄接在一起。本文解析本機、私有 Hugging Face Space 和遠端指標的資料流，說明代理如何利用曲線提出下一輪假設，以及研究比較仍需保留的條件。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 研究代理跑完一輪實驗，告訴你分數變高了，但只看最後一個數字，往往不知道過程是否穩定。
 

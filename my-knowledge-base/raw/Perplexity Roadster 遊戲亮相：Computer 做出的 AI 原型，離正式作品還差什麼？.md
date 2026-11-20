@@ -8,7 +8,7 @@ created: 2026-10-21
 description: "Perplexity Roadster 遊戲由執行長分享，展示 Computer 製作瀏覽器作品的可能。解析可玩原型、操作驗收、效能與維護差距，不把展示當開發保證。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Perplexity Roadster 遊戲把 AI 寫程式的結果，變成讀者可以直接打開的瀏覽器作品。比起只看生成的程式碼，它讓人更容易討論一個想法究竟長什麼樣子。
 

@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "CopilotKit 開源 Open Intelligent UI，把 AI 回答轉成圖表、表格與操作工具。本文解析生成介面的用途、預設 OpenAI 與 Jev 設定，以及資料與動作仍需驗證的原因。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 AI 回答了一長段比較，使用者還得自己把它整理成表格。
 

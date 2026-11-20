@@ -98,6 +98,17 @@ OpenAI 於 2026-09-10 將 GPT-Live-1 全雙工語音模型開放 API，取代傳
 餐廳訂位與居家維修派工場景。文中提供三代語音架構完整對比表、企業客服成本精算，以及語音
 System Prompt 撰寫、Silence Timeout 調控與 Event Loop 狀態機設計的開發者實戰建議。
 
+## 補充資料
+
+**2026-11-19 補充（來源：wingzero〈Pipecat：打造即時語音與多模態 AI 助理的 Python 開源框架〉，https://tools.wingzero.tw/articles/4083 ，2026-09-30）**：工具介紹文、未實測，本庫未回 GitHub 核對。
+
+- **自己組語音管線的開源選項**：Pipecat（Python，BSD 2-Clause）串 STT／LLM／TTS、語音對語音、視訊與影像服務，組成可調整的管線——想混搭供應商、不綁單一全雙工模型時的另一條路；本條的「語音層／推理層解耦」在 Pipecat 可用多代理人交接、平行執行或共用訊息匯流排實作
+- **對話狀態**：需要明確步驟與狀態管理時用內建 **Pipecat Flows**（對應本條的 Event Loop 狀態機設計）
+- **傳輸要先選**：官方文件把 **WebRTC** 列為瀏覽器↔伺服器語音的合適選項，**WebSocket** 較適合伺服器↔伺服器或純文字
+- **「支援」≠「內建」**：列出的服務供應商通常要另裝套件、設金鑰、自付供應商費用
+- 工具：`pipecat init` 建骨架、Whisker（即時除錯）、Tail（終端儀表板）、Pipecat UI；用戶端 SDK 有 JS／React／React Native／Swift／Kotlin／C++；Python 3.12+ 建議、最低 3.11
+- 定位是開發框架而非成品助理；只要簡單文字聊天時不必用
+
 ## 相關連結
 
 - [[karpathy-voice-prompting]] — 同屬語音 AI 領域但切面不同：該篇談「人對 AI 語音輸入」的

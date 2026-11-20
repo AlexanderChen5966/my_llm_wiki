@@ -51,6 +51,7 @@ Agent 不只是「會呼叫工具的大模型 harness」，而是圍繞目標、
 ## 相關連結
 
 - [[agent-loop-explained]] — Agent Loop 概念與四層階梯
+- 📎 2026-11-19：[[ai-production-readiness-open-source-cheat-sheets]] — 對應的「上線前要交哪些證據」：八原則、工具三級、資源天花板、最小證據包
 - [[ai-agent-architecture-10-modules]] — Agent 10 核心模組
 - [[ai-agent-dev-concepts-practitioner]] — Agent 開發實踐者指南
 - [[enterprise-rag]] — 企業級 RAG

@@ -8,7 +8,7 @@ created: 2026-10-07
 description: "qiaomu-codex-imagegen 以 MCP、命令列與 Skill 接出 Codex 內建生圖能力，附場景模板與風格選擇流程。本文整理帳號前提、使用額度與來源權利，說明它與新增免費生圖模型的差別。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 在 Claude Code 或其他代理中規劃內容，最後卻得另開生圖入口，是不少創作者的工作斷點。向陽喬木公開 qiaomu-codex-imagegen，讓其他代理能透過共同工具層呼叫 Codex 內建生圖能力。
 

@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "PartLLM 用文字與點選分割 3D 網格零件。本文整理研究的輸入、分割與編輯用途，並說明為何選對零件仍不等於可製造的 CAD 模型。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 PartLLM 的 3D 零件分割展示最近在 X 受到關注。使用者透過文字或點選指認部位，模型就能協助找出相應區域，讓立體編輯少一些逐面選取。
 

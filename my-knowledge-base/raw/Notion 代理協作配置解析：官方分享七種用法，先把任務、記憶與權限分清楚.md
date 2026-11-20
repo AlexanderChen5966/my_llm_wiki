@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "Notion 代理協作有七種官方精選配置，包含看板交付、共享記憶、待辦與技能庫。本文區分社羣案例、MCP 與內建代理，整理團隊選擇入口、設定責任與驗收結果的方法。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Notion 代理協作這次在 X 展示七種配置，看起來像一張未來工作清單：拖卡片就交付任務、把知識留給下一個代理、讓待辦隨著進度更新。
 

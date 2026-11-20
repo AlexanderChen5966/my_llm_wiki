@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "企業正從「員工 AI 化」走向「企業 AI 化」：AI 不只協助工作，更開始理解企業、參與經營決策。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 「這個月營收為什麼下降？」
 

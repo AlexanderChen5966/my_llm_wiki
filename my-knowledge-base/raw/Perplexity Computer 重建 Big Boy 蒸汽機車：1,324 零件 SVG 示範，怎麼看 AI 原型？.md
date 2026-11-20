@@ -8,7 +8,7 @@ created: 2026-10-21
 description: "Perplexity Computer 以 SVG 重建 Big Boy No. 4014，展示 1,324 個零件與七階段操作。本文解析互動原型用途、資料核對、工程準確性與非工程師的任務寫法。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Perplexity Computer 讓 AI 蒸汽機車從圖片變成互動展示。畫出機車外觀已經很容易，但若能把鍋爐壓力、車輪轉動和操作步驟接在一起，作品就從一張圖變成可以互動的說明工具。
 

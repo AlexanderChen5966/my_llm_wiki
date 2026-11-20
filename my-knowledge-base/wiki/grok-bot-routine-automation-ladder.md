@@ -108,3 +108,4 @@ sairahul1 的說法是「提示詞是一次請託，Bot 是一個職位」。章
 - [[ai-agent-forbidden-tasks-agents-md]] — 職務章程「不能做的事」的延伸清單
 - [[agent-loop-stop-conditions]] — 「哪些事要先問你」＝無人看管執行時的停止條件設計
 - 📎 2026-11-19：[[claude-code-cloud-scheduled-tasks-practice]] — Claude Code 雲端排程實戰：同樣「先手動跑一次再開排程」、被擋寫「無資料」不湊數，另補綠燈不代表成功與連接器預設值陷阱
+- 📎 2026-11-19：[[grok-bot-multi-agent-workflow]] — 多 bot 之間的分工：接力 vs 平行、拆專職 bot 三條件（重複／固定格式／可獨立）

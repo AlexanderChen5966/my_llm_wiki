@@ -7,7 +7,7 @@ created: 2026-10-01
 description: "Contribute to junhao-ye/suno-lyrics-skill development by creating an account on GitHub."
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 ## suno-lyrics-skill
 

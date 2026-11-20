@@ -8,7 +8,7 @@ created: 2026-11-19
 description: "LangSmith 把負責人、固定識別碼與代理類型串成共同紀錄。解析不同環境的評估、OTLP 接入、程式代理成果與未上線路線圖，了解企業如何先用小案例驗收。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 公司同時跑客服、程式與內部助理時，最難回答的問題常是誰負責這一個代理。LangSmith 在 2026 年 11 月 16 日公布的架構改版，正是把這份責任放回產品中心。
 

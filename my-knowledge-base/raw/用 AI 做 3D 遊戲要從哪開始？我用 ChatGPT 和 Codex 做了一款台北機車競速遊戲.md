@@ -8,7 +8,7 @@ created: 2026-09-24
 description: "用 AI 做 3D 遊戲，關鍵在分工：ChatGPT 把參考圖整理成美術規格、產出概念圖與宣傳圖，Codex 在本機專案用 Three.js 寫出可玩的版本，角色在 Blender 建模後匯出 GLB。本文以台北機車競速遊戲《歐兜賣尬車》拆解完整流程，附七段提示詞與交付檢查表。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 《歐兜賣尬車》製作全紀錄：從 Q 版角色、早餐店選車到甩尾集氣，附七段可直接複製的提示詞
 

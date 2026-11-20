@@ -75,6 +75,7 @@ three.js 官方帳號在留言區建議「應該教 AI 盡可能使用**實例�
 - [[claude-code-review-harness-principles]] — 驗證迴圈設計，對照本篇「模型無法自審」的結構性成因
 - [[ai-code-review-safeguards]] — AI 產出的驗收護欄，同一命題的工程解法
 - 📎 2026-10-19：[[claude-code-pure-code-animation-practice]] — 同一缺口的工具化解法：先請 Claude 寫渲染小工具輸出截圖總表＋連續格膠卷，讓模型自己看樣片再改（rar.design 作者實測）
+- 📎 2026-11-19：[[ai-threejs-game-prototype-iteration]] — 補這個缺口的人類端做法：每輪一個可驗收目標、自己打開玩過才算、回饋四句話（哪裡／什麼情況／保留什麼／怎樣算修好）
 - 📎 2026-10-19：[[ideas/ai-3d-code-structure-vs-appearance-acceptance]] — 3JSBench（**單一社群來源**，僅 X 討論串、無排名）把「產出 ≠ 驗收」做成 100 任務／697 項結構確定性檢查，外觀另交偏好投票，兩者不混成總分
 
 ## 原始摘要

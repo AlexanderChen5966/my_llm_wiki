@@ -8,7 +8,7 @@ created: 2026-10-08
 description: "かみやまたくみ發佈付費版ChatGPT現在可「音訊檔案轉文字」，最新資訊於2026-10-08 09:51：ChatGPT 將為付費訂閱者推出音訊處理功能，支援上傳檔案進行轉錄與摘要。檔案上限為 512MB，支援 MP3 等多種格式。根據實測，其轉錄準確度極高，即使是艱深內容也能準確處理。#(252775)"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 ![](https://bucket-image.inkmaginecms.com/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2026/10/ee8e15e0-363c-4284-bd32-074f148d8983.webp)
 

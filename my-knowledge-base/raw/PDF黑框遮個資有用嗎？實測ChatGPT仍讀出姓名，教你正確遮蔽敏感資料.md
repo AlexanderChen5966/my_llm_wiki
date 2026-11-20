@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "黑框遮住文字，不代表個資已刪除。實測ChatGPT、Claude仍讀出被遮住的內容，教你用圖片、PDF遮蔽工具與原始檔替換，處理敏感資料。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 2026.10.12 | [資訊安全](https://www.bnext.com.tw/categories/security)
 

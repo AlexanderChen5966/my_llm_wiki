@@ -84,3 +84,4 @@ Beautiful UI 的解法是**可展開的 Trace**，呈現 Steps、Reasoning、Sea
 - [[agent-tool-runtime-seven-layers]] — Tool Chips 呈現的是七層裡最外面那一層的結果
 - [[frontend-agent-skills-30-picks]] — 前端 Skills 精選
 - [[grok-bot-persistent-agent-interface-design]] — 單一產品的一手設計取捨：狀態放進身分、監看三層（2026-09-29 新增）
+- [[generative-ui-a2ui-open-intelligent-ui]] — 生成式介面的協定與模板：A2UI 1.0、Open Intelligent UI（2026-11-19 新增）

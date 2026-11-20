@@ -8,7 +8,7 @@ created: 2026-11-19
 description: "Anthropic 於 2026 年 11 月 17 日推出 Claude 平台 Linked Billing 測試版與 Claude Desktop 雙更新通道，讓企業統一管理組織帳單並自由切換 Stable 或 Latest 每日更新。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 很多企業主管與團隊負責人導入 AI 工具時，最常遇到的頭痛問題往往不是「模型不夠聰明」，而是「帳單跟版本管理一團亂」。
 

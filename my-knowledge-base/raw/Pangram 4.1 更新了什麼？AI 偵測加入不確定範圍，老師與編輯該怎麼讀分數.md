@@ -8,7 +8,7 @@ created: 2026-11-04
 description: "Pangram 4.1 在 10 月 19 日更新 AI 文字偵測，加入機率輸出與「AI 範圍」提示。本文依官方模型卡整理誤判率、漏判率、50 字下限與中文支援，並說明老師、編輯與求職者看偵測分數時的限制。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 台灣時間 10 月 20 日清晨 2 點 27 分，Pangram 的 Max Spero 在 X 上宣布 Pangram 4.1 上線。
 

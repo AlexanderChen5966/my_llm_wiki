@@ -168,3 +168,4 @@ Plan B 的 7 個失敗全是同一型態 `not-available`——**guard 根本沒�
 - [[production-agent-architecture]] — 生產級 Agent 的 Guardrails
 - [[agentmail-agentid-agent-identity-oidc]] — 代理身分層（AgentID／OIDC）；身分之後的權限仍屬本篇的閘門設計
 - [[agents-md-untrusted-directory-hijack-forever-research]] — 「能讀≠能授權」的事件呼應：不可信目錄的指令文件被代理當成改設定的依據
+- [[self-hosted-agent-workspace-approval-licensing]] — 📎 2026-11-19：產品實例——OpenBot 拒絕優先的政策閘道、「技能是指令不是權限」；Open WebUI Auto 工具審查失敗回退人工

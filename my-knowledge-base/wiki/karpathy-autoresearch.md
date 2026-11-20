@@ -66,6 +66,16 @@ AutoResearch 是 Andrej Karpathy 開源的 630 行 Python 腳本，讓 AI Agent 
 
 **啟動方式：** 在 repo 中開啟 Claude/Codex，禁用所有權限，提示 "Hi have a look at program.md and let's kick off a new experiment!"
 
+### 2026-11-19 補充：研究代理讀實驗曲線（OpenResearch × Trackio）
+
+**來源：aiposthub〈OpenResearch 整合 Trackio：研究代理開始讀自己的實驗曲線〉，https://www.aiposthub.com/openresearch-trackio-experiment-curves-private-spaces/ ，2026-10-25**；依 alphaXiv 官方示範與 10-22 實作更新整理，站方未啟動任務。
+
+- **從「只看最後分數」到「讀整條曲線」**：OpenResearch 內建 Trackio，曲線放在每次 run 的工作紀錄旁，代理也能讀指標再提下一輪修改。最後分數相同的兩次訓練，一次早停滯、一次曾不穩，下一步該改的完全不同
+- **紀錄位置有優先順序**：設了 Hugging Face Space → 優先送 Space；其次自架伺服器網址；都沒設才本機。私有 Space ≠ 資料留在本機；能登入帳號 ≠ 憑證有寫入權
+- 🔑 **算完 ≠ 指標送達**：遠端（HF Jobs、Modal、Kubernetes、Slurm）跑完卻沒曲線，先查記錄與寫入，別直接重跑燒算力；只看到曲線開頭要標「不完整」，不能讓代理當成自然收斂
+- **呼應本條 Frozen Metric**：每輪固定對照、資料切分與改動理由；同一份最終測試結果反覆指導修改，它就不再是獨立檢驗；一次只改一個主要條件；保留沒改善的 run；單次提升小於重跑自然波動時先看穩定度
+- 驗收法：先重跑既有基準確認曲線回到正確 run，再讓代理提一個「指得出曲線哪個位置支持」的改動，並保留沒被支持的替代解釋
+
 ## 相關連結
 
 - [[karpathy-no-more-coding]] - Karpathy 2026 宣言：幾乎不再自己寫 code

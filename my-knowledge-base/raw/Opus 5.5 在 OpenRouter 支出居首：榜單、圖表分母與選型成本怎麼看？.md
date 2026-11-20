@@ -8,7 +8,7 @@ created: 2026-10-16
 description: "Opus 5.5 被 OpenRouter 官方列為平台支出占比第一。本文拆解官方貼文與雙廠商圖表的範圍，說明 token、支出與使用者數的差異，並整理模型選型的品質與成本測試方法。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Opus 5.5 在 OpenRouter 的支出表現受到關注。OpenRouter 官方在台灣時間 2026 年 10 月 14 日發文，稱它在平台模型支出占比居首。
 

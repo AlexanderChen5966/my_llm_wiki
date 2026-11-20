@@ -247,6 +247,12 @@ asset_value: 80
 - **rar.design〈AI 動畫怎麼做？拆解 Claude Opus 5.5 首週爆紅的像素巫師、沙畫與 3D 城堡〉（設計師 Riven，2026-09-29）**：四條路線、介面選擇、三種 prompt、三個習慣、成本與限制、brief 範本。整理他人公開作品，作者未實測。付費訂閱導流未收；作者轉述的「Artificial Analysis 平均每題輸出 token」統計未附出處，未收。
 - **數位時代〈怎麼用Claude做影片？6步驟技巧拆解，從參考片、分鏡一路做到成片〉（韋惟珊，2026-09-30）**：六步驟、拆參考片提示詞、Playwright＋ffmpeg 路線、另找 AI 驗收。作者實測。自家產品介紹、限時試用與訂閱導流、剪藏混入的另一篇無關合作文、熱門文章列表皆未收。
 
+## 補充資料
+
+**2026-11-19 補充（來源：aiposthub〈Claude 在 Blender 建日本車站花六天？19 項說法核對與 Blender MCP 警告〉，Philo，2026-11-13，https://www.aiposthub.com/claude-blender-mcp-japan-station-six-days-fact-check/）**——回應第 11 節「Blender 官方 MCP 是不是同一個」的未核對附註（二手整理，作者未安裝測試）：
+- Blender 確實有**官方**的 MCP（Blender Lab「MCP Server」，Blender 5.1+），和社群版 MCP for Blender（ahujasid）是**兩個不同專案**；所以湖畔城堡案例寫「Blender 官方 MCP」不一定是誤稱，但 Stefan Vaskevich 實際用哪一個**仍未核對**
+- 兩版對照（需求、授權、警告、socket 無驗證、安全模式預設關、預設匿名遙測）見 [[claude-codex-video-toolchain-selection]]「補充資料」段
+
 ## 相關連結
 
 - [[ideas/claude-code-animation-prompt-qa-delivery]] — 同主題的方法論版（狀態清單＋時間表、三輪驗收、HTML／SVG／MP4 交付）；本條是它的實作版
@@ -260,3 +266,4 @@ asset_value: 80
 - [[claude-opus-5-5-release-notes]] — Opus 5.5 發布資訊與「驗收合格任務成本」
 - 📎 2026-10-19：[[opus-5-5-video-case-libraries]] — 兩份 Opus 5.5 影片案例庫（yihui-dev 提示詞收藏 vs athemeroy 研究快照）、七條製作路徑與歸因驗收；[[ideas/ai-3d-code-structure-vs-appearance-acceptance]] — 3D 作品結構與外觀分開驗收（3JSBench，單一社群來源）
 - 📎 2026-11-05：[[motion-engineering-claude-five-department-video]] — 五階段責任分工與修改紀錄，可與本條工作法搭配做專案管理
+- 📎 2026-11-19：[[claude-video-animation-prompts]] — 描述動作的詞彙來源：Motion Prompt 名稱庫（每個條目也是只由時間決定的函式）與狀態回饋、發布片需求寫法

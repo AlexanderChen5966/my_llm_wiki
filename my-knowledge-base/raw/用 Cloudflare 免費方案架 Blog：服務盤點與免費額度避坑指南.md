@@ -7,7 +7,7 @@ created: 2026-10-06
 description: "用 Cloudflare 免費方案架部落格會用到的服務與 2026 年 9 月的免費額度：DNS、Workers、Pages、Workers Builds、D1、Turnstile、WAF Rate limiting rules、Web Analytics、Workers Logs，以及部落格圖片該放 repo、Image Transformations 還是 R2。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 一次盤點 DNS、Workers、D1 到 WAF 等全套免費服務，並精準標出 10ms CPU、Rate Limit 等真正的免費額度瓶頸
 

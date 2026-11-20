@@ -7,6 +7,7 @@ source:
   - https://github.com/yihui-dev/awesome-opus5-5-videos
   - https://www.kocpc.com.tw/archives/670578
   - https://www.bnext.com.tw/article/92576/claude-opus-5.5
+  - https://www.aiposthub.com/awesome-opus-video-prompts/
 official_refs:
   - https://github.com/athemeroy/awesome-opus-5-5-videos（README 本體即本次剪藏，一手；凍結快照 2026-09-26 21:05 CST；docs/、data/ 子頁本批未讀）
   - https://github.com/yihui-dev/awesome-opus5-5-videos（README 本體即本次剪藏，一手；README 自述 2026-09-29 更新、2026-09-30 剪藏；prompts/ 與 data/videos.json 本批未讀）
@@ -126,6 +127,15 @@ asset_value: 51
 - **yihui-dev/awesome-opus5-5-videos README（GitHub，2026-09-30 剪藏）**：475 prompts／精選 100、四個分類、技術標籤、用法三步、Credits。⚠️ Skillry（skillry.dev/ai-videos/opus-5-5）是這份 README 的**導流目的地，不推薦**；「live remake」來源不明，未收。第六批曾以「無增量、沒有頁面網址」排除的 raw〈Skillry Opus 5.5 Videos…〉（wingzero），現可確認就是這個導流目的地（該 raw 不動）。
 - **電腦王阿達〈「Awesome Opus 5.5 Videos」收集 475 組…〉（Rocky，2026-09-30）**：yihui-dev 清單的中文導覽，475／100 與 README 相符，無增量、無實測。把 Skillry 當主要瀏覽入口推薦（替導流背書），不採用。
 - **數位時代〈Claude做影片教學！Opus 5.5做出10種AI動畫風格…〉（蘇柔瑋，2026-10-12，初稿為 AI 編撰）**：本條只取「截至目前 513 組提示詞」一列；其餘案例規格補進 [[claude-code-pure-code-animation-practice]] 第 11 節附註。自家產品「一天一 AI PRO」案例、訂閱與延伸閱讀導流未收。
+
+## 補充資料
+
+**2026-11-19 補充（來源：aiposthub〈Awesome Opus 5.5 影片提示詞庫怎麼用？短指令之外，還要確認哪些製作條件〉，Philo，2026-11-11，https://www.aiposthub.com/awesome-opus-video-prompts/）**——針對 yihui-dev 那份的用法建議，作者觀點、未實測：
+- 🔑 **短提示詞不等於完整製作條件**：例子是 kloss「十一個英文單字做出兩分多鐘影片」，但原貼文自述研究、腳本、動畫、聲音都有參與；一句提示可能沒包含先前對話、工作目錄、工具環境與素材，不能只憑短句推斷流程（呼應 B 層「不要拿提示詞重跑就期待重現」）
+- 挑案例：先挑**用途相近、製作條件最清楚**（有完整提示詞、工具、輸出方式）的，而不是最熱門的
+- 重做時記下：**模型設定、需要的素材、總時間、修改輪數**——差異才找得到原因，不會把失敗全歸給提示詞
+- 小規模復作法：把長片縮成 **10～15 秒、一個場景、一個主張**，文字換成自己的內容、保留原作連結；先要可執行專案，再查字、缺素材、聲音、能否輸出指定格式（網頁動畫到 MP4 還有輸出這一關）；兩版並排比構圖／可讀性／節奏／完整性，修改要指出具體時間點
+- 倉庫授權和個別創作者作品權利要分開確認（與第 2 節「yihui-dev 未見授權聲明」一致）
 
 ## 相關連結
 

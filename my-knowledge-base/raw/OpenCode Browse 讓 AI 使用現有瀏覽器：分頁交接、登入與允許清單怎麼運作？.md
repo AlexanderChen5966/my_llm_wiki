@@ -8,7 +8,7 @@ created: 2026-11-10
 description: "OpenCode Browse連接現有瀏覽器與登入，讓程式代理使用背景分頁。理解人手交接、網站允許清單、本機配對、錄影與HAR紀錄的功能和限制。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 想請程式代理檢查網站，常得先替它準備另一個瀏覽器，再重新登入。若能沿用已開啟的工作環境，代理就能接著畫面做事，人也不必重建整段操作。
 

@@ -8,7 +8,7 @@ created: 2026-11-19
 description: "OpenBot 1.0 將代理、工具、核准與紀錄整合為可自架工作區。解析 AG-UI、MCP、桌面與企業入口、資料外送，以及 MIT 模板和 Intelligence 分別授權。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 OpenBot 把代理、工具和人工核准放進同一個工作區，讓公司保留自己的模型與部署選擇。但程式能自架，不代表每一層服務都用同一份開源授權。
 

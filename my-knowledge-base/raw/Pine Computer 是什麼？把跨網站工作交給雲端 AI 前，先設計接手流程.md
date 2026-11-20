@@ -8,7 +8,7 @@ created: 2026-10-13
 description: "Pine Computer 把瀏覽器、檔案與命令列放進雲端，讓 AI 透過介面工作。整理封閉測試狀態、真人登入接手、供應商比較範例與評測口徑，幫開發者規劃可驗收的第一個任務。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Pine Computer 是供 AI 工作的雲端電腦。開發者把任務交給它，它再使用瀏覽器、檔案與命令列，回傳進度和成果。
 

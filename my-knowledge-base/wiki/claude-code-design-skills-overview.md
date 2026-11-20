@@ -55,3 +55,4 @@ asset_value: 24
 - [[impeccable-style-ai-coding-guide]] — Impeccable 的深度解析條目
 - [[claude-skills-guide]] — Claude Skills 完整指南
 - 📎 2026-10-30：[[taste-skill-anti-slop-frontend]] — Taste Skill 的深度條目；與 Impeccable 的 v4.x 流程（問產品事實→隱喻抽籤→審查）互補
+- 📎 2026-11-19：[[ai-design-skills-anti-template]] — 補上 Hallmark（v2）專篇內容，另收 Huashu Design 3.0、Ling UI、GradientDeck、Jakub Krehel Skills：先比方向、再用主題或 DESIGN.md 固定

@@ -8,7 +8,7 @@ created: 2026-10-21
 description: "OpenAI 分享使用 GPT-6 家族維護軟體的方法，讓 Codex 從 Slack 找線索，再比對正式環境資料提出清理 PR。本文拆解證據、刪除範圍與工程師的審核責任。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 Codex 技術債整理這次最值得看的地方，是它開始主動找維護機會，再補上刪除或簡化的依據。對大型專案而言，知道哪一段可以動，往往比把程式改掉更困難。
 

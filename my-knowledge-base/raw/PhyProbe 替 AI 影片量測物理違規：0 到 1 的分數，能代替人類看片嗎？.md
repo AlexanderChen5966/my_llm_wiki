@@ -8,7 +8,7 @@ created: 2026-10-16
 description: "PhyProbe 用影片編碼器加小型評分頭，估計 0 到 1 的物理違規程度。分清百萬參數範圍、排序與人類相關性，說明如何建立自己的門檻，輔助篩片而不取代審片。"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 PhyProbe 想衡量一種生成影片常見問題：畫面可以很漂亮，物體卻穿過彼此，或突然改變形狀。
 

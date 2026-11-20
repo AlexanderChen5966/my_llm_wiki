@@ -69,6 +69,28 @@ Notion 3.7 把團隊 SOP 做成可分享、有版本歷史的 Notion 頁面，�
 
 **歸屬判斷（2026-09-23）**：本篇與 [[sop-to-skill-4-steps]] 部分重疊（範本與測試），但本條目 R 層的主體（產品機制、權限對應、匯出與同步落差、四機制對照、五個治理盲點）都是既有條目沒有的新內容，超過一半；目標條目的 T 是「SOP 轉 SKILL.md 會逼你補齊判斷標準」的撰寫方法論，裝不下「Skill 放在協作平台時的權限與同步治理」這條新論點，因此獨立成條。
 
+## 補充資料
+
+**2026-11-19 補充（來源：aiposthub〈Notion 代理協作配置解析：官方分享七種用法，先把任務、記憶與權限分清楚〉，Philo，2026-10-13，https://www.aiposthub.com/notion-seven-agent-collaboration-setups-memory-skills-permissions/）**——二手整理，作者未實測：
+- **三種代理入口，權限範圍不同**：① **Notion MCP**＝在外部 AI 工具裡讀寫 Notion，**以連接者本人的 Notion 權限行動**（提示寫「只讀這頁」不等於技術上只能讀這頁）；② **Custom Agents**＝Notion 內共享、背景執行，依排程或事件啟動，**只看得到明確分享給它的內容**；③ **Notion 內建的外部代理**（如 Claude 代理測試版）＝留在 Notion 互動，**用 Notion credits、不支援自帶 Anthropic 帳號計費**（此條件不能套到其他第三方代理）
+- **官方七種配置是用戶案例、不是七個新功能**：看板拖卡交付、共享代理記憶、隨進度更新的待辦、工作成果紀錄、經外部 MCP 的財務流程、團隊共用技能庫、AudioPen 口述入庫；各自的產品、方案、連接與費用要分別確認
+- 呼應本條 T 層：**共用技能庫的更新機制比一次下載更重要**——關鍵技能要指定維護者與適用範圍，否則舊下載副本會讓共享庫分裂成多個版本；驗證法是讓兩個代理跑同一典型任務，差異來自版本／遺漏指示就先修共同資料
+- 作者建議（觀點）：看板狀態要分「準備執行（輸入足夠）／待審核」，測試卡只啟動一次、失敗保留原因；共享記憶每項要有來源、負責人、更新時間；待辦「完成」要有產出證據
+
+**2026-11-19 補充（來源：aiposthub〈Notion Google Drive 代理連線開放測試，即時讀寫文件，權限與觸發怎麼設定？〉，Philo，2026-11-05，https://www.aiposthub.com/notion-agents-google-drive-beta-permissions/）**——轉述官方公告（2026-11-03）與 Help Center，**測試版**、作者未實測：
+- 代理可**即時**搜尋、讀取、建立、更新 Drive 檔案（官方稱不儲存、不建索引）；這和工作區 AI 搜尋連接器（索引）、連結預覽是**不同連線**——搜尋得到不代表代理能改
+- 條件：工作區成員＋已啟用 Notion AI（訪客不行）；個人在 Settings → Connections 連 Google 帳號；組織的 Google Workspace 應用程式規則可能卡住，Custom Agent 可能需管理者批准
+- **有限 vs 完整存取**：有限＝可讀本人能讀的、只能改代理建立或使用者選取的檔案；完整＝沿用本人 Drive 讀寫權限。**Notion Agent 一律完整存取**，有限存取只在 Custom Agent 有意義；Custom Agent 還要在 Tools & access 加入 Drive，可再限定檔案／資料夾／共用雲端硬碟
+- 🔑 權限即執行權的延伸：**共享 Custom Agent＝能用它的人都能搜尋它連的 Drive**；一個 Custom Agent 只能連一個 Google 帳號；**僅限同一個 Google Workspace**（跨 Workspace 分享給本人的檔案也讀不到）
+- 原地編輯只限 Google Docs／Sheets／Slides；PDF、Word 只能讀，更新版另存新檔
+- **資料夾觸發**：依頻率檢查指定資料夾或共用雲端硬碟，**子資料夾變更不觸發**、不能監看整個 My Drive → 用固定的待處理資料夾收件
+
+**2026-11-19 補充（來源：aiposthub〈Notion 代理留言進度更新：團隊怎麼在同一頁追蹤、改派與接手工作？〉，Philo，2026-11-08，https://www.aiposthub.com/notion-agent-comment-progress-20261108/）**——轉述官方貼文（2026-11-06）與 Claude 任務板官方指南，作者未實測：
+- **進度寫進原頁留言回覆**，代理也出現在頁面瀏覽者旁；有權存取任務的人可在工作中途留言**補充背景、提問或改方向**，卡住時直接回覆補資料；方向錯可從「Claude is working」即時工作階段（含推理與工具呼叫）**停止**，暫停後留言即可**續做**；已寫進頁面的錯誤改用頁面版本歷史復原（停止≠復原）。原交辦人離開時，接手者從任務文字＋留言就能**改派／接手**，不必重建私人對話
+- **Claude 任務板案例的條件**（External Agents，建在 Custom Agents 設定上）：Notion **Business／Enterprise** 工作區、可用的 **Notion Credits**、由工作區擁有者啟用 External Agents；HIPAA 工作區與限制 Anthropic 模型的工作區預設停用 Claude。用量看 Credits 儀表板與代理 Insights。這是單一官方案例，不能外推成所有 Notion 代理的方案與計費
+- 🔑 權限即執行權的延伸：代理**只看得到明確授權的頁面、資料庫與連線**（規格、設計文件沒分享就等於缺背景照做）；GitHub 可按儲存庫授權，開 PR 需 PAT 對 Contents 與 Pull Requests 讀寫；只問架構可先用 Codebase Q&A。留言裡補的一次性要求**不會變成長期規則**，要沿用須改代理指令；不同任務類型建議分成多個代理
+- **進度可見≠完成**：成果仍要接回頁面、檔案（生成的 PPT／Excel 連結回原頁）或 **PR 審查**（看差異與預覽再決定合併），看板狀態建議分「可交代理／處理中／待審查／完成」
+
 ## 相關連結
 
 - [[sop-to-skill-4-steps]] — SOP 轉 SKILL.md 的撰寫方法論；本條目談的是 Skill 放上協作平台後的權限與同步治理
@@ -77,3 +99,5 @@ Notion 3.7 把團隊 SOP 做成可分享、有版本歷史的 Notion 頁面，�
 - [[agent-skills-vs-mcp]] — Skills 與 MCP 的選擇判斷
 - [[claude-skill-audit-four-step-minimal-method]] — Skill 盤點與稽核方法
 - [[claude-skills-asset-building]] — Skills 從指令到資產（該篇提過用 Notion 建 AI 資源庫）
+- [[agent-ux-status-transparency-maturity]] — 代理進度須來自真實狀態；對照本條 2026-11-19 補充「進度可見≠完成」
+- [[self-hosted-agent-workspace-approval-licensing]] — 對照：OpenBot 明說「技能是指令不是權限」，與本條「檢視權限＝執行權」是不同的權限模型

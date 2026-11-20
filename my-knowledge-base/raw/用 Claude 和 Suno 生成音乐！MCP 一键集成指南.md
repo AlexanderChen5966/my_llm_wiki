@@ -8,7 +8,7 @@ created: 2026-10-01
 description: "你是否想过：在与 Claude 聊天时，直接让它为你生成一首歌？无需打开任何网站，不需要编程，只需一句话——“帮我写一首关于夏天的歌”——Claude 就会调用 Suno API，在几分钟内为你送上完整的歌曲、歌词和封面艺…"
 tags:
   - "clippings"
-status: "inbox"
+status: "processed"
 ---
 内容疑似 AI 生成
 

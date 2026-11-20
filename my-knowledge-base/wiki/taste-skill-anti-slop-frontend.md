@@ -88,3 +88,4 @@ npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-fro
 - 📎 2026-10-19：[[claude-codex-video-toolchain-selection]] — 同一開發者 Leonxlnx 的產品宣傳動畫 Skill Cinetic（第三方、MIT、預設 Remotion 輸出）
 - 📎 2026-10-30：[[impeccable-style-ai-coding-guide]] — 已補 v4.x 更新（24 指令、PRODUCT／DESIGN.md、隱喻抽籤、4 版本實驗）；Impeccable 主打「流程」、Taste 主打固定風格規則
 - 📎 2026-11-19：[[ai-ui-acceptance-unslop-and-design-reference]] — 另一套反 slop Skill unslop（九項依序改＋換名測試，CC BY 4.0），以及元件名稱、轉場數字、狀態表的驗收做法
+- 📎 2026-11-19：[[ai-design-skills-anti-template]] — 另一條反模板路線：先比多個視覺方向（Huashu Design、Ling UI）、再用主題或 DESIGN.md 固定（Hallmark、GradientDeck）
